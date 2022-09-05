@@ -1125,10 +1125,6 @@ a {
 	font-size: .9em
 }
 
-[class^="icon-watch"] {
-	display: none !important;
-}
-
 .list-table .list-table-data .data.title .more { position: relative; }
 
 .list-table .list-table-data .data.tags { word-wrap: break-word; }
