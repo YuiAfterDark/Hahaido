@@ -1,13 +1,833 @@
-@\import "https://dl.dropboxusercontent.com/s/s03lx9vmf9r49od/CategoryMenu.css";
-@\import "https://dl.dropboxusercontent.com/s/kcgsjgwdxc5mhk8/Favorites.css";
-@\import "https://dl.dropboxusercontent.com/s/xiiui9r3n9fwh94/Menus.css";
-@\import "https://dl.dropboxusercontent.com/s/uw7tcdc88d8wir6/TopMenu.css";
+/* Haikyuu Layout by Hahaido */
+/* Repaired by jery_js */
+
+/* fix for various features*/
+@\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
+
 @font-face {
 font-family: 'Monda';
 font-style: normal;
 font-weight: 400;
 src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) format('woff2');
 }
+
+/* https://dl.dropboxusercontent.com/s/s03lx9vmf9r49od/CategoryMenu.css */
+
+@-webkit-keyframes Shake {
+	0% { -webkit-transform: rotate(0deg); }
+	10% { -webkit-transform: rotate(5deg); }
+	20% { -webkit-transform: rotate(0deg); }
+	30% { -webkit-transform: rotate(-5deg); }
+	40% { -webkit-transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(5deg); }
+	60% { -webkit-transform: rotate(0deg); }
+	70% { -webkit-transform: rotate(-5deg); }
+	80% { -webkit-transform: rotate(0deg); }
+	90% { -webkit-transform: rotate(5deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes Shake {
+	0% { transform: rotate(0deg); }
+	10% { transform: rotate(5deg); }
+	20% { transform: rotate(0deg); }
+	30% { transform: rotate(-5deg); }
+	40% { transform: rotate(0deg); }
+	50% { transform: rotate(5deg); }
+	60% { transform: rotate(0deg); }
+	70% { transform: rotate(-5deg); }
+	80% { transform: rotate(0deg); }
+	90% { transform: rotate(5deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.status-menu-container.fixed {
+	position: fixed;
+	display: block;
+	top: auto;
+	bottom: 10%;
+}
+
+.status-menu-container {
+	position: fixed;
+	right: 0;
+	bottom: 10%;
+	margin: 0;
+	width: 154px;
+	height: 324px;
+	background-color: transparent;
+	border: none;
+	z-index: 5;
+}
+
+.status-menu-container .status-menu:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: -150px;
+	top: -230px;
+	width: 300px;
+	height: 257px;
+	background: url(http://i.imgur.com/ZyO6CvQ.png) no-repeat;
+}
+
+.status-menu-container .status-menu {
+	display: block;
+	margin: 0;
+	width: 154px;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.status-menu-container .status-menu .status-button {
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 154px;
+	height: 54px;
+	padding: 0;
+	font-size: 0;
+	color: transparent;
+	background-image: url(http://i.imgur.com/UAOJKw1.png);
+	background-repeat: no-repeat;
+}
+
+.status-menu-container .status-menu .status-button:hover {
+	-webkit-animation: Shake .5s ease-in;
+	animation: Shake .5s ease-in;
+}
+
+.status-menu-container .status-menu .status-button.on { 
+	pointer-events: none;
+	color: transparent;
+	font-weight: normal;
+}
+
+.status-menu-container .status-menu .status-button.all_anime, .status-menu .status-button.all_anime:hover  { background-position: 0 0; }
+.status-menu-container .status-menu .status-button.watching, .status-menu .status-button.watching:hover  { background-position: 0 -54px; }
+.status-menu-container .status-menu .status-button.reading, .status-menu .status-button.reading:hover  { background-position: 0 -54px; }
+.status-menu-container .status-menu .status-button.completed, .status-menu .status-button.completed:hover  { background-position: 0 -108px; }
+.status-menu-container .status-menu .status-button.onhold, .status-menu .status-button.onhold:hover  { background-position: 0 -162px; }
+.status-menu-container .status-menu .status-button.dropped, .status-menu .status-button.dropped:hover  { background-position: 0 -216px; }
+.status-menu-container .status-menu .status-button.plantowatch, .status-menu .status-button.plantowatch:hover  { background-position: 0 -270px; }
+.status-menu-container .status-menu .status-button.plantoread, .status-menu .status-button.plantoread:hover  { background-position: 0 -270px; }
+
+.status-menu-container .status-menu .status-button:after {
+	opacity: 0;
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 154px;
+	height: 54px;
+	background-color: transparent;
+	background-image: url(http://i.imgur.com/UAOJKw1.png);
+	background-repeat: no-repeat;
+	-webkit-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+}
+
+.status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after { opacity: 1; }
+
+.status-menu-container .status-menu .status-button.all_anime:after, .status-menu-container .status-menu .status-button.all_anime.on:after, .status-menu .status-button.all_anime:hover:after { background-position: -154px 0; }
+.status-menu-container .status-menu .status-button.watching:after, .status-menu-container .status-menu .status-button.watching.on:after, .status-menu .status-button.watching:hover:after  { background-position: -154px -54px; }
+.status-menu-container .status-menu .status-button.reading:after, .status-menu-container .status-menu .status-button.reading.on:after, .status-menu .status-button.reading:hover:after  { background-position: -154px -54px; }
+.status-menu-container .status-menu .status-button.completed:after, .status-menu-container .status-menu .status-button.completed.on:after, .status-menu .status-button.completed:hover:after  { background-position: -154px -108px; }
+.status-menu-container .status-menu .status-button.onhold:after, .status-menu-container .status-menu .status-button.onhold.on:after, .status-menu .status-button.onhold:hover:after  { background-position: -154px -162px; }
+.status-menu-container .status-menu .status-button.dropped:after, .status-menu-container .status-menu .status-button.dropped.on:after, .status-menu .status-button.dropped:hover:after  { background-position: -154px -216px; }
+.status-menu-container .status-menu .status-button.plantowatch:after, .status-menu-container .status-menu .status-button.plantowatch.on:after, .status-menu .status-button.plantowatch:hover:after  { background-position: -154px -270px; }
+.status-menu-container .status-menu .status-button.plantoread:after, .status-menu-container .status-menu .status-button.plantoread.on:after, .status-menu .status-button.plantoread:hover:after  { background-position: -154px -270px; }
+
+/* https://dl.dropboxusercontent.com/s/xiiui9r3n9fwh94/Menus.css */
+
+@-webkit-keyframes Drop_down {
+	from { opacity: 0; margin-top: 20px; }
+	to { opacity: 1; margin-top: 45px; }
+}
+
+@keyframes Drop_down {
+	from { opacity: 0; margin-top: 20px; }
+	to { opacity: 1; margin-top: 45px; }
+}
+
+@-webkit-keyframes Slide_down {
+	from { line-height: 0; }
+	to { line-height: 30px; }
+}
+
+@keyframes Slide_down {
+	from { line-height: 0; }
+	to { line-height: 30px; }
+}
+
+/* HEADER */
+.header {
+	position: absolute;
+	display: block;
+	right: 29%;
+	top: 162px;
+	margin: 0;
+	width: 650px;
+	height: 70px;
+	text-shadow: 0 0 .2em #000000;
+	float: right;
+	z-index: 4; 
+}
+
+.header a {
+	color: #ffffff;
+	text-shadow: 0 0 .2em #000000;
+	font-weight: normal;
+}
+
+.header a:hover { text-decoration: none; }
+
+.header .header-title { display: none; }
+
+.header .header-menu {
+	position: relative;
+	right: 0;
+	top: 0 !important;
+}
+
+.header .header-menu .btn-menu {
+	position: absolute;
+	display: block;
+	top: 36px;
+	right: 150px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: right;
+}
+
+.header .header-menu .header-info {
+	position: absolute;
+	top: 195px;
+	right: 135px;
+	font-size: 1em;
+	margin: 6px 15px 0 0;
+	color: #ffffff;
+	text-align: right;
+}
+
+.header .header-menu .header-info a[href*="/login"]:before, .header .header-menu .header-info a[href*="/register"]:before, 
+.header .header-menu .header-info a[href*="/login"]:after, .header .header-menu .header-info a[href*="/register"]:after {
+	position: relative;
+	display: inline-block;
+	content: '';
+	right: 0;
+	height: 60px;
+	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: -1;
+}
+
+.header .header-menu .header-info a[href*="/login"]:before, .header .header-menu .header-info a[href*="/register"]:before { width: 44px; float: left; }
+
+.header .header-menu .header-info a[href*="/login"]:before { background-position: -220px 0; }
+
+.header .header-menu .header-info a[href*="/register"]:before { background-position: -352px 0; }
+
+.header .header-menu .header-info a[href*="/login"]:after, .header .header-menu .header-info a[href*="/register"]:after { top: 5px; width: 0; float: right; }
+
+.header .header-menu .header-info a[href*="/login"]:after { background-position: -440px -60px; }
+
+.header .header-menu .header-info a[href*="/register"]:after  { background-position: -704px -60px; }
+
+.header .header-menu .header-info a[href*="/login"]:hover:after, .header .header-menu .header-info a[href*="/register"]:hover:after { width: 88px; }
+
+.header .header-menu .header-info a[href*="/login"], .header .header-menu .header-info a[href*="/register"] {
+	position: relative;
+	display: table-cell;
+	left: 158px;
+	top: -363px;
+	width: 44px;
+	height: 60px;
+	font-size: 0;
+	color: transparent;
+	text-shadow: none;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	float: left;
+}
+
+.header .header-menu .header-info a[href*="/login"]:hover, .header .header-menu .header-info a[href*="/register"]:hover { width: 132px; }
+
+.header .username { font-weight: normal; }
+
+.header .header-menu .list-menu {
+	position: absolute;
+	display: none;
+	right: 150px;
+	margin-top: 45px;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	z-index: 1;
+}
+
+.header .header-menu .list-menu[style="display: block;"] { 
+	-webkit-animation: Drop_down .3s forwards ease-out;
+	animation: Drop_down .3s forwards ease-out;
+}
+
+.header .header-menu .list-menu .icon-menu {
+	display: block;
+	width: 88px;
+	height: 61px;
+	font-size: 0;
+	color: transparent;
+	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-repeat: no-repeat;
+}
+
+.header .header-menu .list-menu .icon-menu.anime-list { background-position: -88px -60px; }
+
+.header .header-menu .list-menu .icon-menu.manga-list { background-position: -176px -60px; }
+
+.header .header-menu .list-menu .icon-menu:hover { background-color: transparent; }
+
+.header .header-menu .list-menu .icon-menu svg.icon, .header .header-menu .list-menu .icon-menu .text  { display: none; }
+
+/* SEARCH */
+.status-menu-container .search-container { display: none; }
+
+/* SORT */
+.list-table .list-table-header .header-title {
+	position: relative; 
+	display: table-cell;
+	height: 32px;
+	color: #ffffff;
+	text-align: center;
+	background: none;
+	border: none;
+}
+
+.list-table .list-table-header .header-title .sort-icon { 
+	opacity: 1; 
+	font-size: 0;
+	color: transparent;
+}
+
+.list-table .list-table-header .header-title .link { font-size: 14px; color: #ffffff; }
+
+.list-table .list-table-header .header-title:last-child { background-image: none; }
+
+.list-table .list-table-header .header-title.status { display: none; }
+
+.list-unit.all_anime .list-table .list-table-header .header-title.status { display: table-cell; width: 4px; }
+
+.list-table .list-table-header .header-title.number { width: 30px; }
+
+.list-table .list-table-header .header-title.image { width: 66px; }
+
+.list-table .list-table-header .header-title.title { padding-left: 0; text-align: left; }
+
+.list-table .list-table-header .header-title.score { width: 65px; }
+
+.list-table .list-table-header .header-title.type { width: 60px; }
+
+.list-table .list-table-header .header-title.progress { width: 90px; }
+
+.list-table .list-table-header .header-title.chapters { width: 90px; }
+
+.list-table .list-table-header .header-title.volumes { width: 90px; }
+
+.list-table .list-table-header .header-title.tags { width: 120px; }
+
+.list-table .list-table-header .header-title.rated { width: 70px; }
+
+.list-table .list-table-header .header-title.started { width: 110px; }
+
+.list-table .list-table-header .header-title.finished { width: 110px; }
+
+.list-table .list-table-header .header-title.days { width: 45px; }
+
+.list-table .list-table-header .header-title.storage { width: 75px; }
+
+.list-table .list-table-header .header-title.retail { width: 65px; }
+
+.list-table .list-table-header .header-title.priority { width: 70px; }
+
+.list-table .list-table-header .header-title .link.sort {
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+	white-space: nowrap;
+}
+
+.list-table .list-table-header .header-title .link.sort:hover { color: #ffffff; }
+
+/* STATS */
+.list-unit .list-status-title .stats {
+	position: absolute;
+	right: 20px;
+	top: 68px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.list-unit .list-status-title .stats a {
+	display: block;
+	margin: 0;
+	color: #ffffff;
+}
+
+#show-stats-button, #advanced-options-button { color: #ffffff; text-shadow: 0 0 .2em #000000; }
+
+#show-stats-button i.fa.fa-bar-chart, #advanced-options-button i.fa.fa-filter { font-size: 12px; }
+
+.list-unit .list-status-title .stats a.filterd { text-shadow: 0 0 2px #ffffff; }
+
+.list-unit .list-stats {
+	display: none;
+	width: 625px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #ffffff; 
+	text-shadow: 0 0 .2em #000000; 
+	text-align: center;
+	background-color: transparent;
+}
+
+.list-unit .list-stats[style="display: block;"] { 
+	-webkit-animation: Slide_down .3s forwards ease-out;
+	animation: Slide_down .3s forwards ease-out;
+}
+
+/* https://dl.dropboxusercontent.com/s/uw7tcdc88d8wir6/TopMenu.css */
+
+.list-menu-float {
+	position: absolute;
+	display: table;
+	right: 29%;
+	top: 0;
+	width: 448px;
+	height: 64px;
+	border: none;
+	float: right;
+	z-index: 1;
+}
+
+.list-menu-float .icon-menu {
+	opacity: 1;
+	position: relative;
+	display: table-cell;
+	width: 44px;
+	height: 60px;
+	background-color: transparent;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.list-menu-float .icon-menu:not(.profile):hover, .list-menu-float form:hover {
+	width: 132px;
+	background-color: transparent;
+}
+
+/* SVG */
+.list-menu-float .icon-menu svg.icon {
+	position: relative;
+	display: inline-block;
+	left: 0 !important;
+	top: 0 !important;
+	width: 44px;
+	height: 60px;
+	fill: transparent;
+	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.list-menu-float .icon-menu:hover svg.icon { position: relative; fill: transparent; }
+
+.list-menu-float .icon-menu svg.icon g { display: none; }
+
+.list-menu-float .icon-menu.profile:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 44px;
+	height: 60px;
+	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-position: -396px 0;
+}
+
+.list-menu-float .icon-menu.profile {
+	background-size: cover;
+	border-radius: 6px;
+	float: right; 
+}
+
+.list-menu-float .icon-menu.quick-add  svg.icon { background-position: 0 0; }
+
+.list-menu-float .icon-menu.anime-list svg.icon { background-position: -44px 0; }
+
+.list-menu-float .icon-menu.manga-list svg.icon { background-position: -88px 0; }
+
+.list-menu-float .icon-menu.history svg.icon { background-position: -132px 0; }
+
+.list-menu-float .icon-menu.export  svg.icon{ background-position: -176px 0; }
+
+.list-menu-float .icon-menu.login svg.icon { background-position: -220px 0; }
+
+.list-menu-float form { 
+	display: table-cell;
+	width: 44px; 
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.list-menu-float .icon-menu.logout svg.icon { background-position: -264px 0; }
+
+.list-menu-float .icon-menu.setting svg.icon { background-position: -308px 0; }
+
+.list-menu-float .icon-menu .text {
+	opacity: 1;
+	position: absolute;
+	display: inline-block;
+	left: auto;
+	right: 0;
+	top: 5px;
+	width: 0;
+	height: 61px;
+	font-size: 0;
+	color: transparent;
+	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: -1;
+}
+
+.list-menu-float .icon-menu:hover .text { width: 88px; }
+
+
+.list-menu-float .icon-menu.quick-add .text { background-position: 0 -60px; }
+
+.list-menu-float .icon-menu.anime-list .text { background-position: -88px -60px; }
+
+.list-menu-float .icon-menu.manga-list .text { background-position: -176px -60px; }
+
+.list-menu-float .icon-menu.history .text { background-position: -264px -60px; }
+
+.list-menu-float .icon-menu.export .text { background-position: -352px -60px; }
+
+.list-menu-float .icon-menu.login .text { background-position: -440px -60px; }
+
+.list-menu-float .icon-menu.logout .text { background-position: -528px -60px; }
+
+.list-menu-float .icon-menu.setting .text { background-position: -616px -60px; }
+
+/* setting */
+.list-menu-float .icon-menu.setting .text {
+	opacity: 1;
+	top: 5px;
+	width: 0;
+	height: 61px;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+
+.list-menu-float .icon-menu.setting:hover .text { top: 5px; width: 88px; }
+
+.list-menu-float .icon-menu.setting .text .link-list-setting {
+	opacity: 1;
+	display: block;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting {
+	position: absolute;
+	display: block;
+	width: 88px;
+	height: 61px;
+	color: transparent;
+	background-color: transparent;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting { display: none; }
+
+
+
+
+/* PATCH */
+
+
+* { cursor: url(https://i.imgur.com/RxqXxeV.png), auto !important; }
+
+
+.status-menu-container .status-menu:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: -150px;
+	top: -230px;
+	width: 300px;
+	height: 257px;
+	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwD9tyGIHtO4hKK7KI9--RQM) no-repeat !important;
+}
+
+.status-menu-container .status-menu .status-button {
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 154px;
+	height: 54px;
+	padding: 0;
+	font-size: 0;
+	color: transparent;
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
+	background-repeat: no-repeat;
+}
+
+.status-menu-container .status-menu .status-button:after {
+	opacity: 0;
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 154px;
+	height: 54px;
+	background-color: transparent;
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
+	background-repeat: no-repeat;
+	-webkit-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+}
+
+
+.data.title a[href$="/Black_Jack"]:before {
+	display: inline-block; 
+	content: '';
+	width: 16px; 
+	height: 12px; 
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+
+.header .header-menu .header-info a[href*="/login"]:before, .header .header-menu .header-info a[href*="/register"]:before, 
+.header .header-menu .header-info a[href*="/login"]:after, .header .header-menu .header-info a[href*="/register"]:after {
+	position: relative;
+	display: inline-block;
+	content: '';
+	right: 0;
+	height: 60px;
+	background-image: url();
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: -1;
+}
+
+.header .header-menu .list-menu .icon-menu {
+	display: block;
+	width: 88px;
+	height: 61px;
+	font-size: 0;
+	color: transparent;
+	background-image: url();
+	background-repeat: no-repeat;
+}
+
+
+/* SVG */
+.list-menu-float .icon-menu svg.icon {
+	position: relative;
+	display: inline-block;
+	left: 0 !important;
+	top: 0 !important;
+	width: 44px;
+	height: 60px;
+	fill: transparent;
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.list-menu-float .icon-menu.profile:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 44px;
+	height: 60px;
+	background-image: url();
+	background-position: -396px 0;
+}
+
+.list-menu-float .icon-menu .text {
+	opacity: 1;
+	position: absolute;
+	display: inline-block;
+	left: auto;
+	right: 0;
+	top: 5px;
+	width: 0;
+	height: 61px;
+	font-size: 0;
+	color: transparent;
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: -1;
+}
+
+body.ownlist {
+font-family: 'Monda';
+font-size: 14px;
+background-color: rgb(25, 35, 37);
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBtEM1gp_r1CNkhp1P1ZSGKY1t5-EyAgeYpOicm8ls9H) !important;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+}
+
+.list-container:after {
+pointer-events: none;
+position: fixed;
+display: block;
+content: '';
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwJTYIalEC9GYosf2-Fgp1WQ) !important;
+background-repeat: no-repeat;
+background-position: left center;
+background-size: cover;
+z-index: 4;
+}
+
+.list-block {
+margin: 370px 0 0 0;
+width: 650px;
+min-height: 600px;
+padding: 25px 10px 100px 0;
+background-color: rgba(0, 0, 0, .5);
+/* Table borders */
+background-clip: padding-box;
+border-color: transparent;
+border-style: solid;
+border-width: 0 0 0 10px;
+-webkit-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important; 
+-moz-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important;
+border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important;
+}
+
+.list-table .list-table-data .data.status:before {
+display: block;
+content: '';
+margin-left: -12px;
+width: 22px;
+height: 12px;
+background-image: url();
+background-repeat: no-repeat;
+}
+
+/* HEADERS */
+.list-unit .list-status-title {
+position: absolute;
+display: table;
+margin: -200px 0 0 -15px;
+width: 665px;
+height: 200px;
+background-color: transparent;
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOiHcLasHsjtHTHUvC1iabw) !important;
+background-repeat: no-repeat;
+z-index: 3;
+}
+
+#copyright {
+position: relative;
+width: 675px;
+right: 29%;
+margin: -150px -20px 0 0;
+height: 150px;
+padding: 0 0 0 45px;
+line-height: 272px;
+font-size: 12px;
+color: #ffffff;
+text-shadow: 0 0 .2em #000000;
+text-align: center;
+text-transform: uppercase;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwDZzYCqIL4ufrr0ECYXShiY) no-repeat !important;
+overflow: hidden;
+float: right;
+}
+
+#advanced-options {
+opacity: 0;
+position: absolute;
+display: none;
+left: 0;
+right: 0;
+top: 24px;
+margin: 0 auto;
+width: 865px;
+height: 550px;
+padding: 55px 0 30px;
+font-family: 'Monda';
+color: #c5c5c5;
+text-shadow: 0 0 .2em #000000;
+text-align: left;
+background-color: transparent;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwO2BSzZQgD5BVWxXADygK-4) no-repeat !important;
+border: none;
+box-shadow: none;
+z-index: 1101;
+}
+
+#advanced-options #fancybox-close:before {
+pointer-events: none;
+position: absolute;
+display: block;
+content: '';
+left: -16px;
+top: -14px;
+width: 67px;
+height: 69px;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwF_At13aoqFzYKkhL6GR1nU) no-repeat !important;
+}
+
+#advanced-options .btn-apply,
+#advanced-options .btn-clear {
+position: relative;
+display: inline-block;
+top: -7px;
+margin: 0 4px;
+width: 151px;
+height: 44px;
+padding: 0;
+font-size: 0;
+color: 0;
+background-color: transparent;
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOkA3TyUXyFJarDezEuCMP8) !important;
+background-repeat: no-repeat;
+border-radius: 0;
+}
+            
+
+#recaptcha-terms {
+    display: none;
+}
+
+
+
+
+
 
 @-webkit-keyframes Slide {
 from { margin-top: -50%; }
