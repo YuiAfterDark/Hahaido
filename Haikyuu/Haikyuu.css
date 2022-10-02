@@ -1,15 +1,11 @@
 /* Haikyuu Layout by Hahaido */
 /* Repaired by jery_js */
+/* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
 
 /* fix for various features*/
 @\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
 
-@font-face {
-font-family: 'Monda';
-font-style: normal;
-font-weight: 400;
-src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) format('woff2');
-}
+@\import "https://fonts.googleapis.com/css2?family=Monda&display=swap";
 
 /* https://dl.dropboxusercontent.com/s/s03lx9vmf9r49od/CategoryMenu.css */
 
@@ -69,7 +65,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	top: -230px;
 	width: 300px;
 	height: 257px;
-	background: url(http://i.imgur.com/ZyO6CvQ.png) no-repeat;
+	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwD9tyGIHtO4hKK7KI9--RQM) no-repeat !important;
 }
 
 .status-menu-container .status-menu {
@@ -89,7 +85,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	padding: 0;
 	font-size: 0;
 	color: transparent;
-	background-image: url(http://i.imgur.com/UAOJKw1.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
 	background-repeat: no-repeat;
 }
 
@@ -123,7 +119,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	width: 154px;
 	height: 54px;
 	background-color: transparent;
-	background-image: url(http://i.imgur.com/UAOJKw1.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
 	background-repeat: no-repeat;
 	-webkit-transition: opacity .5s linear;
 	transition: opacity .5s linear;
@@ -220,7 +216,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	content: '';
 	right: 0;
 	height: 60px;
-	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -282,7 +278,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	height: 61px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
 	background-repeat: no-repeat;
 }
 
@@ -319,8 +315,6 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 .list-table .list-table-header .header-title:last-child { background-image: none; }
 
 .list-table .list-table-header .header-title.status { display: none; }
-
-.list-unit.all_anime .list-table .list-table-header .header-title.status { display: table-cell; width: 4px; }
 
 .list-table .list-table-header .header-title.number { width: 30px; }
 
@@ -382,8 +376,6 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 
 #show-stats-button i.fa.fa-bar-chart, #advanced-options-button i.fa.fa-filter { font-size: 12px; }
 
-.list-unit .list-status-title .stats a.filterd { text-shadow: 0 0 2px #ffffff; }
-
 .list-unit .list-stats {
 	display: none;
 	width: 625px;
@@ -439,7 +431,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	width: 44px;
 	height: 60px;
 	fill: transparent;
-	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
 	background-repeat: no-repeat;
 	float: left;
 }
@@ -455,7 +447,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	top: 0;
 	width: 44px;
 	height: 60px;
-	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
 	background-position: -396px 0;
 }
 
@@ -499,7 +491,7 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 	height: 61px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(http://i.imgur.com/tp2Cjwx.png);
+	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -562,272 +554,9 @@ src: url(https://fonts.gstatic.com/s/monda/v4/9IGqbwlMn4Zg3as8alsdNA.woff2) form
 
 * { cursor: url(https://i.imgur.com/RxqXxeV.png), auto !important; }
 
-
-.status-menu-container .status-menu:after {
-	pointer-events: none;
-	position: absolute;
-	display: block;
-	content: '';
-	left: -150px;
-	top: -230px;
-	width: 300px;
-	height: 257px;
-	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwD9tyGIHtO4hKK7KI9--RQM) no-repeat !important;
-}
-
-.status-menu-container .status-menu .status-button {
-	position: relative;
-	display: block;
-	margin: 0;
-	width: 154px;
-	height: 54px;
-	padding: 0;
-	font-size: 0;
-	color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
-	background-repeat: no-repeat;
-}
-
-.status-menu-container .status-menu .status-button:after {
-	opacity: 0;
-	position: absolute;
-	display: block;
-	content: '';
-	left: 0;
-	top: 0;
-	width: 154px;
-	height: 54px;
-	background-color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
-	background-repeat: no-repeat;
-	-webkit-transition: opacity .5s linear;
-	transition: opacity .5s linear;
-}
-
-
-.data.title a[href$="/Black_Jack"]:before {
-	display: inline-block; 
-	content: '';
-	width: 16px; 
-	height: 12px; 
-	background-image: url();
-	background-repeat: no-repeat;
-	background-position: left center;
-}
-
-
-.header .header-menu .header-info a[href*="/login"]:before, .header .header-menu .header-info a[href*="/register"]:before, 
-.header .header-menu .header-info a[href*="/login"]:after, .header .header-menu .header-info a[href*="/register"]:after {
-	position: relative;
-	display: inline-block;
-	content: '';
-	right: 0;
-	height: 60px;
-	background-image: url();
-	background-repeat: no-repeat;
-	-webkit-transition: all .3s ease-out;
-	transition: all .3s ease-out;
-	z-index: -1;
-}
-
-.header .header-menu .list-menu .icon-menu {
-	display: block;
-	width: 88px;
-	height: 61px;
-	font-size: 0;
-	color: transparent;
-	background-image: url();
-	background-repeat: no-repeat;
-}
-
-
-/* SVG */
-.list-menu-float .icon-menu svg.icon {
-	position: relative;
-	display: inline-block;
-	left: 0 !important;
-	top: 0 !important;
-	width: 44px;
-	height: 60px;
-	fill: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
-	background-repeat: no-repeat;
-	float: left;
-}
-
-.list-menu-float .icon-menu.profile:after {
-	position: absolute;
-	content: '';
-	left: 0;
-	top: 0;
-	width: 44px;
-	height: 60px;
-	background-image: url();
-	background-position: -396px 0;
-}
-
-.list-menu-float .icon-menu .text {
-	opacity: 1;
-	position: absolute;
-	display: inline-block;
-	left: auto;
-	right: 0;
-	top: 5px;
-	width: 0;
-	height: 61px;
-	font-size: 0;
-	color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
-	background-repeat: no-repeat;
-	-webkit-transition: all .3s ease-out;
-	transition: all .3s ease-out;
-	z-index: -1;
-}
-
-body.ownlist {
-font-family: 'Monda';
-font-size: 14px;
-background-color: rgb(25, 35, 37);
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBtEM1gp_r1CNkhp1P1ZSGKY1t5-EyAgeYpOicm8ls9H) !important;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center center;
-background-size: cover;
-}
-
-.list-container:after {
-pointer-events: none;
-position: fixed;
-display: block;
-content: '';
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwJTYIalEC9GYosf2-Fgp1WQ) !important;
-background-repeat: no-repeat;
-background-position: left center;
-background-size: cover;
-z-index: 4;
-}
-
-.list-block {
-margin: 370px 0 0 0;
-width: 650px;
-min-height: 600px;
-padding: 25px 10px 100px 0;
-background-color: rgba(0, 0, 0, .5);
-/* Table borders */
-background-clip: padding-box;
-border-color: transparent;
-border-style: solid;
-border-width: 0 0 0 10px;
--webkit-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important; 
--moz-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important;
-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round !important;
-}
-
-.list-table .list-table-data .data.status:before {
-display: block;
-content: '';
-margin-left: -12px;
-width: 22px;
-height: 12px;
-background-image: url();
-background-repeat: no-repeat;
-}
-
-/* HEADERS */
-.list-unit .list-status-title {
-position: absolute;
-display: table;
-margin: -200px 0 0 -15px;
-width: 665px;
-height: 200px;
-background-color: transparent;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOiHcLasHsjtHTHUvC1iabw) !important;
-background-repeat: no-repeat;
-z-index: 3;
-}
-
-#copyright {
-position: relative;
-width: 675px;
-right: 29%;
-margin: -150px -20px 0 0;
-height: 150px;
-padding: 0 0 0 45px;
-line-height: 272px;
-font-size: 12px;
-color: #ffffff;
-text-shadow: 0 0 .2em #000000;
-text-align: center;
-text-transform: uppercase;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwDZzYCqIL4ufrr0ECYXShiY) no-repeat !important;
-overflow: hidden;
-float: right;
-}
-
-#advanced-options {
-opacity: 0;
-position: absolute;
-display: none;
-left: 0;
-right: 0;
-top: 24px;
-margin: 0 auto;
-width: 865px;
-height: 550px;
-padding: 55px 0 30px;
-font-family: 'Monda';
-color: #c5c5c5;
-text-shadow: 0 0 .2em #000000;
-text-align: left;
-background-color: transparent;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwO2BSzZQgD5BVWxXADygK-4) no-repeat !important;
-border: none;
-box-shadow: none;
-z-index: 1101;
-}
-
-#advanced-options #fancybox-close:before {
-pointer-events: none;
-position: absolute;
-display: block;
-content: '';
-left: -16px;
-top: -14px;
-width: 67px;
-height: 69px;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwF_At13aoqFzYKkhL6GR1nU) no-repeat !important;
-}
-
-#advanced-options .btn-apply,
-#advanced-options .btn-clear {
-position: relative;
-display: inline-block;
-top: -7px;
-margin: 0 4px;
-width: 151px;
-height: 44px;
-padding: 0;
-font-size: 0;
-color: 0;
-background-color: transparent;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOkA3TyUXyFJarDezEuCMP8) !important;
-background-repeat: no-repeat;
-border-radius: 0;
-}
-            
-
 #recaptcha-terms {
     display: none;
 }
-
-
-
-
-
 
 @-webkit-keyframes Slide {
 from { margin-top: -50%; }
@@ -850,13 +579,11 @@ to { opacity: 1; }
 }
 
 
-* { cursor: url(https://i.imgur.com/RxqXxeV.png), auto !important; }
-
 body.ownlist {
 font-family: 'Monda';
 font-size: 14px;
 background-color: rgb(25, 35, 37);
-background-image: url(http://i.imgur.com/73Z2dmY.jpg);
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBtEM1gp_r1CNkhp1P1ZSGKY1t5-EyAgeYpOicm8ls9H);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;
@@ -872,7 +599,7 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-background-image: url(http://i.imgur.com/DaU1PFy.png);
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwJTYIalEC9GYosf2-Fgp1WQ);
 background-repeat: no-repeat;
 background-position: left center;
 background-size: cover;
@@ -902,9 +629,9 @@ background-clip: padding-box;
 border-color: transparent;
 border-style: solid;
 border-width: 0 0 0 10px;
--webkit-border-image: url(http://i.imgur.com/16b8VBF.png) 0 0 0 10 round;
--moz-border-image: url(http://i.imgur.com/16b8VBF.png) 0 0 0 10 round;
-border-image: url(http://i.imgur.com/16b8VBF.png) 0 0 0 10 round;
+-webkit-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round; 
+-moz-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round;
+border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round;
 }
 
 .list-unit {
@@ -931,7 +658,6 @@ margin: 10px 0 0 145px;
 width: 519px;
 height: 400px;
 padding: 0;
-background-image: url();
 }
 
 .cover-block .image-container.hide { display: none; }
@@ -999,6 +725,10 @@ cursor: text;
 color: #697c8d;
 }
 
+ /* broken */
+/* 
+.list-unit.all_anime .list-table .list-table-header .header-title.status { display: table-cell; width: 4px; }
+
 .list-table .list-table-data .data.status:before {
 display: block;
 content: '';
@@ -1009,16 +739,12 @@ background-image: url(http://i.imgur.com/N3vLVlm.png);
 background-repeat: no-repeat;
 }
 
-.list-table .list-table-data .data.status { display: none; }
-
 .list-unit.all_anime .list-table-data .data.status {
 display: table-cell;
 width: 4px;
 padding: 0;
 background-color: transparent !important;
 }
-
-.list-table .list-table-data .data.number { text-align: center; }
 
 .list-table .list-table-data .data.status.reading:before, .list-table .list-table-data .data.status.watching:before { background-position: 0 0; }
 
@@ -1029,6 +755,11 @@ background-color: transparent !important;
 .list-table .list-table-data .data.status.dropped:before { background-position: 0 -36px; }
 
 .list-table .list-table-data .data.status.plantoread:before, .list-table .list-table-data .data.status.plantowatch:before { background-position: 0 -48px; }
+*/
+
+.list-table .list-table-data .data.status { display: none; }
+
+.list-table .list-table-data .data.number { text-align: center; }
 
 .list-table .list-table-data .data.image a { display: inline-block; }
 
@@ -1083,7 +814,7 @@ margin: -200px 0 0 -15px;
 width: 665px;
 height: 200px;
 background-color: transparent;
-background-image: url(http://i.imgur.com/KlIZ6dl.png);
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOiHcLasHsjtHTHUvC1iabw);
 background-repeat: no-repeat;
 z-index: 3;
 }
@@ -1123,7 +854,7 @@ color: #ffffff;
 text-shadow: 0 0 .2em #000000;
 text-align: center;
 text-transform: uppercase;
-background: url(http://i.imgur.com/r11mfJw.png) no-repeat;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwDZzYCqIL4ufrr0ECYXShiY) no-repeat;
 overflow: hidden;
 float: right;
 }
@@ -1144,7 +875,7 @@ color: #c5c5c5;
 text-shadow: 0 0 .2em #000000;
 text-align: left;
 background-color: transparent;
-background: url(http://i.imgur.com/PEaohvG.png) no-repeat;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwO2BSzZQgD5BVWxXADygK-4) no-repeat;
 border: none;
 box-shadow: none;
 z-index: 1101;
@@ -1171,7 +902,7 @@ left: -16px;
 top: -14px;
 width: 67px;
 height: 69px;
-background: url(http://i.imgur.com/N7dxNas.png) no-repeat;
+background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwF_At13aoqFzYKkhL6GR1nU) no-repeat;
 }
 
 #advanced-options #fancybox-close {
@@ -1213,7 +944,6 @@ border: solid 1px #000000;
 #advanced-options select, #advanced-options select:disabled {
 display: inline-block;
 padding-right: 20px;
-background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
 background-repeat: no-repeat;
 background-position: center right;
 background-size: 18px 8px;
@@ -1337,7 +1067,7 @@ padding: 0;
 font-size: 0;
 color: 0;
 background-color: transparent;
-background-image: url(http://i.imgur.com/n802wgA.png);
+background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOkA3TyUXyFJarDezEuCMP8);
 background-repeat: no-repeat;
 border-radius: 0;
 }
