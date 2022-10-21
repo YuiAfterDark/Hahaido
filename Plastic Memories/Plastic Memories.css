@@ -3,7 +3,8 @@
 /* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
 /* Last update: 2022-Oct-20 */
 
-@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/animetitleafter";
+@\import "https://malscraper.azurewebsites.net/covers/all/manga/presets/animetitleafter";
 @\import "http://fonts.googleapis.com/css?family=Jura";
 @\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
 
@@ -567,18 +568,12 @@ td[class^='td']:nth-child(2) {
 	content: 'List designed by Hahaido';
 }
 
-.hide:before {
-	display: block;
-	content: '';
-	margin: -31px 0 0 -10px;
-	width: 270px;
-	height: 290px;
-	background: none no-repeat left top;
-}
-
-.hide {
+.animetitle::after {
+	content: "";
 	pointer-events: none;
-	position: relative;
+	position: absolute;
+	top: -226px;
+	left: 203px;
 	display: block !important;
 	margin-left: -180px;
 	width: 180px;
@@ -593,7 +588,9 @@ td[class^='td']:nth-child(2) {
 	z-index: -1;
 }
 
-:hover + .hide { box-shadow: inset 2px 2px 0 #e2465c, inset -2px -2px 0 #e2465c; }
+table:hover .animetitle::after {
+	box-shadow: inset 2px 2px 0 #e2465c, inset -2px -2px 0 #e2465c;
+}
 
 #inlineContent:before {
 	position: fixed;
