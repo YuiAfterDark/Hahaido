@@ -325,7 +325,7 @@ tbody:hover  td[class^='td']:nth-child(4) { background-color: rgb(226, 70, 92); 
 	left: 0 !important;
 	top: 0;
 	height: 116px !important;
-	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwE1fc6QyCwtpJTwncPBtm9c) no-repeat;
+	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwE1fc6QyCwtpJTwncPBtm9c) no-repeat !important;
 	z-index: 4;
 }
 
