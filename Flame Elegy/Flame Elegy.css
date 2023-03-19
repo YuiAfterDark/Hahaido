@@ -1,0 +1,1848 @@
+@keyframes sparkle {
+	0% { background-position: 0 0, 0 0; }
+	100% { background-position: -150px -300px, 150px -300px; }
+}
+ 
+@-webkit-keyframes sparkle {
+	0% { background-position: 0 0, 0 0; }
+	100% { background-position: -150px -300px, 150px -300px; }
+}
+
+@-webkit-keyframes Show {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes Show {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.list-menu-float .icon-menu.setting:before, .list-table .list-table-data .tags .edit:before, .list-table .list-table-data .data.tags:before, .list-table .list-table-data .data.title .add-edit-more a:before,
+.list-menu-float .icon-menu .text:before, .list-table-data:after, .status-menu-container.fixed .status-menu .status-button:before {
+	display: inline-block;
+	line-height: 1;
+	font-family: 'Font Awesome 6 Pro';
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-variant: normal;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: auto;
+}
+
+/*Category menu*/
+.status-menu-container.fixed + div.list-block {
+	margin-top: 0;
+}
+
+.status-menu-container {
+	position: absolute;
+	width: auto;
+	top: 50px;
+	left: calc(50% - 625px);
+	height: auto;
+	background-color: transparent;
+	border: none;
+	z-index: 3;
+}
+
+.status-menu-container .status-menu {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.status-menu-container .status-menu .status-button {
+	position: relative;
+	display: table-cell;
+	margin: 0;
+	padding: .5em;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.2em;
+	color: #a3a3a3;
+	border: solid 1px #a3a3a3;
+	vertical-align: middle;
+	float: left;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.status-menu-container .status-menu .status-button:hover {
+	color: #ffffff;
+}
+
+.status-menu-container .status-menu .status-button + .status-button {
+	border-left: 0;
+}
+
+.status-menu-container .status-menu .status-button.on {
+	pointer-events: none;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: transparent;
+}
+
+.status-menu-container .status-menu .status-button:before, .status-menu-container .status-menu .status-button:after {
+	display: none;
+}
+
+/* Menu Fixed */
+.status-menu-container.fixed {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 128px;
+}
+
+.status-menu-container.fixed .status-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.status-menu-container.fixed .status-menu .status-button {
+	font-size: 0;
+	border: none;
+}
+
+.status-menu-container.fixed .status-menu .status-button:before {
+	width: 34px;
+	padding: 0;
+	line-height: 44px;
+	font-size: 18px;
+	background-color: #000000;
+}
+
+.status-menu-container.fixed .status-menu .status-button:after {
+	display: block;
+	bottom: auto;
+	left: auto;
+	right: 34px;
+	top: 0;
+	width: auto;
+	height: auto;
+	padding: 0 10px;
+	line-height: 44px;
+	font-size: 1rem;
+	white-space: nowrap;
+	background-color: #000000;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.status-menu-container.fixed .status-menu .status-button:hover:after {
+	opacity: 1;
+}
+
+.status-menu-container.fixed .status-menu .status-button.all_anime:before {
+	content: '\f77e';
+}
+.status-menu-container.fixed .status-menu .status-button.all_anime:after {
+	content: 'All';
+}
+.status-menu-container.fixed .status-menu .status-button.watching:before {
+	content: '\f04b';
+}
+.status-menu-container.fixed .status-menu .status-button.watching:after {
+	content: 'Current';
+}
+.status-menu-container.fixed .status-menu .status-button.reading:before {
+	content: '\e0bb';
+}
+.status-menu-container.fixed .status-menu .status-button.reading:after {
+	content: 'Current';
+}
+.status-menu-container.fixed .status-menu .status-button.completed:before {
+	content: '\f14a';
+}
+.status-menu-container.fixed .status-menu .status-button.completed:after {
+	content: 'Completed';
+}
+.status-menu-container.fixed .status-menu .status-button.onhold:before {
+	content: '\f04c';
+}
+.status-menu-container.fixed .status-menu .status-button.onhold:after {
+	content: 'On-hold';
+}
+.status-menu-container.fixed .status-menu .status-button.dropped:before {
+	content: '\f2ed';
+}
+.status-menu-container.fixed .status-menu .status-button.dropped:after {
+	content: 'Dropped';
+}
+.status-menu-container.fixed .status-menu .status-button.plantowatch:before, .status-menu-container.fixed .status-menu .status-button.plantoread:before {
+	content: '\f574';
+}
+.status-menu-container.fixed .status-menu .status-button.plantowatch:after, .status-menu-container.fixed .status-menu .status-button.plantoread:after {
+	content: 'Planned';
+}
+
+/*Menus*/
+.header {
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: #000000;
+	box-shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
+	z-index: 4;
+}
+
+.header a {
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.header a:hover { text-decoration: none; }
+
+.header .header-title:before {
+	display: block;
+	content: '';
+	margin-top: 10px;
+	width: 510px;
+	height: 32px;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_2_Hahaido.png);
+	background-size: cover;
+}
+
+.header .header-title { 
+	left: calc(50% - 625px);
+	top: 0;
+	width: auto;
+	height: auto;
+	line-height: 1;
+	font-size: 2em;
+	color: #f22715;
+	background-image: none;
+	text-indent: 0;
+	font-size: 0;
+}
+
+.header .header-menu {
+	position: relative;
+	display: block;
+	right: auto;
+	top: auto;
+	margin: 0 auto;
+	width:1250px;
+	height: 100%;
+	color: #ffffff;
+}
+
+.header .header-menu .btn-menu {
+	display: block;
+	line-height: 50px;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+.header .header-menu a {
+	color: #a3a3a3 !important;
+	transition: all ease-in-out .3s;
+	-webkit-transition: all ease-in-out .3s;
+}
+
+.header .header-menu a:hover {
+	color: #ffffff !important;
+}
+
+.header .header-menu.other {
+	top: auto;
+}
+
+.header .header-menu.other .btn-menu {
+	display: block;
+	margin: 5px 0 0;
+	padding: 0 90px 0 0;
+	line-height: 18px;
+	font-size: 1em;
+	color: #000000;
+	text-align: right;
+}
+
+.header .header-menu.other .btn-menu a {}
+
+#header-menu-button {
+	pointer-events: none;
+	color: #ffffff !important;
+}
+
+/* List dropdown */
+.header .header-menu.other .fa-angle-down {
+	display: none;
+}
+
+#header-menu-dropdown {
+	padding: 0 0 0 10px;
+	border-left: solid 1px #a3a3a3;
+}
+
+.header .header-menu .header-info {
+	font-size: 1.0em;
+	margin: 4px 0 0;
+	color: #ffffff;
+	text-align: right;
+}
+
+.header .header-menu .header-info i.fa.fa-history { display: none; }
+
+.header .username { font-weight: normal; }
+
+.header .header-menu .list-menu {
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 2px;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	z-index: 1;
+}
+
+.header .header-menu .list-menu .icon-menu {
+	width: auto;
+	height: auto;
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.header .header-menu .list-menu .icon-menu.anime-list {}
+
+.header .header-menu .list-menu .icon-menu.manga-list {}
+
+.header .header-menu .list-menu .icon-menu:hover { background-color: transparent; }
+
+.header .header-menu .list-menu .icon-menu svg.icon { display: none; }
+
+.header .header-menu .list-menu .icon-menu .text {
+	position: relative;
+	left: auto;
+	top: auto;
+}
+
+/* SEARCH */
+.status-menu-container .search-container {
+	position: fixed;
+	right: 0;
+	bottom: 40px;
+	height: 44px;
+	background-color: #000000;
+}
+
+.status-menu-container .search-container #search-button {
+	margin: 0;
+	height: auto;
+	padding: 0 4px;
+	color: #787878;
+}
+
+.status-menu-container .search-container #search-button:hover {
+	color: #ffffff;
+}
+
+.status-menu-container .search-container #search-button .fa {
+	color: #ffffff;
+}
+
+.status-menu-container .search-container #search-box {
+	margin: 0;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+}
+
+.status-menu-container .search-container #search-box.open {
+}
+
+.status-menu-container .search-container #search-box input {
+	height: 100%;
+	color: #ffffff;
+	background-color: #f22715;
+	border: #a3a3a3;
+	outline: none;
+}
+
+/* SORT */
+.list-table > tbody:first-of-type {
+	position: absolute;
+	display: block;
+	right: 10px;
+	top: -110px;
+	width: 0;
+	height: 50px;
+	background-color: transparent;
+	z-index: 2;
+}
+
+.list-table > tbody:first-of-type:before {
+	position: absolute;
+	display: inline-block;
+	content: 'Sort';
+	padding: 8px 0;
+	right: 0;
+	top: 0;
+	width: 40px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #a3a3a3;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	z-index: 1;
+}
+
+.list-table > tbody:first-of-type:hover:before {
+	background-color: #f22715;
+}
+
+.list-table > tbody:first-of-type:hover .list-table-header {
+	visibility: visible;
+	opacity: 1;
+}
+
+.list-table-header {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	right: 0;
+	width: auto;
+	padding: 0 37px 0 0;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	transition: all ease-in-out .3s;
+	-webkit-transition: all ease-in-out .3s;
+}
+
+.list-table .list-table-header .header-title {
+	position: relative; 
+	display: block;
+	height: auto;
+	width: auto !important;
+	padding: 8px 10px !important;
+	text-align: left;
+	font-size: 1.em !important;
+	font-weight: normal !important;
+	background: #000000;
+	border: none;
+}
+
+.list-table .list-table-header .header-title .sort-icon { 
+	opacity: 1; 
+	font-size: 0;
+	color: transparent;
+}
+
+.list-table .list-table-header .header-title .link {
+	line-height: 24px;
+}
+
+.list-table .list-table-header .header-title:last-child { background-image: none; }
+
+.list-table .list-table-header .header-title.status { display: none; }
+
+.list-table .list-table-header .header-title.number { display: none; }
+
+.list-table .list-table-header .header-title.image { display: none; }
+
+.list-table .list-table-header .header-title.title { padding-left: 0; }
+
+.list-table .list-table-header .header-title.score { }
+
+.list-table .list-table-header .header-title.type { }
+
+.list-table .list-table-header .header-title.progress { }
+
+.list-table .list-table-header .header-title.chapters { }
+
+.list-table .list-table-header .header-title.volumes {}
+
+.list-table .list-table-header .header-title.tags { display: none; }
+
+.list-table .list-table-header .header-title.rated {}
+
+.list-table .list-table-header .header-title.started {}
+
+.list-table .list-table-header .header-title.finished {}
+
+.list-table .list-table-header .header-title.storage {}
+
+.list-table .list-table-header .header-title.magazine { display: none; }
+
+.list-table .list-table-header .header-title.retail { display: none; }
+
+.list-table .list-table-header .header-title.priority {}
+
+.list-table .list-table-header .header-title.days { display: none; }
+
+.list-table .list-table-header .header-title.days + .started { display: none; }
+
+.list-table .list-table-header .header-title.studio { display: none; }
+
+.list-table .list-table-header .header-title.licensor { display: none; }
+
+.list-table .list-table-header .header-title.genre { display: none; }
+
+.list-table .list-table-header .header-title.demographic { display: none; }
+
+.list-table .list-table-header .header-title .link.sort {
+	position: relative;
+	display: inline-block;
+	line-height: 1;
+	font-size: 1em;
+	color: #a3a3a3;
+	white-space: nowrap;
+	transition: all ease-in-out .3s;
+	-webkit-transition: all ease-in-out .3s;
+}
+
+.list-table .list-table-header .header-title .link.sort:hover { color: #ffffff; }
+
+/* STATS */
+.list-unit .list-status-title .stats {
+	position: relative;
+	margin: 0 0 0 20px;
+	height: auto;
+	line-height: 50px;
+}
+
+.list-unit .list-status-title .stats a {
+	margin: 0;
+	color: #ffffff;
+}
+
+#show-stats-button, #advanced-options-button {
+	color: #a3a3a3;
+	transition: all ease-in-out .3s;
+	-webkit-transition: all ease-in-out .3s;
+ }
+
+#show-stats-button, #advanced-options-button:hover {
+	color: #ffffff;
+ }
+
+#show-stats-button {
+	display: none;
+}
+
+#show-stats-button i.fa.fa-bar-chart, #advanced-options-button i.fa.fa-filter { display: none; }
+
+.list-unit .list-status-title .stats a.filterd { }
+
+.list-unit .list-stats {
+	pointer-events: none;
+	position: relative;
+	display: block;
+	left: 0;
+	top: -70px;
+	width: 100%;
+	height: auto;
+	line-height: 50px;
+	color: #ffffff;
+	background-color: transparent;
+	background-image: -webkit-gradient(linear,left top,right top,color-stop(5%,#333),color-stop(95%,#181818));
+	background-image: linear-gradient(to right,#333 5%,#181818 95%);
+	box-shadow: 8px 5px 16px 0 rgba(0, 0, 0, .37);
+	z-index: 2;
+}
+
+.list-unit .list-stats[style="display: block;"] { 
+	-webkit-animation: Slide_down .3s forwards ease-out;
+	animation: Slide_down .3s forwards ease-out;
+}
+
+/*Top menu*/
+.list-menu-float {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	right: 0;
+	top: 50px;
+	width: 32px;
+	line-height: 1;
+	background-color: transparent;
+	border: none;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	z-index: 3;
+}
+
+.list-menu-float .icon-menu {
+	position: relative;
+	display: block;
+	width: auto;
+	height: 100%;
+	padding: 0;
+	background-color: transparent;
+}
+
+.icon-watch2 .malicon.malicon-movie-episode, .icon-watch2 .malicon.malicon-movie-pv, .icon-watch2 .malicon.malicon-streaming, .icon-watch-pv2 .malicon.malicon-movie-episode, .icon-watch-pv2 .malicon.malicon-movie-pv, .icon-watch-pv2 .malicon.malicon-streaming {
+	color: #f22715 !important;
+}
+
+.icon-watch2 a.mal-icon, .icon-watch-pv2 a.mal-icon {
+	position: absolute !important;
+	right: 0;
+	top: 28px;
+}
+
+.icon-watch2 a.mal-icon:hover, .icon-watch-pv2 a.mal-icon:hover {
+	opacity: 1 !important;
+}
+
+/* SVG */
+.list-menu-float .icon-menu svg.icon {
+	display: none;
+}
+
+.list-menu-float .icon-menu .text:before {
+	width: 32px;
+	font-size: 18px;
+}
+
+.list-menu-float .icon-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.list-menu-float .icon-menu .text {
+	opacity: 1;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	right: 0;
+	left: auto;
+	top: auto;
+	width: auto;
+	height: 32px;
+	padding: 5px 10px 5px 0;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1rem;
+	color: #a3a3a3;
+	background-color: #000000;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	overflow: hidden;
+}
+
+.list-menu-float .icon-menu:hover .text {
+	right: calc(100% - 32px);
+	width: auto;
+	color: #ffffff;
+}
+
+.list-menu-float .icon-menu.quick-add .text:before {
+	content: '\f0fe';
+}
+
+.list-menu-float .icon-menu.anime-list .text:before {
+	content: '\f1c8';
+}
+
+.list-menu-float .icon-menu.manga-list .text:before {
+	content: '\f15c';
+}
+
+.list-menu-float .icon-menu.history .text:before {
+	content: '\f07b';
+}
+
+.list-menu-float .icon-menu.export .text:before {
+	content: '\f33d';
+}
+
+.list-menu-float .icon-menu.logout .text:before {
+	content: '\f08b';
+}
+
+.list-menu-float .icon-menu.profile {
+	position: absolute;
+	right: 59px;
+	width: 140px;
+	height: 140px;
+	border: solid 4px #ffffff;
+	border-top: none;
+	box-shadow: inset 0 0 10px 4px #000000;
+}
+
+.list-menu-float .icon-menu:not(.profile):hover {
+	width: auto;
+	background-color: transparent;
+}
+
+/* setting */
+.icon-menu.setting {
+	/*display: none;*/
+}
+
+.list-menu-float .icon-menu.setting:hover {
+	color: #ffffff;
+}
+
+.list-menu-float .icon-menu.setting:before {
+	position: absolute;
+	content: '\f1de';
+	right: 0;
+	width: 34px;
+	padding: 0;
+	line-height: 44px;
+	background-color: #000000;
+}
+
+.list-menu-float .icon-menu.setting {
+	position: fixed;
+	right: 0;
+	bottom: 84px;
+	width: 0;
+	height: 44px;
+	padding: 0;
+	color: #a3a3a3;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.list-menu-float .icon-menu.setting .text {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	top: 0;
+	width: auto;
+	height: 100%;
+	padding: 0;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.list-menu-float .icon-menu.setting .text {
+	right: 34px;
+}
+
+.list-menu-float .icon-menu.setting:hover .text {
+	right: 34px;
+	width: auto;
+	height: 100%;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting, .list-menu-float .icon-menu.setting:hover .text .link-style-setting, .list-menu-float .icon-menu.setting .text a {
+	opacity: 1;
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 44px;
+	text-decoration: none;
+	color: #a3a3a3;
+	background-color: #000000;
+}
+
+.list-menu-float .icon-menu.setting .text a {
+	padding: 8px 10px !important;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.list-menu-float .icon-menu.setting .text a:hover {
+	color: #ffffff !important;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+	top: auto;
+	border-top: none;
+}
+
+body, body.ownlist {
+	margin: 0;
+	line-height: 14px;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	background-color: #181818 !important;
+	background-image: none;
+	overflow-x: hidden;
+}
+
+.list-container {
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 85vh;
+	text-align: left;
+	background-color: transparent !important;
+	border: none;
+}
+
+.list-block:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100% + 346px);
+	background: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_3_Hahaido.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.list-block {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 173px;
+	min-height: auto;
+	z-index: 2;
+}
+
+.list-unit {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 1250px;
+}
+
+.cover-block:before {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 20%;
+	top: -150px;
+	width: 80%;
+	height: 100%;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_4_Hahaido.png), url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_5_Hahaido.png);
+	border-radius: 50em;
+	-webkit-animation: sparkle 15s linear infinite;
+	animation: sparkle 15s linear infinite;
+	z-index: 2;
+}
+
+.cover-block {
+	position: fixed;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	z-index: 1;
+}
+
+.cover-block .image-container:before {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 36%;
+	height: 49.3vw;
+	background: -webkit-gradient(linear,left top,right top,from(#171717),color-stop(20%,rgba(23,23,23,.98)),color-stop(25%,rgba(23,23,23,.97)),color-stop(35%,rgba(23,23,23,.95)),color-stop(40%,rgba(23,23,23,.94)),color-stop(45%,rgba(23,23,23,.92)),color-stop(50%,rgba(23,23,23,.9)),color-stop(55%,rgba(23,23,23,.87)),color-stop(60%,rgba(23,23,23,.82)),color-stop(65%,rgba(23,23,23,.75)),color-stop(70%,rgba(23,23,23,.63)),color-stop(75%,rgba(23,23,23,.45)),color-stop(80%,rgba(23,23,23,.27)),color-stop(85%,rgba(23,23,23,.15)),color-stop(90%,rgba(23,23,23,.08)),color-stop(95%,rgba(23,23,23,.03)),to(rgba(23,23,23,0)));
+	background: -webkit-linear-gradient(left,#171717 0,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+	background: -moz- oldlinear-gradient(left,#171717 0,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+	background: -o-linear-gradient(left,#171717 0,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+	background: linear-gradient(to right,#171717 0,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%);
+	z-index: 1;
+}
+
+.cover-block .image-container {
+	position: relative;
+	display: block;
+	right: 38px;
+	width: 83vw;
+	height: 47.17vw;
+	padding: 0;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_1_Hahaido.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cover-block .image-container:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 47.17vw;
+	left: 0;
+	background: -webkit-gradient(linear,left bottom,left top,from(#171717),color-stop(1.62%,rgba(23,23,23,.987)),color-stop(3.1%,rgba(23,23,23,.951)),color-stop(4.5%,rgba(23,23,23,.896)),color-stop(5.8%,rgba(23,23,23,.825)),color-stop(7.06%,rgba(23,23,23,.741)),color-stop(8.24%,rgba(23,23,23,.648)),color-stop(9.42%,rgba(23,23,23,.55)),color-stop(10.58%,rgba(23,23,23,.45)),color-stop(11.76%,rgba(23,23,23,.352)),color-stop(12.94%,rgba(23,23,23,.259)),color-stop(14.2%,rgba(23,23,23,.175)),color-stop(15.5%,rgba(23,23,23,.104)),color-stop(16.9%,rgba(23,23,23,.049)),color-stop(18.38%,rgba(23,23,23,.013)),color-stop(20%,rgba(23,23,23,0)));
+	background: -webkit-linear-gradient(bottom,#171717 0,rgba(23,23,23,.987) 1.62%,rgba(23,23,23,.951) 3.1%,rgba(23,23,23,.896) 4.5%,rgba(23,23,23,.825) 5.8%,rgba(23,23,23,.741) 7.06%,rgba(23,23,23,.648) 8.24%,rgba(23,23,23,.55) 9.42%,rgba(23,23,23,.45) 10.58%,rgba(23,23,23,.352) 11.76%,rgba(23,23,23,.259) 12.94%,rgba(23,23,23,.175) 14.2%,rgba(23,23,23,.104) 15.5%,rgba(23,23,23,.049) 16.9%,rgba(23,23,23,.013) 18.38%,rgba(23,23,23,0) 20%);
+	background: -moz- oldlinear-gradient(bottom,#171717 0,rgba(23,23,23,.987) 1.62%,rgba(23,23,23,.951) 3.1%,rgba(23,23,23,.896) 4.5%,rgba(23,23,23,.825) 5.8%,rgba(23,23,23,.741) 7.06%,rgba(23,23,23,.648) 8.24%,rgba(23,23,23,.55) 9.42%,rgba(23,23,23,.45) 10.58%,rgba(23,23,23,.352) 11.76%,rgba(23,23,23,.259) 12.94%,rgba(23,23,23,.175) 14.2%,rgba(23,23,23,.104) 15.5%,rgba(23,23,23,.049) 16.9%,rgba(23,23,23,.013) 18.38%,rgba(23,23,23,0) 20%);
+	background: -o-linear-gradient(bottom,#171717 0,rgba(23,23,23,.987) 1.62%,rgba(23,23,23,.951) 3.1%,rgba(23,23,23,.896) 4.5%,rgba(23,23,23,.825) 5.8%,rgba(23,23,23,.741) 7.06%,rgba(23,23,23,.648) 8.24%,rgba(23,23,23,.55) 9.42%,rgba(23,23,23,.45) 10.58%,rgba(23,23,23,.352) 11.76%,rgba(23,23,23,.259) 12.94%,rgba(23,23,23,.175) 14.2%,rgba(23,23,23,.104) 15.5%,rgba(23,23,23,.049) 16.9%,rgba(23,23,23,.013) 18.38%,rgba(23,23,23,0) 20%);
+	background: linear-gradient(to top,#171717 0,rgba(23,23,23,.987) 1.62%,rgba(23,23,23,.951) 3.1%,rgba(23,23,23,.896) 4.5%,rgba(23,23,23,.825) 5.8%,rgba(23,23,23,.741) 7.06%,rgba(23,23,23,.648) 8.24%,rgba(23,23,23,.55) 9.42%,rgba(23,23,23,.45) 10.58%,rgba(23,23,23,.352) 11.76%,rgba(23,23,23,.259) 12.94%,rgba(23,23,23,.175) 14.2%,rgba(23,23,23,.104) 15.5%,rgba(23,23,23,.049) 16.9%,rgba(23,23,23,.013) 18.38%,rgba(23,23,23,0) 20%);
+}
+
+.cover-block .image-container.hide { display: none; }
+
+.cover-block .image-container img {
+	display: none;
+	max-width: auto;
+	height: 100%;
+}
+
+td { line-height: 1.5em; }
+
+a {
+    color: #1d439b;
+    text-decoration: none;
+}
+
+.list-table {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: none;
+	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.list-table > tbody {
+	float: left;
+	position: relative;
+}
+
+.list-table > tbody + tbody  {
+	margin: 0 0 20px 20px;
+}
+
+.list-table .list-table-data .data {
+	display: block;
+	padding: 0;
+	color: #a3a3a3;
+	text-align: left;
+	border: none;
+}
+
+.list-table .list-table-data .data a { 
+	color: #f22715;
+}
+
+.list-table .list-table-data .data a:hover { text-decoration: none !important; }
+
+.list-table .list-table-data a.edit-disabled {
+	cursor: text;
+}
+
+.list-table .list-item:before, .list-table .list-item:after {
+	position: absolute;
+	content: '';
+	bottom: 10px;
+	top: 80%;
+	width: 50%;
+	background-color: #777;
+	box-shadow: 0 15px 10px #777;
+	z-index: -1;
+}
+
+.list-table .list-item:before {
+	left: 10px;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.list-table .list-item:after {
+	right: 10px;
+	-webkit-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+
+.list-table .list-item { 
+	width: 375px;
+	height: 245px;
+	padding: 10px 10px 0;
+	background-color: #000000 !important;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_7_Hahaido.png);
+	background-repeat: repeat;
+	background-position: center center;
+}
+
+.list-table-data:before {
+	position: absolute;
+	content: '';
+	left: -10px;
+	top: 100%;
+	width: calc(100% + 20px);
+	height: 1px;
+	background: #000000;
+	z-index: 4;
+}
+
+.list-table-data:after {
+	position: absolute;
+	display: block;
+	content: '\f0dd';
+	left: -10px;
+	top: calc(100% - 20px);
+	width: calc(100% + 20px);
+	height: 20px;
+	line-height: 10px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	background: #000000;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	z-index: 3;
+}
+
+.list-table-data:hover:after {
+	height: 85px;
+	color: #000000;
+	background: #ffffff;
+}
+
+.list-table-data {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.list-table .list-table-data .data.status { display: none; }
+
+.list-table .list-table-data .data.number:before {
+	content: '#';
+}
+
+.list-table .list-table-data .data.number {
+	position: absolute;
+	right: 0;
+	bottom: 25px;
+	padding: 2px 5px;
+	color:  #000000;
+	background-color: #ffffff;
+}
+
+.list-table .list-table-data .data.image { 
+	position: absolute;
+	left: 0;
+}
+
+.list-table .list-table-data .data.image a { 
+	display: inline-block;
+	border-radius: 4px;
+}
+
+.data.image .link::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, .4);
+	border-radius: 4px;
+	z-index: 1;
+}
+
+.list-table .list-table-data .data.image .image {
+	width: 96px;
+	height: 136px;
+	border: none;
+	border-radius: 4px;
+}
+
+.list-table .list-table-data .data.score:before { content: 'Score: '; }
+
+.list-table .list-table-data .data.score { 
+	position: absolute;
+	right: 0;
+	bottom: 55px;
+	text-align: right;
+	z-index: 2;
+}
+
+.list-table .list-table-data .data.score .link {
+	font-weight: normal;
+}
+
+.list-table .list-table-data .data.type { 
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+	padding: 2px 8px;
+	color: #ffffff;
+	background-color: #f22715;
+}
+
+.list-table .list-table-data .data.progress div:before { content: 'Progress: '; }
+.list-table .list-table-data .data.chapter div:before { content: 'Chapters: '; }
+.list-table .list-table-data .data.volume div:before { content: 'Volumes: '; }
+
+.list-table .list-table-data .data.progress, .list-table .list-table-data .data.chapter, .list-table .list-table-data .data.volume { 
+	position: absolute;
+	left: 0;
+	bottom: 55px;
+	z-index: 2;
+}
+
+.list-table .list-table-data .data.volume {
+	left: 43.5%;
+}
+
+.list-table .list-table-data .data.title {
+	width: 100%;
+	padding: 0;
+	z-index: 1;
+}
+
+.list-table .list-table-data .data.title .link {
+	display: -webkit-box;
+	margin-bottom: 5px;
+	width: 100%;
+	line-height: 1.2em;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1em;
+	color: #ffffff;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.list-table .list-table-data .data.image + .data.title .link {
+	width: calc(100% - 106px);
+	padding-left: 106px;
+}
+
+.list-table .list-table-data .data.title .add-edit-more {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	left: -10px;
+	bottom: 25px;
+	margin: 0;
+	width: calc(100% + 20px);
+	padding: 2px 0;
+	font-size: 0;
+	color: transparent;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.list-table .list-table-data .data.title .add-edit-more span {
+	line-height: 1;
+}
+
+.list-table .list-table-data .data.title .add-edit-more a:before {
+	font-size: 1.2rem;
+	color: #a3a3a3;
+}
+
+.list-table .list-table-data .data.title .add-edit-more a:hover:before {
+	color: #ffffff;
+}
+
+.list-table .more-info {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.list-table .more-info[style="display: table-row;"] { 
+	-webkit-animation: Show .3s forwards ease-out;
+	animation: Show .3s forwards ease-out;
+}
+
+.list-table .more-info .more-content {
+	position: absolute;
+	width: 375px;
+	height: 195px;
+	padding: 0 4px 0 16px;
+	overflow-y: auto;
+	background-color: rgba(0, 0 , 0, .7);
+	overflow-y: auto;
+}
+
+.borderRBL, .borderRBL a { color: #ffffff; }
+
+/* HEADERS */
+.list-unit .list-status-title {
+	position: absolute;
+	left: 20px;
+	top: -70px;
+	width: auto;
+	height: auto;
+	line-height: 50px;
+	background-color: transparent;
+	z-index: 4;
+}
+
+.list-unit .list-status-title .text {
+	width: auto;
+	height: auto;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 1em;
+}
+
+#footer-block {
+	position: relative;
+	padding: 173px 0 0;
+	color: #000000;
+	font-family: 'Helvetica', sans-serif;
+	text-transform: uppercase;
+	background-color: transparent;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_6_Hahaido.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	z-index: 2;
+}
+
+#copyright {
+	width: 100%;
+	padding: 1vw 0;
+	font-size: 1em;
+	color: #ffffff;
+	text-align: center;
+	background-color: #000000;
+	z-index: 1;
+}
+
+#recaptcha-terms {
+	margin: 0;
+	font-size: 10px;
+	color: #ffffff;
+	background-color: #181818;
+}
+
+#recaptcha-terms a {
+	color: #f22715;
+}
+
+/* DESIGN SETTINGS BUTTON */
+.cover-block .image-container .btn-list-setting { display: none; }
+
+.cover-block .image-container:hover .btn-list-setting {
+	display: none;
+	position: absolute;
+	right: 28px;
+	top: 20px;
+	padding: 8px;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	border: rgba(255, 255, 255, 0) 1px solid;
+}
+
+.cover-block .image-container .btn-list-setting:hover {
+	position: absolute;
+	right: 28px;
+	top: 20px;
+	padding: 8px;
+	font-size: 14px;
+	color: #ffffff;
+	text-shadow: #323232 1px 1px 1px;
+	border: #ffffff 1px solid;
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: 0 0 4px #000000;
+}
+
+.cover-block .image-container .btn-list-setting .fa-camera {
+	font-size: 16px;
+	text-shadow: #000000 1px 1px 3px;
+}
+
+.cover-block .image-container .btn-list-setting .icon-plus-circle {
+	position: absolute;
+	top: 4px;
+	left: 18px;
+	font-size: 10px;
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: -1px 1px 0 0 #323232;
+	border-radius: 50%;
+}
+
+.cover-block .image-container .btn-list-setting .text { display: none; }
+
+.cover-block .image-container .btn-list-setting:hover .text {
+	display: inline-block;
+	margin-left: 4px;
+}
+
+/**
+ * List Container - List Table - Items
+ */
+
+.list-table .list-table-data a:not(.edit-disabled):hover {
+    text-decoration: underline;
+}
+
+.list-table .list-table-data .tags .edit:before {
+	content: '\f044';
+	font-size: 16px;
+	color: #f22715;
+}
+
+.list-table .list-table-data .tags .edit {
+	visibility: hidden;
+	display: none;
+	top: 195px;
+	left: 370px;
+	width: 0;
+	color: #a3a3a3;
+	font-size: 0;
+	font-family: 'Helvetica', sans-serif;
+}
+
+.list-table .list-table-data .tags:hover .edit {
+	visibility: visible;
+}
+
+.list-table .list-table-data .tags textarea {
+	width: 100%;
+	height: 100%;
+}
+
+.list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
+	position: relative;
+	display: inline;
+	margin: 5px 0 0;
+	width: auto;
+	padding: 2px 8px 4px;
+	color: #a3a3a3;
+	border: solid 1px #a3a3a3;
+	border-radius: 4px;
+	font-size: 1em;
+}
+
+.list-table .list-table-data .data.image + .data.title .rewatching, .list-table .list-table-data .data.image + .data.title .rereading, .list-table .list-table-data .data.image + .data.title .content-status {
+	margin: 5px 0 0 103px;
+}
+
+.list-table .list-table-data .data.rated, .list-table .list-table-data .data.season, .list-table .list-table-data .data.studio, .list-table .list-table-data .data.licensor,
+.list-table .list-table-data .data.started, .list-table .list-table-data .data.finished, .list-table .list-table-data .data.airing-started, .list-table .list-table-data .data.airing-finished, .list-table .list-table-data .data.genre,
+.list-table .list-table-data .data.days, .list-table .list-table-data .data.storage, .list-table .list-table-data .data.magazine, .list-table .list-table-data .data.retail {
+	position: absolute;
+	left: 106px;
+	line-height: 1rem;
+	color: #a3a3a3;
+	z-index: 1;
+}
+
+.list-table .list-table-data .data.started:before, .list-table .list-table-data .data.finished:before, .list-table .list-table-data .data.airing-started:before, .list-table .list-table-data .data.airing-finished:before,
+.list-table .list-table-data .data.days:before, .list-table .list-table-data .data.storage:before, 
+.list-table .list-table-data .data.started, .list-table .list-table-data .data.finished, .list-table .list-table-data .data.airing-started, .list-table .list-table-data .data.airing-finished,
+.list-table .list-table-data .data.days, .list-table .list-table-data .data.storage {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	z-index: 4;
+}
+
+.list-table .list-table-data:hover .data.started:before, .list-table .list-table-data:hover .data.finished:before, .list-table .list-table-data:hover .data.airing-started:before, .list-table .list-table-data:hover .data.airing-finished:before,
+.list-table .list-table-data:hover .data.days:before, .list-table .list-table-data:hover .data.storage:before, 
+.list-table .list-table-data:hover .data.started, .list-table .list-table-data:hover .data.finished, .list-table .list-table-data:hover .data.airing-started, .list-table .list-table-data:hover .data.airing-finished,
+.list-table .list-table-data:hover .data.days, .list-table .list-table-data:hover .data.storage {
+	visibility: visible;
+	opacity: 1;
+}
+
+.list-table .list-table-data .data.rated a, .list-table .list-table-data .data.season a, .list-table .list-table-data .data.studio a, .list-table .list-table-data .data.licensor a { color: #a3a3a3; }
+
+.list-table .list-table-data .data.rated {
+	left: 0;
+	top: 111px;
+	padding: 5px;
+	color: #ffffff;
+	background: #f22715;
+}
+.list-table .list-table-data .data.started:before { content: 'Started: '; }
+.list-table .list-table-data .data.started {
+	left: 0;
+	top: 251px;
+}
+.list-table .list-table-data .data.finished:before { content: 'Finished: '; }
+.list-table .list-table-data .data.finished {
+	left: 0;
+	top: 269px;
+}
+.list-table .list-table-data .data.days:before { content: 'Days watched: '; }
+body.manga .list-table .list-table-data .data.days:before { content: 'Days read: '; }
+.list-table .list-table-data .data.days {
+	left: 0;
+	top: 287px;
+}
+.list-table .list-table-data .data.season:before { content: 'Season: '; }
+.list-table .list-table-data .data.season {
+	left: 106px;
+	top: 65px;
+}
+.list-table .list-table-data .data.airing-started:before { content: 'Premiered: '; }
+body.manga .list-table .list-table-data .data.airing-started:before { content: 'Published: '; }
+.list-table .list-table-data .data.airing-started {
+	right: 0;
+	top: 251px;
+	text-align: right;
+}
+.list-table .list-table-data .data.airing-finished:before { content: 'Ended: '; }
+.list-table .list-table-data .data.airing-finished {
+	right: 0;
+	top: 269px;
+	text-align: right;
+}
+.list-table .list-table-data .data.studio, .list-table .list-table-data .data.licensor,
+.list-table .list-table-data .data.magazine, .list-table .list-table-data .data.retail {
+	display: block;
+	width: calc(100% - 105px);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.list-table .list-table-data .data.studio:before { content: 'Studios: '; }
+.list-table .list-table-data .data.magazine:before { content: 'Magazine: '; }
+.list-table .list-table-data .data.studio, .list-table .list-table-data .data.magazine { top: 83px; }
+.list-table .list-table-data .data.licensor:before { content: 'Licensor: '; }
+.list-table .list-table-data .data.retail:before { content: 'Retail manga: '; }
+.list-table .list-table-data .data.licensor, .list-table .list-table-data .data.retail { top: 101px; }
+.list-table .list-table-data .data.storage:before { content: 'Storage: '; }
+.list-table .list-table-data .data.storage {
+	right: 0;
+	top: 287px;
+	text-align: right;
+}
+
+.list-table .list-table-data .data.started:before, .list-table .list-table-data .data.finished:before, .list-table .list-table-data .data.airing-started:before, .list-table .list-table-data .data.airing-finished:before,
+.list-table .list-table-data .data.days:before, .list-table .list-table-data .data.storage:before {
+	color: #a3a3a3;
+}
+
+.list-table .list-table-data .data.started, .list-table .list-table-data .data.finished, .list-table .list-table-data .data.airing-started, .list-table .list-table-data .data.airing-finished,
+.list-table .list-table-data .data.days, .list-table .list-table-data .data.storage {
+	color: #000000;
+}
+
+.list-table .list-table-data .data.genre { top: 119px; }
+
+.list-table .list-table-data .data.tags:before {
+	position: absolute;
+	content: '\f02b';
+	left: -12px;
+	top: -8px;
+	font-size: 20px;
+	color: #f22715;
+}
+
+.list-table .list-table-data .data.tags {
+	position: absolute;
+	left: 370px;
+	top: 8px;
+	color: #a3a3a3;
+	z-index: 2;
+}
+
+.list-table .list-table-data .data.tags > div {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	right: -15px;
+	top: -18px;
+	width: 375px;
+	height: 214px;
+	padding: 10px;
+	background-color: rgba(255, 255 , 255, 1);
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	overflow-y: auto;
+}
+
+.list-table .list-table-data .data.tags:hover > div {
+	visibility: visible;
+	opacity: 1;
+}
+
+.list-table .list-table-data .data.tags span a {
+	color: #a3a3a3;
+}
+
+.list-table .list-table-data .data.tags span a:hover {
+	color: #000000;
+}
+
+.list-table .list-table-data .data.title .add a:before {
+	content: '\f0fe';
+}
+
+.list-table .list-table-data .data.title .edit a:before {
+	content: '\f044';
+}
+
+.list-table .list-table-data .data.title .more a:before {
+	content: '\f30f';
+}
+
+.list-table .list-table-data .data.title .more {
+	margin-left: 10px;
+}
+
+.list-table .list-table-data .data.tags { word-wrap: break-word; }
+
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching { background-color: #2db039; }
+
+.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch { background-color: #c3c3c3; }
+
+.list-table .list-table-data .data.status.completed { background-color: #26448f; }
+
+.list-table .list-table-data .data.status.onhold { background-color: #f1c83e; }
+
+.list-table .list-table-data .data.status.dropped { background-color: #a12f31; }
+
+.list-unit .loading-space {
+	margin: 8px;
+	height: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.icon-watch, .icon-watch-pv {
+	display: none !important;
+}
+
+/* Filters */
+#advanced-options {
+	opacity: 0;
+	position: fixed;
+	display: none;
+	left: 0;
+	right: 0;
+	top:50px;
+	margin: 0 auto;
+	width: 865px;
+	height: 550px;
+	padding: 55px 0 30px;
+	font-family: 'Monda';
+	color: #c5c5c5;
+	text-shadow: 0 0 .2em #000000;
+	text-align: left;
+	background-color: transparent;
+	background: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_7_Hahaido.png) no-repeat;
+	border: none;
+	box-shadow: none;
+	z-index: 1101;
+}
+
+#fancybox-overlay { 
+	opacity: 0 !important;
+}
+
+#fancybox-overlay[style^="display: block;"] {
+	opacity: .7 !important;
+	background-color: rgba(60, 0, 0) !important;
+}
+
+#fancybox-overlay[style="display: block;"], #advanced-options[style="display: block;"] {
+	-webkit-animation: Show .3s forwards ease-out;
+	animation: Show .3s forwards ease-out;
+}
+
+#advanced-options #fancybox-close:before {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: -16px;
+	top: -14px;
+	width: 67px;
+	height: 69px;
+	background: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_8_Hahaido.png) no-repeat;
+}
+
+#advanced-options #fancybox-close {
+	position: absolute !important;
+	top: 56px !important;
+	right: 74px !important;
+	width: 32px !important;
+	height: 32px !important;
+	background: none !important;
+	cursor: pointer;
+	z-index: 1103;
+}
+
+#advanced-options .advanced-options-header {
+	width: 730px;
+	margin: 0px auto;
+	padding-bottom: 4px;
+	font-size: 16px;
+	border: none;
+	box-shadow: 0 1px 0 #000000, 0 2px 0 #505050;
+}
+
+#advanced-options .advanced-options-header .description {
+	margin-left: 8px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#advanced-options input[type=text], #advanced-options select,  #advanced-options select:disabled {
+	height: 21px;
+	padding: 0 2px;
+	color: #000000;
+	background-color: rgba(255, 255, 255, .8);
+	border: solid 1px #000000;
+}
+
+#advanced-options select:disabled { color: #646464; }
+
+#advanced-options select, #advanced-options select:disabled {
+	display: inline-block;
+	padding-right: 20px;
+	background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 18px 8px;
+}
+
+#advanced-options select:disabled { background-color: rgba(197, 197, 197, .8); }
+
+#advanced-options select option { color: #000000; }
+#advanced-options select::-ms-expand { display: none; }
+
+#advanced-options input:focus, #advanced-options select:focus { outline: none; }
+
+/* FILTER */
+#advanced-options .filter-widget {
+	margin: 0 auto;
+	width: 730px;
+	padding: 12px 0 0;
+}
+
+#advanced-options .filter-widget select {
+	margin-right: 8px;
+	font-size: 14px;
+}
+
+/* SORT */
+#advanced-options .sort-widget {
+	margin: 0px auto;
+	width: 730px;
+	padding: 12px 0 0;
+}
+
+#advanced-options .sort-widget:last-of-type { padding-bottom: 45px; }
+
+#advanced-options .sort-widget select {
+    width: 172px;
+    margin-right: 8px;
+}
+
+#advanced-options .sort-widget input[type=radio] { display: none; }
+
+#advanced-options .sort-widget input[type=radio] + label {
+	position: relative;
+	display: inline-block;
+	line-height: 24px;
+	padding: 0;
+	color: #646464;
+	text-shadow: 0 0 .2em #000000;
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+#advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label {
+	background-color: transparent;
+	border: none;
+}
+
+#advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label { color: #646464; }
+
+#advanced-options .sort-widget input[type=radio]:checked + label { color: #ffffff; }
+
+#advanced-options .filter-widget.title input[type=text] { width: 360px; }
+
+#advanced-options .filter-widget.airing-status select,
+#advanced-options .filter-widget.publishing-status select {width: 152px; }
+
+#advanced-options .filter-widget.producer select,
+#advanced-options .filter-widget.magazine select { width: 360px; }
+
+#advanced-options .filter-widget.aired-date select.year,
+#advanced-options .filter-widget.published-date select.year { width: 80px; }
+
+#advanced-options .filter-widget.aired-date select.month,
+#advanced-options .filter-widget.published-date select.month,
+#advanced-options .filter-widget.aired-date select.day,
+#advanced-options .filter-widget.published-date select.day { width: 60px; }
+
+#advanced-options .filter-widget.aired-date .text,
+#advanced-options .filter-widget.published-date .text {
+	display: inline-block;
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+#advanced-options .filter-widget.aired-season select.year { width: 80px; }
+
+#advanced-options .filter-widget.aired-season select.season { width: 110px; }
+
+#advanced-options .sort-widget .widget-header,
+#advanced-options .filter-widget .widget-header {
+	display: inline-block;
+	width: 110px;
+	font-family: 'Monda';
+	font-size: 14px;
+}
+
+#advanced-options .sort-widget:last-of-type,
+#advanced-options .filter-widget:last-of-type { padding-bottom: 40px; }
+
+#advanced-options .advanced-options-button {
+	width: 730px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	border: none;
+	box-shadow: 0 -1px 0 #505050, 0 -2px 0 #000000;
+}
+
+#advanced-options .btn-apply,
+#advanced-options .btn-clear {
+	position: relative;
+	display: inline-block;
+	top: 10px;
+	margin: 0 4px;
+	width: 151px;
+	height: 44px;
+	padding: 0;
+	font-size: 0;
+	color: 0;
+	background-color: transparent;
+	background-image: url(https://cdn.myanimelist.net/resources/list_design/TokyoRevengers_credit_01/1_9_Hahaido.png);
+	background-repeat: no-repeat;
+	border-radius: 0;
+}
+
+#advanced-options .btn-apply { background-position: 0 0; }
+
+#advanced-options .btn-clear { background-position: -151px 0; }
+
+#advanced-options .btn-apply:hover,
+#advanced-options .btn-clear:hover { background-color: transparent; }
+
+@media screen and (max-width: 1280px) {
+
+	.header .header-menu, .list-unit {
+		width: 1000px;
+	}
+
+}
