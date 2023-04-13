@@ -1,7 +1,7 @@
 /* Plastic Memories by Hahaido */
 /* Repaired in 2022 by jery_js */
 /* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
-/* Last update: 2022-Oct-20 */
+/* Last update: 2023-Apr-12 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/animetitleafter";
 @\import "https://malscraper.azurewebsites.net/covers/all/manga/presets/animetitleafter";
@@ -434,7 +434,7 @@ tbody:hover  td[class^='td']:nth-child(4) { background-color: rgb(226, 70, 92); 
 body {
 	font-family: 'Jura', sans-serif;
 	font-size: 14px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255) !important;
 	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwKPt8OAXx49-DkuKZexmsJPa-3akmpQqOwFuK6S5cIwv);
 	background-position: left bottom;
 	background-attachment: fixed;

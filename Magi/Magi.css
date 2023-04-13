@@ -536,7 +536,7 @@ Last update: 2022-Sep-04
 body.ownlist {
 	font-family: 'Fauna One', serif;
 	font-size: 12px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255) !important;
 	background-image: url(https://i.postimg.cc/qvK9FGGr/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;

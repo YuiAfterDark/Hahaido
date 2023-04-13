@@ -1,6 +1,7 @@
 /* Haikyuu Layout by Hahaido */
 /* Repaired by jery_js */
 /* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
+/* Last update: 2023-Apr-12 */
 
 /* fix for various features*/
 @\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
@@ -582,7 +583,7 @@ to { opacity: 1; }
 body.ownlist {
 font-family: 'Monda';
 font-size: 14px;
-background-color: rgb(25, 35, 37);
+background-color: rgb(25, 35, 37) !important;
 background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBtEM1gp_r1CNkhp1P1ZSGKY1t5-EyAgeYpOicm8ls9H);
 background-repeat: no-repeat;
 background-attachment: fixed;
