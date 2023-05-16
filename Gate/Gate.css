@@ -1,0 +1,368 @@
+/*
+Gate layout by Hahaido
+*/
+
+/* fix for various features */
+@\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
+
+@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	left: calc(50% - 670px) !important;
+	top: 245px;
+	width: 0 !important;
+	height: 0 !important;
+	background: none !important;
+	z-index: 3;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip td  { display: inline !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,  #mal\_cs_links div:last-of-type a:first-of-type, #search,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href$="/forum/"], #mal_cs_otherlinks div a[href*="export"],
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after,
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after { 
+	opacity: 0;
+	position: absolute;
+	content: '';
+	width: 362px;
+	height: 60px;
+	background-repeat: no-repeat;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+}
+
+#mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after,
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { opacity: 1; }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type {
+	position: absolute !important;
+	display: block;
+	width: 362px;
+	height: 60px;
+	font-size: 0 !important;
+	color: transparent;
+	background-repeat: no-repeat;
+}
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { top: 0; background-position: 0 -180px; }
+
+#mal\_cs_listinfo div:first-of-type a:after, #mal\_cs_listinfo div:first-of-type a:hover:after { background-position: -362px -180px; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { margin-left: 10px; top: 60px; background-position: 0 -240px; }
+
+#mal\_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div a[href*="addtolist"]:hover:after { background-position: -362px -240px; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { margin-left: 20px; top: 120px; background-position: 0 -300px; }
+
+#mal\_cs_links div:last-of-type a:last-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { background-position: -362px -300px; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { margin-left: 30px; top: 180px; background-position: 0 -360px; }
+
+#mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:last-of-type a:hover:after { background-position: -362px -360px; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { top: 0; background-position: 0 0; }
+
+#mal\_cs_otherlinks div a[href*="login"]:after , #mal\_cs_otherlinks div a[href*="login"]:hover:after { background-position: -362px 0; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { margin-left: 10px; top: 60px; background-position: 0 -60px; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after, #mal\_cs_otherlinks div a[href*="register"]:hover:after { background-position: -362px -60px; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="forum"] { margin-left: 20px; top: 120px; background-position: 0 -120px;}
+
+#mal\_cs_otherlinks div a[href*="forum"]:after,  #mal\_cs_otherlinks div a[href*="forum"]:hover:after { background-position: -362px -120px; }
+
+/* Tab Content */
+
+td[class^='td']:not(.borderRBL):first-child { width: 56px; padding-left: 6px; }
+
+td[class^='td']:not(.borderRBL):last-child { width: 56px; padding-right: 6px; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; padding: 0 2px; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a {
+	font-size: 14px;
+	color: #282828;
+	text-transform: lowercase;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:hover { color: #ad3232; }
+
+/* SORT */
+#list_surround table:nth-of-type(3) { width: 650px; }
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: absolute;
+	display: block !important;
+	margin: -55px 0 0 5px;
+}
+
+.table_header {
+	position: relative;
+	display: block;
+	width: 80px;
+	white-space: nowrap;
+}
+
+.table_headerLink {
+	display: block;
+	width: 80px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #282828; 
+	font-weight: normal;
+	text-align: left;
+}
+
+.table_headerLink:hover { color: #ad3232; }
+
+.table_headerLink strong { font-weight: normal !important; }
+
+.table_header:first-child { display:none; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type {
+	position: fixed !important;
+	display: block;
+	left: calc(50% - 520px);
+	top: 0;
+	width: 1040px;
+	height: 97px;
+	z-index: 5;
+}
+
+/* MENU BUTTONS */
+.status_not_selected, .status_selected {
+	opacity: 0;
+	position: absolute !important;
+	display: block;
+	height: 97px;
+	background-repeat: no-repeat;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+}
+
+.status_not_selected a, .status_selected a {
+	display: block;
+	height: 97px;
+	font-size: 0;
+}
+
+.status_not_selected:hover, .status_selected { opacity: 1; }
+
+/* Currently watching */
+.status_not_selected:first-child, .status_selected:first-child { left: 0; width: 178px; }
+.status_not_selected:first-child, .status_not_selected:first-child:hover, .status_selected:first-child { background-position: 0 -97px; }
+
+/* Completed */
+.status_not_selected:nth-child(2), .status_selected:nth-child(2) { left: 178px; width: 94px; }
+.status_not_selected:nth-child(2), .status_not_selected:nth-child(2):hover, .status_selected:nth-child(2) { background-position: -178px -97px; }
+  
+/* On hold */
+.status_not_selected:nth-child(3), .status_selected:nth-child(3) { left: 272px; width: 135px; }
+.status_not_selected:nth-child(3),  .status_not_selected:nth-child(3):hover, .status_selected:nth-child(3) { background-position: -272px -97px; }
+
+/* Dropped */
+.status_not_selected:nth-child(4), .status_selected:nth-child(4) { right: 250px; width: 140px; }
+.status_not_selected:nth-child(4), .status_not_selected:nth-child(4):hover, .status_selected:nth-child(4) { background-position: -650px -97px; }
+  
+/* Planned */
+.status_not_selected:nth-child(5), .status_selected:nth-child(5) { right: 107px; width: 143px; }
+.status_not_selected:nth-child(5), .status_not_selected:nth-child(5):hover, .status_selected:nth-child(5) { background-position: -790px -97px; }
+  
+/* All */
+.status_not_selected:last-child, .status_selected:last-child { right: 0; width: 107px; }
+.status_not_selected:last-child, .status_not_selected:last-child:hover, .status_selected:last-child { background-position: -933px -97px; }
+
+/* Flashlight */
+
+@keyframes Swing {
+	from { transform: rotate(0deg) translate(-25px) rotate(0deg); }
+	to { transform: rotate(360deg) translate(-25px) rotate(-360deg); }
+}
+
+@-webkit-keyframes Swing {
+	from { -webkit-transform: rotate(0deg) translate(-25px) rotate(0deg); }
+	to { -webkit-transform: rotate(360deg) translate(-25px) rotate(-360deg); }
+}
+
+#list_surround:before {
+	pointer-events: none;
+	opacity: 1;
+	position: fixed;
+	display: block;
+	content: '';
+	left: -25px;
+	top: -25px;
+	width: calc(100% + 50px);
+	height: calc(100% + 50px);
+	background-image: url(https://cdn.imgchest.com/files/6yxkczgo5k7.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: Swing linear 10s infinite;
+        -webkit-animation: Swing linear 10s infinite;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+	z-index: 4;
+}
+
+body:hover #list_surround:before { opacity: 0; }
+
+/* Character */
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after,
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after { background-image: url(https://cdn.imgchest.com/files/p7bwckdoll7.png); }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type { background-image: url(https://cdn.imgchest.com/files/p7bwckdoll7.png); }
+
+
+#list_surround > table:first-of-type { background: url(https://cdn.imgchest.com/files/84apc53ojb4.png) no-repeat; }
+
+.status_not_selected, .status_selected { background-image: url(https://cdn.imgchest.com/files/84apc53ojb4.png); }
+
+body { background-image: url(https://cdn.imgchest.com/files/g4z9cvwxbm7.png), url(https://cdn.imgchest.com/files/wye3c2d3zj4.jpg); }
+
+#inlineContent {
+	left: 410px;
+	top: 250px;
+	width: 583px;
+	background: url(https://cdn.imgchest.com/files/b49zc2bor3y.png) no-repeat;
+}
+
+#copyright { color: #ff9c00; }
+
+/* Main Style */
+
+* { cursor: url(https://cdn.imgchest.com/files/k46acqbejb7.png) 1 1, auto !important; }
+
+body {
+	font-family: 'Gentium Book Basic', serif;
+	background-color: rgb(0, 0, 0);
+	background-repeat: no-repeat;
+	background-position: center top, left center;
+	background-attachment: scroll, fixed;
+	background-size: auto, cover;
+	overflow-x: hidden;
+}
+
+tr:hover > .td1:not(.borderRBL), tr:hover > .td2:not(.borderRBL) { box-shadow: inset 0 -1px 0 #ad3232; }
+
+.td1, .td2, .td1 a, .td2 a, .category_totals { font-size: 16px; color: #ad3232; }
+
+
+.animetitle + small, .borderRBL { color: #282828; }
+
+a { text-decoration: none; }
+
+#list_surround {
+	position: relative;
+	width: 650px;
+	margin: 70px auto 0;
+}
+
+#list_surround br { display:none; }
+
+.td1, .td2  { vertical-align: top; background-color: rgb(255, 255, 255); }
+
+.animetitle + small {
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+.borderRBL {
+	padding: 0 5px;
+	box-shadow: 0 -1px 0 #ad3232; 
+}
+
+.borderRBL small { visibility: visible !important; }
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: block;
+	height: 180px;
+	background-color: rgb(255, 255, 255);
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 650px;
+	height: 180px;
+	font-size: 0;
+	background-image: url(https://cdn.imgchest.com/files/pyvdcwdojny.png);
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -180px; }
+
+.header_onhold span { background-position: center -360px; }
+
+.header_dropped span { background-position: center -540px; }
+
+.header_ptw span { background-position: center -720px; }
+
+.category_totals {
+	height: 50px;
+	padding: 5px 5px 150px;
+	font-size: 12px;
+	text-align: center; 
+	background: linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, .9) 15%, rgba(255, 255, 255, .7) 35%, rgba(255, 255, 255, .5) 55%, rgba(255, 255, 255, 0) 90%);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, .9) 15%, rgba(255, 255, 255, .7) 35%, rgba(255, 255, 255, .5) 55%, rgba(255, 255, 255, 0) 90%);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, .9) 15%, rgba(255, 255, 255, .7) 35%, rgba(255, 255, 255, .5) 55%, rgba(255, 255, 255, 0) 90%);
+}
+
+#grand_totals { display:none; }
+
+#copyright {
+	padding-bottom: 5px;
+	line-height: 18px;
+	font-size: 14px;
+}
+
+#copyright:after { content: 'List designed by Hahaido.'; }
+
+#inlineContent {
+	pointer-events: none;
+	opacity: 1;
+	position: absolute;
+	display: block !important;
+	height: 660px;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+}
+
+#list_surround:hover #inlineContent { opacity: 0; }

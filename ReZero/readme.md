@@ -8,7 +8,7 @@ Released: 2016-Apr-06
 
 ### Usage Notes
 
-Built for the modern Default Style.
+Built for modern lists.
 
 **Columns**
 

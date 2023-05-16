@@ -1,0 +1,22 @@
+/* Tuka */
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after,
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after { background-image: url(http://i.imgur.com/ggmEphS.png); }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type { background-image: url(https://cdn.imgchest.com/files/l4nec8mvxp4.png); }
+
+#list_surround > table:first-of-type { background: url(https://cdn.imgchest.com/files/345xcv9wlw7.png) no-repeat; }
+
+.status_not_selected, .status_selected { background-image: url(https://cdn.imgchest.com/files/345xcv9wlw7.png); }
+
+body { background-image: url(https://cdn.imgchest.com/files/my8xcnk8bm4.png), url(https://cdn.imgchest.com/files/e4gdcxprk54.jpg); }
+
+#inlineContent {
+	left: 460px;
+	top: 250px;
+	width: 384px;
+	background: url(https://cdn.imgchest.com/files/w7w6c2voj6y.png) no-repeat;
+}
+
+#copyright { color: #174506; }
