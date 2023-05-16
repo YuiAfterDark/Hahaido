@@ -1,17 +1,23 @@
-## Layout 51 - Magi
+# Layout 51 - Magi
 
-Forum link: https://myanimelist.net/forum/?topicid=1603344
+![](gallery/demo.jpg)
 
-Competition: https://myanimelist.net/forum/?topicid=1548291
+## Info
 
 Released: 2016-Apr-06
 
-### List settings
+### Usage Notes
 
-Built for the Default Style.
+Built for the modern Default Style.
 
-Columns:
+**Columns**
+
 - Numbers
 - Image
 - Score
 - Episodes
+
+### Links
+
+- [Forum](https://myanimelist.net/forum/?topicid=1603344)
+- [Competition](https://myanimelist.net/forum/?topicid=1548291)

@@ -1,7 +1,7 @@
 /*
 Magi layout by Hahaido
 Modifications made by Shishio-kun and Valerio Lyndon
-Last update: 2022-Sep-04
+Last update: 2023-May-15
 */
 
 @\import "https://fonts.googleapis.com/css2?family=Fauna+One&display=swap";
@@ -9,7 +9,7 @@ Last update: 2022-Sep-04
 /* fix for various features*/
 @\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
 
-/* https://dl.dropboxusercontent.com/s/i2vfcd2l4kqpzkd/CategoryMenu.css */
+/* Category Menu */
 
 .status-menu-container.fixed {
 	position: fixed;
@@ -95,7 +95,7 @@ Last update: 2022-Sep-04
 
 .status-menu-container.fixed + div.list-block { margin-top: 62px; }
 
-/* https://dl.dropboxusercontent.com/s/nfrysf92k6fwecj/Menus.css */
+/* Menus */
 
 .header {
 	position: relative;
@@ -374,7 +374,7 @@ Last update: 2022-Sep-04
 	animation: Slide_down .3s forwards ease-out;
 }
 
-/* https://dl.dropboxusercontent.com/s/jrf7k7wmamj4io5/TopMenu.css */
+/* Top Menu */
 
 .list-menu-float {
 	position: fixed;
@@ -509,7 +509,7 @@ Last update: 2022-Sep-04
 
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting { display: none; }
 
-/* Main Layout */
+/* Main Style */
 
 @-webkit-keyframes Show {
 	from { opacity: 0; }
@@ -557,7 +557,7 @@ body.ownlist {
 	margin: 0;
 	min-height: 600px;
 	padding: 40px 0 50px 0;
-	background-image: url(https://i.postimg.cc/0QkFb115/dialog-background.png);
+	background-image: url(https://i.postimg.cc/Jz7YGq4k/table-bg.png);
 	background-repeat: repeat-y;
 	background-position: center top;
 }
