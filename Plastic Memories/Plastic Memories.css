@@ -8,7 +8,7 @@
 @\import "http://fonts.googleapis.com/css?family=Jura";
 @\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
 
-/* https://dl.dropboxusercontent.com/s/wggulmz4ngps16c/CategoryMenu.css */
+/* Category Menu */
 
 #list_surround > table:first-of-type:before {
 	position: fixed;
@@ -139,7 +139,7 @@
 	.status_not_selected a:before, .status_selected a:before { top: 0; }
 }
 
-/* https://dl.dropboxusercontent.com/s/z8gfvfjr518y8io/TabContent.css */
+/* Tab Content */
 
 #list_surround > table:nth-of-type(n+4):not(.header_cw):not(.header_completed):not(.header_onhold):not(.header_dropped):not(.header_ptw):not(.header_ptw) {
 	float: left;
@@ -290,7 +290,7 @@ tbody:hover  td[class^='td']:nth-child(4) { background-color: rgb(226, 70, 92); 
 
 .table_headerLink:hover:after { background-color: rgb(226, 70, 92); }
 
-/* https://dl.dropboxusercontent.com/s/f3lqxgi2ldc3ye5/TopMenu.css */
+/* Top Menu */
 
 #mal\_control_strip:before {
 	position: fixed;
@@ -429,7 +429,7 @@ tbody:hover  td[class^='td']:nth-child(4) { background-color: rgb(226, 70, 92); 
 
 #mal\_cs_otherlinks div a[href*="forum"]:after { content: 'Help'; }
 
-/* https://dl.dropboxusercontent.com/s/5zfis6ca44jfhen/Style.css */
+/* Main Style */
 
 body {
 	font-family: 'Jura', sans-serif;
