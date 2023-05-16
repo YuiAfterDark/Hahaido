@@ -669,7 +669,7 @@ Last update: 2023-May-15
 	position: absolute;
 	display: block;
 	content: "";
-	left: -115px;
+	left: -119px;
 	top: -444px;
 	height: 650px;
 	width: 1000px;
@@ -760,7 +760,6 @@ body.ownlist {
 
 .cover-block .image-container {
 	height: 612px;
-	background: url(https://i.postimg.cc/pVYBzFSY/cover.png) no-repeat;
 	z-index: 3;
 }
 
