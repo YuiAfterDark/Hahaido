@@ -1,5 +1,7 @@
 /*
 K-On! layout by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-16
 */
 
 @\import "http://fonts.googleapis.com/css?family=Abel|VT323";
@@ -15,6 +17,7 @@ K-On! layout by Hahaido
 	margin-top: -22px;
 	left: 130px;
 	width: 50px;
+	height: 22px;
 	font-family: 'Abel', sans-serif;
 	font-size: 16px !important;
 	text-align: center;
@@ -217,6 +220,7 @@ K-On! layout by Hahaido
 	margin-top: -22px;
 	left: 180px;
 	width: 50px;
+	height: 22px;
 	font-size: 16px;
 	color: #FFFFFF;
 	text-align: center;
@@ -255,13 +259,24 @@ K-On! layout by Hahaido
 	 z-index: 5; 
 }
 
-/* MENU BUTTONS */
-.status_not_selected, .status_selected { position: relative !important; display: inline-block ; left: 25px; top: 50px; width: 46px; }
+#list_surround > table:first-of-type :is(tbody,td) {
+	display: block;
+	width: auto;
+}
 
+#list_surround > table:first-of-type tr {
+	display: grid;
+	padding-top: 49px;
+	padding-left: 44px;
+	grid-template-columns: repeat(6,46px);
+	margin: 0 auto;
+}
+
+/* MENU BUTTONS */
 .status_not_selected a, .status_selected a {
-	position: absolute;
 	display: inline-block;
 	width: 38px;
+	margin: 0 4px;
 	height: 140px;
 	font-size: 0;
 	background-image: url(https://i.imgur.com/arohB36.png); 
@@ -273,11 +288,11 @@ K-On! layout by Hahaido
 }
 
 .status_not_selected a:hover:after, .status_selected a:after {
-	pointer-events: none;
 	position: absolute;
+	top: 14px;
+	left: 108px;
+	pointer-events: none;
 	display: block;
-	margin-top: -36px;
-	margin-left: 14px;
 	width: 145px;
 	line-height: 29px;
 	font-family: 'VT323', cursive;
@@ -294,22 +309,23 @@ K-On! layout by Hahaido
 .status_not_selected a:hover, .status_selected a { background-position: center center; }
 
 /* Currently watching */
-.status_not_selected a[href*="status=1"]:hover:after, .status_selected a[href*="status=1"]:after { content: 'Watching'; margin-left: 60px; }
+[class^="status_"] a[href*="status=1"]:hover:after { content: 'Watching'; }
+[data-work="manga"] [class^="status_"] a[href*="status=1"]:hover:after { content: 'Reading'; }
 
 /* Completed */
-.status_not_selected a[href*="status=2"]:hover:after, .status_selected a[href*="status=2"]:after { content: 'Completed'; }
+[class^="status_"] a[href*="status=2"]:hover:after { content: 'Completed'; }
   
 /* On hold */
-.status_not_selected  a[href*="status=3"]:hover:after, .status_selected a[href*="status=3"]:after { content: 'On Hold'; margin-left: -32px; }
+[class^="status_"] a[href*="status=3"]:hover:after { content: 'On Hold'; }
 
 /* Dropped */
-.status_not_selected a[href*="status=4"]:hover:after, .status_selected a[href*="status=4"]:after { content: 'Dropped'; margin-left: -78px; }
+[class^="status_"] a[href*="status=4"]:hover:after { content: 'Dropped'; }
   
 /* Planned */
-.status_not_selected a[href*="status=6"]:hover:after, .status_selected a[href*="status=6"]:after { content: 'Planned'; margin-left: -124px; }
+[class^="status_"] a[href*="status=6"]:hover:after { content: 'Planned'; }
   
 /* All */
-.status_not_selected a[href*="status=7"]:hover:after, .status_selected a[href*="status=7"]:after { content: 'All'; margin-left: -170px; }
+[class^="status_"] a[href*="status=7"]:hover:after { content: 'All'; }
 
 /* Main Style */
 
