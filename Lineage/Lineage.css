@@ -6,9 +6,7 @@ Last update: 2023-May-16
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
 @\import "https://malscraper.azurewebsites.net/covers/all/manga/presets/more";
-
-/* Shishio-kun's fixes for new features */
-@\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 
 @font-face {
 	font-family: 'SAO';

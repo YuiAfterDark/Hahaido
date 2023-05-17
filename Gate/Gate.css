@@ -2,10 +2,8 @@
 Gate layout by Hahaido
 */
 
-/* fix for various features */
-@\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
-
-@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic);
+@\import "https://fonts.googleapis.com/css?family=Gentium+Book+Basic";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 
 /* Top Menu */
 
