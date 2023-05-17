@@ -1,0 +1,739 @@
+/*
+Lineage by SylakentH_ and Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+
+@font-face {
+	font-family: 'SAO';
+	src: url(https://files.catbox.moe/ahnop0.woff) format('woff');
+}
+@font-face {
+	font-family: 'Philosopher';
+	src: url(https://files.catbox.moe/my810e.woff) format('woff');
+}
+
+/* Top Menu */
+
+/* Top line */
+#mal_control_strip {
+	position: fixed;
+	display: inline-block;
+	height: 24px !important;
+	background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 200px, rgba(255, 255, 255, .1) 250px, rgba(255, 255, 255, .5) 100%) !important;
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 200px, rgba(255, 255, 255, .1) 250px, rgba(255, 255, 255, .5) 100%) !important;
+    	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 200px, rgba(255, 255, 255, .1) 250px, rgba(255, 255, 255, .5) 100%) !important;
+	z-index: 2;
+}
+
+/* Lnks settings */
+#mal_control_strip a, #mal\_cs_otherlinks div span[title*="Compatibility Score"] {
+	display: block;
+	margin: 4px 12px 0;
+	padding: 3px 0 !important;
+	line-height: 17px;
+	text-decoration: none !important;
+	border-style: solid;
+	border-width: 1px !important;
+	background-color: rgb(241, 168, 4) !important;
+	border-radius: 3px;
+}
+
+#mal_control_strip a:hover {
+	color: #da6358;
+	border-color: #da6358;
+	background-color: rgba(255, 255, 255, .5) !important;
+}
+
+/* Lnks font */
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div { 
+	font-family: Arial, Sans-Serif !important;
+	font-size: 13px !important; 
+	letter-spacing: 0;
+}
+
+/* Disable unnecessary elements */
+#mal_cs_pic, #mal_cs_powered a { display: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; } 
+
+#mal_cs_listinfo, #mal_cs_links { border-left: none !important; }
+
+/* Links surround settings */
+#mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_powered {
+	opacity: .7;
+	overflow: hidden;
+	position: fixed;
+	left: 4px;
+	top: 4px;
+	width: 100px !important;
+	height: 0 !important;
+	padding: 40px 0 0 !important;
+	text-align: center;
+	border-width: 0 !important;
+	background: none no-repeat 0 0;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	z-index: 10;
+}
+
+#mal_cs_listinfo:hover, #mal_cs_links:hover, #mal_cs_otherlinks:hover, #mal_cs_powered:hover {
+	opacity: 1;
+	top: 20px !important;
+	width: 182px !important;
+	height: 200px !important;
+	padding-left: 42px !important;
+}
+
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div, #mal_cs_powered div {
+	opacity: 0;
+	margin: 0 !important;
+	padding: 8px 0 0 !important;
+	line-height: 0;
+	font-size: 0 !important;
+	border-radius: 0 3px 0 0;
+	background-color: rgba(255, 255, 255, .5);
+	transition: opacity .4s ease-in-out;
+	-webkit-transition: opacity .4s ease-in-out;
+}
+
+#mal_cs_listinfo:hover div, #mal_cs_links:hover div, #mal_cs_otherlinks:hover div, #mal_cs_powered:hover div { opacity: 1; }
+
+#mal_cs_listinfo div:nth-of-type(2), #mal_cs_links div:nth-of-type(2), #mal_cs_otherlinks div:nth-of-type(2), #mal_cs_powered div:nth-of-type(2) {
+	border-radius: 0 0 3px 3px;
+	padding: 4px 0 8px !important;
+}
+
+#mal_cs_listinfo div:last-child, #mal_cs_links div:last-child { padding-top: 1px !important; }
+
+#mal_cs_powered div { 
+	padding-top: 16px !important; 
+	border-top-right-radius: 3px !important;
+}
+
+/* You are viewing... text */
+#mal_cs_otherlinks strong {
+	display: block;
+	padding: 0 4px 4px;
+	line-height: 17px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+
+#mal_cs_otherlinks strong a {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+	border-width: 0 !important;
+	background-color: transparent !important;
+	letter-spacing: 1px;
+}
+
+#mal_cs_otherlinks strong a:hover { color: #FFFFFF; background-color: transparent !important; }
+
+/* Compatibility */
+#mal\_cs_otherlinks div span[title*="Compatibility Score"]:before { content: 'Compatibility: '; }
+
+#mal\_cs_otherlinks div span[title*="Compatibility Score"] {
+	padding: 10px 0 12px;
+	color: #da6358;
+	border-color: #da6358;
+	background-color: rgba(255, 255, 255, .5) !important;
+}
+
+#mal_cs_listinfo {
+	left: 178px;
+	background-image: url(https://cdn.imgchest.com/files/b49zc2vn2ey.png);
+}
+
+
+#mal_cs_listinfo:hover { background-image: url(https://cdn.imgchest.com/files/l4nec8lz8j4.png); }
+
+#mal_cs_listinfo strong a strong { font-weight: normal; }
+
+
+#mal_cs_listinfo:before {
+	position: fixed !important;
+	content: '';
+	top: 0;
+	left: 175px;
+	height: 20px;
+	width: 50px;
+	z-index: -1;
+}
+
+#mal_cs_listinfo:hover:before { width: 200px !important; }
+
+#mal_cs_links {
+	left: 122px !important;
+	background-image: url(https://cdn.imgchest.com/files/d7ogcbxabdy.png);
+	z-index: 9;
+}
+
+#mal_cs_links:hover { background-image: url(https://cdn.imgchest.com/files/j7kzcaxpa37.png); }
+
+#mal_cs_links:before {
+	position: fixed;
+	content: '';
+	left: 105px;
+	top: 0;
+	width: 70px;
+	height: 20px;
+	z-index: -1;
+}
+
+#mal_cs_otherlinks {
+	left: 66px !important;
+	background-image: url(https://cdn.imgchest.com/files/pyvdcwnxw9y.png);
+	z-index: 8;
+}
+
+#mal_cs_otherlinks:hover { background-image: url(https://cdn.imgchest.com/files/6yxkczqpzj7.png); }
+
+#mal_cs_otherlinks:before {
+	position: fixed;
+	content: '';
+	left: 55px;
+	top: 0;
+	width: 50px;
+	height: 20px;
+	z-index: -1;
+}
+
+#mal_cs_powered {
+	position: fixed !important;
+	left: 10px !important;
+	background-image: url(https://cdn.imgchest.com/files/p7bwck26k87.png);
+	z-index: 7;
+}
+
+#mal_cs_powered:hover { background-image: url(https://cdn.imgchest.com/files/w7pjcqknq57.png); }
+
+#mal_cs_powered:before {
+	position: fixed;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 55px;
+	height: 20px;
+	z-index: -1;
+}
+
+/* Search */
+#search {
+	position: relative;
+	margin-top: 8px !important;
+	padding: 8px !important;
+	border-radius: 0 0 3px 3px !important;
+}
+
+#searchBox {
+	display: inline-block !important;
+	margin: -8px 0 8px;
+	width: 132px !important;
+	height: 20px !important;
+	padding: 0 24px 0 2px;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	background-color: rgb(241, 168, 4);
+	transition: color .4s ease, background-color .4s ease;
+	-webkit-transition: color .4s ease, background-color .4s ease;
+}
+
+#search:hover #searchBox, #searchBox:hover, #searchBox:focus {
+	color: #da6358;
+	border-color: #da6358;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+#searchListButton {
+	position: absolute;
+	left: 152px;
+	top: 12px !important;
+	margin: 0;
+	width: 0;
+	height: 0;
+	padding: 16px 0 0 19px !important;
+	border-radius: 3px;
+	background: url(https://cdn.imgchest.com/files/k46acqglqo7.png) no-repeat !important;
+	background-position: 0 0;
+}
+
+#search:hover #searchListButton { background-position: 0 -16px !important; }
+
+/* Category Menu */
+
+/* RENDERS AND BACKGROUNDS */
+.status_selected {
+	position: fixed;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+}
+
+/* MENU BUTTONS */
+.status_selected {
+	position: fixed;
+	z-index: -1; 
+}
+
+.status_not_selected { position: fixed; }
+
+.status_selected a, .status_not_selected a {
+	position: fixed;
+	display: inline-block;
+	right: 5px;
+	top: 50%;
+	width: 73px;
+	height: 100px;
+	font-size: 0;
+	background-image: url(https://cdn.imgchest.com/files/myd5cerddl4.png);
+}
+
+.status_not_selected a {
+	opacity: .7;
+	transition: opacity .4s ease;
+	-webkit-transition: opacity .4s ease;
+}
+
+.status_selected a, .status_not_selected a:hover { opacity: 1; }
+
+.status_selected a:before, .status_not_selected a:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	left: -227px;
+	height: 100px;
+	background-image: url(https://cdn.imgchest.com/files/3yrgcnzee64.png);
+}
+
+.status_not_selected a:before {
+	opacity: 0;
+	width: 0;
+	transition: opacity .4s ease, width .4s ease;
+	-webkit-transition: opacity .4s ease, width .4s ease;
+}
+
+.status_selected a:before, .status_not_selected a:hover:before {
+	opacity: 1;
+	width: 200px; 
+}
+
+.status_not_selected a[href*="status=1"] { 
+	margin-top: -285px; 
+	background-position: 0 0; 
+}
+.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover {
+	margin-top: -285px;
+	background-position: -73px 0; 
+}
+
+.status_not_selected a[href*="status=2"] {
+	margin-top: -195px;
+	background-position: 0 -100px;
+}
+.status_selected a[href*="status=2"], .status_not_selected a[href*="status=2"]:hover {
+	margin-top: -195px;
+	background-position: -73px -100px;
+}
+.status_selected a[href*="status=2"]:before, .status_not_selected a[href*="status=2"]:before,
+.status_not_selected a[href*="status=2"]:hover:before { background-position: 0 -100px; }
+
+.status_not_selected a[href*="status=3"] {
+	margin-top: -100px;
+	background-position: 0 -200px;
+}
+.status_selected a[href*="status=3"], .status_not_selected a[href*="status=3"]:hover {
+	margin-top: -100px;
+	background-position: -73px -200px;
+}
+.status_selected a[href*="status=3"]:before, .status_not_selected a[href*="status=3"]:before, 
+.status_not_selected a[href*="status=3"]:hover:before { background-position: 0 -200px; }
+
+.status_not_selected a[href*="status=4"] {
+	margin-top: -5px;
+	background-position: 0 -300px;
+}
+.status_selected a[href*="status=4"], .status_not_selected a[href*="status=4"]:hover {
+	margin-top: -5px;
+	background-position: -73px -300px;
+}
+.status_selected a[href*="status=4"]:before, .status_not_selected a[href*="status=4"]:before,
+.status_not_selected a[href*="status=4"]:hover:before { background-position: 0 -300px; }
+
+.status_not_selected a[href*="status=6"] {
+	margin-top: 90px;
+	background-position: 0 -400px;
+}
+.status_selected a[href*="status=6"], .status_not_selected a[href*="status=6"]:hover {
+	margin-top: 90px;
+	background-position: -73px -400px;
+}
+.status_selected a[href*="status=6"]:before, .status_not_selected a[href*="status=6"]:before,
+.status_not_selected a[href*="status=6"]:hover:before { background-position: 0 -400px; }
+
+.status_not_selected a[href*="status=7"] {
+	margin-top: 185px;
+	background-position: 0 -500px;
+}
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"]:hover {
+	margin-top: 185px;
+	background-position: -73px -500px;
+}
+.status_selected a[href*="status=7"]:before, .status_not_selected a[href*="status=7"]:before,
+.status_not_selected a[href*="status=7"]:hover:before { background-position: 0 -500px; }
+
+/* Main Style */
+
+/*
+HOW TO USE
+Use and COMPLETE this simple tutorial if you never installed CSS, it only takes a few minutes:
+http://myanimelist.net/forum/?topicid=200320
+  
+  
+When you're done with the tutorial and can see the starter layout on your list, copy and paste this entire page of codes (including this part and the codes above and below) 
+to your CSS edit box (the box titled Edit Advanced CSS File) replacing any other codes in the box. 
+Save with the blue button at the bottom. It will put this premade layout on your list instead of the starter one from the tutorial! 
+  
+  
+If the layout looks weird on your list after installing, you can try to alter your settings here.
+Common solutions are to set Default Status Settings to Watching or All Anime, check or uncheck tags (make sure you save afterwards):
+http://myanimelist.net/editprofile.php?go=listpreferences
+  
+  
+If your list still has problems you can ask us about it here, or other questions:
+http://myanimelist.net/forum/?topicid=200323
+  
+  
+And you'll find further ways to customize your list here:
+http://myanimelist.net/forum/?topicid=419405
+*/
+
+
+td[class^='td']:nth-of-type(2) { width: 454px !important; }
+
+.table_header[width="125"], span[id*="tagLinks"], div[id*="tagChangeRow"] { display: none !important; }
+
+td[class^='td'][width="125"] { width: 0; }
+
+.hide {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.borderRBL  {
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 2px 0 !important;
+}
+
+.borderRBL small { visibility: visible !important; }
+
+/* Custom cursor */
+a, #searchListButton { cursor: url(https://cdn.imgchest.com/files/w7pjcqwppm7.png) 1 1, auto !important; }
+
+body { cursor: url(https://cdn.imgchest.com/files/p7bwckdnn97.png) 1 1, auto; }
+/* Custom cursor */
+
+a { text-decoration: none; }
+
+body {
+	font-family: 'Philosopher';
+	font-size: 13px;
+	color: #7f7e7e;
+	letter-spacing: .5px;
+	background-color: transparent;
+}
+
+/* LIST SETTINGS */
+
+#list_surround {
+	position: relative;
+	left: 100%;
+	margin-left: -960px;
+	top: 0;
+	width: 650px;
+	padding-top: 200px;
+}
+
+.table_header span { display: none; }
+
+.table_header:nth-child(2) { text-align: left; }
+
+.td1, .td2 { 
+	padding: 6px 0 3px; 
+	line-height: 13px;
+	vertical-align: top;
+	transition: background-color .4s ease;
+	-webkit-transition: background-color .4s ease;
+}
+
+.animetitle, .animetitle + small { display: table-cell; }
+
+.animetitle span { display: inline-block; }
+
+.animetitle + small:before { content: ' '; white-space: pre-wrap; }
+
+.animetitle + small {
+	visibility: visible !important;
+	color: #f2a603;
+	font-size: 11px;
+	text-transform: lowercase;
+	letter-spacing: .5px;
+}
+
+#list_surround small { visibility: hidden; }
+
+#list_surround small a:last-of-type:before {
+	position: absolute; 
+	display: inline-block !important;
+	content: '...';
+	margin-left: -8px;
+	font-family: Arial;
+	line-height: 7px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: .5px;
+	color: #7f7e7e;
+}
+
+#list_surround small a:first-of-type {
+	position: relative;
+	left: 44px;
+	padding: 10px;
+	font-size: 0;
+	background-image: url(https://cdn.imgchest.com/files/84apc5328m4.png);
+	background-repeat: no-repeat;
+	background-position: 0 -1px;
+}
+
+#list_surround small a[href*="edit"] { background-position: 0 -22px; }
+
+#list_surround tr:hover small a:first-of-type, #list_surround tr:hover small a:last-of-type:before { visibility: visible; }
+
+td[class^='td']:nth-child(2) { text-align: left; }
+
+td[class^='td'][width="45"] {
+	background-image: url(https://cdn.imgchest.com/files/my8xcnkdrz4.png);
+	background-repeat: no-repeat;
+	background-position: 11px 2px;
+}
+
+/* LIST COLOR */
+
+.table_header, .td1, .td2 {
+	text-align: center;
+	background-color: rgba(255, 255, 255, .75);
+}
+
+tr:hover td[class^='td']:not(.borderRBL) { background-color: rgba(255, 255 , 255, 1); }
+
+/* LIST FONT COLOR */
+
+a { color: #7f7e7e; }
+
+.table_headerLink { 
+	line-height: 24px;
+	font-size: 10px;
+	color: #f2a603 !important;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.table_headerLink strong { font-weight: normal !important; }
+
+td[class^='td'][width="45"], td[class^='td'][width="45"] a { color: #FFFFFF; }
+
+/* BORDER COLORS */
+
+td[class^='td']:first-child { border-left: 2px solid #FFFFFF !important; box-shadow: -1px 0 0 #7f7e7e; }
+
+td[class^='td']:last-child { border-right: 2px solid #FFFFFF !important; box-shadow: 1px 0  0 #7f7e7e; }
+
+.table_header { 
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-width: 2px 0;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 1px 0 #000000, 0 -1px 0 #7f7e7e;
+}
+
+.table_header:first-child { border-left: 2px solid white !important; box-shadow: 0 -1px 0 #7f7e7e, 0 1px 0 #000000, -1px 0 0 #7f7e7e; }
+
+.table_header:nth-child(5) { 
+	border-right: 2px solid white !important;
+	box-shadow: 0 -1px 0 #7f7e7e, 1px 0 0 #7f7e7e, 0 1px 0 #000000;
+	border-radius: 0 16px 0 0;
+}
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: inline-block;
+	height: 100px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 650px;
+	height: 131px;
+	font-size: 0;
+	background-image: url(https://cdn.imgchest.com/files/myd5cem5mx4.png);
+				      /* url(https://cdn.imgchest.com/files/myd5cerdre4.png); */ /* for manga list */
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -131px; }
+
+.header_onhold span { background-position: center -262px; }
+
+.header_dropped span { background-position: center -393px; }
+
+.header_ptw span { background-position: center -524px; }
+
+/* CURRENTLY WATCHING RENDER AND BACKGROUND */
+.status_selected:first-child {
+	background-image: url(https://cdn.imgchest.com/files/myd5cerdw94.png),
+ 				       url(https://cdn.imgchest.com/files/pyq9c3eojm4.jpg);
+	background-position: left bottom, left top;
+}
+
+/* COMPLETED RENDER AND BACKGROUND */
+.status_selected:nth-child(2) {
+	background-image: url(https://cdn.imgchest.com/files/w7pjcqwpvp7.png),
+ 				       url(https://cdn.imgchest.com/files/p7bwckdnlq7.jpg);
+	background-position: left bottom, left top;
+}
+
+/* ON-HOLD RENDER AND BACKGROUND */
+.status_selected:nth-child(3) {
+	background-image: url(https://cdn.imgchest.com/files/84jdcvjq6q4.png),
+ 				       url(https://cdn.imgchest.com/files/l7lxcpdoxb7.jpg);
+	background-position: left bottom, left top;
+}
+
+/* DROPPED RENDER AND BACKGROUND */
+.status_selected:nth-child(4) {
+	background-image: url(https://cdn.imgchest.com/files/g4z9cvwlzd7.png),
+ 				       url(https://cdn.imgchest.com/files/wye3c2d5q34.jpg);
+	background-position: left bottom, left top;
+}
+
+/* PLANNED RENDER AND BACKGROUND */
+.status_selected:nth-child(5) {
+	background-image: url(https://cdn.imgchest.com/files/p7bwckdn2z7.png),
+ 				       url(https://cdn.imgchest.com/files/l4nec8m6lq4.jpg);
+	background-position: left bottom, left top;
+}
+
+/* ALL RENDER AND BACKGROUND */
+.status_selected:last-child {
+	background-image: url(https://cdn.imgchest.com/files/w7pjcqwpwv7.png),
+ 				      url(https://cdn.imgchest.com/files/p7bwckdndz7.jpg);
+	background-position: left bottom, left top;
+}
+
+.category_totals {
+	padding: 3px 3px 9px 3px;
+	text-align: center;
+	font-size: 11px;
+	color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	background-color: rgb(242, 166, 3);
+	box-shadow: 1px 0  0 #7f7e7e, 0 1px  0 #7f7e7e, -1px 0  0 #7f7e7e;
+	border-radius: 0 0 16px 16px;
+}
+
+#grand_totals:before {
+	diplay: inline-block;
+	content: '< ';
+}
+
+#grand_totals:after {
+	diplay: inline-block;
+	content: ' >';
+}
+
+#grand_totals {
+	position: absolute;
+	display: block;
+	margin-top: -28px;
+	width: calc(100% - 24px);
+	padding: 0 10px 10px;
+	text-align: center;
+	font-size: 11px;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 0 2px;
+	background-color: rgb(242, 166, 3);
+	box-shadow: 1px 0  0 #7f7e7e, 0 1px  0 #7f7e7e, -1px 0  0 #7f7e7e;
+	border-radius: 0 0 12px 12px;
+}
+
+#copyright:before {
+	diplay: block;
+	content: "Design by SylakentH_ and Hahaido";
+	font-size: 12px;
+}
+
+#copyright {
+	position: relative;
+	display: block;
+	margin-top: -10px !important;
+	padding: 2px 0 4px;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: solid 4px #da6358;
+	background-color: rgb(160, 55, 60);
+	border-radius: 16px;
+}
+
+#copyright a { 
+	padding-right: 2px;
+	font-size: 14px;
+	color: #FFFFFF; 
+	text-shadow: 1px 1px #f11c26;
+}
+
+/* Put your text here */
+#mal\_control_strip:before {
+	position: fixed;
+	display: block;
+	content: "I'd rather trust and regret than doubt and regret";
+	right: 0;
+	top: 0;
+	padding-right: 4px;
+	font-family: 'SAO';
+	line-height: 24px;
+	color: #FFFFFF;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #000000;
+}
+
+/* Pics for manga list category menu */
+/* .status_selected a, .status_not_selected a { background-image: url(https://cdn.imgchest.com/files/b49zc2b8d2y.png); }
+.status_selected a:before, .status_not_selected a:before { background-image: url(https://cdn.imgchest.com/files/3yrgcnzezr4.png); } */
+
+@-moz-document url-prefix() {
+	#list_surround small a:last-of-type:before { line-height: 6px; }	
+	.td1, .td2 { line-height: 14px; padding: 4px 0; }
+}
