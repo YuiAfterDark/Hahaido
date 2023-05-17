@@ -1,4 +1,4 @@
-# Lineage
+# Layout 25 - Lineage
 
 ![](gallery/demo.jpg)
 
