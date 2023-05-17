@@ -1,7 +1,12 @@
-### Flame Elegy
+# Flame Elegy
 
-Columns: 
-- Does not support notes.
+## Info
 
-Forum link: https://myanimelist.net/forum/?topicid=2037331
-Private forum link: https://myanimelist.net/forum/?topicid=1998786
+### Usage Notes
+
+Supports all columns except notes.
+
+### Links
+
+- [Forum](https://myanimelist.net/forum/?topicid=2037331)
+- [Private Forum](https://myanimelist.net/forum/?topicid=1998786)
