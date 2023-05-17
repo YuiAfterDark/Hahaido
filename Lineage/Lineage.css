@@ -1,8 +1,14 @@
 /*
 Lineage by SylakentH_ and Hahaido
+Modified by Shishio-kun and Valerio Lyndon
+Last update: 2023-May-16
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://malscraper.azurewebsites.net/covers/all/manga/presets/more";
+
+/* Shishio-kun's fixes for new features */
+@\import "https://onedrive.live.com/download?cid=4A07C1EEED420167&resid=4A07C1EEED420167%211210&authkey=AIspvg3EwthZV6g";
 
 @font-face {
 	font-family: 'SAO';
@@ -300,6 +306,7 @@ Lineage by SylakentH_ and Hahaido
 	font-size: 0;
 	background-image: url(https://cdn.imgchest.com/files/myd5cerddl4.png);
 }
+[data-work="manga"] :is(.status_selected,.status_not_selected) a { background-image: url(https://cdn.imgchest.com/files/b49zc2b8d2y.png); }
 
 .status_not_selected a {
 	opacity: .7;
@@ -317,6 +324,7 @@ Lineage by SylakentH_ and Hahaido
 	height: 100px;
 	background-image: url(https://cdn.imgchest.com/files/3yrgcnzee64.png);
 }
+.status_selected a[href*="/mangalist/"]:before, .status_not_selected a[href*="/mangalist/"]:before { background-image: url(https://cdn.imgchest.com/files/3yrgcnzezr4.png); }
 
 .status_not_selected a:before {
 	opacity: 0;
@@ -593,9 +601,11 @@ td[class^='td']:last-child { border-right: 2px solid #FFFFFF !important; box-sha
 	height: 131px;
 	font-size: 0;
 	background-image: url(https://cdn.imgchest.com/files/myd5cem5mx4.png);
-				      /* url(https://cdn.imgchest.com/files/myd5cerdre4.png); */ /* for manga list */
 	background-repeat: no-repeat;
 	z-index: 1;
+}
+[data-work="manga"] :is(.header_cw, .header_completed, .header_onhold, .header_dropped, .header_ptw) span {
+	background-image: url(https://cdn.imgchest.com/files/myd5cerdre4.png);
 }
 
 .header_cw span { background-position: center 0; }
@@ -729,11 +739,16 @@ td[class^='td']:last-child { border-right: 2px solid #FFFFFF !important; box-sha
 	text-shadow: 1px 1px #000000;
 }
 
-/* Pics for manga list category menu */
-/* .status_selected a, .status_not_selected a { background-image: url(https://cdn.imgchest.com/files/b49zc2b8d2y.png); }
-.status_selected a:before, .status_not_selected a:before { background-image: url(https://cdn.imgchest.com/files/3yrgcnzezr4.png); } */
-
 @-moz-document url-prefix() {
 	#list_surround small a:last-of-type:before { line-height: 6px; }	
 	.td1, .td2 { line-height: 14px; padding: 4px 0; }
+}
+
+/* Preload images */
+#mal_control_strip tbody {
+	background-image:
+		url(https://cdn.imgchest.com/files/6yxkczqpzj7.png),
+		url(https://cdn.imgchest.com/files/l4nec8lz8j4.png),
+		url(https://cdn.imgchest.com/files/w7pjcqknq57.png),
+		url(https://cdn.imgchest.com/files/j7kzcaxpa37.png)
 }
