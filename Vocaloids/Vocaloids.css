@@ -1,5 +1,7 @@
 /*
 Vocaloid by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-17
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -307,7 +309,6 @@ body {
 .td1 a, .td2  a { color: #66e74e; }
 
 tr:hover .td1, tr:hover .td2 {
-	height: 304px;
 	background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(234,248,252,0) 40%, rgba(79,129,189, 1) 50%, rgba(234,248,252,0) 60%, rgba(255,255,255,0) 100%);
 	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(234,248,252,0) 40%, rgba(79,129,189, 1) 50%, rgba(234,248,252,0) 60%, rgba(255,255,255,0) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(234,248,252,0) 40%, rgba(79,129,189, 1) 50%, rgba(234,248,252,0) 60%, rgba(255,255,255,0) 100%);
@@ -322,11 +323,13 @@ tr:hover .td1, tr:hover .td2 {
 }
 
 .animetitle {
-	height: 0;
+	display: inline-block;
+	height: 24px;
 	color: #4f81bd !important;
-	transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
+	transition: height .5s ease-in-out;
+	-webkit-transition: height .5s ease-in-out;
 	z-index: 1;
+	white-space: no-wrap;
 }
 
 tr:hover .animetitle:before {
@@ -364,8 +367,6 @@ tr:hover .animetitle {
 }
 
 tr:hover .animetitle span:after { position: relative !important; display: table-cell !important; height: 12px !important; }
-
-.animetitle span { display: block !important; }
 
 tr:hover .animetitle span { 
 	position: relative;
