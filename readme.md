@@ -8,9 +8,3 @@ Hahaido is a list designer on MyAnimeList. This repository's purpose is to preve
 - https://www.deviantart.com/hahaido
 - https://twitter.com/Xaxaido
 - https://hlcss.ml ( seems to be broken, see https://web.archive.org/web/20170816151919/http://hlcss.ml/ )
-
-## Layouts that are yet to be repaired
-
-Sadly, I have been unable to find all the assets required to repair these layouts.
-
-- [Gate](https://myanimelist.net/forum/?topicid=1465938)
