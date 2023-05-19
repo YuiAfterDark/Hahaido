@@ -1,0 +1,483 @@
+/*
+Boku wa Tomodachi ga Sukunai by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Codystar&family=Poiret+One&display=swap";
+
+/* Tab Content */
+
+/* # */
+td[class^='td']:first-child { visibility: hidden; width: 34px !important; }
+
+/* Score */
+td[class^='td'][width="45"] { 
+	position: absolute !important;
+	display: inline-block;
+ 	margin-left: -546px; 
+	width: 24px !important;
+	text-align: center !important; 
+	background-color: rgba(238, 237, 193, 1);
+	border-radius: 10em;
+}
+
+td[class^='td']:nth-child(2) { width: 520px; }
+
+td[class^='td']:nth-child(4)  { text-align: right !important; }
+
+td[class^='td'][width="50"] { width: 70px !important; }
+
+tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a, .table_headerLink:hover { color: #3fa6e1; text-shadow: 0 0 0.2em #3fa6e1, 0 0 0.2em #3fa6e1; }
+tr:hover td[class^='td'][width="45"], tr:hover td[class^='td'][width="45"] a { color: #436e5d; text-shadow: none; }
+
+#list_surround table tbody:hover td[class^='td']:nth-of-type(3) {  color: #436e5d !important; text-shadow: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle + small { text-shadow: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle span:after { visibility: hidden; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) div small { visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover div small a:first-of-type {
+	visibility: visible;
+	position: absolute !important;
+	display: block !important;
+	font-family: 'Poiret One', cursive !important;
+	color: #d6000a !important;
+	line-height: 25px !important;
+	margin-left: -28px !important;
+	text-shadow: none;
+}
+
+#list_surround table:nth-of-type(n+4) div small a:hover {
+	text-shadow: 0 0 0.2em #d6000a !important;
+}
+
+#list_surround table:nth-of-type(n+4) div small a:last-of-type { display: none !important; }
+
+/* SORT */
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+	display: none;
+}
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: absolute; 
+	margin: -220px 0 0 690px;
+	width: 100px;
+	padding: 4px 10px 4px 4px;
+	background-color: rgba(255, 255, 255, 1);
+	border: solid 4px #eeedc1;
+}
+
+.table_header { 
+	position: relative;
+	display: block;
+	width: 100px;
+	text-align: left;
+}
+
+.table_headerLink {
+	font-family: 'Codystar', cursive;
+	color: #436e5d;
+	font-size: 16px;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+.table_header span { display: none; }
+
+.table_headerLink strong { font-weight: normal !important; }
+
+/* Top Menu */
+
+#mal\_control_strip:before {
+	opacity: 1;
+	position: absolute;
+	display: block;
+	content: 'Menu';
+	margin-top: 192px;
+	left: 40px;
+	padding: 4px;
+	color: #436e5d;
+	background-color: rgba(238, 237, 193, 1);
+	border-radius: 0 0 6px 6px;
+	transition: opacity .5s linear .5s, margin-top 0s linear .5s;
+	-webkit-transition: opacity .5s linear .5s, margin-top 0s linear .5s;
+	z-index: -1;
+} 
+
+#mal\_control_strip:hover:before { 
+	opacity: 0; 
+	margin-top: 0;		
+	transition: opacity .5s linear, margin-top 0s linear .5s;
+	-webkit-transition: opacity .5s linear, margin-top 0s linear .5s;
+}
+
+#mal\_control_strip:after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 64px;
+	width: 128px;
+	background: url(https://i.imgur.com/yuKEnkg.png) /* logo.png */ no-repeat;
+} 
+
+#mal\_control_strip {
+	position: fixed !important;
+	display: block !important;
+	left: 0;
+	top: 0;
+	margin-top: -192px !important;
+	height: 192px !important;
+	width: 128px !important;
+	background: rgba(238, 237, 193, 1) !important;
+	border-radius: 0 0 8px;
+	transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+}
+
+#mal\_control_strip:hover { margin-top: 0 !important; }
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover, #mal\_cs_otherlinks div a:hover:after { text-decoration: underline !important; }
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a, #mal\_cs_otherlinks div a:after { 
+	font-family: 'Poiret One', cursive !important;       
+	color: #d6000a !important;
+	font-size: 16px !important;
+}
+
+#mal\_control_strip table, #mal\_control_strip td  {
+	display: block !important;
+	width: 128px !important; 
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong,  #searchBox,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"],
+#mal\_cs_otherlinks div a[href*="register"], #mal\_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="list/"] { display: none !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; }
+
+/* Username, Logout */
+#mal\_cs_listinfo div {  
+	margin: 0 !important;
+	width: 100px !important; 
+} 
+
+#mal\_cs_listinfo div a {
+	position: relative !important; 
+	display: block !important; 
+	top: 68px !important;
+	line-height: 18px !important;
+}
+
+/* Add to List, Home, Anime List, Manga List */
+ #mal\_cs_links div { 
+	margin: 0 !important;
+	width: 100px !important;  
+}
+
+ #mal\_cs_links div a {
+	position: relative !important; 
+	display: inline-block !important; 
+	top: 68px !important;
+	line-height: 18px !important;
+}
+
+#mal\_cs_links div a[href*="addtolist"] { font-weight: 600 !important; }
+
+/* History, Forum, Export */
+#mal\_cs_otherlinks div a[href*="history"], #mal\_cs_otherlinks div a[href$="/forum/"], #mal\_cs_otherlinks div a[href*="export"], #mal\_cs_otherlinks div a[href*="mangalist"] { display: none !important; } 
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"]:before {
+	pointer-events: none;
+	visibility: visible;
+	position: absolute;
+	display: block;
+	content: ''; 
+	left: 0;
+	top: 0;
+	width: 128px;
+	height: 128px;
+	background: url(https://i.imgur.com/3zH9Iki.png) /* logo2.png */ no-repeat;
+}
+
+#mal\_cs_otherlinks div a[href*="login"] {
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 64px;
+	font-size: 0 !important;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:after {
+	visibility: visible;
+	position: absolute;
+	display: block;
+	content: 'Login'; 
+	margin: 48px 0 0 25px;
+	font-size: 20px !important;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear
+}
+
+#mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_links div a[href$="/"]:before, 
+#mal\_cs_links div:last-of-type a:first-of-type:before, #mal\_cs_links div:last-of-type a:last-of-type:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin: 5px 0 0 -12px;
+	height: 8px;
+	width: 8px;
+	background-color: rgba(67, 110, 93, 1);
+	border-radius: 10px;
+}
+
+/* Category Menu */
+
+#list_surround table:first-of-type {
+	position: absolute !important;
+	margin-top: -18px;
+	padding-bottom: 11px;
+	background-color: rgb(255, 255, 255);
+}
+
+.status_not_selected, .status_selected { position: relative !important; width: 115px !important; padding-top: 4px; border-radius: 0 0 8px 8px; }
+
+.status_not_selected a, .status_selected a {
+	display: inline-block;
+	font-size: 0;
+}
+
+.status_not_selected a:hover { box-shadow: inset 0 -4px 0 #436e5d; }
+
+.status_not_selected a:after, .status_selected a:after {
+	display: inline-block;
+	color: #eeedc1;
+	line-height: 30px;
+	font-size: 20px;
+	padding-bottom: 4px;
+	font-weight: 600;
+	text-align: center; 
+}
+
+.status_selected a:after {
+	font-weight: 400;
+	color: #436e5d !important;
+}
+
+.status_selected { background-color: rgba(238, 237, 193, 1); }
+
+/* Currently watching */
+.status_not_selected:first-child, .status_selected:first-child { border-radius: 0 0 8px 0; }
+.status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after { content: 'Watching'; }
+
+/* Completed */
+.status_not_selected a[href*="status=2"]:after, .status_selected a[href*="status=2"]:after { content: 'Completed'; }
+  
+/* On hold */
+.status_not_selected  a[href*="status=3"]:after, .status_selected a[href*="status=3"]:after { content: 'On Hold'; }
+
+/* Dropped */
+.status_not_selected a[href*="status=4"]:after, .status_selected a[href*="status=4"]:after { content: 'Dropped'; }
+  
+/* Planned */
+.status_not_selected a[href*="status=6"]:after, .status_selected a[href*="status=6"]:after { content: 'Planned'; }
+  
+/* All */
+.status_not_selected:last-child, .status_selected:last-child { border-radius: 0 0 0 8px; }
+.status_not_selected a[href*="status=7"]:after, .status_selected a[href*="status=7"]:after { content: 'All';  }
+
+/* Main Style */
+
+/* Custom cursor */
+* { cursor: url(https://i.imgur.com/6kpfmHf.png) /* cursor.png */, auto; }
+
+/* ~Add~ form */
+#fancybox-wrap { position: fixed !important; }
+
+/* Disabling default form outer area effects */
+div#fancy-bg-n, div#fancy-bg-ne, div#fancy-bg-e, div#fancy-bg-se, div#fancy-bg-s, div#fancy-bg-sw, div#fancy-bg-w, div#fancy-bg-nw { background: none !important; }
+
+/* Custom form outer area effects */
+#fancybox-outer { 	
+	box-shadow: 0 0 20px rgba(220, 209, 207, 1);
+}
+
+/* Form background color*/
+#fancybox-frame { background-color: rgba(238, 237, 193, 1) !important; }
+
+/* Overlay effect when form is showed */
+#fancybox-overlay { 
+	opacity: .5 !important;
+	background-color: rgba(220, 209, 207, 1) !important;  
+}
+
+/* ~Close~ form button */
+#fancybox-close { 
+	height: 48px !important;
+	width: 48px !important;
+	background: url(https://i.imgur.com/TzWyoer.png) /* close.png */ no-repeat !important;
+}
+/* ~Add~ form */
+
+body {
+	font-family: 'Poiret One', cursive;
+        font-size: 12px;
+	color: #436e5d;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+a { text-decoration: none; }
+
+#list_surround {
+	position: relative;
+	left: 40%;
+	width: 690px;
+	margin-top: 128px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: -4px;
+	top: -4px;
+	width: 690px;
+	height: 100%;
+	border: solid 4px #eeedc1;
+	box-shadow: 0 0 20px #dcd1cf;
+	z-index: 1;
+}
+
+.animetitle span { 
+	display: block;
+	min-width: 0; 
+	max-width: 464px;
+	padding: 2px 0;
+	font-size: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.animetitle + small {
+	position: absolute;
+	display: inline-block;
+	right: 694px;
+	margin-top: -4px;
+	padding: 4px;
+	font-family: 'Poiret One', cursive;
+	color: #d6000a !important;
+	font-size: 12px !important;
+	background-color: rgba(238, 237, 193, 1);
+}
+
+.td1, .td2 {
+	line-height: 24px !important;
+	font-family: 'Codystar', cursive;
+	font-size: 16px;
+        background-color: rgba(255, 255, 255, 1); 	
+}
+
+.td1 a, .td2 a { color: #436e5d; }
+
+/* HEADERS */
+.header_title {
+	display: block;
+	height: 220px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 690px;
+	height: 200px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/oIiM8jZ.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -200px; }
+
+.header_onhold span { background-position: center -400px; }
+
+.header_dropped span { background-position: center -600px; }
+
+.header_ptw span { background-position: center -800px; }
+
+.category_totals { 
+	padding: 4px 6px 8px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #eeedc1;
+	font-weight: 900;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 1); 
+} 
+
+
+#grand_totals { display: none; }
+
+/* BACKGROUNDS */
+#copyright:before {
+	pointer-events: none;
+	position: fixed;
+	display: inline-block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	z-index: -2;
+}
+
+.header_cw ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/j7kzcaxljg7.jpg); }
+.header_completed ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/l7lxcpxbql7.jpg); }
+.header_onhold ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/pyq9c3vqw64.jpg); }
+.header_dropped ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/84jdcv6pl94.jpg); }
+.header_ptw ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/myd5cem28r4.jpg); }
+#grand_totals ~ #copyright:before { background-image: url(https://cdn.imgchest.com/files/my2pck5bgz7.jpg); }
+
+#copyright {
+	position: relative !important;
+	margin-top: -20px !important;
+	padding: 20px 2px 2px;
+	font-size: 14px;
+	color: #436e5d;
+	text-align: center !important;
+	background: linear-gradient(bottom, rgba(238, 237, 193, 1) 35%, rgba(255, 255, 255, 0) 90%);
+	background: -moz-linear-gradient(bottom, rgba(238, 237, 193, 1) 35%, rgba(255, 255, 255, 0) 90%);
+	background: -webkit-linear-gradient(bottom, rgba(238, 237, 193, 1) 35%, rgba(255, 255, 255, 0) 90%);
+}
+
+#copyright a { color: #d6000a; }
+
+#copyright a:hover { text-shadow: #d6000a 0.1em 0.1em 0.2em; }
+
+#copyright:after { display: block;  content: 'List designed by Hahaido.'; }
+
+/*@-moz-document url-prefix() {
+	.td1, .td2 { line-height: 14px; padding: 4px 0; }
+}*/
