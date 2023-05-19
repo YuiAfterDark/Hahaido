@@ -1,5 +1,7 @@
 /*
 Kimi ni Todoke by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-18
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -65,11 +67,9 @@ Kimi ni Todoke by Hahaido
 	letter-spacing: 0px !important;
 }
 
-#list_surround table:nth-of-type(1n+4) tbody:hover small a[href*="editlist"]:hover:before,
-#list_surround table:nth-of-type(1n+4) tbody:hover small a[href*="editmanga"]:hover:before  { content: 'Edit' !important; }
+#list_surround table:nth-of-type(1n+4) tbody:hover small a[href$="edit?hideLayout"]:hover:before  { content: 'Edit' !important; }
 
-#list_surround table:nth-of-type(1n+4) tbody:hover small a[href$="add"]:hover:before,
-#list_surround table:nth-of-type(1n+4) tbody:hover small a[href*="addmanga"]:hover:before { content: 'Add' !important; }
+#list_surround table:nth-of-type(1n+4) tbody:hover small a[href*="/add?"]:hover:before { content: 'Add' !important; }
 
 /* SORT */
 #list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
