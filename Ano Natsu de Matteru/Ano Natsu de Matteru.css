@@ -1,0 +1,503 @@
+/*
+Ano Natsu de Matteru by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Rufina&family=Schoolbell&display=swap";
+
+/* Tab Content */
+
+#list_surround table { display: inline-block; }
+
+#list_surround table:nth-of-type(n+4) {
+	position: relative;
+	margin-left: 0; 
+	margin-top: -20px;
+	width: 282px !important;
+	height: 300px !important; 
+}
+
+#list_surround table tbody tr, #list_surround table:nth-of-type(n+4) td { position: absolute !important; display: block; }
+
+#list_surround table:nth-of-type(n+4) td { width: 256px; background-color: rgba(0, 0, 0, 1); }
+
+#list_surround table:nth-of-type(n+4) tbody:hover td[class^='td']:nth-of-type(4) { visibility: visible; } 
+
+#list_surround table:nth-of-type(n+4) tbody:hover td[class^='td']:nth-of-type(5) { visibility: visible; width: 172px; }
+
+/* EDIT */
+td[class^='td']:nth-of-type(2) small { position: absolute !important; visibility: hidden; }
+
+td[class^='td']:nth-of-type(2) small a:last-of-type { display: none !important; }
+
+td[class^='td']:nth-of-type(2):hover small a:first-of-type {
+	visibility: visible;
+	position: absolute !important;
+	display: block !important;
+	content: none !important;
+	color: transparent !important;
+	width: 24px;
+	height: 24px;
+	margin-left: 0 !important;
+	margin-top: -4px !important;
+	padding: 4px;
+	background-color: rgba(0, 0, 0, 1);
+	background-image: url(https://i.imgur.com/21Q0n0Y.png) /* edit.png */ !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	letter-spacing: -5px !important;
+}
+
+/* SORT */
+.table_header span { display: none; }
+
+#list_surround table:nth-of-type(3):before, #list_surround table:nth-of-type(3) a { 
+	font-family: 'Rufina', serif; 
+	color: #a5a5a5; 
+	font-size: 16px;
+}
+
+#list_surround table:nth-of-type(3) a, .table_headerLink strong { font-weight: normal; } 
+
+#list_surround table:nth-of-type(3) a:hover { color: #FFFFFF; }
+
+#list_surround table:nth-of-type(3):before {
+	position: absolute;
+	content: 'Arrange by';
+	margin-top: -32px;
+	width: 102px;
+	color: #a5a5a5;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+#list_surround table:nth-of-type(3):after {
+	position: absolute;
+	content: '';
+	left: 0;
+	margin-top: -5px;
+	width: 32px;
+	border-top: solid 2px #a5a5a5;
+}
+
+#list_surround table:nth-of-type(3) { 
+	position: fixed !important; 
+	display: block !important; 
+	left: 0;
+	top: 50%;
+	margin-top: -34px; 
+	width: 102px !important;
+	height: 88px;
+	padding-top: 4px;
+	background-color: rgba(0, 0, 0, 1);
+	z-index: 1;
+}
+
+#list_surround table:nth-of-type(3) td {
+	position: relative !important;
+    	display: block !important;
+    	width: 102px !important;
+	text-align: left;
+}
+
+#list_surround table:nth-of-type(3) a:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: 94px;
+	margin-top: 8px;
+	border: solid 4px #a5a5a5;
+}
+
+/* Top Menu */
+
+#mal\_control_strip:before, #mal\_cs_otherlinks div a[href*="faq"]:after, #mal\_cs_links div a[href*="mangalist"]:after {
+	position: absolute;
+	content: '';
+	right: 0;
+	width: 32px;
+	border-top: solid 2px #a5a5a5;
+}
+
+#mal\_control_strip:before { margin-top: 0; }
+
+#mal\_cs_otherlinks div a[href*="faq"]:after { margin-top: 32px; }
+
+#mal\_cs_links div a[href*="mangalist"]:after { margin-top: 28px; }
+
+#mal\_control_strip {
+	position: fixed !important;
+	display: block;
+	left: 100% !important;
+	margin-left: -104px !important;
+	top: 50% !important;
+	margin-top: -65px !important;
+	height: 130px !important;
+	width: 108px !important;
+	background: rgba(0, 0, 0, 1) !important;
+	z-index: 1;
+}
+
+#mal\_control_strip a { text-decoration: none !important;  margin-left: -13px !important; width: 100px; text-align: right; }
+
+#mal\_control_strip a:hover { color: #FFFFFF !important; }
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a { 
+	font-family: 'Rufina', serif !important;       
+	color: #a5a5a5 !important;
+	font-size: 16px !important;
+}
+
+#mal\_control_strip table {
+	display: block !important;
+	width: 108px !important; 
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 108px !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong,  #search,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none !important; }
+
+#mal\_cs_powered  { width: 0 !important; height: 0 !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+/* Username, Logout */
+#mal\_cs_listinfo div {  
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100px !important; 
+} 
+
+#mal\_cs_listinfo div a {
+	position: relative !important; 
+	display: block !important; 
+	top: 9px !important;
+	line-height: 18px !important;
+}
+
+#mal\_cs_listinfo strong  a {  visibility: hidden; display: block; letter-spacing: -12px; font-weight: normal !important; }
+
+#mal\_cs_listinfo strong a:after { visibility: visible; content: 'My Profile'; letter-spacing: 0 !important; }
+
+/* Add to List, Home, Anime List, Manga List */
+#mal\_cs_links { margin-top: 6px; }
+
+#mal\_cs_links div { 
+	margin: 0 !important;
+	width: 100px !important;
+}
+
+ #mal\_cs_links div a {
+	position: relative !important; 
+	display: inline-block !important; 
+	top: 0 !important;
+	line-height: 18px !important;
+}
+
+/* History, Forum, Export */
+#mal\_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href$="/forum/"], #mal\_cs_otherlinks div a[href*="export"], #mal\_cs_otherlinks div a[href*="mangalist"]   { display: none !important; } 
+
+/* Log in, Create list, Learn more */
+#mal\_cs_otherlinks { margin-top: -26px; }
+
+#mal\_cs_otherlinks div {  
+	margin: 0 !important;
+	width: 100px !important; 
+} 
+
+#mal\_cs_otherlinks div a { 
+	position: relative !important; 
+	display: block !important; 
+	top: 0 !important;
+	line-height: 18px !important;
+}
+
+#mal\_cs_otherlinks div a[href*="register"] {  visibility: hidden; display: block; letter-spacing: -12px; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { visibility: visible; content: 'Create List'; letter-spacing: 0 !important; }
+
+#mal\_cs_listinfo div a:before, #mal\_cs_links a:before,  #mal\_cs_otherlinks div a:before {
+	visibility: visible;
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: -2px;
+	margin-top: 6px;
+	border: solid 4px #a5a5a5;
+}
+
+/* Category Menu */
+
+#list_surround table:first-of-type:after {
+	position: fixed;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://i.imgur.com/cdiMQAu.png) /* camera.png */;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	z-index: -1;
+}
+
+#list_surround table:first-of-type {
+	position: fixed !important;
+	display: block;
+	width: 640px;
+	top: 0;
+	right: 0;
+}
+
+/* BACKGROUNDS */
+.status_selected:before {
+	pointer-events: none;
+	position: fixed;
+	display: inline-block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	z-index: -2;
+}
+
+.status_not_selected, .status_selected { 
+	width: auto !important; 
+	white-space: nowrap; 
+}
+
+.status_not_selected a { color: #a5a5a5; }
+
+.status_not_selected a, .status_selected a {
+	font-family: 'Rufina', serif;
+	padding: 0 6px;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+	border-left: solid 2px #a5a5a5;
+}
+
+
+.status_not_selected a:hover, .status_selected a { color: #FFFFFF !important; }
+
+/* Currently watching */
+.status_selected  a[href*="status=1"], .status_not_selected  a[href*="status=1"] { border-left: none; }
+
+/*All */
+.status_selected  a[href*="status=7"], .status_not_selected  a[href*="status=7"] { display: none; }
+
+/* Main Style */
+
+/* # */
+td[class^='td']:first-of-type { 
+	margin-left: -110px;  
+	margin-top: 22px;
+	width: 40px !important;
+}
+
+/* Animetitle*/
+td[class^='td']:nth-of-type(2) {
+	margin-left: -220px;  
+	margin-top: 276px;
+	width: 263px !important;
+}
+
+/* Score */
+td[class^='td']:nth-of-type(3):before { content: 'score: '; font-size: 12px; line-height: 20px; } 
+
+td[class^='td']:nth-of-type(3) {
+	visibility: visible !important;
+	right: 0;  
+	margin-top: 56px !important;   
+	width: 48px !important;
+	text-align: right;
+	z-index: 20 !important;
+}
+
+/* Type */
+td[class^='td']:nth-of-type(4)  {
+	visibility: hidden;
+	margin-left: -174px !important;  
+	margin-top: 56px !important; 
+	width: 172px !important;
+	text-align: left;
+}
+
+/* Episodes */
+td[class^='td']:nth-of-type(5):before { content: 'Episodes: '; } 
+
+td[class^='td']:nth-of-type(5) {
+	visibility: hidden;
+	margin-left: -178px !important;  
+	top: 215px !important;   
+	width: 180px !important; 
+	text-align: center;
+}
+
+#list_surround br { display:none; }
+
+* { cursor: url(https://i.imgur.com/XABfiLi.png) /* cursor.png */, auto; }
+
+/* Covers settings */
+.hide {
+	visibility: visible;
+	position: relative;
+	display: block !important;
+	float: left;
+	width: 180px !important;
+	height: 256px !important;
+	margin-top: 0;
+	margin-left: 0;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+	z-index: 10;
+}
+
+/* Covers black tint*/
+.hide:before {
+	position: absolute;
+	content: '';
+	width: 180px;
+ 	height: 256px;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+/* Covers film frame*/
+.hide:after {
+	position: absolute;
+	content: '';
+	width: 263px;
+ 	height: 280px;
+	margin-left: -40px;
+	margin-top: -12px;
+	background: url(https://i.imgur.com/6NIk4Dv.png) /* frame.png */ no-repeat;
+}
+
+body {
+	background-color: rgb(0, 0,0 );
+        color: #FFFFFF;
+        font-size: 12px;
+	font-family: 'Schoolbell', cursive;
+}
+
+a { color: #FFFFFF; text-decoration: none; }
+
+#list_surround:before  {
+	position: relative;
+	display: block !important;
+	content: '';
+	top: 0;
+	left: -140px;
+	width: 686px;
+	height: 384px;
+	background: url(https://i.imgur.com/Ikz3ZXm.png) /* TopBarAngeled */ no-repeat;
+	z-index: 1;
+}
+
+#list_surround:after {
+	position: fixed;
+	display: block !important;
+	top: 0;
+	left: 0;
+	content: ' I * Chi * Ka';
+}
+
+#list_surround {
+	position: absolute !important;
+	left: 20%;
+	width: 500px;
+}
+
+.animetitle { 
+	display: block; 
+	width: 263px;
+	font-size: 20px;
+	min-width: 0px; 
+	max-width: 263px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2 { 
+	line-height: 24px !important;
+	font-size: 16px;
+	z-index: 15;
+}
+
+.header_title, .header_cw, .header_completed , .header_onhold, .header_dropped, .header_ptw { display: none; }
+
+.category_totals { 
+	position: relative;
+	display: block;
+	margin-left: -40px;
+	margin-top: 18px;
+	width: 263px !important;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	padding-bottom: 128px;
+	background-color: rgba(0, 0, 0, 1) !important;
+	border-radius: 0 0 50em 0 / 0 0 25em 0 !important;
+}
+
+/* CURRENTLY WATCHING BACKGROUND */
+.status_selected:first-child:before {
+	background-image: url(https://i.imgur.com/83QGGXS.jpg);
+}
+
+/* COMPLETED BACKGROUND */
+.status_selected:nth-child(2):before {
+	background-image: url(https://i.imgur.com/SsFjVds.jpg);
+}
+
+/* ON-HOLD BACKGROUND */
+.status_selected:nth-child(3):before {
+	background-image: url(https://i.imgur.com/cGop0cE.jpg);
+}
+
+/* DROPPED BACKGROUND */
+.status_selected:nth-child(4):before {
+	background-image: url(https://i.imgur.com/whIUXRt.jpg);
+}
+
+/* PLANNED BACKGROUND */
+.status_selected:nth-child(5):before {
+	background-image: url(https://i.imgur.com/P1NKFza.jpg);
+}
+
+/* ALL BACKGROUND */
+.status_selected:last-child:before {
+	background-image: url(https://i.imgur.com/oXaNWqZ.jpg);
+}
+
+#copyright {
+	position: fixed !important;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Rufina', serif;
+	color: #a5a5a5;
+	font-size: 12px;
+	text-align: center !important;
+	padding: 2px;
+	background-color: rgb(0, 0, 0);
+	z-index: 25;
+}
+
+#copyright:after { display: block;  content: 'Directed by Hahaido.'; }
