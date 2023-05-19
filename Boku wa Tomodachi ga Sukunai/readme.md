@@ -10,6 +10,7 @@ Built for classic lists.
 
 **Columns:**
 
+- Numbers
 - Score
 - Type
 - Episodes
