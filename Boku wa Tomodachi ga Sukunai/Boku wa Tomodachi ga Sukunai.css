@@ -11,12 +11,11 @@ Boku wa Tomodachi ga Sukunai by Hahaido
 td[class^='td']:first-child { visibility: hidden; width: 34px !important; }
 
 /* Score */
-td[class^='td'][width="45"] { 
-	position: absolute !important;
-	display: inline-block;
- 	margin-left: -546px; 
+td[class^='td'][width="45"] {
+	position: absolute;
+	left: 4px;
 	width: 24px !important;
-	text-align: center !important; 
+	text-align: center !important;
 	background-color: rgba(238, 237, 193, 1);
 	border-radius: 10em;
 }
