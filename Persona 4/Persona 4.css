@@ -1,5 +1,7 @@
 /*
 Persona 4 by Hahaido
+Modified by Valerio Lyndon
+Last updated: 2023-May-19
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -274,6 +276,7 @@ Persona 4 by Hahaido
 }
 
 .status_not_selected a[href*="status=7"]:after, .status_selected a[href*="status=7"]:after {
+	content: "";
 	margin: 16px 0 0 12px;
 	width: 12px;
 	height: 12px;
