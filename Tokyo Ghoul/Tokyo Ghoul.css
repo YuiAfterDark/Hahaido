@@ -1,0 +1,506 @@
+/*
+Tokyo Ghoul by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Offside&display=swap";
+
+/* Top Menu */
+
+@keyframes Swing {
+	0% { transform: rotate(0deg); margin-left: 0; }
+	20% { transform: rotate(-5deg); margin-left: 10px; }
+	60% { transform: rotate(5deg); margin-left: -10px; }
+	100% { transform: rotate(0deg); margin-left: 0; }
+}
+   
+@-webkit-keyframes Swing {
+	0% { -webkit-transform: rotate(0deg); margin-left: 0; }
+	20% { -webkit-transform: rotate(-5deg); margin-left: 10px; }
+	60% { -webkit-transform: rotate(5deg); margin-left: -10px; }
+	100% { -webkit-transform: rotate(0deg); margin-left: 0; }
+}
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 0;
+	background: none !important;
+	z-index: 1;
+}
+
+#mal\_control_strip table {
+	display: block !important;
+	width: 64px !important; 
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 64px !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong, #search,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal\_cs_otherlinks div a[href*="register"], #mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #mal\_cs_links div:last-of-type a:first-of-type, 
+#mal\_cs_links div a[href$="/"] , #mal\_cs_otherlinks div a[href*="faq"] { display: none !important; }
+
+#mal\_cs_listinfo {
+	position: fixed !important;
+	margin-left: -474px !important; 
+	bottom: -9px; 
+	z-index: 1;
+}
+
+#mal\_cs_listinfo div { display: inline !important;  margin: 0 !important; } 
+
+#mal\_cs_links { 
+	position: absolute !important; 
+	margin-left: -420px !important; 
+	bottom: -9px !important;
+	z-index: 2;
+}
+
+#mal\_cs_links div { display: inline !important; }
+
+#mal\_cs_otherlinks div a[href*="login"], #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: fixed !important;
+	display: block;
+	top: -4px;
+	width: 71px;
+	height: 201px;
+	font-size: 0 !important;
+	background-image: url(https://i.imgur.com/VQkA0F0.png) /* top_bg.png */; 
+	background-repeat: no-repeat;
+}
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { 
+	left: 5px;
+	background-position: -142px 0;
+}
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { left: 80px; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { 
+	left: 155px;
+	background-position: -71px 0;
+}
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { 
+	left: 230px;
+	background-position: -284px 0;
+}
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] {
+	left: 5px;
+	background-position: -213px 0;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:hover, #mal\_cs_listinfo div:last-of-type a:hover, #mal\_cs_listinfo div:first-of-type a:hover, 
+#mal_cs_links div a[href*="addtolist"]:hover,  #mal\_cs_links div:last-of-type a:last-of-type:hover {
+	animation: Swing ease-in-out 1s;
+        -webkit-animation: Swing ease-in-out 1s;
+}
+
+/* Tab Content */
+
+td[class^='td'][width="70"] { width: 80px !important; }
+
+/* SORT */
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: absolute;
+	display: block;
+	width: 50px !important; 
+	margin-left: 60px;
+	margin-top: -28px;
+	z-index: 1;
+}
+
+.table_header:first-of-type { display: none !important; }
+
+.table_headerLink {
+	display: block;
+	margin-left: 42px;
+	width: 72px;
+	font-size: 0;
+	line-height: 24px;
+}
+
+@media only screen and (max-width: 1366px) {
+	.header_cw + table, .header_completed + table, .header_onhold + table,
+	.header_dropped + table, .header_ptw + table { margin-left: 44px; }
+	.table_headerLink {
+		margin-left: 28px;
+		margin-top: 8px;
+		width: 52px;
+		line-height: 18px;
+	}	
+}
+
+/* Category Menu */
+
+@keyframes PickUp {
+	0% { margin-left: 0; z-index: 1; }
+	50% { margin-left: 15px; z-index: 1; }
+	70% { z-index: 3; }
+	100% { margin-left: -1px; z-index: 3; }
+}
+   
+@-webkit-keyframes PickUp {
+	0% { margin-left: 0; z-index: 1; }
+	50% { margin-left: 15px; z-index: 1; }
+	70% { z-index: 3; }
+	100% { margin-left: -1px; z-index: 3; }
+}
+
+/* MENU BUTTONS */
+#list_surround > table:first-of-type:before, #list_surround > table:first-of-type:after {
+	pointer-events: none;
+	position: fixed;
+	display: block;
+	content: '';
+	margin-top: 215px;
+	height: 450px;
+}
+
+#list_surround > table:first-of-type:before {
+	width: 540px;
+	background-image: url(https://i.imgur.com/FM5h0IY.png) /* middle.png */;
+	background-repeat: repeat;
+	background-position: left center;
+	background-clip: content-box;
+	z-index: -1; 
+}
+
+#list_surround > table:first-of-type:after {
+	margin-left: -12px;
+	width: 571px;
+	background-image: url(https://i.imgur.com/hJ7OwwO.png) /* frame_bg.png */; 
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+.status_selected, .status_not_selected { position: fixed; left: calc(38% + 532px); bottom: 15px; }
+
+.status_selected a, .status_not_selected a {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 60px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/w6PSNvc.png) /* category_bg.png */;
+}
+
+.status_not_selected:hover {
+	animation: PickUp linear 1s;
+        -webkit-animation: PickUp linear 1s;
+}
+
+.status_selected, .status_not_selected:hover {
+	margin-left: -1px; 
+	z-index: 3;
+}
+
+.status_not_selected a[href*="status=1"] {
+	bottom: 15px;
+	background-position: 0 0; 
+}
+ 
+.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover {
+	bottom: 15px;
+	background-position: -200px 0; 
+}
+
+.status_not_selected a[href*="status=2"] {
+	bottom: 75px;
+	background-position: 0 -60px;
+}
+.status_selected a[href*="status=2"], .status_not_selected a[href*="status=2"]:hover {
+	bottom: 75px;
+	background-position: -200px -60px;
+}
+
+.status_not_selected a[href*="status=3"] {
+	bottom: 135px;
+	background-position: 0 -120px;
+}
+.status_selected a[href*="status=3"], .status_not_selected a[href*="status=3"]:hover {
+	bottom: 135px;
+	background-position: -200px -120px;
+}
+
+.status_not_selected a[href*="status=4"] {
+	bottom: 195px;
+	background-position: 0 -180px;
+}
+.status_selected a[href*="status=4"], .status_not_selected a[href*="status=4"]:hover {
+	bottom: 195px;
+	background-position: -200px -180px;
+}
+
+.status_not_selected a[href*="status=6"] {
+	bottom: 255px;
+	background-position: 0 -240px;
+}
+.status_selected a[href*="status=6"], .status_not_selected a[href*="status=6"]:hover {
+	bottom: 255px;
+	background-position: -200px -240px;
+}
+
+.status_not_selected a[href*="status=7"] {
+	bottom: 315px;
+	background-position: 0 -300px;
+}
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"]:hover {
+	bottom: 315px;
+	background-position: -200px -300px;
+}
+
+/* Main Style */
+
+/* LIST SETTINGS */
+
+/* Custom cursor */
+a { cursor: hand !important; }
+
+a { text-decoration: none !important; }
+
+body:before {
+	position: fixed;
+	display: block;
+	content: '';
+	left: calc(38% + 200px);
+	top: 0;
+	width: 750px;
+	height: 1050px;
+	background-image: url(https://i.imgur.com/WdK8Mh6.png) /* ken.png */; 
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+
+body {
+	font-family: 'Offside';
+	font-size: 14px;
+	letter-spacing: .5px;
+	background-image: url(https://i.imgur.com/R5E1xs9.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#list_surround:before, #list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	height: 100%;
+}
+
+#list_surround:before {
+	width: 540px;
+	background-image: url(https://i.imgur.com/FM5h0IY.png) /* middle.png */;
+	background-repeat: repeat;
+	background-position: left center;
+	background-clip: content-box;
+	z-index: -1; 
+}
+
+#list_surround:after {
+	margin-left: -12px;
+	top: 0;
+	width: 571px;
+	background-image: url(https://i.imgur.com/hJ7OwwO.png) /* frame_bg.png */; 
+	background-repeat: repeat-y;
+	z-index: 2;
+}
+
+#list_surround {
+	position: absolute;
+	left: calc(38% - 12px);
+	margin-top: 335px;
+	width: 540px;
+}
+
+.td1, .td2 { 
+	padding: 6px 0 3px; 
+	line-height: 16px;
+	vertical-align: top;
+}
+
+.animetitle, .animetitle + small { display: table-cell; }
+
+.animetitle span { 
+	display: inline-block; 
+	padding-left: 8px; 
+	max-width: 330px;
+}
+
+.animetitle + small:before { content: ' '; white-space: pre-wrap; }
+
+.animetitle + small {
+	visibility: visible !important;
+	font-size: 11px;
+	text-transform: lowercase;
+	letter-spacing: .5px;
+}
+
+#list_surround small { visibility: hidden; }
+
+#list_surround small a:first-of-type { 
+	visibility: hidden;
+	position: absolute;
+	margin-left: -2px;
+	font-size: 11px;
+}
+
+a[title="View More Information"] { display: none; }
+
+#list_surround tr:hover small, #list_surround tr:hover small a { visibility: visible; }
+
+/* LIST COLOR */
+
+tr:hover td[class^='td']:not(.borderRBL) { background: rgb(238, 154, 154); }
+tr:hover td[class^='td']:not(.borderRBL):last-child { 
+	background: linear-gradient(left , rgba(238, 154, 154, 1) 0%, rgba(238, 154, 154, 1) 25%, rgba(238, 154, 154, 0) 100%);
+	background: -moz-linear-gradient(left , rgba(238, 154, 154, 1) 0%, rgba(238, 154, 154, 1) 25%, rgba(238, 154, 154, 0) 100%);
+	background:  -webkit-gradient(
+						linear,
+						left bottom,
+						right bottom,
+						color-stop(0, rgba(238, 154, 154, 1)),
+						color-stop(0.25, rgba(238, 154, 154, 1)),
+						color-stop(1, rgba(255, 255, 255, 0)));
+}
+
+/* LIST FONT COLOR */
+
+.animetitle + small { color: #000000; text-shadow: none; }
+
+.td1, .td2, .td1 a, .td2 a, .category_totals, #grand_totals { color: #FFFFFF; text-shadow: 1px 1px 0em #8f0a0a; }
+
+/* HEADERS */
+.header_title { 
+	pointer-events: none;
+	display: inline-block;
+	height: 110px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	margin-top: -52px;
+	width: 540px;
+	height: 160px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/odTJMbg.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -160px; }
+
+.header_onhold span { background-position: center -320px; }
+
+.header_dropped span { background-position: center -480px; }
+
+.header_ptw span { background-position: center -640px; }
+
+#grand_totals, .category_totals {
+	text-align: center;
+	font-size: 10px;
+}
+
+.category_totals {
+	display: block;
+	margin-top: 4px;
+	padding: 6px 10px 40px 10px;
+	font-size: 10px;
+	border-top: 1px solid #FFFFFF;
+	box-shadow: 0 -2px  0 #8f0a0a;
+}
+
+#grand_totals { 
+	position: fixed;
+	display: block;
+	top: 0;
+	left: calc(38% - 20px);
+	width: 540px;
+	padding: 6px 10px 10px 10px;
+	background: rgb(0, 0, 0);
+	box-shadow: 0 0 16px 6px #000000, 0 0 16px 6px #000000, 0 0 16px 6px #000000;
+	z-index: 5;
+}
+
+#copyright, #copyright a {
+	color: #000000;
+	text-shadow: 0 0 .2em #670c0c;
+}
+
+#copyright {
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 69%;
+	width: 260px;
+	padding: 0 5px 5px 5px;
+	font-size: 12px;
+	text-align: left !important;
+}
+
+#copyright:after { content: 'List designed by Hahaido.'; }
+
+#copyright a { font-size: 14px; }
+
+#inlineContent:before, #inlineContent:after {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	background-repeat: no-repeat;
+}
+
+#inlineContent:before {
+	margin-left: -217px;
+	margin-top: -304px;
+	width: 571px;
+	height: 340px;
+	background-image: url(https://i.imgur.com/brtfJ89.png) /* logo_bg.png */; 
+}
+
+#inlineContent:after {
+	margin-left: 40px;
+	margin-top: -215px;
+	width: 534px;
+	height: 630px;
+	background-image: url(https://i.imgur.com/FpySUYt.png) /* mask.png */; 
+}
+
+#inlineContent { 
+	pointer-events: none;
+	position: absolute;
+	display: inline-block !important;
+	left: 38%;
+	top: 0;
+	z-index: 4;
+}
+
+@-moz-document url-prefix() {
+	#list_surround small a:last-of-type:before { line-height: 6px; }	
+	.td1, .td2 { line-height: 17px; padding: 4px 0; }
+}
