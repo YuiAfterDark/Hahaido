@@ -1,0 +1,606 @@
+/*
+Darker than Black by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap";
+
+/* Tab Content */
+
+tr:hover > .td1, tr:hover > .td2 { background-color: rgba(255, 255, 255, 1); }
+
+td[width="30"] { width: 40px !important; }
+
+td[width="50"] { width: 70px !important; }
+
+#list_surround table tbody:hover td[class^='td']:nth-of-type(4) {
+	background: linear-gradient(left , rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(left , rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 100%);
+	background:  -webkit-gradient(
+						linear,
+						left bottom,
+						right bottom,
+						color-stop(0, rgba(255, 255, 255, 1)),
+						color-stop(0.25, rgba(255, 255, 255, 1)),
+						color-stop(1, rgba(255, 255, 255, 0)));
+}
+
+tr:hover > .td1, tr:hover > .td2 { background-color: rgba(255, 255, 255, 1); }
+
+tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: #000000 !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle + small { background-color: transparent; }
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; letter-spacing: -12px; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	position: absolute !important;
+	display: block !important;
+	color: transparent !important;
+	width: 24px;
+	height: 24px;
+	margin-left: -8px !important;
+	margin-top: 0;
+	background: url(https://i.imgur.com/1zbRPU9.png) /* edit.png */ no-repeat !important;
+	text-shadow: none;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type { visibility: visible; }
+
+/* SORT */
+.table_header span { display: none; }
+
+#list_surround table:nth-of-type(3):before, #list_surround table:nth-of-type(3) a {
+	color: #FFFFFF;
+	font-size: 18px;
+} 
+
+#list_surround table:nth-of-type(3):before {
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: -38px;
+	top: 0;
+	width: 648px;
+	height: 90px;
+	background-image: url(https://i.imgur.com/MTKFFRQ.png) /* top.png */;
+	z-index: -1;
+}
+
+#list_surround table:nth-of-type(3) { 
+	position: fixed !important; 
+	display: block !important; 
+	top: 0;
+	margin-left: 16px;
+	width: 540px !important;
+	z-index: 101;
+}
+
+#list_surround table:nth-of-type(3) td {
+    	width: 135px !important;
+	text-align: center;
+	padding-top: 4px;
+	box-shadow: inset 0 1px 0 #5b0407, inset 1px 0 0 #5b0407, inset -1px 0 0 #5b0407;
+	-o-box-shadow: inset 0 1px 0 #5b0407, inset 1px 0 0 #5b0407, inset -1px 0 0 #5b0407;
+	-moz-box-shadow: inset 0 1px 0 #5b0407, inset 1px 0 0 #5b0407, inset -1px 0 0 #5b0407;
+	-webkit-box-shadow: inset 0 1px 0 #5b0407, inset 1px 0 0 #5b0407, inset -1px 0 0 #5b0407;
+}
+
+#list_surround table:nth-of-type(3) td:first-child,  #list_surround table:nth-of-type(3) td:nth-child(4) {
+	box-shadow: inset 0 1px 0 #5b0407;
+	-o-box-shadow: inset 0 1px 0 #5b0407;
+	-moz-box-shadow: inset 0 1px 0 #5b0407;
+	-webkit-box-shadow: inset 0 1px 0 #5b0407;
+}
+
+#list_surround table:nth-of-type(3) a, .table_headerLink strong { font-weight: normal; } 
+
+.table_header > .table_headerLink { width: 32px; }
+
+.table_headerLink strong { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
+
+.table_headerLink strong:before { 
+	visibility: visible;
+	content: 'Title';
+	letter-spacing: 0 !important;  
+}
+
+#list_surround table:nth-of-type(3) a:hover { color: #fa0107; }
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 0 !important;
+	background: none !important;
+	z-index: 100;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+/* Font settings */
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a {   
+	font-family: 'Cutive Mono', serif !important;
+	font-size: 12.5px !important;
+	letter-spacing: -.5px;
+	font-weight: 500 !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered, #mal\_cs_pic img,  #mal\_cs_otherlinks div strong,  #search,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span { display: none !important; }
+
+#mal\_cs_powered  { width: 0 !important; height: 0 !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; text-shadow: none !important }
+
+#mal\_cs_listinfo, #mal\_cs_links, #mal\_cs_otherlinks { 
+	position: fixed;
+	display: block !important;
+	right: 33px;
+	width: 0 !important;
+	height: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	border-width: 0 !important;
+	transition: width .5s ease-in-out, height .5s ease-in-out;
+	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out;
+} 
+
+/* Icons effects */
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before {
+	position: fixed;
+	display: block !important;
+	content: '';
+	left: 100% !important;
+	margin-left: -34px;
+	width: 32px !important;
+	height: 32px !important;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#mal\_cs_otherlinks:before {
+	border-bottom-width: 2px;
+	border-radius: 0 0 0 4px;
+}
+
+#mal\_cs_listinfo  { top: 0; }
+
+#mal\_cs_links { top: 32px; }
+
+#mal\_cs_otherlinks { top: 64px; }
+
+#mal\_cs_listinfo:hover, #mal\_cs_links:hover, #mal\_cs_otherlinks:hover { width: 172px !important; height: 172px !important; }
+
+/* Links surround */
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div {
+	opacity: 0;
+	margin: 0 !important;
+	line-height: 0 !important;
+	padding-top: 6px !important;
+	transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+
+#mal\_cs_listinfo:hover div, #mal\_cs_links:hover div, #mal\_cs_otherlinks:hover div { opacity: 1; }
+
+#mal_cs_listinfo div:first-child, #mal_cs_links div:first-child, #mal_cs_otherlinks div:last-child { border-radius: 4px 0 0 0; }
+
+#mal_cs_otherlinks div:first-child { display: none; }
+
+#mal\_cs_otherlinks div:last-child { padding: 6px 0 10px !important; }
+
+#mal\_cs_listinfo div:last-child, #mal\_cs_links div:last-child { padding: 1px 0 10px !important; }
+
+/* Links settings */
+#mal_cs_listinfo a, #mal\_cs_listinfo strong a:after, #mal_cs_links a, #mal_cs_otherlinks a, #mal\_cs_otherlinks a[href*="register"]:after {
+	display: block;
+	margin: 4px 12px 0;
+	line-height: 18px;
+	border-style: solid;
+	border-width: 1px;
+	background-clip: padding-box;
+	border-radius: 3px;
+}
+
+/* Icons images */
+#mal\_cs_listinfo:before { background-image: url(https://i.imgur.com/WXgOAI1.png) /* listinfo.png */; }
+
+#mal\_cs_links:before { background-image: url(https://i.imgur.com/xRCwIX7.png)  /* links.png */; }
+
+#mal\_cs_otherlinks:before { background-image: url(https://i.imgur.com/YKlaGTI.png) /* otherlinks.png */; }
+
+/* Icons hover effects */
+#mal\_cs_listinfo:hover:before, #mal\_cs_links:hover:before, #mal_cs_otherlinks:hover:before {
+	width: 34px !important;
+	border-width: 0;
+}
+
+#mal\_cs_pic { border: none !important; }
+
+/* MyAnimeList logo */
+#mal\_cs_pic, #mal\_cs_pic a {
+	position: fixed;
+	display: block !important;
+	right: 0 !important;
+	top: 0;
+	width: 32px !important;
+	height: 64px !important;
+}
+
+#mal\_cs_pic a {
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-image: url(https://i.imgur.com/EB0CqCs.png) /* MAL.png */ !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Links custom text*/
+#mal\_cs_listinfo strong a, #mal\_cs_otherlinks div a[href*="register"] { visibility: hidden; display: inline; line-height: 0 !important; letter-spacing: -12px; }
+
+#mal\_cs_listinfo strong a:after { visibility: visible; content: 'My profile'; letter-spacing: 0 !important; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { visibility: visible; content: 'Create list'; letter-spacing: -.5px !important; }
+
+/* Category Menu */
+
+#list_surround table:first-of-type {
+	position: fixed !important;
+	left: 3px;
+	bottom: 16px;
+	width: 555px;
+	z-index: 10;
+}
+
+#list_surround table:first-of-type:before {
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: -38px;
+	bottom: 0;
+	width: 648px;
+	height: 90px;
+	background-image: url(https://i.imgur.com/wKJQ3yK.png) /* bottom.png */;
+	z-index: -1;
+}
+
+#list_surround table:first-of-type:after {
+	pointer-events: none;
+	position: fixed !important;
+	display: block;
+	margin-left: 27px;
+	margin-bottom: 9px;
+	content: '';
+	left: -38px;
+	bottom: 0;
+	width: 600px;
+	height: 42px;
+	background: linear-gradient(left , rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .8) 100%);
+	background: -moz-linear-gradient(left , rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .8) 100%);
+	background:  -webkit-gradient(
+						linear,
+						left bottom,
+						right bottom,
+						color-stop(0, rgba(0, 0, 0, .8)),
+						color-stop(0.5, rgba(0, 0, 0, 0)),
+						color-stop(1, rgba(0, 0, 0, .8)));
+}
+
+.status_not_selected, .status_selected  { 
+	width: auto !important; 
+	white-space: nowrap;
+}
+
+.status_not_selected a, .status_selected a, .status_not_selected a:before, .status_selected a:before { 
+	display: inline-block;
+	width: 111px;
+	margin-right: 3px;
+	color: #FFFFFF;
+	line-height: 24px;
+	font-size: 18px;
+	text-align: center;
+	border: solid 1px #FFFFFF;
+	border-radius: 10px/3px;
+	-o-border-radius: 10px/3px;
+	-moz-border-radius: 10px/3px;
+ 	-webkit-border-radius: 10px/3px;
+}
+
+.status_not_selected a:after, .status_selected a:after { 
+	visibility: visible;
+	position: absolute;
+	display: block;
+	margin-left: 27px;
+	margin-top: -33px;
+	width: 55px;
+	height: 42px;
+	content: '';
+	box-shadow: inset 0 1px 0 rgba(250, 1, 7, .8), inset 0 -1px 0 rgba(250, 1, 7, .8);
+ 	-moz-box-shadow: inset 0 1px 0 rgba(250, 1, 7, .8), inset 0 -1px 0 rgba(250, 1, 7, .8);
+ 	 -webkit-box-shadow: inset 0 1px 0 rgba(250, 1, 7, .8), inset 0 -1px 0 rgba(250, 1, 7, .8);
+	border-radius: 10px/3px;
+	-o-border-radius: 10px/3px;
+	-moz-border-radius: 10px/3px;
+ 	-webkit-border-radius: 10px/3px;
+}
+
+
+.status_not_selected a:hover, .status_selected a, .status_not_selected a:hover:before, .status_selected a:before { 
+	color: #fa0107;
+	border-color: #fa0107;
+	box-shadow: inset 0 0 4px rgba(250, 1, 7, .8);
+ 	-moz-box-shadow: inset 0 0 4px rgba(250, 1, 7, .8);
+ 	 -webkit-box-shadow: inset 0 0 4px rgba(250, 1, 7, .8);
+}
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { visibility: hidden; display: block; letter-spacing: -12px; }
+.status_not_selected a[href*="status=1"]:before, .status_selected a[href*="status=1"]:before { visibility: visible; content: 'Current'; letter-spacing: 0 !important; }
+.status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after { margin-top: -34px; }
+
+/* Planned */
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { visibility: hidden; display: block; letter-spacing: -12px; }
+.status_not_selected  a[href*="status=6"]:before, .status_selected  a[href*="status=6"]:before { visibility: visible; content: 'Planned'; letter-spacing: 0 !important; }
+.status_not_selected a[href*="status=6"]:after, .status_selected a[href*="status=6"]:after { margin-top: -34px; }
+
+/*All */
+.status_selected  a[href*="status=7"], .status_not_selected  a[href*="status=7"] { display: none; }
+
+/* Reviews */
+
+/* Tags */
+td[class^='td']:nth-of-type(5):before {
+	position: absolute;
+	display: block;
+	margin-left: -2px;
+	margin-top: -2px;
+	content: '';
+	width: 0;
+	height: 0;
+	background: linear-gradient(left , rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 35%);
+	background: -moz-linear-gradient(left , rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 35%);
+	background:  -webkit-gradient(
+						linear,
+						left bottom,
+						right bottom,
+						color-stop(0, rgba(0, 0, 0, .8)),
+						color-stop(0.35, rgba(0, 0, 0, 0)));
+	transition: width .5s linear 1s, height .5s linear 1.5s;
+	-webkit-transition:  width .5s linear 1s, height .5s linear 1.5s;
+}
+
+#list_surround table tbody:hover tr td[class^='td']:nth-of-type(5):before { width: 184px; height: 184px; }
+
+td[class^='td']:nth-of-type(5) {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute !important;
+	left: 723px !important;  
+	margin-top: 24px !important;   
+	width: 0 !important; 
+	height: 0;
+        font-size: 12px;
+	line-height: 16px !important;
+	color: transparent !important;
+	padding: 0;
+	border: none;
+	transition: width .5s linear 1s, height .5s linear 1.5s, padding .5s linear 1s, border .5s linear 1s, color .5s linear 1.8s;
+	-webkit-transition:  width .5s linear 1s, height .5s linear 1.5s, padding .5s linear 1s, border .5s linear 1s, color .5s linear 1.8s;
+}
+
+#list_surround table tbody:hover tr td[class^='td']:nth-of-type(5) { 
+	visibility: visible; 
+	width: 180px !important; 
+	height: 180px;
+	padding: 2px;
+	color: #FFFFFF !important;
+	border: solid 1px rgba(250, 1, 7, .8);
+	background-color: rgba(0, 0, 0, .8) !important;
+}
+
+td[class^='td']:nth-of-type(5) a { 
+	pointer-events: none; 
+	color: transparent !important;
+	transition: color .5s linear 1.8s;
+	-webkit-transition: color .5s linear 1.8s;
+}
+
+#list_surround table tbody:hover tr td[class^='td']:nth-of-type(5) a { color: #FFFFFF !important; }
+
+/* Disable Tags in the Sort Options */
+.table_header[width="125"] { display: none !important; } 
+
+/* Falling */
+
+@keyframes Falling
+{
+	0% { transform: scale(0, 0) rotate(-360deg); }  
+	45% { transform: scale(0.2, 0.2) rotate(-270deg); }
+	60% { transform: scale(0.4, 0.4) rotate(-180deg); }  
+	75% { transform: scale(0.8, 0.8) rotate(-90deg); }    
+	100% { transform: scale(1, 1)  rotate(0deg); }
+}
+
+@-o-keyframes Falling
+{
+	0% { -o-transform: scale(0, 0) rotate(-360deg); }  
+	45% { -o-transform: scale(0.2, 0.2) rotate(-270deg); }
+	60% { -o-transform: scale(0.4, 0.4) rotate(-180deg); }  
+	75% { -o-transform: scale(0.8, 0.8) rotate(-90deg); }    
+	100% { -o-transform: scale(1, 1)  rotate(0deg); }
+}
+
+@-ms-keyframes Falling
+{
+	0% { -ms-transform: scale(0, 0) rotate(-360deg); }  
+	45% { -ms-transform: scale(0.2, 0.2) rotate(-270deg); }
+	60% { -ms-transform: scale(0.4, 0.4) rotate(-180deg); }  
+	75% { -ms-transform: scale(0.8, 0.8) rotate(-90deg); }    
+	100% { -ms-transform: scale(1, 1)  rotate(0deg); }
+}
+
+@-moz-keyframes Falling
+{
+	0% { -moz-transform: scale(0, 0) rotate(-360deg); }  
+	45% { -moz-transform: scale(0.2, 0.2) rotate(-270deg); }
+	60% { -moz-transform: scale(0.4, 0.4) rotate(-180deg); }  
+	75% { -moz-transform: scale(0.8, 0.8) rotate(-90deg); }    
+	100% { -moz-transform: scale(1, 1)  rotate(0deg); }
+}
+
+@-webkit-keyframes Falling
+{
+	0% { -webkit-transform: scale(0, 0) rotate(-360deg); }  
+	45% { -webkit-transform: scale(0.2, 0.2) rotate(-270deg); }
+	60% { -webkit-transform: scale(0.4, 0.4) rotate(-180deg); }  
+	75% { -webkit-transform: scale(0.8, 0.8) rotate(-90deg); }    
+	100% { -webkit-transform: scale(1, 1)  rotate(0deg); }
+}
+
+.Falling
+{
+	animation-name: Falling;
+	-o-animation-name: Falling;
+	-ms-animation-name: Falling;
+	-moz-animation-name: Falling;
+	-webkit-animation-name: Falling;
+}
+
+/* Main Style */
+
+* { cursor: url(https://i.imgur.com/GveZSdb.png) /* cursor.png */, auto; }
+
+.hide {
+	visibility: hidden;
+	position: absolute !important;
+	display: block !important;
+	margin-left: 720px !important;
+	margin-top: -100% !important;
+	width: 130px !important;
+	height: 184px !important;
+	border: solid 1px #e3e5e5;
+	background-repeat: no-repeat !important;
+	background-size: 105% 105%;
+	box-shadow: inset 0 1px 0 rgba(162, 163, 162, .6);
+	transition: margin-left 1s ease-in-out, margin-top 1s ease-in-out;
+	-webkit-transition: margin-left 1s ease-in-out, margin-top 1s ease-in-out;
+	z-index: 15;
+}
+
+:hover +  .hide {
+	visibility: visible !important;
+	margin-left: 592px !important;
+	margin-top: 0 !important;
+	animation: Falling linear 1s;
+        -webkit-animation: Falling linear 1s;
+}
+
+body, .td1 a, .td2 a, #copyright a { color: #FFFFFF; }
+
+body:before {
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: -78px;
+	top: -48px;
+	width: 600px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8); 
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 48px; 
+	border-image: url(https://i.imgur.com/cZo5BPJ.png) /* border.png */ 0 48 0 0 stretch;
+	-moz-border-image: url(https://i.imgur.com/cZo5BPJ.png) /* border.png */ 0 48 0 0 stretch;
+	-webkit-border-image: url(https://i.imgur.com/cZo5BPJ.png) /* border.png */ 0 48 0 0 stretch;
+	z-index: -1;
+}
+
+body:after {
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: -38px;
+	top: 0;
+	width: 643px;
+	height: 100%;
+	background-image: url(https://i.imgur.com/jMX7Bx9.png) /* bg.png */, url(https://i.imgur.com/APupAFm.png) /* Rifle.png */;
+	background-repeat: repeat, no-repeat;
+	background-position: center center, left center;
+	z-index: -2;
+}
+
+body {
+        font-size: 12px;
+        font-family: 'Special Elite', cursive;
+	background-image: url(https://i.imgur.com/6wPHbI8.jpg) /* Background.jpg */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a { text-decoration: none; }
+
+#list_surround {
+	position: relative;
+	width: 586px;
+	left: 0;
+	margin-top: 48px;
+	margin-bottom: 80px;
+}
+
+.animetitle span { 
+	display: inline-block; 
+	padding-left: 4px;
+	font-size: 14px;
+	min-width: 0px; 
+	max-width: 386px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2, .td1 a, .td2 a { letter-spacing: 1.2px; }
+
+.td1, .td2 { line-height: 24px !important; }
+
+.header_title, .header_cw, .header_completed , .header_onhold, .header_dropped, .header_ptw { display: none; }
+
+.category_totals { 
+	display: block;
+	width: 96%;
+	padding: 4px 0;
+	line-height: 18px;
+	text-align: center;
+	padding-top: 8px;
+	color: rgba(250, 1, 7, .5);
+	border-width: 1px 0;
+	border-style: dotted;
+	border-color: rgba(250, 1, 7, .5);
+} 
+
+#copyright {
+	position: relative !important;
+	margin-top: 0 !important;
+	width: 96%;
+	text-align: center !important;
+	padding-top: 8px;
+	line-height: 18px;
+	color: rgba(250, 1, 7, .5);
+}
+
+#copyright a { font-size: 14px; color: rgba(250, 1, 7, .5); }
+
+#copyright:after { display: inline-block;  content: 'List designed by Hahaido.'; }
