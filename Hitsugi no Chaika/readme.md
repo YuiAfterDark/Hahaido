@@ -1,4 +1,4 @@
-# Layout 44 - Hitsugi no Chaika
+# Layout 45 - Hitsugi no Chaika
 
 ![](gallery/demo.jpg)
 

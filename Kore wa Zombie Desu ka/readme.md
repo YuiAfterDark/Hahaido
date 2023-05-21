@@ -1,4 +1,4 @@
-# Layout 10 - Kore wa Zombie Desu ka
+# Layout 11 - Kore wa Zombie Desu ka
 
 ![](gallery/demo.jpg)
 
@@ -9,6 +9,12 @@
 Built for classic lists.
 
 Animelist only.
+
+**Columns:**
+
+- Numbers
+- Score
+- Episodes
 
 ### Links
 

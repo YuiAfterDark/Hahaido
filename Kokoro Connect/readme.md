@@ -1,4 +1,4 @@
-# Layout 9 - Kokoro Connect
+# Layout 10 - Kokoro Connect
 
 ![](gallery/demo.jpg)
 
@@ -12,6 +12,8 @@ Built for classic lists.
 
 - Numbers
 - Score
+- Type
+- Episodes
 
 ### Links
 

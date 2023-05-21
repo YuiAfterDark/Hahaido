@@ -1,4 +1,4 @@
-# Layout 21 - Boku wa Tomodachi ga Sukunai
+# Layout 22 - Boku wa Tomodachi ga Sukunai
 
 ![](gallery/demo.jpg)
 

@@ -1,4 +1,4 @@
-# Layout 42 - Gate: Jieitai Kanochi nite, Kaku Tatakaeri
+# Layout 43 - Gate: Jieitai Kanochi nite, Kaku Tatakaeri
 
 ![](gallery/demo.jpg)
 

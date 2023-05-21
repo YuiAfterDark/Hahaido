@@ -1,4 +1,4 @@
-# Layout 3 - Guilty Crown
+# Layout 4 - Guilty Crown
 
 ![](gallery/demo.jpg)
 
@@ -7,6 +7,11 @@
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Score
+- Episodes
 
 ### Links
 

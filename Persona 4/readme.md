@@ -1,4 +1,4 @@
-# Layout 26 - Persona 4
+# Layout 27 - Persona 4
 
 ![](gallery/demo.jpg)
 

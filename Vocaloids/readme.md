@@ -1,4 +1,4 @@
-# Layout 18 - Vocaloids
+# Layout 19 - Vocaloids
 
 ![](gallery/demo.jpg)
 
@@ -7,6 +7,12 @@
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Type
+- Episodes
 
 ### Links
 

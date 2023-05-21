@@ -1,18 +1,23 @@
-### Layout 52 - Haikyuu
+# Layout 53 - Haikyuu
 
-Forum link: https://myanimelist.net/forum/?topicid=1603347
+## Info
 
 Released: 2017-Mar-31
 
-### List settings
+### Usage Info
 
-List type: Modern
+Built for modern lists.
 
-Columns:
+**Columns:**
+
 - Numbers
 - Score
 - Episodes
 
-### Notes:
+### Links:
+
+- [Forum](https://myanimelist.net/forum/?topicid=1603347)
+
+## Problems
 
 - Status [image](http://i.imgur.com/N3vLVlm.png) is broken and seems irreparable.

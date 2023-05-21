@@ -1,4 +1,4 @@
-# Layout 17 - Vampire Knight
+# Layout 18 - Vampire Knight
 
 ![](gallery/demo.png)
 

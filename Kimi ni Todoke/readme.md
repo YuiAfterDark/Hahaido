@@ -1,4 +1,4 @@
-# Layout 8 - Kimi ni Todoke
+# Layout 9 - Kimi ni Todoke
 
 ![](gallery/demo.jpg)
 
@@ -7,6 +7,12 @@
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Score
+- Episodes
 
 ### Links
 

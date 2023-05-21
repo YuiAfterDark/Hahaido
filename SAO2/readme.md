@@ -1,4 +1,4 @@
-# Layout 34 - Sword Art Online II: Phantom Bullet
+# Layout 35 - Sword Art Online II: Phantom Bullet
 
 ![](gallery/demo.jpg)
 

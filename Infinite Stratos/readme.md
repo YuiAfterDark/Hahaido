@@ -1,4 +1,4 @@
-# Layout 24 - Infinite Stratos
+# Layout 25 - Infinite Stratos
 
 ![](gallery/demo.jpg)
 
@@ -7,6 +7,12 @@
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Score
+- Episodes
 
 ### Links
 

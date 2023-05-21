@@ -1,4 +1,4 @@
-# Layout 39 - Androids
+# Layout 40 - Androids
 
 ![](gallery/demo.jpg)
 
@@ -9,6 +9,12 @@ A Plastic Memories list layout.
 ### Usage notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Score
+- Episodes
 
 ### Links
 

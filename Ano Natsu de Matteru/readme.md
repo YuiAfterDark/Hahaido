@@ -1,4 +1,4 @@
-# Layout 5 - Ano Natsu de Matteru
+# Layout 6 - Ano Natsu de Matteru
 
 ![](gallery/demo.jpg)
 
@@ -7,6 +7,13 @@
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Score
+- Type
+- Episodes
 
 ### Links
 

@@ -1,4 +1,4 @@
-# Layout 53 - Re:Zero
+# Layout 54 - Re:Zero
 
 ![](gallery/demo.jpg)
 
@@ -13,7 +13,6 @@ Built for modern lists.
 **Columns**
 
 - Numbers
-- Image
 - Score
 - Episodes
 

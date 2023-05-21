@@ -1,4 +1,4 @@
-# Layout 25 - Lineage
+# Layout 26 - Lineage
 
 ![](gallery/demo.jpg)
 
@@ -9,6 +9,13 @@ By SylakentH_ and Hahaido.
 ### Usage Notes
 
 Built for classic lists.
+
+**Columns:**
+
+- Numbers
+- Score
+- Type
+- Episodes
 
 #### Links
 

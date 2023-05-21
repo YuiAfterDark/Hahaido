@@ -1,4 +1,4 @@
-# Layout 45 - Noragami
+# Layout 46 - Noragami
 
 ![](gallery/demo.jpg)
 
@@ -9,6 +9,12 @@
 Built for classic lists.
 
 Animelist only.
+
+**Columns:**
+
+- Numbers
+- Score
+- Episodes
 
 ### Links
 
