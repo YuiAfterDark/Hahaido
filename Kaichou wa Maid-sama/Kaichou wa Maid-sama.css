@@ -1,0 +1,499 @@
+/*
+Kaichou wa Maid-sama by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Pompiere&display=swap";
+
+/* Tab Content */
+
+.table_header:first-child, td[class^='td']:first-child { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle span:after { visibility: hidden; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	position: absolute !important;
+	display: inline-block !important;
+	margin-left: -14px;
+	color: rgb(255, 240, 170);
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type:hover { text-shadow: 0 0 0.2em rgb(255, 240, 170); }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none; }
+
+/* SORT */
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: relative; 
+	margin-top: -32px;
+	background-color: rgb(0, 0, 0);
+	z-index: 1; 
+}
+
+.table_header {
+	line-height: 32px;
+	border-top: dashed 2px rgb(255, 240, 170);
+}
+
+.table_headerLink { font-size: 0; }
+    
+.table_headerLink:hover { text-shadow: 1px 1px rgb(255, 240, 170); }
+
+.table_headerLink:before {
+	position: absolute;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold !important; 
+	color: rgb(31, 31, 31); 
+	text-shadow: 1px 1px rgb(165, 165, 165);
+}
+
+.table_header a[href$="order=1"]:before { content: 'Today in our menu'; }
+
+.table_header a[href$="order=4"]:before { 
+	margin-right: -28px;
+	content: 'Price'; 
+}
+
+.table_header a[href$="order=12"]:before { 
+	margin-right: 6px;
+	content: 'Portion'; 
+}
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute !important;
+	display: block;
+	left: 0 !important;
+	top: 0;
+	width: 0 !important;
+	background: none !important;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover:after { text-decoration: underline !important; }
+
+#mal\_control_strip td  { display: inline !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,  #mal\_cs_links div:last-of-type a:first-of-type,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"], #mal\_cs_otherlinks div a[href*="register"],
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #mal\_cs_links div:last-of-type a:last-of-type,
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"] {
+	position: fixed;
+	display: block;
+	height: 64px;
+	width: 64px;
+	left: 0;
+	font-size: 0;
+	background-color: rgba(129, 8, 20, .7);
+}
+
+#mal\_cs_otherlinks div a:before, #mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before {
+	position: absolute;
+	display: block;
+	left: 66px;
+	top: 22px;
+	font-size: 16px; 
+	color: #000000;
+	text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000;
+	white-space: nowrap;
+}
+
+#mal\_control_strip a:hover { background-color: rgb(0, 0, 0) !important; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { top: 54px; background-image: url(https://i.imgur.com/s6WsOO9.png) /* profile.png */ !important; }
+
+#mal\_cs_listinfo div:first-of-type a:hover:before { content: 'Personality'; top: 22px; }
+
+/* LOGIN, LOGOUT */
+#mal\_cs_otherlinks div a[href*="login"] { top: 178px; background-image: url(https://i.imgur.com/ah8Yx4X.png) /* login.png */ !important; }
+
+#mal\_cs_listinfo div:last-of-type a { top: 178px; background-image: url(https://i.imgur.com/K5jABoc.png) /* logout.png */; }
+
+#mal\_cs_otherlinks div a[href*="login"]:hover:before { content: 'Entrance'; }
+
+#mal\_cs_listinfo div:last-of-type a:hover:before { content: 'Exit'; }
+
+/* ADD*/
+#mal\_cs_links div a[href*="addtolist"] { top: 116px; background-image: url(https://i.imgur.com/qynQuoU.png) /* add.png */; }
+
+#mal\_cs_links div a[href*="addtolist"]:hover:before { content: 'Make an order'; }
+
+#searchBox {
+        position: absolute !important; 
+        display: block !important; 
+	top: 400px !important;
+	left: 700px;
+	border: none !important;
+	text-align: left !important;
+        color: rgb(240, 200, 215);
+        font-size: 16px !important;
+	width: 176px !important;
+        height: 20px !important;
+	padding: 5px;
+        margin: 50px auto 25px;
+	background-color: rgba(129, 8, 20, .7);
+	background-image: url(https://i.imgur.com/YRu07AY.png) /* Search.png */;
+	background-repeat: no-repeat;
+	transition: left .5s linear;
+	-webkit-transition: left .5s linear;
+	overflow: hidden;
+}
+
+#searchBox:hover, #searchBox:focus { left: 850px; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type:before, #list_surround > table:first-of-type:after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: -50px;
+	width: 16px;
+	height: 230px;
+	background-color: rgb(0, 0, 0);
+}  
+
+#list_surround > table:first-of-type:before { 
+	left: -12px; 
+	border-radius: 0 0 0 30em / 0 0 0 20em;
+}
+
+#list_surround > table:first-of-type:after { 
+	left: 188px; 
+	border-radius: 0 0 30em 0 / 0 0 20em 0;
+}
+
+#list_surround > table:first-of-type {
+	position: absolute;
+	left: 648px;
+	top: 50px;
+	width: 184px;
+}
+
+.status_not_selected, .status_selected { 
+	position: relative !important;
+	display: block !important;
+	width: 184px;
+	white-space: nowrap;
+}
+
+.status_not_selected a, .status_selected a {
+	position: absolute;
+	display: block;
+	padding-right: 4px;
+	color: rgb(240, 200, 215) !important;
+	line-height: 34px;
+	font-size: 16px;
+	text-align: center;
+	height: 31px;
+	width: 184px;
+	background-color: rgba(129, 8, 20, .7);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+	z-index: 20;
+}
+
+/* Currently watching */
+.status_not_selected > a[href*="status=1"], .status_not_selected > a[href*="status=1"]:hover, .status_not_selected > a[href*="status=1"]:active, .status_selected > a[href*="status=1"] {
+ 	display: block; 
+	top: -2px; 
+	border-top: solid 2px rgba(0, 0, 0, 1); 
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	border-radius: 120px 120px 0 0 / 12px 12px 0 0;
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=1"]:hover, .status_not_selected > a[href*="status=1"]:active, .status_selected > a[href*="status=1"] { 
+	color: rgba(255, 240, 170, 1) !important;
+	background-color: rgba(0, 0, 0, 1); 
+}
+
+/* Completed */
+.status_not_selected > a[href*="status=2"], .status_not_selected > a[href*="status=2"]:hover, .status_not_selected > a[href*="status=2"]:active, .status_selected > a[href*="status=2"] {
+	position: absolute; 
+	display: block; 
+	top: 31px; 
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=2"]:hover, .status_not_selected > a[href*="status=2"]:active, .status_selected > a[href*="status=2"] { 
+	color: rgba(255, 240, 170, 1) !important;
+	background-color: rgba(0, 0, 0, 1); 
+}
+
+/* On Hold */
+.status_not_selected > a[href*="status=3"], .status_not_selected > a[href*="status=3"]:hover, .status_not_selected > a[href*="status=3"]:active, .status_selected > a[href*="status=3"] {
+	 position: absolute; 
+	display: block;  
+	top: 62px;
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=3"]:hover, .status_not_selected > a[href*="status=3"]:active, .status_selected > a[href*="status=3"] { 
+	color: rgba(255, 240, 170, 1) !important;
+	background-color: rgba(0, 0, 0, 1); 
+}
+
+/* Dropped */
+.status_not_selected > a[href*="status=4"], .status_not_selected > a[href*="status=4"]:hover, .status_not_selected > a[href*="status=4"]:active, .status_selected > a[href*="status=4"] {
+	position: absolute; 
+	display: block; 
+	top: 93px;
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=4"]:hover, .status_not_selected > a[href*="status=4"]:active, .status_selected > a[href*="status=4"] { 
+	color: rgba(255, 240, 170, 1) !important;
+	background-color: rgba(0, 0, 0, 1); 
+}
+
+/* Planned */
+.status_not_selected > a[href*="status=6"], .status_not_selected > a[href*="status=6"]:hover,  .status_not_selected > a[href*="status=6"]:active, .status_selected > a[href*="status=6"]  {
+	position: absolute; 
+	display: block; 
+	top: 124px; 
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=6"]:hover,  .status_not_selected > a[href*="status=6"]:active, .status_selected > a[href*="status=6"] { 
+	color: rgba(255, 240, 170, 1) !important;
+	background-color: rgba(0, 0, 0, 1); 
+}
+
+/*All */
+.status_not_selected > a[href*="status=7"], .status_not_selected > a[href*="status=7"]:hover, .status_not_selected > a[href*="status=7"]:active, .status_selected > a[href*="status=7"]  {
+	position: absolute; 
+	display: block; 
+	top: 155px; 
+	border-left: solid 2px rgba(0, 0, 0, 1); 
+	border-right: solid 2px rgba(0, 0, 0, 1); 
+	border-bottom: solid 2px rgba(0, 0, 0, 1); 
+	border-radius: 0 0 120px 120px / 0 0 12px 12px;
+	transition: color .5s linear, border-color .5s linear;
+	-webkit-transition: color .5s linear, border-color .5s linear;
+}
+
+.status_not_selected > a[href*="status=7"]:hover, .status_not_selected > a[href*="status=7"]:active, .status_selected > a[href*="status=7"] { 
+	color: rgb(255, 240, 170) !important;
+	background-color: rgb(0, 0, 0); 
+}
+
+/* Main Style */
+
+body {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-image:
+		url(https://i.imgur.com/gWuq4Td.png) /* right_misaki.png */,
+		url(https://i.imgur.com/UXOs90Q.png) /* extra-background.png */,
+		url(https://i.imgur.com/Bb5FoZD.png) /* background.png */;
+	background-repeat: no-repeat, repeat-x, repeat;
+	background-position: right bottom, center bottom, center center;
+	background-attachment: fixed, fixed, scroll;
+}
+
+a { text-decoration: none; }
+
+.td1, .td2, .td1 a, .td2 a { font-family: 'Pompiere', cursive; }
+
+tr:hover .animetitle span { text-decoration: underline; }
+
+#list_surround {
+	position: relative;
+	left: 200px;
+	top: 0;
+	width: 600px;
+	padding: 352px 0 109px 50px;
+	background: url(https://i.imgur.com/jSEZv2h.png) /* top_misaki.png */ left 2px no-repeat;
+}
+
+.animetitle span { 
+	display: block;
+	padding-left: 36px;
+	min-width: 0; 
+	max-width: 420px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: rgb(240, 200, 215);
+	overflow: hidden;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2 {
+	line-height: 24px !important;
+	font-size: 18px;
+	background-color: rgb(167, 82, 90); 
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	z-index: 15;		
+}
+
+.td1 a, .td2 a { color: #000000; }
+
+/* HEADERS */
+.header_title {
+	display: block;
+	height: 172px;
+}
+
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 600px;
+	padding: 106px 0 34px;
+	line-height: 34px;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(255, 240, 170);
+	text-align: center !important;
+	background-color: rgb(0, 0, 0);
+	background-image: url(https://i.imgur.com/0f8TZ2h.png) /* top_image.png */;
+	background-repeat: no-repeat;
+	background-position: center 6px;
+	border-radius: 120px 120px 0 0 / 12px 12px 0 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+
+.category_totals,  #grand_totals {
+	font-family: 'Julius Sans One', sans-serif !important;
+	text-align: center;
+	font-size: 14px;
+	color: rgb(31, 31, 31) !important; 
+	font-weight: bold !important; 
+	text-shadow: 1px 1px rgb(165, 165, 165) !important;
+	background-color: rgb(0, 0, 0);
+} 
+
+.category_totals  { 
+	padding: 8px 0 112px 0;
+	border-radius: 0 0 120px 120px / 0 0 12px 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.category_totals:after {
+	position: absolute;
+	display: block;
+	margin-top: 12px;
+	content: '';
+	width: 600px;
+	height: 128px;
+	background: url(https://i.imgur.com/4VykSn2.png) /* bottom_image.png */ no-repeat;
+}
+
+#grand_totals:before {
+	position: relative;
+	display: block;
+	margin-top: -20px;
+	content: 'Total';
+	font-size: 24px;
+	color: rgb(255, 240, 170);
+	text-shadow: none !important;
+}
+
+#copyright {
+	float: right;
+	width: 252px;
+	padding: 2px;
+	color: #000000;
+	text-align: right !important;
+	border: solid 1px #000000;
+	background: rgb(255, 255, 255);
+	z-index: 15;
+}
+
+#grand_totals  {
+	padding: 2em 1em 1em 1em;
+	border: dashed 2px rgb(255, 240, 170);
+	background-color: rgb(0, 0, 0);
+	border-radius: 0 0 120px 120px / 0 0 12px 12px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+
+#copyright a { font-weight: bold; color: rgb(129, 8, 20); }
+
+#copyright a:hover { text-shadow: 0 0 0.2em rgb(129, 8, 20); }
+
+#copyright:after { display: block;  content: 'List designed by Hahaido.'; }
+
+.hide {
+	visibility: hidden;
+	position: absolute;
+	display: block !important; 
+	margin: -26px 0 0 -248px;
+	width: 200px !important;
+	height: 284px !important;
+	background-repeat: no-repeat;
+	background-size: 200px 284px;
+	border: solid 2px #000000;
+	border-radius: 120px / 12px;
+	box-shadow:
+ 		0 1px 0 rgba(255,255,255, .2),
+ 		0 4px 5px rgba(0, 0, 0, .6),
+		0 1px 0 rgba(0, 0, 0, .6);
+	z-index: 20;
+}
+
+.hide:hover { visibility: visible; }
+
+.hide:hover:after {
+	visibility: visible !important;
+	display: block; 
+	content: '';
+	margin: 12px 0 0 200px;
+	width: 0;
+	height: 0;
+	border-top: 24px solid #000000; 
+	border-right: 46px solid transparent;	
+}
+
+.hide:before { 
+	visibility: visible !important;
+	position: absolute;
+	display: block; 
+	content: '';
+	margin: -4px 0 0 248px;
+	width: 32px;
+	height: 32px;
+	line-height: 24px; 
+	background: url(https://i.imgur.com/galMDYn.png) /* hide_bg.png */ no-repeat;
+	z-index: -1;
+}
+
+.hide:hover:before { background-position: 0 -32px; }
