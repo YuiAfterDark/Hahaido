@@ -1,0 +1,501 @@
+/*
+One Piece by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Marmelad&family=Waiting+for+the+Sunrise&display=swap";
+
+/* Top Menu */
+
+#mal\_control_strip:before, #mal\_control_strip:after {
+	pointer-events: none;
+	position: fixed;
+	display: block;
+	content: '';
+	left: 50%;
+}
+
+#mal\_control_strip:before {
+	margin-left: -320px;
+	width: 640px;
+	height: 80px;
+	background: url(https://i.imgur.com/BdrB3e2.png) /* top_bg.png */;
+}
+
+#mal\_control_strip:after {
+	margin-left: -675px;
+	top: 5px;
+	width: 1350px;
+	height: 165px;
+	background: url(https://i.imgur.com/FkvoqEX.png) /* posters.png */;
+}
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	left: 0 !important;
+	top: 0;
+	height: 95px !important;
+	background-repeat: repeat-x;
+	background: url(https://i.imgur.com/cQyGBLJ.png) /* top.png */ !important;
+	z-index: 2;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover:after { text-decoration: underline !important; }
+
+#mal\_control_strip td  { display: inline !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,  #mal\_cs_links div:last-of-type a:first-of-type,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href$="/forum/"], #mal_cs_otherlinks div a[href*="export"],
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: absolute !important;
+	display: block;
+	width: 80px;
+	left: calc(50% - 320px);
+	top: 30px;
+	font-size: 0 !important;
+	color: transparent;
+}
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after { 
+	position: absolute;
+	display: block;
+	line-height: 20px;
+	font-family: 'Marmelad', sans-serif;
+	font-size: 14px !important;
+	color: #c7401c;
+	text-align: left;
+	white-space: pre-wrap;
+	text-transform: uppercase;
+}
+
+#mal\_cs_otherlinks div a:before, #mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before, #mal\_cs_links div:last-of-type a:last-of-type:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	margin-left: -14px;
+	width: 12px;
+	height: 20px;
+	background: url(https://i.imgur.com/NPq477z.png) /* mark.png */ no-repeat;
+}
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { margin: -10px 0 0 40px; }
+
+#mal\_cs_listinfo div:first-of-type a:after { content: 'Profile'; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { margin: -10px 0 0 145px; }
+
+#mal\_cs_links div a[href*="addtolist"]:after { content: 'Add'; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { margin: 15px 0 0 145px; }
+
+#mal\_cs_links div:last-of-type a:last-of-type:after { content: 'Mangalist'; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { margin: 15px 0 0 40px; }
+
+#mal\_cs_listinfo div:last-of-type a:after { content: 'Logout'; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { margin-left: 40px; }
+
+#mal\_cs_otherlinks div a[href*="login"]:after { content: 'Login'; text-align: center; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { margin-left: 120px; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { content: 'Join'; text-align: center; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="forum"] { margin-left: 190px; }
+
+#mal\_cs_otherlinks div a[href*="forum"]:after { content: 'Help'; text-align: center; }
+
+#search {
+	position: fixed; 
+        display: block !important;
+	left: calc(50% + 185px);
+	top: 24px !important;
+	width: 100px;
+	height: 14px;
+}
+
+#searchBox {
+        position: absolute !important; 
+        display: block !important;
+	width: 82px !important; 
+	height: 14px !important;
+	padding-left: 2px;
+	text-align: left !important;
+	border: solid 1px #cbaa7a !important;
+	background-color: rgba(203, 170, 122, .5);
+}
+
+#searchListButton {
+	position: absolute !important;
+	display: block !important;
+	width: 0;
+	height: 0;
+	margin-left: 90px !important;
+	padding: 18px 0 0 20px !important;
+	background-image: url(https://i.imgur.com/0eRc4Xk.png) /* search_button.png */ !important;
+	box-shadow: 0 0 1px #613f0c;
+	border-radius: 4px;
+}
+
+/* Tab Content */
+
+td[class^='td']:first-child { width: 56px; padding-left: 6px; }
+
+td[class^='td']:last-child { width: 56px; padding-right: 6px; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	line-height: 20px;
+	font-size: 13px;
+	color: #b48642;
+	text-shadow: none;
+	transition: color .2s linear;
+	-webkit-transition: color .2s linear;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type:hover { color: #FFFFFF; }
+
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none; }
+
+/* SORT */
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+	display: none;
+}
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: fixed;
+	display: block;
+	left: calc(50% + 90px);
+	top: 18px;
+	width: 80px;
+	z-index: 3;
+}
+
+.table_header {
+	position: relative;
+	display: block;
+	width: 80px;
+}
+
+.table_headerLink {
+	display: block;
+	width: 80px;
+	font-size: 12px;
+	color: #b48642;
+	text-shadow: none;
+	text-align: right;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.table_headerLink:hover { text-decoration: underline; }
+
+.table_headerLink strong { font-weight: normal !important; }
+
+.table_header:first-child { display:none; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type {
+	position: fixed !important;
+	right: -220px;
+	bottom: 60px;
+	width: 600px;
+	z-index: 2;
+}
+
+/* MENU BUTTONS */
+.status_not_selected, .status_selected { 
+	position: relative !important;
+	display: inline-block !important;
+	width: 60px;
+	white-space: nowrap;
+}
+
+.status_not_selected a, .status_selected a {
+	position: absolute;
+	display: inline-block;
+	font-size: 0;
+	color: transparent;
+}
+
+.status_not_selected a:after, .status_selected a:after {
+	display: block;
+	width: 100px;
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 22px;
+	color: transparent;
+	text-shadow: 0 0 .1em #b48642;
+	text-align: left;
+	white-space: nowrap;
+	transform: rotate(-55deg);
+	-webkit-transform: rotate(-55deg);
+	transition: all linear .2s;
+	-webkit-transition: all linear .2s;
+}
+
+.status_not_selected a:hover:after, .status_selected a:after { color: #b48642; text-shadow: 1px 1px 0 #FFFFFF; }
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after { content: 'Current'; }
+
+/* Completed */
+.status_not_selected a[href*="status=2"]:after, .status_selected a[href*="status=2"]:after { content: 'Completed'; }
+  
+/* On hold */
+.status_not_selected  a[href*="status=3"]:after, .status_selected a[href*="status=3"]:after { content: 'On Hold'; }
+
+/* Dropped */
+.status_not_selected a[href*="status=4"]:after, .status_selected a[href*="status=4"]:after { content: 'Dropped'; }
+  
+/* Planned */
+.status_not_selected a[href*="status=6"]:after, .status_selected a[href*="status=6"]:after { content: 'Planned'; }
+  
+/* All */
+.status_not_selected a[href*="status=7"]:after, .status_selected a[href*="status=7"]:after { content: 'All';  }
+
+/* Main Style */
+
+* { cursor: url(https://i.imgur.com/LzIrtp0.png) /* cursor.png */ 1 1, auto !important; }
+
+@keyframes Fall {
+	0% { transform: scaleY(1) rotate(5deg); }
+	16% { transform: scaleY(-1) rotate(-5deg); }
+	32% { transform: scaleY(1) rotate(5deg); }
+	48% { transform: scaleY(-1) rotate(-5deg); }
+	64% { transform: scaleY(1) rotate(5deg); }
+	80% { transform: scaleY(-1) rotate(-5deg); }
+	100% { transform: scaleY(1) rotate(5deg); }
+} 
+
+@-webkit-keyframes Fall {
+	0% { -webkit-transform: scaleY(1) rotate(5deg); }
+	16% { -webkit-transform: scaleY(-1) rotate(-5deg); }
+	32% { -webkit-transform: scaleY(1) rotate(5deg); }
+	48% { -webkit-transform: scaleY(-1) rotate(-5deg); }
+	64% { -webkit-transform: scaleY(1) rotate(5deg); }
+	80% { -webkit-transform: scaleY(-1) rotate(-5deg); }
+	100% { -webkit-transform: scaleY(1) rotate(5deg); }
+} 
+
+body {
+	font-family: 'Marmelad', sans-serif;
+	background-color: rgb(255, 255, 255);
+	background-image: url(https://i.imgur.com/u1JHhSi.png) /* bottom.png */, url(https://i.imgur.com/wU0O70m.png) /* Luffy.png */, url(https://i.imgur.com/N77YoQb.png) /* water.png */, url(https://i.imgur.com/uFElPT7.png) /* bg.png */;
+	background-repeat: repeat-x, no-repeat, no-repeat, repeat;
+	background-attachment: fixed, scroll;
+	background-position: bottom center, center 104px, center top, center center;
+	background-size: auto, auto, cover, auto;
+}
+
+.td1, .td2, .td1 a, .td2 a, .category_totals { font-size: 14px; color: #fcee9e; text-shadow: 0  0 .2em #e74d11, 0 0 .2em #e74d11; }
+
+tr:hover td[class^='td'], tr:hover td[class^='td'] a { color: #FFFFFF; text-shadow: none; }
+
+a { text-decoration: none; }
+
+#list_surround:before {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 35px;
+	top: 77px;
+	width: 539px;
+	min-height: 280px;
+	height: calc(100% - 98px);
+	background: url(https://i.imgur.com/YzsADJ7.png) /* bg2.png */ center center repeat;
+	z-index: -1;
+}
+
+#list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 40px;
+	width: 534px;
+	height: calc(100% - 378px);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 177px 39px 180px; 
+	border-image: url(https://i.imgur.com/b0ZhudS.png) /* frame.png */ 177 39 180 round;
+	-moz-border-image: url(https://i.imgur.com/b0ZhudS.png) /* frame.png */ 177 39 180 round;
+	-webkit-border-image: url(https://i.imgur.com/b0ZhudS.png) /* frame.png */ 177 39 180 round;
+	z-index: 1;
+}
+
+#list_surround {
+	position: relative;
+	left: calc(50% - 305px);
+	margin: 310px 0 30px;
+	width: 538px;
+	padding: 36px;
+}
+
+#list_surround br { display:none; }
+
+.td1, .td2  { vertical-align: top; }
+
+.animetitle + small {
+	font-size: 13px;
+	color: #b48642;
+	text-shadow: none;
+	text-transform: lowercase;
+}
+
+/* HEADERS */
+.header_title {
+	display: block;
+	height: 220px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	margin: 50px 0 0 8px;
+	width: 528px;
+	height: 150px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/87x36TX.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -150px; }
+
+.header_onhold span { background-position: center -300px; }
+
+.header_dropped span { background-position: center -450px; }
+
+.header_ptw span { background-position: center -600px; }
+
+.category_totals {
+	position: relative;
+	display: inline-block;
+	margin: 4px 0 0 3px; 
+	padding-top: 4px;
+	width: 534px;
+	font-size: 12px;
+	text-align: center; 
+	box-shadow: 0 -1px 0 #3065a7; 
+}
+
+#grand_totals { display:none; }
+
+#copyright {
+	position: fixed;
+	display: block;
+	left: 5px;
+	bottom: 15px;
+	width: 350px;
+	line-height: 18px;
+	font-size: 13px;
+	color: #b48642;
+	text-shadow: 1px 1px 0 #FFFFFF;
+	text-align: left !important;
+}
+
+#copyright:after { content: 'List designed by Hahaido.'; }
+
+#inlineContent:before, #inlineContent:after {
+	position: fixed;
+	display: block;
+	content: '';
+	left: 50%;
+	bottom: 147px;
+	height: 500px;
+}
+
+#inlineContent:before {
+	margin-left: -720px;
+	width: 414px;
+	background-image: url(https://i.imgur.com/6n0V9A5.png) /* Robin.png */;
+}
+
+#inlineContent:after {
+	margin-left: 320px;
+	width: 427px;
+	background-image: url(https://i.imgur.com/iRRghHc.png) /* Nami.png */;
+}
+
+#inlineContent {
+	pointer-events: none;
+	position: fixed;
+	display: block !important;
+	z-index: 3;
+}
+
+.hide:after {
+	position: absolute;
+	display: block;
+	content: '';
+	margin: -62px 0 0 -18px;
+	width: 200px;
+	height: 225px;
+	background: url(https://i.imgur.com/OVIwyDf.png) /* covers_bg.png */ no-repeat;
+}
+
+/* COVERS */
+.hide {
+	visibility: hidden;
+	position: fixed;
+	display: block !important;
+	left: 30px;
+	top: -184px;
+	width: 165px;
+	height: 125px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transition: top linear 1s;
+	-webkit-transition: top linear 1s;
+	z-index: 4;
+}
+
+:hover + .hide {
+	visibility: visible;
+	top: calc(100% - 170px);
+	animation: Fall 1s linear;
+	-webkit-animation: Fall 1s linear;
+}
