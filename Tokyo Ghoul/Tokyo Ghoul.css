@@ -1,5 +1,7 @@
 /*
 Tokyo Ghoul by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-21
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -167,31 +169,6 @@ td[class^='td'][width="70"] { width: 80px !important; }
 }
 
 /* MENU BUTTONS */
-#list_surround > table:first-of-type:before, #list_surround > table:first-of-type:after {
-	pointer-events: none;
-	position: fixed;
-	display: block;
-	content: '';
-	margin-top: 215px;
-	height: 450px;
-}
-
-#list_surround > table:first-of-type:before {
-	width: 540px;
-	background-image: url(https://i.imgur.com/FM5h0IY.png) /* middle.png */;
-	background-repeat: repeat;
-	background-position: left center;
-	background-clip: content-box;
-	z-index: -1; 
-}
-
-#list_surround > table:first-of-type:after {
-	margin-left: -12px;
-	width: 571px;
-	background-image: url(https://i.imgur.com/hJ7OwwO.png) /* frame_bg.png */; 
-	background-repeat: repeat-y;
-	z-index: 2;
-}
 
 .status_selected, .status_not_selected { position: fixed; left: calc(38% + 532px); bottom: 15px; }
 
