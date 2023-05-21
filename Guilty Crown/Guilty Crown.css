@@ -1,0 +1,908 @@
+/*
+Guilty Crown by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Quicksand&family=Electrolize&family=Cutive+Mono";
+
+/* Shrink Vert */
+
+@keyframes ShrinkVert
+{
+	0% { transform: scale(1, 1); }   
+	10% { transform: scale(1, .5); }      
+	20% { transform: scale(1, 0); }
+	30% { transform: scale(1, .5); }
+	40% { transform: scale(1, 1); }
+	60% { transform: scale(1, 1); }      
+	70% { transform: scale(1, 1); }     
+	80% { transform: scale(1, 0); }
+	90% { transform: scale(1, .5); }
+	100% { transform: scale(1, 1); }
+}
+
+@-o-keyframes ShrinkVert
+{
+	0% { -o-transform: scale(1, 1); }   
+	10% { -o-transform: scale(1, .5); }      
+	20% { -o-transform: scale(1, 0); }
+	30% { -o-transform: scale(1, .5); }
+	40% { -o-transform: scale(1, 1); }
+	60% { -o-transform: scale(1, 1); }      
+	70% { -o-transform: scale(1, 1); }     
+	80% { -o-transform: scale(1, 0); }
+	90% { -o-transform: scale(1, .5); }
+	100% { -o-transform: scale(1, 1); }
+}
+
+@-ms-keyframes ShrinkVert
+{
+	0% { -ms-transform: scale(1, 1); }   
+	10% { -ms-transform: scale(1, .5); }      
+	20% { -ms-transform: scale(1, 0); }
+	30% { -ms-transform: scale(1, .5); }
+	40% { -ms-transform: scale(1, 1); }
+	60% { -ms-transform: scale(1, 1); }      
+	70% { -ms-transform: scale(1, 1); }     
+	80% { -ms-transform: scale(1, 0); }
+	90% { -ms-transform: scale(1, .5); }
+	100% { -ms-transform: scale(1, 1); }
+}
+
+@-moz-keyframes ShrinkVert
+{
+	0% { -moz-transform: scale(1, 1); }   
+	10% { -moz-transform: scale(1, .5); }      
+	20% { -moz-transform: scale(1, 0); }
+	30% { -moz-transform: scale(1, .5); }
+	40% { -moz-transform: scale(1, 1); }
+	60% { -moz-transform: scale(1, 1); }      
+	70% { -moz-transform: scale(1, 1); }     
+	80% { -moz-transform: scale(1, 0); }
+	90% { -moz-transform: scale(1, .5); }
+	100% { -moz-transform: scale(1, 1); }
+}
+
+@-webkit-keyframes ShrinkVert
+{
+	0% { -webkit-transform: scale(1, 1); }   
+	10% { -webkit-transform: scale(1, .5); }      
+	20% { -webkit-transform: scale(1, 0); }
+	30% { -webkit-transform: scale(1, .5); }
+	40% { -webkit-transform: scale(1, 1); }
+	60% { -webkit-transform: scale(1, 1); }      
+	70% { -webkit-transform: scale(1, 1); }     
+	80% { -webkit-transform: scale(1, 0); }
+	90% { -webkit-transform: scale(1, .5); }
+	100% { -webkit-transform: scale(1, 1); }
+}
+
+.ShrinkVert
+{
+	animation-name: ShrinkVert;
+	-o-animation-name: ShrinkVert;
+	-ms-animation-name: ShrinkVert;
+	-moz-animation-name: ShrinkVert;
+	-webkit-animation-name: ShrinkVert;
+}
+
+/* Shrink Vert Emblem */
+
+@keyframes ShrinkVertEmblem
+{
+	0% { transform: scale(1, 1); }   
+	10% { transform: scale(1, .5); }      
+	20% { transform: scale(1, 0); }
+	30% { transform: scale(1, .5); opacity: 0; }
+	40% { transform: scale(1, 1); opacity: 1; }
+	60% { transform: scale(1, 1); opacity: 1; }      
+	70% { transform: scale(1, 1); opacity: 0; }     
+	80% { transform: scale(1, 0); }
+	90% { transform: scale(1, .5); }
+	100% { transform: scale(1, 1); }
+}
+
+@-o-keyframes ShrinkVertEmblem
+{
+	0% { -o-transform: scale(1, 1); }   
+	10% { -o-transform: scale(1, .5); }      
+	20% { -o-transform: scale(1, 0); }
+	30% { -o-transform: scale(1, .5); opacity: 0; }
+	40% { -o-transform: scale(1, 1); opacity: 1; }
+	60% { -o-transform: scale(1, 1); opacity: 1; }      
+	70% { -o-transform: scale(1, 1); opacity: 0; }     
+	80% { -o-transform: scale(1, 0); }
+	90% { -o-transform: scale(1, .5); }
+	100% { -o-transform: scale(1, 1); }
+}
+
+@-ms-keyframes ShrinkVertEmblem
+{
+	0% { -ms-transform: scale(1, 1); }   
+	10% { -ms-transform: scale(1, .5); }      
+	20% { -ms-transform: scale(1, 0); }
+	30% { -ms-transform: scale(1, .5); opacity: 0; }
+	40% { -ms-transform: scale(1, 1); opacity: 1; }
+	60% { -ms-transform: scale(1, 1); opacity: 1; }      
+	70% { -ms-transform: scale(1, 1); opacity: 0; }     
+	80% { -ms-transform: scale(1, 0); }
+	90% { -ms-transform: scale(1, .5); }
+	100% { -ms-transform: scale(1, 1); }
+}
+
+@-moz-keyframes ShrinkVertEmblem
+{
+	0% { -moz-transform: scale(1, 1); }   
+	10% { -moz-transform: scale(1, .5); }      
+	20% { -moz-transform: scale(1, 0); }
+	30% { -moz-transform: scale(1, .5); opacity: 0; }
+	40% { -moz-transform: scale(1, 1); opacity: 1; }
+	60% { -moz-transform: scale(1, 1); opacity: 1; }      
+	70% { -moz-transform: scale(1, 1); opacity: 0; }     
+	80% { -moz-transform: scale(1, 0); }
+	90% { -moz-transform: scale(1, .5); }
+	100% { -moz-transform: scale(1, 1); }
+}
+
+@-webkit-keyframes ShrinkVertEmblem
+{
+	0% { -webkit-transform: scale(1, 1); }   
+	10% { -webkit-transform: scale(1, .5); }      
+	20% { -webkit-transform: scale(1, 0); }
+	30% { -webkit-transform: scale(1, .5); opacity: 0; }
+	40% { -webkit-transform: scale(1, 1); opacity: 1; }
+	60% { -webkit-transform: scale(1, 1); opacity: 1; }      
+	70% { -webkit-transform: scale(1, 1); opacity: 0; }     
+	80% { -webkit-transform: scale(1, 0); }
+	90% { -webkit-transform: scale(1, .5); }
+	100% { -webkit-transform: scale(1, 1); }
+}
+
+.ShrinkVertEmblem
+{
+	animation-name: ShrinkVertEmblem;
+	-o-animation-name: ShrinkVertEmblem;
+	-ms-animation-name: ShrinkVertEmblem;
+	-moz-animation-name: ShrinkVertEmblem;
+	-webkit-animation-name: ShrinkVertEmblem;
+}
+
+/* Short Shrink Vert */
+
+@keyframes ShortShrinkVert
+{
+	0% { transform: scale(1, 1); }   
+	25% { transform: scale(1, .5); }      
+	50% { transform: scale(1, 0); }
+	75% { transform: scale(1, .5); }
+	100% { transform: scale(1, 1); }
+}
+
+@-o-keyframes ShortShrinkVert
+{
+	0% { -o-transform: scale(1, 1); }   
+	25% { -o-transform: scale(1, .5); }      
+	50% { -o-transform: scale(1, 0); }
+	75% { -o-transform: scale(1, .5); }
+	100% { -o-transform: scale(1, 1); }
+}
+
+@-ms-keyframes ShortShrinkVert
+{
+	0% { -ms-transform: scale(1, 1); }   
+	25% { -ms-transform: scale(1, .5); }      
+	50% { -ms-transform: scale(1, 0); }
+	75% { -ms-transform: scale(1, .5); }
+	100% { -ms-transform: scale(1, 1); }
+}
+
+@-moz-keyframes ShortShrinkVert
+{
+	0% { -moz-transform: scale(1, 1); }   
+	25% { -moz-transform: scale(1, .5); }      
+	50% { -moz-transform: scale(1, 0); }
+	75% { -moz-transform: scale(1, .5); }
+	100% { -moz-transform: scale(1, 1); }
+}
+
+@-webkit-keyframes ShortShrinkVert
+{
+	0% { -webkit-transform: scale(1, 1); }   
+	25% { -webkit-transform: scale(1, .5); }      
+	50% { -webkit-transform: scale(1, 0); }
+	75% { -webkit-transform: scale(1, .5); }
+	100% { -webkit-transform: scale(1, 1); }
+}
+
+.ShortShrinkVert
+{
+	animation-name: ShortShrinkVert;
+	-o-animation-name: ShortShrinkVert;
+	-ms-animation-name: ShortShrinkVert;
+	-moz-animation-name: ShortShrinkVert;
+	-webkit-animation-name: ShortShrinkVert;
+}
+
+/* Tab Content */
+
+.hide {
+	filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/></filter></svg>#grayscale');
+	-webkit-filter: grayscale(100%);
+}
+
+tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
+
+/* Arrow when hover a title */
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle { 
+	background-image: url(https://i.imgur.com/LUDjWaV.png) /* hover.png */; 
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* Circle to the left of the table */
+#list_surround table:nth-of-type(n+4) .animetitle:before { 
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	content: '';
+	right: 633px !important;
+	top: 231px !important;
+	width: 230px;
+	height: 230px;
+	border: solid 1px #0c100d;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: inset 0 0 2px #FFFFFF, inset 0 0 12px rgba(63, 65, 64, 1), inset 0 0 24px rgba(145, 145, 145, 1);
+	border-radius: 50em;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle:before {  
+	visibility: visible;
+	animation: ShortShrinkVert linear .7s;
+        -webkit-animation: ShortShrinkVert linear .7s;
+}
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; letter-spacing: -12px; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type {
+	visibility: visible;
+	position: absolute !important;
+	display: block !important;
+	width: 36px;
+	left: -56px !important;
+	border: solid 1px #b8bbe4;
+	border-right: none;
+	background-color: rgba(79, 64, 131, .6);
+	border-radius: 6px 0 0 6px;
+	text-align: center;
+	letter-spacing: 0 !important;
+}
+
+#list_surround table:nth-of-type(n+4) small a:first-of-type:hover {
+	border-color: #f1eaa6 !important;
+	background-color: rgba(204, 191, 147, .6) !important;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type:after {
+	visibility: visible;
+	position: absolute;
+	display: inline-block;
+	content: '';
+	left: 30px !important;
+	width: 28px;
+	height: 24px;
+}
+
+/* SORT */
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+	display: none;
+}
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table { 
+	position: fixed; 
+	display: block; 
+	top: 0;
+	right: 520px;
+	z-index: 15;
+}
+
+.table_header { 
+	position: fixed;
+	display: block;
+}
+
+
+#list_surround table:nth-of-type(3) a {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: normal;
+} 
+
+.table_headerLink strong, .table_header a[href$="order=4"], .table_header a[href$="order=9"], .table_header a[href$="order=12"] { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
+
+.table_headerLink strong:before, .table_header a[href$="order=4"]:before, .table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { 
+	visibility: visible;
+	position: fixed;
+	display: block;
+	width: 48px;
+	height: 48px;
+	color: #b8bbe4;
+	text-align: center;
+	border: solid 2px #b8bbe4;
+	background-color: rgba(79, 64, 131, .6);
+	border-radius: 10em;
+	letter-spacing: 0 !important;  
+}
+
+.table_headerLink strong:hover:before, .table_header a[href$="order=4"]:hover:before, .table_header a[href$="order=9"]:hover:before, .table_header a[href$="order=12"]:hover:before { color: #FFFFFF; border-color: #FFFFFF; }
+
+.table_headerLink strong:before { content: 'T';  }
+
+.table_header a[href$="order=4"]:before { content: 'S'; }
+
+.table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { content: 'P'; }
+
+.table_header:first-of-type { right: 931px; top: 285px; }
+
+.table_header:nth-of-type(2) { right: 778px; top: 152px; }
+
+.table_header:nth-of-type(3) { right: 541px; top: 286px; }
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	top: 0;
+	width: 0 !important;
+	background: none !important;
+	z-index: 100;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+/* Font settings */
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a {   
+	font-family: 'Cutive Mono', serif !important;
+	font-size: 12.5px !important;
+	letter-spacing: -.5px;
+	font-weight: 500 !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered, #mal\_cs_pic img,  #mal\_cs_otherlinks div strong,  #search,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span { display: none !important; }
+
+#mal\_cs_powered  { width: 0 !important; height: 0 !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; text-shadow: none !important }
+
+#mal\_cs_listinfo, #mal\_cs_links, #mal\_cs_otherlinks { 
+	position: fixed;
+	display: block !important;
+	right: 33px;
+	width: 0 !important;
+	height: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	border-width: 0 !important;
+	transition: width .5s ease-in-out, height .5s ease-in-out;
+	-webkit-transition: width .5s ease-in-out, height .5s ease-in-out;
+} 
+
+/* Icons effects */
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before {
+	position: fixed;
+	display: block !important;
+	content: '';
+	left: 100% !important;
+	margin-left: -34px;
+	width: 32px !important;
+	height: 32px !important;
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#mal\_cs_otherlinks:before {
+	border-bottom-width: 2px;
+	border-radius: 0 0 0 4px;
+}
+
+#mal\_cs_listinfo  { top: 0; }
+
+#mal\_cs_links { top: 32px; }
+
+#mal\_cs_otherlinks { top: 64px; }
+
+#mal\_cs_listinfo:hover, #mal\_cs_links:hover, #mal\_cs_otherlinks:hover { width: 172px !important; height: 172px !important; }
+
+/* Links surround */
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div {
+	opacity: 0;
+	margin: 0 !important;
+	line-height: 0 !important;
+	padding-top: 6px !important;
+	transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+
+#mal\_cs_listinfo:hover div, #mal\_cs_links:hover div, #mal\_cs_otherlinks:hover div { opacity: 1; }
+
+#mal_cs_listinfo div:first-child, #mal_cs_links div:first-child, #mal_cs_otherlinks div:last-child { border-radius: 4px 0 0 0; }
+
+#mal_cs_otherlinks div:first-child { display: none; }
+
+#mal\_cs_otherlinks div:last-child { padding: 6px 0 10px !important; }
+
+#mal\_cs_listinfo div:last-child, #mal\_cs_links div:last-child { padding: 1px 0 10px !important; }
+
+/* Links settings */
+#mal_cs_listinfo a, #mal\_cs_listinfo strong a:after, #mal_cs_links a, #mal_cs_otherlinks a, #mal\_cs_otherlinks a[href*="register"]:after {
+	display: block;
+	margin: 4px 12px 0;
+	line-height: 18px;
+	border-style: solid;
+	border-width: 1px;
+	background-clip: padding-box;
+	border-radius: 3px;
+}
+
+/* Icons images */
+#mal\_cs_listinfo:before { background-image: url(https://i.imgur.com/WXgOAI1.png) /* listinfo.png */; }
+
+#mal\_cs_links:before { background-image: url(https://i.imgur.com/xRCwIX7.png)  /* links.png */; }
+
+#mal\_cs_otherlinks:before { background-image: url(https://i.imgur.com/YKlaGTI.png) /* otherlinks.png */; }
+
+/* Icons hover effects */
+#mal\_cs_listinfo:hover:before, #mal\_cs_links:hover:before, #mal_cs_otherlinks:hover:before {
+	width: 34px !important;
+	border-width: 0;
+}
+
+#mal\_cs_pic { border: none !important; }
+
+/* MyAnimeList logo */
+#mal\_cs_pic, #mal\_cs_pic a {
+	position: fixed;
+	display: block !important;
+	right: 0 !important;
+	top: 0;
+	width: 32px !important;
+	height: 64px !important;
+}
+
+#mal\_cs_pic a {
+	border-style: solid;
+	border-width: 0 0 0 2px;
+	background-image: url(https://i.imgur.com/EB0CqCs.png) /* MAL.png */ !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Links custom text*/
+#mal\_cs_listinfo strong a, #mal\_cs_otherlinks div a[href*="register"] { visibility: hidden; display: inline; line-height: 0 !important; letter-spacing: -12px; }
+
+#mal\_cs_listinfo strong a:after { visibility: visible; content: 'My profile'; letter-spacing: 0 !important; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { visibility: visible; content: 'Create list'; letter-spacing: -.5px !important; }
+
+/* Top Menu - UnFixed */
+
+#mal\_control_strip { position: absolute !important; left: 100% !important; top: 0; width: 32px; }
+
+#mal\_cs_listinfo, #mal\_cs_links, #mal\_cs_otherlinks { position: absolute; }
+
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before { position: absolute; margin-left: -1px !important; }
+
+#mal\_cs_pic, #mal\_cs_pic a { position: absolute !important; }
+
+/* Top Menu Colors - Violet */
+
+/* Effects on links hover*/
+#mal\_control_strip a:hover { color: #e2e6fb !important; }
+
+/* Font settings */
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a {   
+	color: #FFFFFF !important;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Icons effects */
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before {
+	border-color: #605b93;
+	background-color: rgba(142, 128, 164, 1);
+	box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-o-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-moz-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-webkit-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+}
+
+#mal\_cs_otherlinks:before {
+	box-shadow: inset 1px -1px 0 rgba(221, 221, 221, 1);
+	-o-box-shadow: inset 1px -1px 0 rgba(221, 221, 221, 1);
+	-moz-box-shadow: inset 1px -1px 0 rgba(221, 221, 221, 1);
+	-webkit-box-shadow: inset 1px -1px 0 rgba(221, 221, 221, 1);
+}
+
+/* Links surround */
+#mal_cs_listinfo div, #mal_cs_links div, #mal_cs_otherlinks div { background-color: rgba(199, 195, 229, 1); }
+
+/* Links borders */
+#mal_cs_listinfo div:first-child {
+	box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-o-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-moz-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-webkit-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+}
+
+#mal_cs_listinfo div:last-child {
+	box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-o-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-moz-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-webkit-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+}
+
+#mal_cs_links div:first-child {
+	box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-o-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-moz-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+	-webkit-box-shadow: inset 1px 1px 0 #605b93, inset -1px 0 0 #605b93;
+}
+
+#mal_cs_links div:last-child {
+	box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-o-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-moz-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+	-webkit-box-shadow: inset 1px -1px 0 #605b93, inset -1px -1px 0 #605b93;
+}
+
+#mal_cs_otherlinks div {
+	box-shadow: inset 1px -1px 0 #605b93, inset -1px 1px 0 #605b93;
+	-o-box-shadow:  inset 1px -1px 0 #605b93, inset -1px 1px 0 #605b93;
+	-moz-box-shadow:  inset 1px -1px 0 #605b93, inset -1px 1px 0 #605b93;
+	-webkit-box-shadow:  inset 1px -1px 0 #605b93, inset -1px 1px 0 #605b93;
+}
+
+/* Links settings */
+#mal_cs_listinfo a, #mal\_cs_listinfo strong a:after, #mal_cs_links a, #mal_cs_otherlinks a, #mal\_cs_otherlinks a[href*="register"]:after {
+	border-color: #DDDDDD;
+    	background: linear-gradient(bottom, rgba(96, 91, 147, .5) 25%, rgba(156, 151, 209, 1) 100%) !important;
+	background: -moz-linear-gradient(bottom, rgba(96, 91, 147, .5) 25%, rgba(156, 151, 209, 1) 100%) !important;
+	background: -webkit-gradient(
+						linear,
+						left bottom,
+						left top,
+						color-stop(0.25, rgba(96, 91, 147, .5)),
+						color-stop(1, rgba(156, 151, 209, 1))) !important;
+}
+
+/* Links hover effects */
+#mal\_cs_listinfo a:hover, #mal\_cs_listinfo strong a:hover:after, #mal\_cs_links a:hover, #mal\_cs_otherlinks a:hover, #mal\_cs_otherlinks a[href*="register"]:hover:after { 
+	border-color: #ececf3;
+	background: rgba(156, 151, 209, 1) !important;
+}
+
+/* Icons hover effects */
+#mal\_cs_listinfo:hover:before, #mal\_cs_links:hover:before, #mal_cs_otherlinks:hover:before {
+	background-color: rgba(199, 195, 229, 1);
+	box-shadow: inset 0 1px 0 #605b93, inset 0 -1px 0 #605b93;
+	-o-box-shadow: inset 0 1px 0 #605b93, inset 0 -1px 0 #605b93;
+	-moz-box-shadow: inset 0 1px 0 #605b93, inset 0 -1px 0 #605b93;
+	-webkit-box-shadow: inset 0 1px 0 #605b93, inset 0 -1px 0 #605b93;
+}
+
+#mal\_cs_pic { border: none !important; }
+
+/* MyAnimeList logo */
+#mal\_cs_pic a {
+	border-color: #605b93;
+	background-color: rgba(142, 128, 164, 1) !important;
+	box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-o-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-moz-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+	-webkit-box-shadow: inset 1px 0 0 rgba(221, 221, 221, 1);
+}
+
+/* Category Menu */
+
+#list_surround table:first-of-type {
+	position: absolute !important;
+	left: 0;
+	top: 0;
+	z-index: 15;
+}
+
+#list_surround table:first-of-type:before { 
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	content: '';
+	margin-left: -366px;
+	margin-top: -232px;
+	width: 230px;
+	height: 230px;
+	border: solid 1px #0c100d;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: inset 0 0 2px #FFFFFF, inset 0 0 12px rgba(63, 65, 64, 1), inset 0 0 24px rgba(145, 145, 145, 1);
+	border-radius: 50em;
+}
+
+#list_surround table:first-of-type:after { 
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	content: '';
+	margin-left: -356px;
+	margin-top: -194px;
+	width: 180px;
+	height: 158px;
+	background: url(https://i.imgur.com/XFKCET9.png) /* emblem.png */;
+	z-index: 2; 
+}
+
+#list_surround table:first-of-type:hover:before {  
+	visibility: visible;
+	animation: ShrinkVert linear 1.5s;
+        -webkit-animation: ShrinkVert linear 1.5s;
+}
+
+#list_surround table:first-of-type:hover:after {  
+	visibility: visible;
+	animation: ShrinkVertEmblem linear 1.5s;
+        -webkit-animation: ShrinkVertEmblem linear 1.5s;
+}
+
+.status_not_selected a, .status_selected a {
+	visibility: hidden;
+	position: fixed; 
+	display: block;
+	right: 600px;
+	top: 332px;
+	width: 300px;
+	font-size: 20px;
+	font-family: 'Electrolize', sans-serif;
+	text-align: center;
+	color: transparent !important;
+	transition: color .2s linear 1.3s;
+	-webkit-transition: color .2s linear 1.3s;
+}
+
+.status_not_selected a:hover, .status_selected a:hover { visibility: visible; color: #0c100d !important; z-index: 1; }
+
+.status_not_selected a:before, .status_selected a:before { 
+	visibility: visible;
+	position: fixed;
+	display: block;
+	content: '';
+	width: 64px;
+	height: 64px;
+}
+
+.status_not_selected a:before { background-image: url(https://i.imgur.com/ChcVMaz.png) /* menu.png */; }
+
+.status_not_selected a:hover:before, .status_selected a:before { background-image: url(https://i.imgur.com/C2uQ4Rl.png) /* menu_hover.png */; }
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"]:before, .status_not_selected a[href*="status=1"]:hover:before, .status_selected a[href*="status=1"]:before { 
+	margin-left: -58px; 
+	margin-top: 110px; 
+	background-position: 0 0; 
+}
+
+/* Completed */
+.status_not_selected a[href*="status=2"]:before, .status_not_selected a[href*="status=2"]:hover:before, .status_selected a[href*="status=2"]:before { 
+	margin-left: 16px; 
+	margin-top: 172px; 
+	background-position: 256px 0;
+}
+
+/* On Hold */
+.status_not_selected > a[href*="status=3"]:before, .status_not_selected > a[href*="status=3"]:hover:before, .status_selected > a[href*="status=3"]:before { 
+	margin-left: 98px; 
+	margin-top: 198px; 
+	background-position: 192px 0; 
+}
+
+/* Dropped */
+.status_not_selected a[href*="status=4"]:before, .status_not_selected a[href*="status=4"]:hover:before, .status_selected a[href*="status=4"]:before {  
+	margin-left: 184px; 
+	margin-top: 192px; 
+	background-position: 128px 0; 
+}
+
+/* Planned */
+.status_not_selected a[href*="status=6"]:before, .status_not_selected a[href*="status=6"]:hover:before, .status_selected a[href*="status=6"]:before {  
+	margin-left: 260px; 
+	margin-top: 158px; 
+	background-position: 64px 0; 
+}
+
+/*All */
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"] { display: none; }
+
+/* Main Style */
+
+* { cursor: url(https://i.imgur.com/EnCUhc2.png) /* cursor.png */ 1 1, auto; }
+
+/* Covers shape */
+.hide, .hide:before {
+	visibility: hidden;
+	display: block !important;
+	border-radius: 10em;
+}
+
+/* Covers settings */
+.hide {
+	opacity: 0;
+	position: fixed !important;
+	right: 662px;
+	top: 260px;
+	width: 174px;
+	height: 174px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 190px 270px;
+	/* Animation appearance */
+	transition: opacity .3s linear .4s;
+	-webkit-transition: opacity .3s linear .4s;
+	z-index: 15;
+}
+
+/* Covers blured borders */
+.hide:before {
+	position: absolute;
+	content: '';
+	margin-left: -1px;
+	margin-top: -1px;
+	width: 176px;
+	height: 176px;
+	box-shadow: inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1),
+		              inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1), inset 0 0 6px rgba(255, 255, 255, 1);
+}
+
+/* Circuit behind covers */
+.hide:after {
+	position: absolute;
+	content: '';
+	margin-left: -28px;
+	margin-top: -28px;
+	width: 230px;
+	height: 230px;
+	background: url(https://i.imgur.com/5QqOPFw.png) /* circuit.png */;
+	z-index: -1;
+}
+
+:hover + .hide, :hover + .hide:before, :hover + .hide:after { visibility: visible !important; }
+
+/* Additional animation */
+:hover + .hide { 
+	opacity: .9;
+	animation: ShortShrinkVert linear .7s;
+        -webkit-animation: ShortShrinkVert linear .7s;
+}
+
+body {
+        color: #0c100d;
+        font-size: 12px;
+      	font-family: 'Electrolize', sans-serif;
+	background-image: url(https://i.imgur.com/bRQZglm.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a { text-decoration: none; }
+
+/* Menu image to the left of the table */
+#list_surround:before {
+	position: fixed;
+	content: '';
+	top: 92px;
+	right: 514px;
+	width: 450px;
+	height: 458px;
+	background: url(https://i.imgur.com/mo7J7cV.png) /* menu_bg.png */ no-repeat;
+}
+
+/* Girl image at the top of the table */
+#list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	content: '';
+	top: -464px;
+	margin-left: -20px;
+	width: 520px;
+	height: 510px;
+	background-image: url(https://i.imgur.com/UtO8c2F.png) /* top.png */,
+					 url(https://cdn.imgchest.com/files/pyvdcwg5aqy.png) /* Inori.png */;
+	background-repeat: no-repeat;
+	background-position: bottom center, top center;
+}
+
+#list_surround {
+	position: absolute !important;
+	right: 0;
+	margin-top: 464px;
+	width: 500px;
+	background-color: rgba(79, 64, 131, .6);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 0 0 19px; 
+	border-image: url(https://i.imgur.com/tFf8Dui.png) /* border.png */ 0 0 0 19 stretch;
+	-moz-border-image: url(https://i.imgur.com/tFf8Dui.png) /* border.png */ 0 0 0 19 stretch;
+	-webkit-border-image: url(https://i.imgur.com/tFf8Dui.png) /* border.png */ 0 0 0 19 stretch;
+}
+
+.animetitle { 
+	display: inline-block; 
+	min-width: 0; 
+	max-width: 350px; 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 24px !important;
+	font-size: 16px;
+	padding-left: 18px;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2 {
+	line-height: 24px !important;
+	font-size: 14px;
+	color: #b8bbe4;	
+}
+
+/* Titles color */
+.td1 a, .td2 a { color: #b8bbe4; }
+
+.header_title, .header_cw, .header_completed , .header_onhold, .header_dropped, .header_ptw { display: none; }
+
+.category_totals {
+	display: block;
+	margin-left: -19px;
+	padding: 8px 0 0 19px;
+	text-align: right; 
+	color: #b8bbe4;
+	border-bottom: solid 2px #b8bbe4;
+} 
+
+#copyright {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 200px;
+	width: 246px;
+	text-align: left !important;
+	font-size: 10px;
+	z-index: -1;
+}
+
+/*#copyright a { color: #0c100d; }*/
+
+/* Barcode */
+#copyright:before { 
+	position: absolute;
+	display: block; 
+	content: '';
+	width: 185px;
+	height: 90px;
+	margin-left: -192px;
+	background: url(https://i.imgur.com/dR3f2Rr.png) /* barcode.png */ center top no-repeat;
+}
+
+#copyright:after { display: inline-block; content: 'List designed by Hahaido.'; }
