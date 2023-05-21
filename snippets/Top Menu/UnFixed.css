@@ -1,0 +1,7 @@
+#mal\_control_strip { position: absolute !important; left: 100% !important; top: 0; width: 32px; }
+
+#mal\_cs_listinfo, #mal\_cs_links, #mal\_cs_otherlinks { position: absolute; }
+
+#mal\_cs_listinfo:before, #mal\_cs_links:before, #mal\_cs_otherlinks:before { position: absolute; margin-left: -1px !important; }
+
+#mal\_cs_pic, #mal\_cs_pic a { position: absolute !important; }
