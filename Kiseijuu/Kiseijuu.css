@@ -1,0 +1,440 @@
+/*
+Kiseijuu by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap";
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	left: calc(100% - 700px) !important;
+	top: 295px;
+	width: 650px !important;
+	height: 25px !important;
+	background: rgb(249, 220, 191) !important;
+	box-shadow: inset 0 1px 0 #f9dcbf, inset -1px 0 0 #f9dcbf, inset 1px 0 0 #f9dcbf;
+	z-index: 1;
+}
+
+#mal\_control_strip table, #mal\_control_strip td  { display: block !important; }
+ 
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href$="/forum/"], #mal_cs_otherlinks div a[href*="export"], 
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: absolute;
+	display: block;
+	/*left: 50px;*/
+	top: 0;
+	width: 90px;
+	font-size: 0 !important;
+	color: transparent;
+}
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:after {
+	position: absolute;
+	display: block;
+	width: 90px;
+	line-height: 25px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	color: #dd9fa7;
+	text-shadow: 0 -10px 0 transparent, 0 10px 0 transparent;
+	text-align: center;
+	white-space: pre-wrap;
+	text-transform: uppercase;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+#mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { 
+	color: #FFFFFF;
+	text-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+}
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { right: 560px; }
+
+#mal\_cs_listinfo div:first-of-type a:after { content: 'Profile'; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { right: 470px; }
+
+#mal\_cs_links div a[href*="addtolist"]:after { content: 'Add'; box-shadow: inset 0 -2px 0 #f9dcbf, inset 0 3px 0 #f9dcbf, inset -1px 0 0 #dd9fa7, inset 1px 0 0 #dd9fa7; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { right: 380px; }
+
+#mal\_cs_links div:last-of-type a:last-of-type:after { content: 'Mangalist'; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { right: 290px; }
+
+#mal\_cs_listinfo div:last-of-type a:after { content: 'Logout'; box-shadow: inset 0 -2px 0 #f9dcbf, inset 0 3px 0 #f9dcbf, inset 1px 0 0 #dd9fa7;  }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { right: 560px; }
+
+#mal\_cs_otherlinks div a[href*="login"]:after { content: 'Login'; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { right: 470px; }
+
+#mal\_cs_otherlinks div a[href*="register"]:after { content: 'Register'; box-shadow: inset 0 -2px 0 #f9dcbf, inset 0 3px 0 #f9dcbf, inset -1px 0 0 #dd9fa7, inset 1px 0 0 #dd9fa7; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="forum"] { right: 380px; }
+
+#mal\_cs_otherlinks div a[href*="forum"]:after { content: 'Help'; }
+
+#search {
+	position: absolute; 
+        display: block !important;
+	margin-left: -146px !important;
+	top: -4px !important;
+}
+
+#searchBox {
+        position: absolute !important; 
+        display: block !important; 
+	width: 124px !important;
+        height: 13px !important;
+	padding-right: 2px;
+	color: #775359;
+	text-align: right !important;
+	background-color: rgb(255, 255, 255);
+	border: solid 1px #775359 !important;
+}
+
+#searchListButton {
+	position: absolute !important;
+	display: block !important;
+	margin-left: 128px !important;
+	padding: 0 2px 3px 2px !important;
+	background-color: rgb(119, 83, 89) !important;
+} 
+
+/* Tab Content */
+
+td[class^='td']:first-child { width: 56px; padding-left: 6px; }
+
+td[class^='td']:last-child { width: 56px; padding-right: 6px; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	font-size: 13px;
+	color: transparent;
+	text-shadow: 0 -10px 0 transparent, 0 10px 0 transparent;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type {
+	visibility: visible;
+	text-shadow: 0 0 0 #a57880, 0 0 0 #a57880;
+}
+
+
+
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none; }
+
+/* SORT */
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+	display: none;
+}
+
+#list_surround table:nth-of-type(3) {
+	position: absolute;
+	display: block;
+	left: 528px;
+	top: 122px;
+	width: 270px;
+	height: 26px !important;
+	background-color: rgb(249, 220, 191);
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+
+#list_surround table:nth-of-type(3) td { width: 0 !important; }
+
+.table_headerLink {
+	display: block;
+	width: 90px;
+	font-size: 12px;
+	line-height: 26px;
+	color: #dd9fa7;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-shadow: 0 -10px 0 transparent, 0 10px 0 transparent;
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+
+.table_headerLink:hover {
+	color: #FFFFFF;
+	text-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+}
+
+.table_headerLink strong { font-weight: normal !important; }
+
+.table_header:first-child { display:none; }
+
+.table_header { 
+	position: absolute;
+	display: inline-block;
+	width: 90px;
+}
+
+.table_header:nth-of-type(2) { left: 0; }  
+
+.table_header:nth-of-type(3) { left: 90px; }  
+.table_header:nth-of-type(3) .table_headerLink { box-shadow: inset 0 -2px 0 #f9dcbf, inset 0 2px 0 #f9dcbf, inset -1px 0 0 #dd9fa7, inset 1px 0 0 #dd9fa7; }  
+
+.table_header:nth-of-type(4) { left: 180px; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin: 136px 0 0 -402px;
+	width: 402px;
+	height: 500px;
+	background: url(https://i.imgur.com/2cpQRXE.png) /* category_bg.png */;
+	z-index: -1;
+}
+
+#list_surround > table:first-of-type {
+	position: fixed !important;
+	display: block;
+	right: 700px;
+	top: 10px;
+	width: 0;
+	height: 0;
+}
+
+/* MENU BUTTONS */
+.status_not_selected a, .status_selected a {
+	position: fixed;
+	display: block;
+	width: 90px;
+	height: 90px;
+	font-size: 0;
+	border-radius: 50em;
+}
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { margin: 147px 0 0 -270px; }
+
+/* Completed */
+.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin: 205px 0 0 -536px; }
+  
+/* On hold */
+.status_not_selected  a[href*="status=3"], .status_selected a[href*="status=3"] { margin: 318px 0 0 -559px; }
+
+/* Dropped */
+.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin: 430px 0 0 -534px; }
+  
+/* Planned */
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin: 503px 0 0 -443px; }
+  
+/* All */
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { margin: 534px 0 0 -331px; }
+
+.status_selected a { z-index: 1; }
+
+.status_not_selected a:hover { z-index: 2; }
+
+.status_not_selected a:before, .status_selected a:before {
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	display: block;
+	content: '';
+	margin: -90px 0 0 -90px;
+	width: 112px;
+	height: 200px;
+	background: url(https://i.imgur.com/QummUqY.png) /* blade.png */;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transition: opacity .3s linear, transform .3s ease-out, margin.3s ease-out;
+	-webkit-transition: opacity .3s linear, -webkit-transform .3s ease-out, margin.3s ease-out;
+	z-index: -1;
+}
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"]:before, .status_selected a[href*="status=1"]:before { background-position: 0 0; }
+
+/* Completed */
+.status_not_selected a[href*="status=2"]:before, .status_selected a[href*="status=2"]:before { background-position: 0 -200px; }
+  
+/* On hold */
+.status_not_selected  a[href*="status=3"]:before, .status_selected a[href*="status=3"]:before { background-position: 0 -400px; }
+
+/* Dropped */
+.status_not_selected a[href*="status=4"]:before, .status_selected a[href*="status=4"]:before { background-position: 0 -600px; }
+  
+/* Planned */
+.status_not_selected a[href*="status=6"]:before, .status_selected a[href*="status=6"]:before { background-position: 0 -800px; }
+  
+/* All */
+.status_not_selected a[href*="status=7"]:before, .status_selected a[href*="status=7"]:before { background-position: 0 -1000px; }
+
+
+.status_not_selected a:hover:before, .status_selected a:before{
+	opacity: 1;
+	margin: -135px 0 0;
+	transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+}
+
+.status_not_selected a:after, .status_selected a:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 90px;
+	height: 90px;
+	background: url(https://i.imgur.com/mbvvhQx.png) /* category_buttons.png */ no-repeat;
+	border-radius: 50em;
+}
+
+@-moz-document url-prefix() {
+/* Completed */
+.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin: 205px 0 0 -371px; }
+  
+/* On hold */
+.status_not_selected  a[href*="status=3"], .status_selected a[href*="status=3"] { margin: 318px 0 0 -393px; }
+
+/* Dropped */
+.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin: 430px 0 0 -367px; }
+  
+/* Planned */
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin: 503px 0 0 -275px; }
+  
+/* All */
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { margin: 534px 0 0 -162px; }
+}
+
+/* Main Style */
+
+body {
+	font-family: 'Noticia Text', serif;
+	background-color: rgb(0, 0, 0);
+	background: url(https://i.imgur.com/F5SXNRe.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	background-size: cover;
+}
+
+body, a, .td1, .td2 { color: #775359; font-size: 15px; }
+
+a { text-decoration: none; }
+
+#list_surround:before {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: -320px;
+	width: 650px;
+	height: 295px;
+	background: url(https://i.imgur.com/z6GCfG5.png) /* top.png */ no-repeat;
+}
+
+#list_surround {
+	position: relative;
+	left: calc(100% - 700px);
+	width: 650px;
+	margin-top: 320px;
+	background-image: url(https://i.imgur.com/403XSnv.png) /* table_bg.png */, url(https://i.imgur.com/xytzx7b.jpg) /* bg.jpg */;
+	background-repeat: no-repeat, repeat;
+	background-position: right center, center center;
+	background-attachment: fixed, scroll;
+	box-shadow: inset 0 0 2px 4px #f9dcbf, inset 6px 0 0 #dbb289, inset -6px 0 0 #dbb289, inset 0 6px 0 #dbb289, inset 0 -6px 0 #dbb289, inset 0 0 12px #000000;
+}
+
+#list_surround br { display:none; }
+
+.animetitle + small {
+	font-size: 13px;
+	color: #a57880;
+	text-transform: lowercase;
+}
+
+/* HEADERS */
+.header_title {
+	display: block;
+	height: 200px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 650px;
+	height: 200px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/13qaxF5.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -200px; }
+
+.header_onhold span { background-position: center -400px; }
+
+.header_dropped span { background-position: center -600px; }
+
+.header_ptw span { background-position: center -800px; }
+
+.category_totals {
+	width: 638px;
+	color: #a57880;
+	padding: 5px 5px 10px;
+	font-size: 13px;
+	text-align: center;
+}
+
+#grand_totals { display:none; }
+
+#copyright {
+	position: absolute;
+	display: block;
+	margin-top: 0 !important;
+	width: 640px;
+	color: #dd9fa7;
+	padding: 5px;
+	font-size: 11px;
+	text-align: center;
+	background-color: rgb(249, 220, 191);
+	text-transform: uppercase;
+}
+
+#copyright:after {
+	content: 'List designed by Hahaido.';
+}
