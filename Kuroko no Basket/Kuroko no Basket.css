@@ -1,0 +1,643 @@
+/*
+Kuroko no Basket by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Monoton&family=Wallpoet&display=swap";
+
+/* Tab Content */
+
+#list_surround table tbody tr td[class^='td']:first-child {
+	width: 50px !important;
+	border-left: solid 2px rgba(233, 20, 1, 1) !important;	
+	border-right: none !important;
+}
+
+#list_surround table tbody tr td[width="45"] {
+	color: #FFFFFF;
+	background-color: rgba(233, 20, 1, 1); 
+}
+
+#list_surround table tbody tr td[class^='td']:last-child { display: none; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle span { text-decoration: underline; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle  + small { visibility: hidden !important; }
+
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody small { line-height: 24px !important; visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a {
+	position: absolute !important;
+	display: block !important;
+	visibility: visible;
+	color: #000000;
+	margin-left: -32px !important;
+}
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+/* Hide */
+
+.hide {
+	pointer-events: none;
+	visibility: hidden;
+	position: fixed;
+    	display: inline-block !important;
+        bottom: 80%; 
+	left: 70px !important;
+	line-height: 24px !important; 
+	transition: bottom 1s ease-in-out, left 1s ease-in-out 0.2s;
+	-webkit-transition: bottom 1s ease-in-out, left 1s ease-in-out 0.2s;
+	z-index: 20;
+}
+
+:hover + .hide:before {
+	pointer-events: none;
+	position: absolute;
+	visibility: hidden;
+ 	content: '';
+	margin-left: 114%;	
+	margin-top: 0;
+	width: 160%;
+	padding: .2em;
+	font-size: 14px !important;
+	border: solid 1px rgba(137,130,48, .2);
+	border-radius: 10px;
+}
+
+:hover + .hide:after {
+	position: absolute;
+	display: block;
+ 	content: '';
+ 	width: 200px;
+ 	height: 200px;
+	border-radius: 50em 1em 1em 50em;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	 background: 
+		linear-gradient(left, rgba(255, 255, 255, .7) 0%,rgba(255, 255, 255, .1) 50%);
+ 	background: 
+		-moz-linear-gradient(left, rgba(255, 255, 255, .7) 0%, rgba(255,255,255, .1) 50%);
+ 	background:
+ 		-webkit-gradient(linear, left center, right center,
+ 			color-stop(0%,rgba(255, 255, 255, .7)),
+ 			color-stop(50%,rgba(255, 255, 255, .1)));
+	border-radius: 50em;
+}
+
+:hover + .hide {
+	visibility: visible;
+	position: fixed !important;
+	display: block !important; 
+	width: 200px !important;
+	height: 200px !important;
+	bottom: 10px !important; 
+	left: 515px !important;
+	background-repeat: no-repeat !important;
+	background-size: 200px 284px !important;
+	border-radius: 50em;
+	 animation: ball linear 1s;
+        -webkit-animation: ball linear 1s;
+	box-shadow:
+ 		0 1px 0 rgba(255,255,255,.2),
+ 		0 4px 5px rgba(0,0,0,.6),
+		0 1px 0 rgba(0,0,0,.6);
+}
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute !important;
+	display: block;
+	background: none !important;
+	z-index: 15;
+}
+
+#mal\_control_strip td  { display: inline !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href$="/forum/"], #mal_cs_otherlinks div a[href*="export"], 
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a { font-family: 'Wallpoet', cursive !important; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div strong { 
+	font-size: 24px; 
+	font-weight: normal !important;
+	font-family: 'Monoton', cursive !important;  
+	color: rgba(233, 20, 1, 1);
+}
+
+#mal\_cs_listinfo div strong:hover { 
+	text-shadow: 0px 0px 10px rgba(233, 20, 1, 1), 0px 0px 10px rgba(233, 20, 1, 1);
+}
+
+#mal\_cs_listinfo div:first-of-type { 
+	position: absolute; 
+	display: block; 
+	width: 700px;
+	top: 2px;
+	left: 380px; 
+	font-family: 'Monoton', cursive !important;
+	font-size: 18px;
+	color: rgba(79, 129, 189, 1) !important;
+	z-index: 25;
+}
+
+#mal\_cs_listinfo div:first-of-type:before { content: 'Hi, '; }
+#mal\_cs_listinfo div:first-of-type:after { content: ', welcome to the game!'; }
+/*  USERNAME */
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a, #mal\_cs_otherlinks div a[href*="login"] {
+	position: fixed !important;
+	display: block !important;
+	content: none;
+	width: 64px;
+	top: 75px !important;
+	left: 160px !important;
+	color: transparent !important; 
+	letter-spacing: -5px !important;
+	text-shadow: none;
+	z-index: 20;
+}
+
+#mal\_cs_listinfo div:last-of-type a:hover, #mal\_cs_otherlinks div:last-of-type a:hover  { text-shadow: 0px 0px 10px rgba(233, 20, 1, 1) !important; }
+
+#mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_otherlinks div a[href*="login"]:before  {
+	position: absolute !important;
+	display: inline-block !important;
+	content: 'Quit game' !important;
+	text-align: center;
+	font-size: 18px; 
+	color: rgba(233, 20, 1, 1)  !important;
+	top: -20px !important;
+	letter-spacing: 0px !important
+}
+
+#mal\_cs_otherlinks div:last-of-type a:before {
+	visibility: visible !important;
+	position: absolute !important;
+	display: inline-block !important;
+	content: 'Start game' !important;
+	text-align: center;
+	font-size: 18px; 
+	color: rgba(233, 20, 1, 1)  !important;
+	top: -20px !important;
+}
+
+/* ADD*/
+#mal\_cs_links div a[href*="addtolist"]:before, #mal\_cs_links div a[href*="addtolist"]:after {
+	position: absolute;
+	content: ' ' ;
+        bottom: 15px;
+        left: 10px;
+	width: 50%;
+        height: 20%;
+	max-width: 64px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	transform: skew(-8deg) rotate(-3deg);
+	-webkit-transform: skew(-8deg) rotate(-3deg);
+	  z-index: -2;
+}
+
+#mal\_cs_links div a[href*="addtolist"]:after {
+	right: 10px; 
+	left: auto;
+	transform:skew(8deg) rotate(3deg);
+	-webkit-transform: skew(8deg) rotate(3deg);
+}
+
+#mal\_cs_links, #mal\_cs_otherlinks { visibility: hidden; }
+
+#mal\_cs_links:hover, #mal\_cs_otherlinks:hover, #mal\_cs_links div a:hover, #mal\_cs_otherlinks div a:hover { content: none !important; color: transparent !important; text-shadow: none !important; }
+
+/* ADD*/
+#mal\_cs_links div a[href*="addtolist"] { 
+	visibility: visible !important; 
+	position: absolute !important;
+	display: block !important;
+	content: none;
+	height: 64px;
+	width: 64px;
+	top: 32px !important;
+	left: 410px !important;
+	font-size: 18px;
+	text-align: center;
+	color: #000000 !important;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #efefef; 
+  	border-radius: 0 0 120px 120px / 0 0 6px 6px;
+	 box-shadow: 0 1px 4px rgba(79, 129, 189, 0.8), 0 0 20px rgba(79, 129, 189, 0.4) inset;
+}
+
+#mal\_cs_links div a[href*="addtolist"]:hover { box-shadow: 0 1px 4px rgba(233, 20, 1, 0.8), 0 0 20px rgba(233, 20, 1, 0.4) inset; }
+
+#search:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin: 47px 0 0 -4px;
+	height: 40px;
+	width: 160px;
+	background-color: rgb(79, 129, 189);
+	box-shadow: inset 0 -1px 0 #000000, inset 0 -3px 0 #164a88;
+	border-radius: 20px;
+}
+
+#search {
+	position: absolute; 
+        display: block !important;
+	left: -172px !important;
+	top: 465px !important;
+}
+
+#searchBox {
+        position: absolute !important;
+        display: block !important;
+	margin: 50px auto 25px;
+	width: 120px !important;
+        height: 20px !important;
+	padding: 5px;
+        color: #FFFFFF; 
+        font-weight: bold;
+        font-size: 14px !important;
+        text-shadow: rgba(233, 20, 1, 1) 0.1em 0.1em 0.2em, rgba(233, 20, 1, 1) 0.1em 0.1em 0.2em;
+	background: rgba(255,255,255, 1);
+	border: none;
+	box-shadow: inset 0 1px 0 #000000, inset 0 -1px 0 #FFFFFF, inset 0 0 2px #000000;
+	border-radius: 20px;
+}
+
+#searchListButton {
+	position: absolute !important;
+	display: block !important;
+	margin: 58px 0 0 132px !important;
+	padding: 0 2px 3px 2px !important;
+} 
+
+/* Category Menu */
+
+.status_not_selected, .status_selected {
+	position: absolute;
+	display: block;
+	top: 0;
+	height: 35px;
+	width: 175px;
+}
+
+.status_not_selected a, .status_selected a {
+	position: absolute;
+	display: block;
+	content: none !important;
+	color: transparent !important;
+	margin-top: 522px;
+	right: -460px;
+	margin-left: -25px;
+	height: 72px;
+	width: 72px;
+	border: solid 2px transparent;
+	border-radius: 20em;
+}
+
+.status_not_selected a { background-color: rgba(79, 129, 189, 1); }
+
+.status_not_selected a:hover, .status_selected a { background-color: rgba(233, 20 , 1, 1); }
+
+/* Currently watching */
+.status_not_selected > a[href*="status=1"], .status_selected > a[href*="status=1"] {
+	top: 35px; 
+	background-image: url(https://i.imgur.com/em9gxA1.png) /* current.png */;
+}
+
+/* Completed */
+.status_not_selected > a[href*="status=2"], .status_selected > a[href*="status=2"] {
+	top: 100px; 
+	background-image: url(https://i.imgur.com/6sFoAW3.png) /* completed.png */;
+}
+
+/* On Hold */
+.status_not_selected > a[href*="status=3"], .status_selected > a[href*="status=3"] {
+	top: 165px;
+	background-image: url(https://i.imgur.com/RkqDvHB.png) /* onhold.png */;
+}
+
+
+/* Dropped */
+.status_not_selected > a[href*="status=4"], .status_selected > a[href*="status=4"] {
+	top: 230px;
+	background-image: url(https://i.imgur.com/ankXEQd.png) /* dropped.png */;
+}
+
+/* Planned */
+.status_not_selected > a[href*="status=6"], .status_selected > a[href*="status=6"]  {
+	top: 295px; 
+	background-image: url(https://i.imgur.com/eQrTr3q.png) /* planned.png */;
+}
+
+/*All */
+.status_not_selected > a[href*="status=7"], .status_selected > a[href*="status=7"]  {
+	top: 360px;
+	background-image: url(https://i.imgur.com/fWu5bYu.png) /* all.png */;
+}
+
+/* Ball */
+
+@keyframes ball
+{
+	0% { transform: scale(0.5, 0.5); }   
+	50% { transform: scale(0.5, 0.5); }        
+	60% { transform: scale(0.6, 0.6) rotate(0deg); }    
+	65% { transform: scale(0.6, 0.6) rotate(45deg); }    
+	70% { transform: scale(0.7, 0.7) rotate(90deg); }        
+	75% { transform: scale(0.7, 0.7) rotate(135deg); }   
+	80% { transform: scale(0.8, 0.8) rotate180deg); }      
+	85% { transform: scale(0.8, 0.8) rotate(225deg); }    
+	90% { transform: scale(0.9, 0.9) rotate(270deg); }  
+	95% { transform: scale(0.9, 0.9) rotate(315deg); }  
+	100% { transform: scale(1, 1) rotate(360deg); }  
+}
+
+@-o-keyframes ball
+{
+	0% { -o-transform: scale(0.5, 0.5); }   
+	50% { -o-transform: scale(0.5, 0.5); }        
+	60% { -o-transform: scale(0.6, 0.6) rotate(0deg); }    
+	65% { -o-transform: scale(0.6, 0.6) rotate(45deg); }    
+	70% { -o-transform: scale(0.7, 0.7) rotate(90deg); }        
+	75% { -o-transform: scale(0.7, 0.7) rotate(135deg); }   
+	80% { -o-transform: scale(0.8, 0.8) rotate180deg); }      
+	85% { -o-transform: scale(0.8, 0.8) rotate(225deg); }    
+	90% { -o-transform: scale(0.9, 0.9) rotate(270deg); }  
+	95% { -o-transform: scale(0.9, 0.9) rotate(315deg); }  
+	100% { -o-transform: scale(1, 1) rotate(360deg); }  
+}
+
+@-ms-keyframes ball
+{
+	0% { -ms-transform: scale(0.5, 0.5); }   
+	50% { -ms-transform: scale(0.5, 0.5); }        
+	60% { -ms-transform: scale(0.6, 0.6) rotate(0deg); }    
+	65% { -ms-transform: scale(0.6, 0.6) rotate(45deg); }    
+	70% { -ms-transform: scale(0.7, 0.7) rotate(90deg); }        
+	75% { -ms-transform: scale(0.7, 0.7) rotate(135deg); }   
+	80% { -ms-transform: scale(0.8, 0.8) rotate180deg); }      
+	85% { -ms-transform: scale(0.8, 0.8) rotate(225deg); }    
+	90% { -ms-transform: scale(0.9, 0.9) rotate(270deg); }  
+	95% { -ms-transform: scale(0.9, 0.9) rotate(315deg); }  
+	100% { -ms-transform: scale(1, 1) rotate(360deg); }  
+}
+
+@-moz-keyframes ball
+{
+	0% { -moz-transform: scale(0.5, 0.5); }   
+	50% { -moz-transform: scale(0.5, 0.5); }        
+	60% { -moz-transform: scale(0.6, 0.6) rotate(0deg); }    
+	65% { -moz-transform: scale(0.6, 0.6) rotate(45deg); }    
+	70% { -moz-transform: scale(0.7, 0.7) rotate(90deg); }        
+	75% { -moz-transform: scale(0.7, 0.7) rotate(135deg); }   
+	80% { -moz-transform: scale(0.8, 0.8) rotate180deg); }      
+	85% { -moz-transform: scale(0.8, 0.8) rotate(225deg); }    
+	90% { -moz-transform: scale(0.9, 0.9) rotate(270deg); }  
+	95% { -moz-transform: scale(0.9, 0.9) rotate(315deg); }  
+	100% { -moz-transform: scale(1, 1) rotate(360deg); }  
+}
+
+@-webkit-keyframes ball
+{
+	0% { -webkit-transform: scale(0.5, 0.5); }   
+	50% { -webkit-transform: scale(0.5, 0.5); }        
+	60% { -webkit-transform: scale(0.6, 0.6) rotate(0deg); }    
+	65% { -webkit-transform: scale(0.6, 0.6) rotate(45deg); }    
+	70% { -webkit-transform: scale(0.7, 0.7) rotate(90deg); }        
+	75% { -webkit-transform: scale(0.7, 0.7) rotate(135deg); }   
+	80% { -webkit-transform: scale(0.8, 0.8) rotate180deg); }      
+	85% { -webkit-transform: scale(0.8, 0.8) rotate(225deg); }    
+	90% { -webkit-transform: scale(0.9, 0.9) rotate(270deg); }  
+	95% { -webkit-transform: scale(0.9, 0.9) rotate(315deg); }  
+	100% { -webkit-transform: scale(1, 1) rotate(360deg); }  
+}
+
+.ball
+{
+	animation-name: ball;
+	-o-animation-name: ball;
+	-ms-animation-name: ball;
+	-moz-animation-name: ball;
+	-webkit-animation-name: ball;
+}
+
+/* Main Style */
+
+/*
+HOW TO USE
+Use and COMPLETE this simple tutorial if you never installed CSS, it only takes a few minutes:
+http://myanimelist.net/forum/?topicid=200320
+
+
+When you're done with the tutorial and can see the starter layout on your list, copy and paste this entire page of codes (including this part and the codes above and below) 
+to your CSS edit box (the box titled Edit Advanced CSS File) replacing any other codes in the box. 
+Save with the blue button at the bottom. It will put this premade layout on your list instead of the starter one from the tutorial! 
+
+
+If the layout looks weird on your list after installing, you can try to alter your settings here.
+Common solutions are to set Default Status Settings to Watching or All Anime, check or uncheck tags (make sure you save afterwards):
+http://myanimelist.net/editprofile.php?go=listpreferences
+
+
+If your list still has problems you can ask us about it here, or other questions:
+http://myanimelist.net/forum/?topicid=200323
+
+
+And you'll find further ways to customize your list here:
+http://myanimelist.net/forum/?topicid=419405
+*/
+
+a { text-decoration: none !important; }
+
+a:hover { cursor: url(https://i.imgur.com/dck4wX7.png) /* cursor.png */ 1 2, auto; }
+
+body {
+	background-color: rgb(0, 0, 0);
+        color: #000000;
+        font-size: 11.00px;
+        font-family: Verdana, Arial;
+}
+
+#list_surround {
+	position: relative !important;
+	padding: 200px 0 90px;
+	width: 550px;
+	left: calc(100% - 740px);
+}
+
+.table_headerLink, .table_headerLink strong  { display: none; } 
+
+.table_headerLink:visited { color: rgba(60, 44, 8, 1); }
+
+.animetitle { 
+	display: block; 
+	min-width: 0; 
+	max-width: 410px; 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	line-height: 24px !important;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2 {
+        background-color: rgba(255, 255, 255, .7); 
+	font-family: 'Wallpoet', cursive;
+	font-size: 18px;
+	border-right: solid 2px rgba(233, 20, 1, 1);	
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;	
+	z-index: 15;		
+}
+
+.td1 a, .td2 a { color: #FFFFFF; }
+
+/* HEADERS */
+.header_title {
+	display: block;
+	height: 250px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	pointer-events: none;
+	position: absolute;
+	display: inline-block;
+	width: 700px;
+	height: 250px;
+	margin: 50px 0 0 -150px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/uRTqjhw.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: 0 0; }
+
+.header_completed span { background-position: 0 -250px; }
+
+.header_onhold span { background-position: 0 -500px; }
+
+.header_dropped span { background-position: 0 -750px; }
+
+.header_ptw span { background-position: 0 -1000px; }
+
+/* BACKGROUNDS */
+.status_selected:before {
+	pointer-events: none;
+	position: fixed;
+	display: inline-block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: -1;
+}
+
+/* CURRENTLY WATCHING BACKGROUND */
+.status_selected:first-child:before {
+	background-image: url(https://i.imgur.com/83VJHgd.jpg) /* watching.jpg */;
+}
+
+/* COMPLETED BACKGROUND */
+.status_selected:nth-child(2):before {
+	background-image: url(https://i.imgur.com/DVHQppB.jpg) /* completed.jpg */;
+}
+
+/* ON-HOLD BACKGROUND */
+.status_selected:nth-child(3):before {
+	background-image: url(https://i.imgur.com/B8uZcxh.jpg) /* onhold.jpg */;
+}
+
+/* DROPPED BACKGROUND */
+.status_selected:nth-child(4):before {
+	background-image: url(https://i.imgur.com/7GUeoY2.jpg) /* dropped.jpg */;
+}
+
+/* PLANNED BACKGROUND */
+.status_selected:nth-child(5):before {
+	background-image: url(https://i.imgur.com/AcrKIsh.jpg) /* planned.jpg */;
+}
+
+/* ALL BACKGROUND */
+.status_selected:last-child:before {
+	background-image: url(https://i.imgur.com/AQJBvwZ.jpg) /* all.jpg */;
+}
+
+.category_totals, #grand_totals  { 
+	background-color: rgba(233, 20, 1, 1); 
+	color: #FFFFFF; 
+	font-family: 'Wallpoet', cursive;  
+	text-align: center;
+	border: solid 2px rgba(233, 20, 1, 1); 
+} 
+
+#copyright {
+	position: absolute;
+	display: block;
+	color: #000000;
+	width: 350px;
+	top: 720px !important;
+	margin-left: 476px;
+	text-align: right !important;
+	padding: 2px;
+	border: solid 2px rgba(79, 129, 189, 1);
+	background: rgba(255,255,255, 1);
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	z-index: 15;
+}
+
+#copyright a { color: rgba(233, 20, 1, 1); }
+
+#copyright a:hover { text-shadow: rgba(233, 20, 1, 1) 0.1em 0.1em 0.2em; }
+
+#copyright:after { display: block;  content: 'List designed by Hahaido.'; }
+
+#inlineContent {
+	pointer-events: none !important;
+	display: block !important;
+	position: fixed !important;
+	content: ' ';
+	top: 0px;
+	left: 0px;
+	width: 370px;
+	height: 332px;
+	background: url(https://i.imgur.com/FPPfnMI.png) /* Target.png */ no-repeat;
+	z-index: -1;
+}
+
+#list_surround:before {
+	pointer-events: none !important;
+	position: absolute;
+	display: inline-block;
+	content: ' ';
+	width: 692px;
+	height: 523px;
+	top: 0px;
+	right: -190px;
+	background-color: rgba(198, 252, 226, 1);
+	background: url(https://i.imgur.com/ZO6HMXB.png) /* extra_team.png */ top center no-repeat;
+	z-index: 10;
+}
