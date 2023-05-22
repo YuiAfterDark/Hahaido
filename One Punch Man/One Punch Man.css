@@ -1,0 +1,390 @@
+/*
+One Punch Man by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Bangers&display=swap";
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	left: calc(100% - 600px) !important;
+	top: 291px;
+	width: 0 !important;
+	height: 0 !important;
+	background: none !important;
+	z-index: 3;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip td  { display: inline !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong,  #mal\_cs_links div:last-of-type a:first-of-type, #search,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href$="/forum/"], #mal_cs_otherlinks div a[href*="export"],
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_otherlinks div a:before, #mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before, #mal\_cs_links div:last-of-type a:first-of-type:before, #mal\_cs_links div:last-of-type a:last-of-type:before {
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	margin: -45px 0 0 -35px;
+	padding: 4px;
+	line-height: 17px;
+	font-family: 'Bangers', cursive;
+	font-size: 14px;
+	color: #be2c1d;
+	text-align: center;
+	background: linear-gradient(top, rgb(252, 245, 238) 0%, rgb(206, 203, 208) 100%);
+	background: -moz-linear-gradient(top, rgb(252, 245, 238) 0%, rgb(206, 203, 208) 100%);
+	background: -webkit-linear-gradient(top, rgb(252, 245, 238) 0%, rgb(206, 203, 208) 100%);
+	border: solid 1px #1e1e1e;
+	border-radius: 16px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	z-index: 1;
+}
+
+#mal\_cs_otherlinks div a:hover:before, #mal\_cs_listinfo div:last-of-type a:hover:before, #mal\_cs_listinfo div:first-of-type a:hover:before, 
+#mal_cs_links div a[href*="addtolist"]:hover:before, #mal\_cs_links div:last-of-type a:first-of-type:hover:before, #mal\_cs_links div:last-of-type a:last-of-type:hover:before { opacity: 1; margin: -25px 0 0 -35px; }
+
+#mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after,
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after { 
+	opacity: 0;
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url(https://i.imgur.com/AFuQpdg.png) /* top_buttons.png */;
+	background-repeat: no-repeat;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+}
+
+#mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after,
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { opacity: 1; }
+
+#mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type {
+	position: absolute !important;
+	display: block;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	font-size: 0 !important;
+	color: transparent;
+	background-image: url(https://i.imgur.com/AFuQpdg.png) /* top_buttons.png */; 
+	background-repeat: no-repeat;
+}
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { background-position: 0 0; }
+#mal\_cs_listinfo div:first-of-type a:before { content: 'Profile'; }
+#mal\_cs_listinfo div:first-of-type a:after, #mal\_cs_listinfo div:first-of-type a:hover:after { background-position: 0 -40px; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { margin-left: 40px; background-position: -40px 0; }
+#mal\_cs_links div a[href*="addtolist"]:before { content: 'Add'; }
+#mal\_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div a[href*="addtolist"]:hover:after { background-position: -40px -40px; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { margin-left: 80px; background-position: -80px 0; }
+#mal\_cs_links div:last-of-type a:last-of-type:before { content: 'Manga'; }
+#mal\_cs_links div:last-of-type a:last-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { background-position: -80px -40px; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { margin-left: 120px; background-position: -120px 0; }
+#mal\_cs_listinfo div:last-of-type a:before { content: 'Logout'; }
+#mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:last-of-type a:hover:after { background-position: -120px -40px; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { background-position: -160px 0; }
+#mal\_cs_otherlinks div a[href*="login"]:before { content: 'Login'; }
+#mal\_cs_otherlinks div a[href*="login"]:after , #mal\_cs_otherlinks div a[href*="login"]:hover:after { background-position: -160px -40px; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { margin-left: 40px; background-position: -200px 0; }
+#mal\_cs_otherlinks div a[href*="register"]:before { content: 'Register'; }
+#mal\_cs_otherlinks div a[href*="register"]:after, #mal\_cs_otherlinks div a[href*="register"]:hover:after { background-position: -200px -40px; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="forum"] { margin-left: 80px; background-position: -240px 0;}
+#mal\_cs_otherlinks div a[href*="forum"]:before { content: 'Help'; }
+#mal\_cs_otherlinks div a[href*="forum"]:after,  #mal\_cs_otherlinks div a[href*="forum"]:hover:after { background-position: -240px -40px; }
+
+/* Tab Content */
+
+td[class^='td']:not(.borderRBL):first-child { width: 56px; padding-left: 6px; }
+
+td[class^='td']:not(.borderRBL):last-child { width: 56px; padding-right: 6px; }
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; padding: 0 2px; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a {
+	font-size: 14px;
+	color: #282828;
+	text-transform: lowercase;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:hover { color: #be2c1d; }
+
+/* SORT */
+#list_surround table:nth-of-type(3) { width: 190px !important; }
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: absolute;
+	display: block !important;
+	margin: -55px 0 0 360px;
+	width: 190px !important;
+}
+
+.table_header {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	white-space: nowrap;
+}
+
+.table_headerLink {
+	display: inline-block;
+	width: 60px;
+	font-size: 14px;
+	color: #c5c5c5; 
+	text-shadow: 0 0 4px #000000;
+	font-weight: normal;
+	text-align: center;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+
+.table_headerLink:hover { color: #ffda35; text-shadow: 0 0 4px #000000, 0 0 8px #e4842d; }
+
+.table_headerLink strong { font-weight: normal !important; }
+
+.table_header:first-child { display:none; }
+
+@-moz-document url-prefix() {
+	.header_cw + table, .header_completed + table, .header_onhold + table,
+	.header_dropped + table, .header_ptw + table { margin: -58px 0 0 360px; }
+}
+
+/* Category Menu */
+
+#list_surround > table:first-of-type {
+	position: fixed !important;
+	display: block;
+	margin-left: -186px;
+	top: 300px;
+	width: 167px;
+	height: 240px;
+	background: url(https://i.imgur.com/SMLixOM.png) /* category_bg.png */ no-repeat;
+	z-index: 5;
+}
+
+/* MENU BUTTONS */
+.status_not_selected, .status_selected {
+	opacity: 0;
+	display: block;
+	width: 167px;
+	height: 40px;
+	background-image: url(https://i.imgur.com/SMLixOM.png) /* category_bg.png */;
+	background-repeat: no-repeat;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+}
+
+.status_not_selected a, .status_selected a {
+	display: block;
+	width: 167px;
+	height: 40px;
+	font-size: 0;
+}
+
+.status_not_selected:hover, .status_selected { opacity: 1; }
+
+/* Currently watching */
+.status_not_selected:first-child { background-position: 0 0; }
+.status_not_selected:first-child, .status_not_selected:first-child:hover, .status_selected:first-child { background-position: -167px 0; }
+
+/* Completed */
+.status_not_selected:nth-child(2) { background-position: 0 -40px; }
+.status_not_selected:nth-child(2), .status_not_selected:nth-child(2):hover, .status_selected:nth-child(2) { background-position: -167px -40px; }
+  
+/* On hold */
+.status_not_selected:nth-child(3) { background-position: 0 -80px; }
+.status_not_selected:nth-child(3), .status_not_selected:nth-child(3):hover, .status_selected:nth-child(3) { background-position: -167px -80px; }
+
+/* Dropped */
+.status_not_selected:nth-child(4) { background-position: 0 -120px; }
+.status_not_selected:nth-child(4), .status_not_selected:nth-child(4):hover, .status_selected:nth-child(4) { background-position: -167px -120px; }
+  
+/* Planned */
+.status_not_selected:nth-child(5) { background-position: 0 -160px; }
+.status_not_selected:nth-child(5), .status_not_selected:nth-child(5):hover, .status_selected:nth-child(5) { background-position: -167px -160px; }
+  
+/* All */
+.status_not_selected:last-child { background-position: 0 -200px; }
+.status_not_selected:last-child, .status_not_selected:last-child:hover, .status_selected:last-child { background-position: -167px -200px; }
+
+/* Main Style */
+
+* { cursor: url(https://i.imgur.com/vmrOVQY.png) /* cursor.png */ 1 1, auto !important; }
+
+body {
+	font-family: 'Bangers', cursive;
+	text-transform: uppercase;
+	background-color: rgb(0, 0, 0);
+	background-image: url(https://i.imgur.com/xGVF7Zm.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+tr:hover > .td1:not(.borderRBL):first-child, tr:hover > .td2:not(.borderRBL):first-child { 
+	background-color: rgb(247, 217, 129); 
+	background-image: url(https://i.imgur.com/mKKIUpX.png) /* dirt_left.png */;
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+tr:hover > td[class^='td']:nth-of-type(2) {
+	background-image: url(https://i.imgur.com/mKKIUpX.png) /* dirt_left.png */, linear-gradient(left , rgba(247, 217, 129, 1) 0%, rgba(247, 217, 129, 1) 25%, rgba(247, 217, 129, 0) 100%);
+	background-image: url(https://i.imgur.com/mKKIUpX.png) /* dirt_left.png */, -moz-linear-gradient(left , rgba(247, 217, 129, 1) 0%, rgba(247, 217, 129, 1) 25%, rgba(247, 217, 129, 0) 100%);
+	background-image: url(https://i.imgur.com/mKKIUpX.png) /* dirt_left.png */, -webkit-gradient(left , rgba(247, 217, 129, 1) 0%, rgba(247, 217, 129, 1) 25%, rgba(247, 217, 129, 0) 100%);
+	background-repeat: repeat-y, repeat;
+	background-position: -56px top, left top;
+}
+
+.td1, .td2, .td1 a, .td2 a, .category_totals { font-size: 16px; color: #be2c1d; }
+
+.animetitle + small, .borderRBL { color: #323232; }
+
+a { text-decoration: none; }
+
+#list_surround:before, #list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#list_surround:before {
+	left: 16px;
+	top: -300px;
+	width: 634px;
+	height: 300px;
+	background: url(https://i.imgur.com/FkES5zi.png) /* top_bg.png */ no-repeat;
+}
+
+#list_surround:after {
+	left: -26px;
+	top: -14px;
+	width: 600px;
+	height: calc(100% + 14px);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 26px; 
+	border-image: url(https://i.imgur.com/l2bq1Jq.png) /* borders.png */ 0 28 round;
+	z-index: 1;
+}
+
+#list_surround {
+	position: relative;
+	left: calc(100% - 650px);
+	width: 600px;
+	margin-top: 300px;
+	background-color: rgb(255, 255, 255);
+	background-image: url(https://i.imgur.com/mKKIUpX.png) /* dirt_left.png */;
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+#list_surround br { display:none; }
+
+.td1, .td2  { vertical-align: top; }
+
+.animetitle + small {
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+.borderRBL {
+	padding: 0 5px;
+	box-shadow: 0 -1px 0 #ad3232; 
+}
+
+.borderRBL small { visibility: visible !important; }
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: block;
+	height: 170px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	margin-top: -18px;
+	width: 600px;
+	height: 170px;
+	font-size: 0;
+	background-image: url(https://i.imgur.com/BA4ufIj.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -170px; }
+
+.header_onhold span { background-position: center -340px; }
+
+.header_dropped span { background-position: center -510px; }
+
+.header_ptw span { background-position: center -680px; }
+
+.category_totals {
+	height: 50px;
+	padding: 5px 5px 15px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#grand_totals { display:none; }
+
+#copyright {
+	position: fixed;
+	display: block;
+	margin-left: -186px;
+	top: 530px;
+	width: 150px;
+	height: 71px;
+	padding: 5px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #c8c8c8;
+	text-shadow: 1px 1px 2px #000000;
+	background: url(https://i.imgur.com/Jhnj5YI.png) /* copyright_bg.png */ no-repeat;
+}
+
+#copyright:after { content: 'List designed by Hahaido.'; }
