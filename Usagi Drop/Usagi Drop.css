@@ -1,0 +1,609 @@
+/*
+Usagi Drop by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap";
+
+/* Tab Content */
+
+/* # */
+td[class^='td']:first-of-type { color: transparent; }
+
+#list_surround table tbody:hover td[class^='td']:nth-of-type(3) {
+	box-shadow: none;
+ 	-moz-box-shadow: none;
+ 	 -webkit-box-shadow: none;
+}
+
+/* Score */
+td[class^='td']:nth-of-type(3) { 
+	pointer-events: none;
+	position: absolute !important;
+	display: inline-block;
+ 	margin-left: -522px; 
+	width: 20px !important; 
+	text-align: center !important; 
+	z-index: 1;
+} 
+
+td[class^='td']:first-child { width: 28px !important; }
+
+td[class^='td']:nth-child(2) { width: 502px !important; }
+
+td[class^='td']:nth-child(4)  { padding-right: 6px; text-align: right !important; }
+
+td[width="50"] { width: 70px !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover tr td { 
+	box-shadow: inset 0 -1px 0 #b5db0e;
+ 	-moz-box-shadow: inset 0 -1px 0 #b5db0e;
+ 	 -webkit-box-shadow: inset 0 -1px 0 #b5db0e;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover .animetitle span:after { visibility: hidden; }
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; letter-spacing: -12px; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type {
+	visibility: visible;
+	position: absolute !important;
+	display: block !important;
+	margin-left: -20px !important;
+	color: #b5db0e !important;
+	line-height: 25px !important;
+	letter-spacing: 0 !important;
+}
+
+/* SORT */
+.table_header span { display: none; }
+
+.table_headerLink strong { font-weight: normal; }
+
+#list_surround table:nth-of-type(3) { 
+	position: fixed !important; 
+	right: 0;
+	top: 50%;
+	margin-top: -120px;
+	width: 100px !important;
+	height: 240px;
+	z-index: 20;
+}
+
+#list_surround table:nth-of-type(3) td { display: block !important; width: 0 !important; }
+
+#list_surround table:nth-of-type(3) a {
+	position: relative;
+	display: block;
+	margin-left: -4px;
+	margin-top: 24px;
+	width: 100px;
+	height: 80px;
+	color: #FFFFFF; 
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center; 
+	white-space: pre-line;
+	transition: margin-left .2s ease-in;
+	-o-transition: margin-left .2s ease-in;
+	-moz-transition: margin-left .2s ease-in;
+	-webkit-transition: margin-left .2s ease-in;
+} 
+
+#list_surround table:nth-of-type(3) a:hover { margin-left: -28px; text-decoration: underline; } 
+
+.table_header a[href$="order=1"]:before, .table_header a[href$="order=4"]:before, 
+.table_header a[href$="order=12"]:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: -52px;
+	margin-top: -28px;
+	width: 156px;
+	height: 106px;
+	z-index: -1;
+}
+
+.table_header a[href$="order=1"]:before { margin-left: -52px; background: url(https://i.imgur.com/MCU3oTF.png) /* title.png */; }
+
+.table_header a[href$="order=4"]:before { background: url(https://i.imgur.com/HywLCE9.png) /* score.png */; }
+
+.table_header a[href$="order=12"]:before { background: url(https://i.imgur.com/OjYL3dP.png) /* episodes.png */; }
+
+/* Top Menu */
+
+#mal\_control_strip:before {
+	position: absolute;
+	display: block;
+	content: 'Menu';
+	margin-top: 192px;
+	left: 36px;
+	padding: 4px;
+	background: rgba(255, 253, 195, 1);
+	border-radius: 0 0 1em 1em;
+} 
+
+#mal\_control_strip:after {
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 128px;
+	height: 192px;
+	background: url(https://i.imgur.com/LwhHsOd.png) /* usagi.png */ center top no-repeat rgba(255, 253, 195, 1);
+	border-radius: 0 0 1em 1em;
+	z-index: -1;
+} 
+
+#mal\_control_strip {
+	position: fixed !important;
+	display: block !important;
+	margin-top: -192px !important;
+	height: 192px !important;
+	width: 128px !important;
+	left: 0;
+	background: transparent !important;
+	transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+}
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover { text-decoration: underline !important; }
+
+#mal\_control_strip:hover { margin-top: 0 !important;  }
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a { 
+	font-family: 'Crafty Girls', cursive !important;
+	color: #89abd9 !important;
+	font-size: 16px !important;
+}
+
+#mal\_control_strip table {
+	display: block !important;
+	width: 128px !important; 
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 128px !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong,  #searchBox,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none !important; }
+
+#mal\_cs_powered  { width: 0 !important; height: 0 !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+/* Username, Logout */
+#mal\_cs_listinfo div {  
+	margin: 0 !important;
+} 
+
+#mal\_cs_listinfo div a {
+	position: relative !important; 
+	display: inline-block !important; 
+	top: 64px !important;
+	line-height: 20px !important;
+}
+
+#mal\_cs_listinfo strong { font-weight: normal; }
+
+/* Add to List, Home, Anime List, Manga List */
+ #mal\_cs_links div { 
+	margin: 0 !important;
+}
+
+ #mal\_cs_links div a {
+	position: relative !important; 
+	display: inline-block !important; 
+	top: 64px !important;
+	line-height: 18px !important;
+}
+
+/* History, Forum, Export */
+#mal\_cs_otherlinks div a[href*="history"], #mal\_cs_otherlinks div a[href*="forum"], #mal\_cs_otherlinks div a[href*="export"], #mal\_cs_otherlinks div a[href*="mangalist"]   { display: none !important; } 
+
+/* Log in, Create list, Learn more */
+#mal\_cs_otherlinks div {  
+	margin: 0 !important;
+} 
+
+#mal\_cs_otherlinks div a { 
+	position: relative !important; 
+	display: block !important; 
+	top: 24px !important;
+	line-height: 18px !important;
+}
+
+/* Category Menu */
+
+#list_surround table:first-of-type {
+	position: absolute !important;
+	left: 50%;
+	margin-left: -428px;
+	top: -328px !important;
+	width: 900px; 
+	z-index: 15;
+}
+
+.status_not_selected, .status_selected { position: relative !important; display: inline-block !important; width: 156px !important; }
+
+.status_not_selected a, .status_selected a  {
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	padding-bottom: 4px;
+	line-height: 26px !important;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center; 
+	white-space: pre-line;
+}
+
+.status_not_selected a {
+	margin-top: 248px;
+	transition: margin-top .2s ease-in;
+	-o-transition: margin-top .2s ease-in;
+	-moz-transition: margin-top .2s ease-in;
+	-webkit-transition: margin-top .2s ease-in;
+}
+
+.status_not_selected a:hover, .status_selected a { margin-top: 224px !important; text-decoration: underline; }
+
+.status_not_selected a:before, .status_selected a:before {
+	position: absolute;
+	display: block; 
+	content: '';
+	margin-left: -46px;
+	margin-top: -224px;
+	width: 192px;
+	height: 228px;
+}
+
+.status_selected > a[href*="status=1"]:before, .status_not_selected > a[href*="status=1"]:before { 
+	background: url(https://i.imgur.com/IL8F5Bo.png) /* watching.png */;
+}
+
+.status_selected > a[href*="status=1"], .status_not_selected > a[href*="status=1"] { color: #ffe450 !important; }
+
+.status_selected > a[href*="status=2"]:before, .status_not_selected > a[href*="status=2"]:before { 
+	background: url(https://i.imgur.com/rLYhs1T.png) /* completed.png */;
+}
+
+.status_selected > a[href*="status=2"], .status_not_selected > a[href*="status=2"] { color: #008cd1 !important; }
+
+.status_selected > a[href*="status=3"]:before, .status_not_selected > a[href*="status=3"]:before { 
+	background: url(https://i.imgur.com/snlUzt0.png) /* onhold.png */;
+}
+
+.status_selected > a[href*="status=3"], .status_not_selected > a[href*="status=3"] { color: #b5db0e !important; }
+
+.status_selected > a[href*="status=4"]:before, .status_not_selected > a[href*="status=4"]:before { 
+	background: url(https://i.imgur.com/k2gvfOf.png) /* dropped.png */;
+}
+
+.status_selected > a[href*="status=4"], .status_not_selected > a[href*="status=4"] { color: #ffa700 !important; }
+
+.status_selected > a[href*="status=6"]:before, .status_not_selected > a[href*="status=6"]:before { 
+	background: url(https://i.imgur.com/sfR6YhD.png) /* planned.png */;
+}
+
+.status_selected > a[href*="status=6"], .status_not_selected > a[href*="status=6"] { color: #f37f87 !important; }
+
+/*All */
+.status_selected > a[href*="status=7"], .status_not_selected > a[href*="status=7"] { display: none; }
+
+/* Balloon Top */
+
+@keyframes BalloonTop
+{
+	0% { transform: translateX(0); }
+	25% { transform: translateX(-32px); }
+	40% { transform: translateX(0); }
+	55% { transform: translateX(32px); }
+	70% { transform: translateX(0); }
+	85% { transform: translateX(-32px); }
+	100% { transform: translateX(0); }
+}
+
+@-o-keyframes BalloonTop
+{
+	0% { -o-transform: translateX(0); }
+	25% { -o-transform: translateX(-32px); }
+	40% { -o-transform: translateX(0); }
+	55% { -o-transform: translateX(32px); }
+	70% { -o-transform: translateX(0); }
+	85% { -o-transform: translateX(-32px); }
+	100% { -o-transform: translateX(0); }
+}
+
+@-ms-keyframes BalloonTop
+{
+	0% { -ms-transform: translateX(0); }
+	25% { -ms-transform: translateX(-32px); }
+	40% { -ms-transform: translateX(0); }
+	55% { -ms-transform: translateX(32px); }
+	70% { -ms-transform: translateX(0); }
+	85% { -ms-transform: translateX(-32px); }
+	100% { -ms-transform: translateX(0); }
+}
+
+@-moz-keyframes BalloonTop
+{
+	0% { -moz-transform: translateX(0); }
+	25% { -moz-transform: translateX(-32px); }
+	40% { -moz-transform: translateX(0); }
+	55% { -moz-transform: translateX(32px); }
+	70% { -moz-transform: translateX(0); }
+	85% { -moz-transform: translateX(-32px); }
+	100% { -moz-transform: translateX(0); }
+}
+
+@-webkit-keyframes BalloonTop
+{
+	0% { -webkit-transform: translateX(0); }
+	25% { -webkit-transform: translateX(-32px); }
+	40% { -webkit-transform: translateX(0); }
+	55% { -webkit-transform: translateX(32px); }
+	70% { -webkit-transform: translateX(0); }
+	85% { -webkit-transform: translateX(-32px); }
+	100% { -webkit-transform: translateX(0); }
+}
+
+.BalloonTopTop
+{
+	animation-name: BalloonTop;
+	-o-animation-name: BalloonTop;
+	-ms-animation-name: BalloonTop;
+	-moz-animation-name: BalloonTop;
+	-webkit-animation-name: BalloonTop;
+}
+
+/* Balloon */
+
+@keyframes Balloon
+{
+	0% { transform: translateX(0) rotate(0); }
+	25% { transform: translateX(-32px) rotate(-6deg); }
+	40% { transform: translateX(0) rotate(0); }
+	55% { transform: translateX(32px) rotate(6deg); }
+	70% { transform: translateX(0) rotate(0); }
+	85% { transform: translateX(-32px) rotate(-6deg); }
+	100% { transform: translateX(0) rotate(0); }
+}
+
+@-o-keyframes Balloon
+{
+	0% { -o-transform: translateX(0) rotate(0); }
+	25% { -o-transform: translateX(-32px) rotate(-6deg); }
+	40% { -o-transform: translateX(0) rotate(0); }
+	55% { -o-transform: translateX(32px) rotate(6deg); }
+	70% { -o-transform: translateX(0) rotate(0); }
+	85% { -o-transform: translateX(-32px) rotate(-6deg); }
+	100% { -o-transform: translateX(0) rotate(0); }
+}
+
+@-ms-keyframes Balloon
+{
+	0% { -ms-transform: translateX(0) rotate(0); }
+	25% { -ms-transform: translateX(-32px) rotate(-6deg); }
+	40% { -ms-transform: translateX(0) rotate(0); }
+	55% { -ms-transform: translateX(32px) rotate(6deg); }
+	70% { -ms-transform: translateX(0) rotate(0); }
+	85% { -ms-transform: translateX(-32px) rotate(-6deg); }
+	100% { -ms-transform: translateX(0) rotate(0); }
+}
+
+@-moz-keyframes Balloon
+{
+	0% { -moz-transform: translateX(0) rotate(0); }
+	25% { -moz-transform: translateX(-32px) rotate(-6deg); }
+	40% { -moz-transform: translateX(0) rotate(0); }
+	55% { -moz-transform: translateX(32px) rotate(6deg); }
+	70% { -moz-transform: translateX(0) rotate(0); }
+	85% { -moz-transform: translateX(-32px) rotate(-6deg); }
+	100% { -moz-transform: translateX(0) rotate(0); }
+}
+
+@-webkit-keyframes Balloon
+{
+	0% { -webkit-transform: translateX(0) rotate(0); }
+	25% { -webkit-transform: translateX(-32px) rotate(-6deg); }
+	40% { -webkit-transform: translateX(0) rotate(0); }
+	55% { -webkit-transform: translateX(32px) rotate(6deg); }
+	70% { -webkit-transform: translateX(0) rotate(0); }
+	85% { -webkit-transform: translateX(-32px) rotate(-6deg); }
+	100% { -webkit-transform: translateX(0) rotate(0); }
+}
+
+.Balloon
+{
+	animation-name: Balloon;
+	-o-animation-name: Balloon;
+	-ms-animation-name: Balloon;
+	-moz-animation-name: Balloon;
+	-webkit-animation-name: Balloon;
+}
+
+/* Main Style */
+
+/* Custom cursor */
+* { cursor: url(https://i.imgur.com/fUz9d9Y.png) /* cursor.png */, auto !important; }
+
+/* Covers settings */
+.hide:before {
+	display: block;
+	content: '';
+	width: 130px;
+	height: 184px;
+	border: solid 1px #89abd9;
+	background-repeat: no-repeat;
+	background-size: 110% 110%;
+	background-position: center;
+	box-shadow: inset 0 1px 0 #FFFFFF, inset 1px 0 0 #FFFFFF, inset -1px 0 0 #FFFFFF;
+	border-radius: 0 0 1em 1em;
+}
+
+/* Covers position and transition settings */
+.hide {
+	visibility: hidden;
+	position: fixed;
+	display: block !important;
+	left: 180px;
+	bottom: -444px;
+	transition: bottom 1.5s ease-in-out;
+	-webkit-transition: bottom 1.5s ease-in-out;
+	z-index: 25;
+}
+
+/* Balloon image */
+.hide:after {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-top: -444px;
+	width: 128px;
+	height: 260px;
+	background: url(https://i.imgur.com/hTqe2bb.png) /* balloon.png */;
+	z-index: -1;
+}
+
+/* Covers end position when hover on */
+:hover + .hide {
+	visibility: visible;
+	bottom: calc(100% - 444px) !important;
+}
+
+/* Covers custom animation */
+:hover + .hide:before {
+	animation: Balloon linear 1.4s;
+        -webkit-animation: Balloon linear 1.4s;
+}
+
+/* Balloon custom animation */
+:hover + .hide:after {
+	animation: BalloonTop linear 1.4s;
+        -webkit-animation: BalloonTop linear 1.4s;
+}
+
+body {
+	background-image: url(https://i.imgur.com/8IdinrY.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+        color: #89abd9;
+        font-size: 12px;
+        font-family: 'Crafty Girls', cursive;
+}
+
+a { text-decoration: none; }
+
+#list_surround {
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	margin-top: 300px;
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 32px; 
+	border-image: url(https://i.imgur.com/PlAkhOF.png) /* border.png */ 0 32 0 32 stretch;
+}
+
+.animetitle span { 
+	display: block;
+	font-size: 18px;
+	max-width: 464px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 26px;
+}
+
+/* Airing, watching etc. */
+.animetitle + small {
+	position: absolute;
+	display: block;
+	margin-left: -72px;
+	margin-top: -24px;
+	font-size: 10px !important;
+	line-height: 10px !important;
+	padding: 6px;
+	color: #FFFFFF;
+	background-color: rgba(137, 171, 217, 1);
+	border-radius: 50em;
+}
+
+.td1, .td2 {
+	line-height: 24px !important;
+	font-size: 16px;
+	z-index: 15;		
+}
+
+/* Anime titles color */
+.td1 a, .td2 a { color: #89abd9; }
+
+.header_title, .header_cw, .header_completed , .header_onhold, .header_dropped, .header_ptw { display: none; }
+
+.category_totals { 
+	padding-top: 16px;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+} 
+
+/* Copyright background settings */
+#copyright:before {
+	position: absolute !important;
+	display: block;
+	content: '';
+	margin-left: -40px;
+	margin-top: -28px;
+	width: 220px;
+	height: 220px;
+	background-color: rgba(137, 171, 217, 1);
+	border-radius: 50em;
+	z-index: -1;
+}
+
+#copyright {
+	position: fixed !important;
+	display: block;
+	left: -12px !important;
+	bottom: -4px !important;
+	width: 150px;
+	color: #FFFFFF;
+	text-align: center !important;
+	padding: 2px;
+	line-height: 18px !important;
+	z-index: 15;
+}
+
+/* Copyright links color */
+#copyright a { color: #FFFFFF; }
+
+#copyright:after { display: block;  content: 'List designed by Hahaido.'; }
+
+/* Top image */
+#inlineContent {
+	position: absolute !important;
+	display: block !important;
+	left: 50%;
+	margin-left: -600px;
+	top: -328px;
+	width: 1200px; 
+	height: 384px;
+	background: url(https://i.imgur.com/FTiDqsq.png) /* menu_bg.png */;
+	z-index: 1;
+}
