@@ -1,12 +1,13 @@
-/* Haikyuu Layout by Hahaido */
-/* Repaired by jery_js */
-/* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
-/* Last update: 2023-Apr-12 */
+/*
+Haikyuu by Hahaido
+Modified by jery_js, Shishio-kun, and Valerio Lyndon
+Last update: 2023-May-22
+*/
 
-@\import "https://fonts.googleapis.com/css2?family=Monda&display=swap";
 @\import "https://yuiafterdark.github.io/shared/fixes/modern.css";
+@\import "https://fonts.googleapis.com/css2?family=Monda&display=swap";
 
-/* https://dl.dropboxusercontent.com/s/s03lx9vmf9r49od/CategoryMenu.css */
+/* Category Menu */
 
 @-webkit-keyframes Shake {
 	0% { -webkit-transform: rotate(0deg); }
@@ -64,7 +65,7 @@
 	top: -230px;
 	width: 300px;
 	height: 257px;
-	background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwD9tyGIHtO4hKK7KI9--RQM) no-repeat !important;
+	background: url(https://i.imgur.com/TFwVAhk.png) /* category_bg.png */ no-repeat;
 }
 
 .status-menu-container .status-menu {
@@ -84,7 +85,7 @@
 	padding: 0;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
+	background-image: url(https://i.imgur.com/oCyZUC0.png) /* category_buttons.png */;
 	background-repeat: no-repeat;
 }
 
@@ -118,7 +119,7 @@
 	width: 154px;
 	height: 54px;
 	background-color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwL33StncM-uo8Nd4xpjMVOM) !important;
+	background-image: url(https://i.imgur.com/oCyZUC0.png) /* category_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: opacity .5s linear;
 	transition: opacity .5s linear;
@@ -135,7 +136,7 @@
 .status-menu-container .status-menu .status-button.plantowatch:after, .status-menu-container .status-menu .status-button.plantowatch.on:after, .status-menu .status-button.plantowatch:hover:after  { background-position: -154px -270px; }
 .status-menu-container .status-menu .status-button.plantoread:after, .status-menu-container .status-menu .status-button.plantoread.on:after, .status-menu .status-button.plantoread:hover:after  { background-position: -154px -270px; }
 
-/* https://dl.dropboxusercontent.com/s/xiiui9r3n9fwh94/Menus.css */
+/* Menus */
 
 @-webkit-keyframes Drop_down {
 	from { opacity: 0; margin-top: 20px; }
@@ -215,7 +216,7 @@
 	content: '';
 	right: 0;
 	height: 60px;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
+	background-image: url(https://i.imgur.com/Q49oFOL.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -277,7 +278,7 @@
 	height: 61px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
+	background-image: url(https://i.imgur.com/Q49oFOL.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 }
 
@@ -314,6 +315,8 @@
 .list-table .list-table-header .header-title:last-child { background-image: none; }
 
 .list-table .list-table-header .header-title.status { display: none; }
+
+.list-unit.all_anime .list-table .list-table-header .header-title.status { display: table-cell; width: 4px; }
 
 .list-table .list-table-header .header-title.number { width: 30px; }
 
@@ -391,7 +394,7 @@
 	animation: Slide_down .3s forwards ease-out;
 }
 
-/* https://dl.dropboxusercontent.com/s/uw7tcdc88d8wir6/TopMenu.css */
+/* Top Menu */
 
 .list-menu-float {
 	position: absolute;
@@ -430,7 +433,7 @@
 	width: 44px;
 	height: 60px;
 	fill: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004) !important;
+	background-image: url(https://i.imgur.com/Q49oFOL.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	float: left;
 }
@@ -446,7 +449,7 @@
 	top: 0;
 	width: 44px;
 	height: 60px;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
+	background-image: url(https://i.imgur.com/Q49oFOL.png) /* top_buttons.png */;
 	background-position: -396px 0;
 }
 
@@ -490,7 +493,7 @@
 	height: 61px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwM40Uv50IPDAF09g9ooI004);
+	background-image: url(https://i.imgur.com/Q49oFOL.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -545,118 +548,109 @@
 
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting { display: none; }
 
-
-
-
-/* PATCH */
-
-
-* { cursor: url(https://i.imgur.com/RxqXxeV.png), auto !important; }
-
-#recaptcha-terms {
-    display: none;
-}
+/* Main Style */
 
 @-webkit-keyframes Slide {
-from { margin-top: -50%; }
-to { margin-top: 0; }
+	from { margin-top: -50%; }
+	to { margin-top: 0; }
 }
 
 @keyframes Slide {
-from { margin-top: -50%; }
-to { margin-top: 0; }
+	from { margin-top: -50%; }
+	to { margin-top: 0; }
 }
 
 @-webkit-keyframes Show {
-from { opacity: 0; }
-to { opacity: 1; }
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 @keyframes Show {
-from { opacity: 0; }
-to { opacity: 1; }
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
+* { cursor: url(https://i.imgur.com/4zrsph3.png) /* cursor.png */, auto !important; }
 
 body.ownlist {
-font-family: 'Monda';
-font-size: 14px;
-background-color: rgb(25, 35, 37) !important;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwBtEM1gp_r1CNkhp1P1ZSGKY1t5-EyAgeYpOicm8ls9H);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center center;
-background-size: cover;
+	font-family: 'Monda';
+	font-size: 14px;
+	background-color: rgb(25, 35, 37) !important;
+	background-image: url(https://i.imgur.com/qLMOyS4.jpg) /* background.jpg */;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
 }
 
 .list-container:after {
-pointer-events: none;
-position: fixed;
-display: block;
-content: '';
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwJTYIalEC9GYosf2-Fgp1WQ);
-background-repeat: no-repeat;
-background-position: left center;
-background-size: cover;
-z-index: 4;
+	pointer-events: none;
+	position: fixed;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://i.imgur.com/drTTFTz.png) /* side_bg.png */;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: cover;
+	z-index: 4;
 }
 
 .list-container {
-position: relative;
-display: inline-block;
-right: 29%;
-margin: 0;
-width: 650px;
-text-align: left;
-background-color: transparent;
-border: none;
-float: right;
+	position: relative;
+	display: inline-block;
+	right: 29%;
+	margin: 0;
+	width: 650px;
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	float: right;
 }
 
 .list-block {
-margin: 370px 0 0 0;
-width: 650px;
-min-height: 600px;
-padding: 25px 10px 100px 0;
-background-color: rgba(0, 0, 0, .5);
-/* Table borders */
-background-clip: padding-box;
-border-color: transparent;
-border-style: solid;
-border-width: 0 0 0 10px;
--webkit-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round; 
--moz-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round;
-border-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwA9_Hy5hcdio8h1_weYa5LE) 0 0 0 10 round;
+	margin: 370px 0 0 0;
+	width: 650px;
+	min-height: 600px;
+	padding: 25px 10px 100px 0;
+	background-color: rgba(0, 0, 0, .5);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 0 0 10px; 
+	-webkit-border-image: url(https://i.imgur.com/xVSIbAx.png) /* border.png */ 0 0 0 10 round;
+	-moz-border-image: url(https://i.imgur.com/xVSIbAx.png) /* border.png */ 0 0 0 10 round;
+	border-image: url(https://i.imgur.com/xVSIbAx.png) /* border.png */ 0 0 0 10 round;
 }
 
 .list-unit {
-display: block;
-margin: 0;
-width: 650px;
+	display: block;
+	margin: 0;
+	width: 650px;
 }
 
 .cover-block {
-pointer-events: none;
-position: absolute;
-display: block;
-top: 64px;
-margin: 0 auto;
-width: 650px;
-text-align: center;
-vertical-align: middle;
-z-index: 2;
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	top: 64px;
+	margin: 0 auto;
+	width: 650px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
 }
 
 .cover-block .image-container {
-display: block;
-margin: 10px 0 0 145px;
-width: 519px;
-height: 400px;
-padding: 0;
+	display: block;
+	margin: 10px 0 0 145px;
+	width: 519px;
+	height: 400px;
+	padding: 0;
 }
 
 .cover-block .image-container.hide { display: none; }
@@ -671,7 +665,7 @@ a { text-decoration: none; }
 
 .list-unit.all_anime .list-table .list-table-data .data, .list-unit.all_anime .list-table .list-table-data .data a { color: #f0943d; }
 
-.list-unit.watching .list-table .list-table-data .data, .list-unit.watching .list-table .list-table-data .data a,
+.list-unit.watching .list-table .list-table-data .data, .list-unit.watching .list-table .list-table-data .data a, 
 .list-unit.reading .list-table .list-table-data .data, .list-unit.reading .list-table .list-table-data .data a { color: #8ed5c7; }
 
 .list-unit.completed .list-table .list-table-data .data, .list-unit.completed .list-table .list-table-data .data a { color: #d4575f; }
@@ -684,35 +678,35 @@ a { text-decoration: none; }
 .list-unit.plantoread .list-table .list-table-data .data, .list-unit.plantoread .list-table .list-table-data .data a { color: #a95274; }
 
 .list-table {
-width: 650px;
-margin: 0;
-border-collapse: collapse;
-border: none;
+	width: 650px;
+	margin: 0;
+	border-collapse: collapse;
+	border: none;
 }
 
 .list-table > tbody:nth-of-type(2n+1) { background-color: transparent; }
 
 .list-table .list-item:before, .list-table .list-item:after {
-position: absolute;
-display: block;
-content: '';
-width: 0;
-height: 1px;
-background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
-background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
-background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
--webkit-transition: all .3s ease-out;
-transition: all .3s ease-out;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+	background-image: -moz-linear-gradient(right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 0) 100%);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
 }
 
 .list-table .list-item:hover:before, .list-table .list-item:hover:after { width: 75%; }
 
 .list-table .list-table-data .data {
-display: table-cell;
-padding: 4px 0;
-vertical-align: middle;
-text-align: center;
-border: none;
+	display: table-cell;
+	padding: 4px 0;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
 }
 
 .list-table .list-table-data .data a { font-weight: normal !important; }
@@ -720,29 +714,27 @@ border: none;
 .list-table .list-table-data .data a:hover { text-decoration: none !important; }
 
 .list-table .list-table-data a.edit-disabled {
-cursor: text;
-color: #697c8d;
+	cursor: text;
+	color: #697c8d;
 }
-
- /* broken */
-/* 
-.list-unit.all_anime .list-table .list-table-header .header-title.status { display: table-cell; width: 4px; }
 
 .list-table .list-table-data .data.status:before {
-display: block;
-content: '';
-margin-left: -12px;
-width: 22px;
-height: 12px;
-background-image: url(http://i.imgur.com/N3vLVlm.png);
-background-repeat: no-repeat;
+	display: block;
+	content: '';
+	margin-left: -12px;
+	width: 22px;
+	height: 12px;
+	background-image: url(https://i.imgur.com/zEwIvls.png) /* status_bg.png */;
+	background-repeat: no-repeat;
 }
 
-.list-unit.all_anime .list-table-data .data.status {
-display: table-cell;
-width: 4px;
-padding: 0;
-background-color: transparent !important;
+.list-table .list-table-data .data.status { display: none; }
+
+.list-unit.all_anime .list-table-data .data.status { 
+	display: table-cell; 
+	width: 4px;
+	padding: 0;
+	background-color: transparent !important; 
 }
 
 .list-table .list-table-data .data.status.reading:before, .list-table .list-table-data .data.status.watching:before { background-position: 0 0; }
@@ -754,18 +746,13 @@ background-color: transparent !important;
 .list-table .list-table-data .data.status.dropped:before { background-position: 0 -36px; }
 
 .list-table .list-table-data .data.status.plantoread:before, .list-table .list-table-data .data.status.plantowatch:before { background-position: 0 -48px; }
-*/
-
-.list-table .list-table-data .data.status { display: none; }
-
-.list-table .list-table-data .data.number { text-align: center; }
 
 .list-table .list-table-data .data.image a { display: inline-block; }
 
 .list-table .list-table-data .data.title {
-padding: 0;
-text-align: left;
-word-wrap: break-word;
+	padding: 0;
+	text-align: left;
+	word-wrap: break-word;
 }
 
 .list-table .list-table-data .data.title .link { width: calc(100% - 80px); }
@@ -775,15 +762,15 @@ word-wrap: break-word;
 .list-table .list-table-data .data.title .ml4 { display: none; }
 
 .list-table .list-table-data .data.title .add-edit-more {
-display: inline-block;
-margin-right: 10px;
-width: 0;
-font-size: .9em;
-white-space: nowrap;
--webkit-transition: all .3s ease-out;
-transition: all .3s ease-out;
-float: right;
-overflow: hidden;
+	display: inline-block;
+	margin-right: 10px;
+	width: 0;
+	font-size: .9em;
+	white-space: nowrap;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	float: right;
+	overflow: hidden;
 }
 
 .list-table .list-table-data:hover .data.title .add-edit-more { width: 68px; }
@@ -794,28 +781,28 @@ overflow: hidden;
 
 .list-table .more-info .more-content { padding: 10px 20px 10px 10px; }
 
-.borderRBL, .borderRBL a { color: #ffffff; text-shadow: 0 0 .2em #000000; }
+.borderRBL, .borderRBL a { 	color: #ffffff; text-shadow: 0 0 .2em #000000; }
 
 .borderRBL { opacity: 0; display: block; text-align: right; }
 
-.borderRBL a { font-weight: bold; }
+.borderRBL a  { font-weight: bold; }
 
 .list-table .more-info[style="display: table-row;"] .borderRBL {
--webkit-animation: Slide .3s ease-out, Show .3s forwards ease-out .3s;
-animation: Slide .3s ease-out, Show .3s forwards ease-out .3s;
+	-webkit-animation: Slide .3s ease-out, Show .3s forwards ease-out .3s;
+	animation: Slide .3s ease-out, Show .3s forwards ease-out .3s;
 }
 
 /* HEADERS */
 .list-unit .list-status-title {
-position: absolute;
-display: table;
-margin: -200px 0 0 -15px;
-width: 665px;
-height: 200px;
-background-color: transparent;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOiHcLasHsjtHTHUvC1iabw);
-background-repeat: no-repeat;
-z-index: 3;
+	position: absolute;
+	display: table;
+	margin: -200px 0 0 -15px;
+	width: 665px;
+	height: 200px;
+	background-color: transparent;
+	background-image: url(https://i.imgur.com/0MdUsGE.png) /* headers_bg.png */;
+	background-repeat: no-repeat;
+	z-index: 3;
 }
 
 .list-unit .list-status-title .text { display: none; }
@@ -831,121 +818,122 @@ z-index: 3;
 .list-unit.plantowatch .list-status-title, .list-unit.plantoread .list-status-title { background-position: 0 -1000px; }
 
 #footer-block {
-position: relative;
-display: inline-block;
-width: 100%;
-padding: 0;
-font-family: 'Monda';
-background-color: transparent;
-float: right;
+	position: relative;
+	display: inline-block; 
+	width: 100%; 
+	padding: 0;
+	font-family: 'Monda';
+	background-color: transparent;
+	float: right;
 }
 
 #copyright {
-position: relative;
-width: 675px;
-right: 29%;
-margin: -150px -20px 0 0;
-height: 150px;
-padding: 0 0 0 45px;
-line-height: 272px;
-font-size: 12px;
-color: #ffffff;
-text-shadow: 0 0 .2em #000000;
-text-align: center;
-text-transform: uppercase;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwDZzYCqIL4ufrr0ECYXShiY) no-repeat;
-overflow: hidden;
-float: right;
+	position: relative;
+	width: 675px;
+	right: 29%;
+	margin: -150px -20px 0 0;
+	height: 150px;
+	padding: 0 0 0 45px;
+	line-height: 272px;
+	font-size: 12px;
+	color: #ffffff;
+	text-shadow: 0 0 .2em #000000;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(https://i.imgur.com/KcHY3Mg.png) /* footer_bg.png */ no-repeat;
+	overflow: hidden;
+	float: right;
 }
 
 #advanced-options {
-opacity: 0;
-position: absolute;
-display: none;
-left: 0;
-right: 0;
-top: 24px;
-margin: 0 auto;
-width: 865px;
-height: 550px;
-padding: 55px 0 30px;
-font-family: 'Monda';
-color: #c5c5c5;
-text-shadow: 0 0 .2em #000000;
-text-align: left;
-background-color: transparent;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwO2BSzZQgD5BVWxXADygK-4) no-repeat;
-border: none;
-box-shadow: none;
-z-index: 1101;
+	opacity: 0;
+	position: absolute;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 24px;
+	margin: 0 auto;
+	width: 865px;
+	height: 550px;
+	padding: 55px 0 30px;
+	font-family: 'Monda';
+	color: #c5c5c5;
+	text-shadow: 0 0 .2em #000000;
+	text-align: left;
+	background-color: transparent;
+	background: url(https://i.imgur.com/4oQD8AE.png) /* filter_bg.png */ no-repeat;
+	border: none;
+	box-shadow: none;
+	z-index: 1101;
 }
 
 #fancybox-overlay { opacity: 0; }
 
 #fancybox-overlay[style="display: block;"] {
-opacity: .5;
-background-color: rgb(80, 80, 80);
+	opacity: .5;
+	background-color: rgb(80, 80, 80);
 }
 
 #fancybox-overlay[style="display: block;"], #advanced-options[style="display: block;"] {
--webkit-animation: Show .3s forwards ease-out;
-animation: Show .3s forwards ease-out;
+	-webkit-animation: Show .3s forwards ease-out;
+	animation: Show .3s forwards ease-out;
 }
 
 #advanced-options #fancybox-close:before {
-pointer-events: none;
-position: absolute;
-display: block;
-content: '';
-left: -16px;
-top: -14px;
-width: 67px;
-height: 69px;
-background: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwF_At13aoqFzYKkhL6GR1nU) no-repeat;
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	left: -16px;
+	top: -14px;
+	width: 67px;
+	height: 69px;
+	background: url(https://i.imgur.com/rxpCmjn.png) /* filter_close.png */ no-repeat;
 }
 
 #advanced-options #fancybox-close {
-position: absolute !important;
-top: 56px !important;
-right: 74px !important;
-width: 32px !important;
-height: 32px !important;
-background: none !important;
-cursor: pointer;
-z-index: 1103;
+	position: absolute !important;
+	top: 56px !important;
+	right: 74px !important;
+	width: 32px !important;
+	height: 32px !important;
+	background: none !important;
+	cursor: pointer;
+	z-index: 1103;
 }
 
 #advanced-options .advanced-options-header {
-width: 730px;
-margin: 0px auto;
-padding-bottom: 4px;
-font-size: 16px;
-border: none;
-box-shadow: 0 1px 0 #000000, 0 2px 0 #505050;
+	width: 730px;
+	margin: 0px auto;
+	padding-bottom: 4px;
+	font-size: 16px;
+	border: none;
+	box-shadow: 0 1px 0 #000000, 0 2px 0 #505050;
 }
 
 #advanced-options .advanced-options-header .description {
-margin-left: 8px;
-font-size: 14px;
-font-weight: normal;
+	margin-left: 8px;
+	font-size: 14px;
+	font-weight: normal;
 }
 
-#advanced-options input[type=text], #advanced-options select, #advanced-options select:disabled {
-height: 21px;
-padding: 0 2px;
-color: #000000;
-background-color: rgba(255, 255, 255, .8);
-border: solid 1px #000000;
+#advanced-options input[type=text], #advanced-options select,  #advanced-options select:disabled {
+	height: 21px;
+	padding: 0 2px;
+	color: #000000;
+	background-color: rgba(255, 255, 255, .8);
+	border: solid 1px #000000;
 }
 
 #advanced-options select:disabled { color: #646464; }
 
 #advanced-options select, #advanced-options select:disabled {
-display: inline-block;
-padding-right: 20px;
-background-repeat: no-repeat;
-background-position: center right;
-background-size: 18px 8px;
+	display: inline-block;
+	padding-right: 20px;
+	background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 18px 8px;
 }
 
 #advanced-options select:disabled { background-color: rgba(197, 197, 197, .8); }
@@ -958,48 +946,48 @@ background-size: 18px 8px;
 
 /* FILTER */
 #advanced-options .filter-widget {
-margin: 0 auto;
-width: 730px;
-padding: 12px 0 0;
+	margin: 0 auto;
+	width: 730px;
+	padding: 12px 0 0;
 }
 
 #advanced-options .filter-widget select {
-margin-right: 8px;
-font-size: 14px;
+	margin-right: 8px;
+	font-size: 14px;
 }
 
 /* SORT */
 #advanced-options .sort-widget {
-margin: 0px auto;
-width: 730px;
-padding: 12px 0 0;
+	margin: 0px auto;
+	width: 730px;
+	padding: 12px 0 0;
 }
 
 #advanced-options .sort-widget:last-of-type { padding-bottom: 45px; }
 
 #advanced-options .sort-widget select {
-width: 172px;
-margin-right: 8px;
+    width: 172px;
+    margin-right: 8px;
 }
 
 #advanced-options .sort-widget input[type=radio] { display: none; }
 
 #advanced-options .sort-widget input[type=radio] + label {
-position: relative;
-display: inline-block;
-line-height: 24px;
-padding: 0;
-color: #646464;
-text-shadow: 0 0 .2em #000000;
-text-align: left;
-background-color: transparent;
-border: none;
-border-radius: 0;
+	position: relative;
+	display: inline-block;
+	line-height: 24px;
+	padding: 0;
+	color: #646464;
+	text-shadow: 0 0 .2em #000000;
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
 }
 
 #advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label {
-background-color: transparent;
-border: none;
+	background-color: transparent;
+	border: none;
 }
 
 #advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label { color: #646464; }
@@ -1025,9 +1013,9 @@ border: none;
 
 #advanced-options .filter-widget.aired-date .text,
 #advanced-options .filter-widget.published-date .text {
-display: inline-block;
-margin-right: 4px;
-font-size: 14px;
+	display: inline-block;
+	margin-right: 4px;
+	font-size: 14px;
 }
 
 #advanced-options .filter-widget.aired-season select.year { width: 80px; }
@@ -1036,39 +1024,39 @@ font-size: 14px;
 
 #advanced-options .sort-widget .widget-header,
 #advanced-options .filter-widget .widget-header {
-display: inline-block;
-width: 110px;
-font-family: 'Monda';
-font-size: 14px;
+	display: inline-block;
+	width: 110px;
+	font-family: 'Monda';
+	font-size: 14px;
 }
 
 #advanced-options .sort-widget:last-of-type,
 #advanced-options .filter-widget:last-of-type { padding-bottom: 40px; }
 
 #advanced-options .advanced-options-button {
-width: 730px;
-margin: 0 auto;
-padding: 0;
-text-align: center;
-border: none;
-box-shadow: 0 -1px 0 #505050, 0 -2px 0 #000000;
+	width: 730px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	border: none;
+	box-shadow: 0 -1px 0 #505050, 0 -2px 0 #000000;
 }
 
 #advanced-options .btn-apply,
 #advanced-options .btn-clear {
-position: relative;
-display: inline-block;
-top: -7px;
-margin: 0 4px;
-width: 151px;
-height: 44px;
-padding: 0;
-font-size: 0;
-color: 0;
-background-color: transparent;
-background-image: url(https://image.myanimelist.net/ui/5LYzTBVoS196gvYvw3zjwOkA3TyUXyFJarDezEuCMP8);
-background-repeat: no-repeat;
-border-radius: 0;
+	position: relative;
+	display: inline-block;
+	top: -7px;
+	margin: 0 4px;
+	width: 151px;
+	height: 44px;
+	padding: 0;
+	font-size: 0;
+	color: 0;
+	background-color: transparent;
+	background-image: url(https://i.imgur.com/orNi8FY.png) /* filter_buttons.png */;
+	background-repeat: no-repeat;
+	border-radius: 0;
 }
 
 #advanced-options .btn-apply { background-position: 0 0; }
@@ -1082,42 +1070,42 @@ border-radius: 0;
 .cover-block .image-container .btn-list-setting { display: none; }
 
 /**
-* List Container - List Table - Items
-*/
+ * List Container - List Table - Items
+ */
 
 .list-table .list-table-data a:not(.edit-disabled):hover { text-decoration: underline; }
 
 .list-table .list-table-data .tags .edit {
-display: block;
-width: 100%;
-text-align: center;
-color: #2db039;
-font-size: 10px;
-font-family: 'Monda';
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #2db039;
+	font-size: 10px;
+	font-family: 'Monda';
 }
 
 .list-table .list-table-data .tags .edit:hover { color: green !important; }
 
 .list-table .list-table-data .tags textarea {
-box-sizing: border-box;
-width: 100%;
-height: 60px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
 }
 
 .list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
-position: absolute;
-margin-left: 12px;
-width: 68px;
-font-size: .9em;
-color: #ffffff;
-text-shadow: 0 0 .2em #000000;
-text-align: left;
-white-space: nowrap;
--webkit-transition: all .3s ease-out;
-transition: all .3s ease-out;
-float: left;
-overflow: hidden;
-z-index: 1;
+	position: absolute;
+	margin-left: 12px;
+	width: 68px;
+	font-size: .9em;
+	color: #ffffff;
+	text-shadow: 0 0 .2em #000000;
+	text-align: left;
+	white-space: nowrap;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	float: left;
+	overflow: hidden;
+	z-index: 1;
 }
 
 .list-table .list-table-data:hover .data.title .rewatching, .list-table .list-table-data:hover .data.title .rereading, .list-table .list-table-data:hover .data.title .content-status { width: 0; }
@@ -1125,8 +1113,14 @@ z-index: 1;
 .list-table .list-table-data .data.tags { word-wrap: break-word; }
 
 .list-unit .loading-space {
-margin: 8px;
-height: 20px;
-font-size: 20px;
-text-align: center;
+    margin: 8px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Various Pathces */
+
+#recaptcha-terms {
+	display: none;
 }

@@ -1,5 +1,7 @@
 # Layout 53 - Haikyuu
 
+![](gallery/demo.jpg)
+
 ## Info
 
 Released: 2017-Mar-31
@@ -17,7 +19,3 @@ Built for modern lists.
 ### Links:
 
 - [Forum](https://myanimelist.net/forum/?topicid=1603347)
-
-## Problems
-
-- Status [image](http://i.imgur.com/N3vLVlm.png) is broken and seems irreparable.
