@@ -1,0 +1,523 @@
+/*
+Durarara by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Faster+One&family=VT323&display=swap";
+
+/* Tab Content */
+
+td[class^='td']:first-child { width: 40px !important; text-align: left; padding-left: 6px; }
+
+#list_surround table tbody:hover td[class^='td']:first-child {
+	background: linear-gradient(right, rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+	background: -moz-linear-gradient(right , rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+	background:  -webkit-linear-gradient(right , rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+}
+
+td[class^='td']:last-child { text-align: right !important; padding-right: 6px; }
+
+#list_surround table tbody:hover td[class^='td']:last-child {
+	background: linear-gradient(left , rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+	background: -moz-linear-gradient(left , rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+	background:  -webkit-linear-gradien(left , rgba(165, 165, 165, 1) 0%, rgba(165, 165, 165, 1) 50%, rgba(196, 196, 196, 1) 100%);
+}
+
+tr:hover > .td1, tr:hover > .td2 { color: #d2e6b6 !important; background-color: rgba(165, 165, 165, 1); }
+
+tr:hover > .td1 a, tr:hover > .td2 a { color: #d2e6b6 !important; }
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; letter-spacing: -12px; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	position: absolute !important;
+	display: block !important;
+	left: -56px !important;
+	margin-top: -14px;
+	width: 75px;
+	height: 48px;
+	padding-top: 14px;
+	font-size: 16px;
+	text-indent: 10px;
+	letter-spacing: 0; 
+	background-image: url(https://i.imgur.com/BGEqZQ1.png) /* edit.png */;
+	background-repeat: no-repeat;
+	transition: left .5s ease-in;
+	-moz-transition: left .5s ease-in;
+	-webkit-transition: left .5s ease-in;
+	z-index: -1;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small a:first-of-type { visibility: visible; color: #FFFFFF !important; }
+
+#list_surround table:nth-of-type(n+4) small a:first-of-type:hover { left: -75px !important; }
+
+/* SORT */
+#list_surround > table:nth-of-type(n+4) ~ .header_cw + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_completed + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_onhold + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_dropped + table,
+#list_surround > table:nth-of-type(n+4) ~ .header_ptw + table {
+    display: none;
+} 
+
+.table_header span { display: none; }
+
+#list_surround table:nth-of-type(3):before {
+	visibility: visible;
+	position: absolute;
+	content: '';
+	margin-left: -58px; 
+	top: -288px;
+	width: 600px;
+	height: 496px; 
+	background: url(https://i.imgur.com/49QbYxH.png) /* header_bg.png */;
+}
+
+#list_surround table:nth-of-type(3) { 
+	visibility: hidden; 
+	position: absolute !important; 
+	top: -208px;
+	right: 0; 
+	z-index: 5; 
+}
+
+#list_surround table:nth-of-type(3) td { display: block !important; width: 0 !important; }
+
+#list_surround table:nth-of-type(3) a {
+	position: relative;
+	display: block;
+	margin-left: 10px;
+	margin-top: 16px;
+}  
+
+.table_headerLink strong, .table_header a[href$="order=4"], .table_header a[href$="order=12"] { 
+	visibility: visible;
+	position: relative;
+	display: block; 
+	top: 80px;
+	color: transparent;
+	letter-spacing: -12px;
+}
+
+.table_headerLink strong:before, .table_header a[href$="order=4"]:before, .table_header a[href$="order=12"]:before { 
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: -32px;
+	margin-top: -2px;
+	color: #000000;
+	font-size: 22px;
+	font-family: 'Faster One', cursive;
+	letter-spacing: 0;
+}
+
+.table_headerLink strong:before { margin-left: -32px; content: 'Title'; }
+
+.table_header a[href$="order=4"]:before { content: 'Score'; }
+
+.table_header a[href$="order=12"]:before { content: 'Progress'; margin-top: -100px; }
+
+.table_headerLink strong:hover:before, .table_header a[href$="order=4"]:hover:before, .table_header a[href$="order=12"]:hover:before { text-decoration: underline; }
+
+/* Category Menu */
+
+#list_surround table:first-of-type:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-top: -176px;
+	width: 209px;
+	height: 611px;
+	background-image: url(https://i.imgur.com/AvAwfMT.png) /* category_bg.png */;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#list_surround table:first-of-type {
+	position: fixed !important;
+	left: 128px;
+	bottom: 0;
+	width: 256px;
+	z-index: 5;
+}
+
+.status_not_selected, .status_selected { position: relative !important; display: block !important; width: 186px !important; }
+
+.status_not_selected a, .status_selected a { 
+	position: relative;
+	display: block; 
+	width: 256px; 
+	height: 53px; 
+	margin-bottom: 12px;
+	color: transparent;
+	background-repeat: no-repeat;
+	letter-spacing: -12px;
+	margin-left: -24px;
+	transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transition: transform .5s ease-in;
+	-moz-transition: -moz-transform .5s ease-in;
+	-webkit-transition: -webkit-transform .5s ease-in;
+}
+
+.status_not_selected a:hover, .status_selected a { 
+	transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+}
+
+.status_selected  a[href*="status=1"], .status_not_selected  a[href*="status=1"] { background-image: url(https://i.imgur.com/UDeInLo.png) /* current.png */; }
+
+.status_selected  a[href*="status=2"], .status_not_selected  a[href*="status=2"] { background-image: url(https://i.imgur.com/i5yCtyE.png) /* completed.png */; }
+
+.status_selected  a[href*="status=3"], .status_not_selected  a[href*="status=3"] { background-image: url(https://i.imgur.com/Pu7Yqxv.png) /* onhold.png */; }
+
+.status_selected  a[href*="status=4"], .status_not_selected  a[href*="status=4"] { background-image: url(https://i.imgur.com/va9RzBI.png) /* dropped.png */; }
+
+.status_selected  a[href*="status=6"], .status_not_selected  a[href*="status=6"] { background-image: url(https://i.imgur.com/zN7mTmV.png) /* planned.png */; }
+
+/*All */
+.status_selected  a[href*="status=7"], .status_not_selected  a[href*="status=7"] { display: none; }
+
+.status_not_selected a:before, .status_selected a:before {
+	position: absolute;
+	display: block;
+	content: attr(title);
+	margin-left: 198px;
+	margin-top: 14px;
+	width: 40px;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 14px;
+	white-space: pre-line;
+	letter-spacing: 0;
+} 
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	background: none !important;
+}
+
+#mal\_control_strip table {
+	display: block !important;
+	width: 111px !important; 
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 111px !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; }
+
+#mal\_cs_otherlinks div a[href*="register"], #mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="mangalist"],
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search { display: none !important; }
+
+#mal\_cs_listinfo div strong, #mal\_cs_listinfo div:first-of-type a, #mal\_cs_links div a[href*="addtolist"], #mal\_cs_links div a[href$="/"],
+#mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type{ 
+	content: none !important;
+	color: transparent !important; 
+	letter-spacing: -5px !important;
+}
+
+#mal\_cs_listinfo div:first-of-type a, #mal_cs_links div a[href*="addtolist"], #mal\_cs_links div a[href$="/"],
+#mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: fixed !important;
+	display: block !important;
+	top: -32px !important;
+	height: 111px;
+	width: 111px;
+	background-repeat: no-repeat;
+	transition: top .5s ease-in;
+	-moz-transition: top .5s ease-in;
+	-webkit-transition: top .5s ease-in; 
+	z-index: 5;
+}
+
+#mal\_cs_listinfo div:first-of-type a:hover, #mal\_cs_links div a[href*="addtolist"]:hover, #mal\_cs_links div a[href$="/"]:hover, 
+#mal_cs_links div:last-of-type a:first-of-type:hover, #mal\_cs_links div a[href*="mangalist"]:hover { top: -16px !important; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { left: 336px !important; background-image: url(https://i.imgur.com/J3zGssD.png) /* mangalist.png */ !important; }
+
+/* ANIMELIST */
+#mal\_cs_links div:last-of-type a:first-of-type { left: 256px !important; background-image: url(https://i.imgur.com/CYgclF7.png) /* animelist.png */ !important;  }
+
+/* HOME */
+#mal\_cs_links div a[href$="/"] { left: 176px !important; background-image: url(https://i.imgur.com/cZlokrT.png) /* home.png */ !important;}
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { left: 96px !important; background-image: url(https://i.imgur.com/3J47TMo.png) /* add.png */ !important; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { left: 16px !important; background-image: url(https://i.imgur.com/WYzCcSN.png) /* profile.png */ !important; }
+
+/* LOGIN, LOGOUT */
+#mal\_cs_listinfo div:last-of-type a, #mal\_cs_otherlinks div a[href*="login"] {
+	position: absolute !important;
+	display: block !important;
+	width: 56px;
+	height: 92px;
+	top: 50px !important;
+	left: 100% !important;
+	margin-left: -788px !important;
+	color: transparent !important; 
+	letter-spacing: -12px !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: background-size .5s ease-in, margin-left .5s ease-in, top .5s ease-in;
+	-webkit-transition: background-size .5s ease-in, margin-left .5s ease-in, top .5s ease-in;
+	z-index: 5;
+}
+
+#mal\_cs_listinfo div:last-of-type a { background-image: url(https://i.imgur.com/LqsJA54.png) /* logout.png */ !important; }
+
+#mal\_cs_otherlinks div a[href*="login"] { background-image: url(https://i.imgur.com/BMdPgGJ.png) /* login.png */ !important; }
+
+#mal\_cs_listinfo div:last-of-type a:hover, #mal\_cs_otherlinks div a[href*="login"]:hover { margin-left: -781px !important; top: 58px !important; background-size: 80%; }
+
+#mal\_cs_otherlinks div a[href*="faq"] {
+	pointer-events: none;
+	position: fixed !important;
+	display: block !important;
+	right: 600px;
+	bottom: 18px;
+	width: 420px;
+	height: 80px;
+	content: none !important;
+	color: transparent !important; 
+	letter-spacing: -5px !important;
+	background-image: url() /* broken image: butt_disabled.png */ !important; 
+	background-repeat: no-repeat;
+	z-index: 6;
+}
+
+/* Main Style */
+
+/* Custom cursor */
+* { cursor: default; }
+
+/* Covers settings */
+.hide {
+	visibility: hidden;
+	position: fixed;
+	display: block !important;
+	left: -282px !important;
+	top: 0 !important;
+	width: 400px !important;
+	height: 172px !important;
+	background: url(https://i.imgur.com/7vNtIS6.png) /* covers_bg.png */ no-repeat;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transition: transform .5s linear, left .5s linear, top .5s linear;
+	-webkit-transition: -webkit-transform .5s linear, left .5s linear, top .5s linear;
+	z-index: 6;
+}
+
+.hide:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	margin-left: 255px;
+	margin-top: 25px;
+	width: 122px;
+	height: 122px;
+	background-repeat: no-repeat;
+	background-position: center 50%;
+	background-size: 110% 140%;
+}
+
+:hover + .hide { 
+	visibility: visible; 
+	left: -79px !important;
+	top: 162px !important;
+	transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+#list_surround br { display: none; }
+
+body:before, body:after {
+	position: fixed;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body:before {
+	background-image: url(https://i.imgur.com/wDD3y8n.png) /* bg.png */;
+	background-repeat: repeat;
+	background-position: center;
+	z-index: -2;
+}
+
+body {
+	background-color: rgba(196, 196, 196, 1);
+        color: #ad870d;
+        font-size: 12px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+body:after {
+	background-image: url(https://i.imgur.com/6UZuTEs.png) /* celty_bg.png */;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 60%;
+	z-index: -1;
+}
+
+a { text-decoration: none; }
+
+#list_surround:before {
+	position: fixed;
+	display: block;
+	content: '';
+	right: 15px;
+	top: 0;
+	width: 572px;
+	height: 1080px;
+	background: url(https://i.imgur.com/a5aWsHV.png) /* borders.png */ no-repeat;
+	z-index: -1;
+}
+
+#list_surround {
+	position: relative;
+	left: 100%;
+	margin-left: -590px;
+	width: 500px;
+	margin-top: 496px; 
+	/* Table borders */
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 40px 0 40px; 
+	border-image: url(https://i.imgur.com/9MnnCGN.png) /* blur.png */ 0 40 0 40 stretch;
+	-moz-border-image: url(https://i.imgur.com/9MnnCGN.png) /* blur.png */ 0 40 0 40 stretch;
+	-webkit-border-image: url(https://i.imgur.com/9MnnCGN.png) /* blur.png */ 0 40 0 40 stretch;
+	z-index: 1;
+}
+
+#list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: inline-block;
+	content: '';
+	left: -3px;
+	top: -2px;
+	width: 507px;
+	height: 100%;
+	background: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 13%, rgba(0, 0, 0, .4) 19%, rgba(0, 0, 0, .4) 20%, rgba(0, 0, 0, .4) 50%,  rgba(0, 0, 0, .4) 80%, rgba(0, 0, 0, .4) 81%, rgba(0, 0, 0, .2) 88%, rgba(0, 0, 0, 0) 100%); 
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 13%, rgba(0, 0, 0, .4) 19%, rgba(0, 0, 0, .4) 20%, rgba(0, 0, 0, .4) 50%,  rgba(0, 0, 0, .4) 80%, rgba(0, 0, 0, .4) 81%, rgba(0, 0, 0, .2) 88%, rgba(0, 0, 0, 0) 100%); 
+	background:  -webkit-gradient(
+                        linear,
+                        left bottom,
+                        right bottom,
+                        color-stop(0, rgba(0, 0, 0, 0)),
+                        color-stop(.13, rgba(0, 0, 0, .2)),
+			color-stop(.19, rgba(0, 0, 0, .4)),
+                        color-stop(.2, rgba(0, 0, 0, .4)),
+			color-stop(.5, rgba(0, 0, 0, .4)),
+			color-stop(.8, rgba(0, 0, 0, .4)),
+                        color-stop(.81, rgba(0, 0, 0, .4)),
+			color-stop(.88, rgba(0, 0, 0, .2)),
+                        color-stop(1, rgba(0, 0, 0, 0)));
+	z-index: 2;
+} 
+
+.animetitle { 
+	display: block;
+	min-width: 0;
+	max-width: 345px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 24px !important;
+}
+
+.animetitle + small { display: none; }
+
+.td1, .td2 {
+	font-size: 16px;
+	line-height: 24px !important;	
+	background-color: rgba(196, 196, 196, 1);
+}
+
+.td1 a, .td2 a { color: #ad870d; }
+
+.header_title, .header_cw, .header_completed , .header_onhold, .header_dropped, .header_ptw { display: none; }
+
+.category_totals {
+	position: absolute;
+	display: block;
+	left: 150px;
+	top: -180px;
+	width: 120px;
+	color: #000000;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center; 
+	font-family: 'VT323', cursive;
+	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+	z-index: 5;
+} 
+
+#inlineContent {
+	display: block !important;
+	margin-left: -60px;
+	width: 600px;
+	height: 59px;
+	background: url(https://i.imgur.com/0uFmNRt.png) /* bottom.png */ no-repeat;
+}
+
+#copyright:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: -34px;
+	margin-top: -4px;
+	width: 323px;
+	height: 168px;
+	background: url(https://i.imgur.com/0FvBdnT.png) /* copyright_bg.png */ no-repeat;
+	z-index: -1;
+}
+
+#copyright { 
+	position: absolute;
+	display: block;
+	left: -38%;
+	margin-left: -152px;
+	top: -502px;
+	width: 260px;
+	line-height: 16px !important;
+	text-align: center !important; 
+	color: #FFFFFF;
+	line-height: 12px; 
+	z-index: 5;
+}
+
+#copyright:after { display: block;  content: 'List designed by Hahaido'; }
+
+@-moz-document url-prefix() {
+	body:after { background-position: left 64px; }
+}
