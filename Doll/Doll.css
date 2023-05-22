@@ -1,0 +1,620 @@
+/*
+Doll by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=MedievalSharp&family=Tangerine&display=swap";
+@\import "https://files.catbox.moe/24pwsg.css"; /* Eileen Caps Black Font */
+
+/* Animations */
+
+@keyframes chain {
+	0% { width: 0; }
+	80% { width: 50%; }
+	100% { width: calc(50% - 144px); }
+}
+   
+@-webkit-keyframes chain {
+	0% { width: 0; }
+	80% { width: 50%; }
+	100% { width: -webkit-calc(50% - 144px); }
+} 
+
+@keyframes MyMove {
+	0% { top: -250px; }
+	80% { top: -250px; }
+	95% { top: 10px; }
+	100% { top: 0; }
+}
+   
+@-webkit-keyframes MyMove {
+	0% { top: -250px; }
+	80% { top: -250px; }
+	95% { top: 10px; }
+	100% { top: 0; }
+} 
+
+@keyframes MyMoveLeft {
+	0% { margin-left: -144px; }
+	80% { margin-left: -144px; }
+	90% { margin-left: 5px; }
+	100% { margin-left: 0; }
+}
+   
+@-webkit-keyframes MyMoveLeft {
+	0% { margin-left: -144px; }
+	80% { margin-left: -144px; }
+	90% { margin-left: 5px; }
+	100% { margin-left: 0; }
+}
+
+@keyframes wrap {
+	0% { opacity: 0; }
+	10% { opacity: .5; }
+	20% { opacity: 1; }
+	30% { opacity: .5; }
+	40% { opacity: 1; }
+	50% { opacity: .5; }
+	60% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes wrap {
+	0% { opacity: 0; }
+	10% { opacity: .5; }
+	20% { opacity: 1; }
+	30% { opacity: .5; }
+	40% { opacity: 1; }
+	50% { opacity: .5; }
+	60% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+@keyframes ash {
+	0% { background-position: left center, 0 0, 0 0; }
+	100% { background-position: left center, -200px -400px, 200px -400px; }
+}
+ 
+@-webkit-keyframes ash {
+	0% { background-position: left center, 0 0, 0 0; }
+	100% { background-position: left center, -200px -400px, 200px -400px; }
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+ 
+@-webkit-keyframes rotate {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes appear {
+	0% { opacity: 0; }
+	90% { opacity: 0; }
+	100% { opacity: 1; }
+}
+ 
+@-webkit-keyframes appear {
+	0% { opacity: 0; }
+	90% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Tab Content */
+
+#list_surround table { margin-left: 55px; width: 490px; }
+
+td[class^='td']:first-child { width: 40px !important; text-align: left; padding-left: 6px; }
+
+td[class^='td']:nth-child(3) { width: 20px !important; }
+
+td[class^='td']:last-child { text-align: right !important; padding-right: 6px; }
+
+tr:hover > .td1, tr:hover > .td2 { box-shadow: 0 -1px 0 #f2a962; }
+
+.td1, .td2, .td1 a:not(.List_LightBox), .td2 a:not(.List_LightBox) { color: #303030; }
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; font-size: 0; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { display: none !important; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	opacity: 0;
+	position: absolute !important;
+	display: block !important;
+	margin-left: -26px;
+	padding: 0 2px;
+	font-family: 'MedievalSharp', cursive;
+	color: #f2a962 !important;
+	line-height: 24px;
+	font-size: 14px;
+	transition: opacity ease-out .3s, box-shadow ease-out .2s;
+	-webkit-transition: opacity ease-out .3s, box-shadow ease-out .2s;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover div small a:first-of-type { visibility: visible; opacity: 1; }
+
+#list_surround table:nth-of-type(n+4)  div small a:first-of-type:hover { box-shadow: inset 1px -1px 0 #f2a962, inset -1px 0 0 #f2a962; }
+
+/* SORT */
+.table_header:first-of-type { display: none !important; } 
+
+.header_cw + table, .header_completed + table, .header_onhold + table,
+.header_dropped + table, .header_ptw + table {
+	position: absolute;
+	display: block !important;
+	width: 52px !important; 
+	margin-left: 81px !important;
+	margin-top: -85px;
+}
+
+.header_cw + table tbody td, .header_completed + table tbody td, .header_onhold + table tbody td,
+.header_dropped + table tbody td, .header_ptw + table tbody td {
+	display: inline-block !important;
+	width: 52px !important;
+	margin: 0 !important;
+}
+
+.table_header:nth-of-type(2), .table_header:nth-of-type(3), .table_header:nth-of-type(4) { position: relative; font-size: 0; }
+
+.table_header:nth-of-type(2):before, .table_header:nth-of-type(3):before, .table_header:nth-of-type(4):before { 
+	position: absolute;
+	display: block;
+	width: 52px;
+	padding: 1px 0 2px 4px;
+	font-family: 'MedievalSharp', cursive;
+	color: #303030;
+	font-size: 15px;
+	font-weight: normal !important;
+	text-align: left;
+	transition: color ease-out .2s, background-color ease-out .2s;
+	-webkit-transition: color ease-out .2s, background-color ease-out .2s;
+}
+
+.table_header:nth-of-type(2):before { content: 'title'; margin-top: -32px; }
+
+.table_header:nth-of-type(3):before { content: 'score'; margin-top: -15px; }
+
+.table_header:nth-of-type(4):before { content: 'series'; margin-top: 2px; }
+
+.table_header:nth-of-type(2):hover:before, .table_header:nth-of-type(3):hover:before, .table_header:nth-of-type(4):hover:before {  
+	color: #fbedd2;
+	background-color: rgb(244, 203, 158);
+}
+
+/* Category Menu */
+
+#list_surround > table:first-of-type {
+	position: absolute !important;
+	left: 50%;
+	top: 0;
+	margin: 78px 0 0 109px;
+	width: 80px;
+}
+
+#list_surround > table:first-of-type td { width: 80px; }
+
+.status_not_selected, .status_selected  { 
+	display: block !important;
+	padding: 1px 0;
+	white-space: nowrap; 
+}  
+
+.status_not_selected a, .status_selected a { 
+	display: block;
+	width: 80px;
+	font-family: 'MedievalSharp', cursive;
+	font-size: 15px;
+	text-align: center;
+}
+
+.status_not_selected a { 
+	color: #fbedd2; 
+	transition: color ease-out .2s;
+	-webkit-transition: color ease-out .2s;
+}
+
+.status_not_selected a:hover, .status_selected a, .status_not_selected a:hover:before, .status_selected a:before { color: #f2a962; }
+
+.status_not_selected a:before, .status_selected a:before {
+	font-size: 15px;
+}
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { font-size: 0; }
+.status_not_selected a[href*="status=1"]:before, .status_selected a[href*="status=1"]:before { content: 'Current'; }
+
+/* Planned */
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { font-size: 0; }
+.status_not_selected  a[href*="status=6"]:before, .status_selected  a[href*="status=6"]:before { content: 'Planned'; }
+
+/*All */
+.status_selected  a[href*="status=7"], .status_not_selected  a[href*="status=7"] { display: none; }
+
+/* Top Menu */
+
+#mal\_control_strip:before {
+	position: absolute !important;
+	display: block !important;
+	content: '';
+	width: 361px;
+	height: 128px;
+	top: 4px !important;
+	margin-left: 120px !important;
+	background: url(https://i.imgur.com/JKeHu31.png) /* top_bg.png */ !important;
+	z-index: -1;
+}
+
+#mal\_control_strip:after {
+	position: absolute !important;
+	display: block !important;
+	content: '';
+	margin-left: 235px !important;
+	top: 62px !important;
+	width: 132px;
+	height: 132px;
+	background: url(https://i.imgur.com/2rKkbP2.png) /* gear.png */;
+	animation-name: rotate;
+	-webkit-animation-name: rotate;
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50% !important;
+	width: 500px !important;
+	margin-left: -250px !important;
+	background: none !important;
+	animation-name: MyMove;
+	-webkit-animation-name: MyMove;
+	animation-duration: 6s;    
+	-webkit-animation-duration: 6s;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	z-index: 5;
+}
+
+#mal\_control_strip table {
+	display: inline-block !important;
+	width: 50px !important; 
+}
+
+#mal\_control_strip td {
+	display: inline-block !important;
+	width: 50px !important;
+}
+
+#mal\_control_strip a, #mal\_control_strip a:before { 
+	padding: 10px 2px; 
+	text-decoration: none !important; 
+	transition: color ease-out .2s, text-shadow ease-out .2s;
+	-webkit-transition: color ease-out .2s, text-shadow ease-out .2s;
+}
+
+#mal\_control_strip a:hover, #mal\_control_strip a:hover:before { 
+	color: #f2a962; 
+	text-shadow: 0 0 .2em #d8101d, 0 0 .2em #d8101d, 0 0 .2em #d8101d; 
+}
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a:before {   
+	font-family: 'MedievalSharp', cursive !important;
+	font-size: 14px !important;
+	color: #FFFFFF;
+	text-shadow: 0 0 .2em #d8101d, 0 0 .2em #d8101d;
+	white-space: nowrap;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic img, #mal\_cs_otherlinks strong,
+#mal\_cs_otherlinks div a[href*="sharedanime"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; text-shadow: none !important; }
+
+#mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="mangalist"],
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search, #mal\_cs_links div:last-of-type a:first-of-type, 
+#mal\_cs_links div a[href$="/"] { display: none !important; }
+
+#mal\_cs_listinfo div:first-of-type a, #mal\_cs_listinfo div:last-of-type a, #mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: relative !important;
+	font-size: 0 !important;
+}
+
+#mal\_cs_listinfo {
+	position: absolute !important;
+	margin-left: 184px !important; 
+	top: 23px;
+	z-index: 1;
+}
+
+#mal\_cs_listinfo div { display: inline; !important;  margin: 0 !important; } 
+
+#mal\_cs_listinfo div:last-of-type a { width: 50px !important; }
+
+#mal\_cs_links { 
+	position: absolute !important; 
+	margin-left: 245px !important; 
+	top: 23px !important;
+	z-index: 2;
+}
+
+#mal\_cs_links div { display: inline !important; }
+
+/* Log in, Create list, Learn more */
+#mal\_cs_otherlinks {
+	position: absolute !important; 
+	top: 23px !important; 
+	margin-left: 75px !important; 
+}
+
+#mal\_cs_otherlinks div { display: inline !important; margin: 0 !important; } 
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a:before { content: 'profile'; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"]:before { content: 'add'; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type:before { content: 'manga'; margin-left: -9px; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a:before { content: 'logout'; margin-left: 110px; }
+
+/* Main Style */
+
+/* Custom cursor */
+* { cursor: url(https://i.imgur.com/YEikZHB.png) /* cursor.png */ 5 10, auto; }
+
+.hide:before {
+	position: absolute;
+	display: block;
+	content: '';
+	margin-left: -12px;
+	margin-top: -12px;
+	width: 144px;
+	height: 212px;
+	background: url(https://i.imgur.com/STDrJ8b.png) /* covers_bg.png */;
+}
+
+.hide:after {
+	position: fixed;
+	display: block;
+	content: '';
+	right: 50%;
+	top: 50%;
+	margin-top: -3px;
+	width: calc(50% - 144px);
+	width: -webkit-calc(50% - 144px);
+	height: 40px;
+	background: url(https://i.imgur.com/yNjzG2J.png) /* chain.png */ repeat-x;
+	z-index: -1;
+}
+
+:hover + .hide:after {
+	animation: chain 1s ease-out;
+	-webkit-animation: chain 1s ease-out;
+}
+
+.hide {
+	visibility: hidden;
+	position: fixed;
+	display: block !important;
+	left: 0;
+	top: 50%;
+	margin-top: -90px;
+	margin-left: -136px;
+	width: 120px;
+	height: 180px;
+	padding: 12px 12px 20px 12px;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+:hover + .hide { 
+	visibility: visible; 
+	margin-left: 0;
+	animation: MyMoveLeft 1s ease-out;
+	-webkit-animation: MyMoveLeft 1s ease-out;
+}
+
+#list_surround br { display: none; }
+
+body:before, body:after {
+	position: fixed;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body:before {
+	opacity: 0;
+	background-image: url(https://i.imgur.com/nsO2pJz.png) /* bg_light.png */;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+	animation: wrap 1.5s linear infinite;
+	-webkit-animation: wrap 1.5s linear infinite;
+	z-index: -2;
+}
+
+body:after {
+	background-image: url(https://cdn.imgchest.com/files/j7kzcak9q37.png) /* Yaya_right.png */,
+				     url(https://i.imgur.com/2rb13pH.png) /* bottom_bg.png */;
+	background-repeat: no-repeat, repeat-x;
+	background-position: right center, left bottom;
+	background-size: contain, auto;
+	z-index: -1;
+}
+
+body {
+        color: #303030;
+        font-size: 18px;
+	font-family: 'Tangerine', cursive;
+	background-color: rgb(0, 0, 0);
+	background-image: url(https://cdn.imgchest.com/files/d7ogcb6rody.png) /* background.png */,
+				         url(https://i.imgur.com/z8MlnK1.png) /* ash1.png */,
+				         url(https://i.imgur.com/FQXqzf6.png) /* ash2.png */;
+	background-repeat: no-repeat, repeat, repeat;
+	background-attachment: fixed;
+	background-position: left center, 0 0, 0 0;
+	background-size: contain, auto, auto;
+	animation: ash 15s linear infinite;
+	-webkit-animation: ash 15s linear infinite;
+}
+
+a { text-decoration: none; }
+
+#list_surround {
+	position: relative;
+	display: block;
+	left: 50% !important;
+	margin: 150px 0 350px -250px;
+	width: 600px;
+	padding-top: 201px;
+	background-image: url(https://i.imgur.com/Nh2muF0.png) /* middle.png */;
+	background-repeat: repeat-y;
+	background-position: center top;
+	background-clip: content-box;
+}
+
+.animetitle span { 
+	display: block;
+	min-width: 0;
+	max-width: 320px; 
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 24px;
+}
+
+.animetitle span:first-letter { color: #f2a962; font-weight: bold; letter-spacing: 2px; }
+
+.animetitle + small { display: none; }
+
+.td1, .td2 {
+	padding-bottom: 1px;
+	line-height: 24px;		
+	background-color: transparent;
+	transition: box-shadow linear .1s;
+	-webkit-transition: box-shadow linear .1s;
+}
+
+.header_title { 
+	display: block;
+	width: 514px !important; 
+	height: 111px;
+	margin: -201px 0 0 -55px !important; 
+	padding: 90px 0 0 86px;
+	font-family: 'MedievalSharp', cursive;
+	font-size: 36px;
+	color: #f2a962;
+	background-image: url(https://i.imgur.com/AiGWZB2.png) /* top.png */;
+	background-repeat: no-repeat;
+
+}
+
+.header_title span { display: inline-block; width: 260px; text-align: right; }
+
+.header_title span:first-letter {
+	font-family: 'Eileen Caps Black';
+	font-size: 50px; 
+	line-height: 36px; 
+}
+
+.header_cw span, .header_ptw span { font-size: 0; }
+
+.header_cw span:before { content: 'Current'; font-size: 36px; }
+
+.header_ptw span:before { content: 'Planned'; font-size: 36px; }
+
+.category_totals {
+	display: block;
+	margin: 2px 0;
+	padding: 4px 0 2px;
+	color: #303030;
+	line-height: 16px;
+	text-align: center;
+	border-style: solid;
+	border-color: #f2a962;
+	border-width: 1px 0;
+}
+
+#grand_totals { display: none;}
+
+#copyright {
+	position: absolute;
+	display: block;
+	margin: 0 !important;
+	width: 350px; 
+	height: 149px;
+	padding:22px 125px 0;
+	font-family: 'MedievalSharp', cursive;
+	font-size: 12px;
+	line-height: 14px;
+	color: #f2a962;
+	background: url(https://i.imgur.com/awrmJH7.png) /* bottom.png */;
+}
+
+#copyright a { color: #f2a962; font-weight: bold; }
+
+#copyright:after { display: inline-block; content: 'List designed by Hahaido.'; }
+
+/* Put your name here */
+#inlineContent:before {
+	visibility: visible !important;
+	position: absolute;
+	display: block;
+	content: "Hahaido's workshop";
+	left: 50% !important;
+	margin-left: -100px !important;
+	top: -94px !important;
+	width: 200px;
+	font-family: 'MedievalSharp', cursive;
+	font-size: 12px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0 0 .2em #d8101d, 0 0 .2em #d8101d;
+	animation: appear 6s linear;
+	-webkit-animation: appear 6s linear;
+}
+
+#inlineContent:after {
+	visibility: visible !important;
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://i.imgur.com/AmFqUbx.png) /* branch.png */;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
+#inlineContent {
+	pointer-events: none;
+	visibility: hidden;
+	position: absolute;
+	display: block !important;
+	left: 50%;
+	top: 0;
+}
