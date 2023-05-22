@@ -2,8 +2,11 @@
 
 #mal\_control_strip:before { background: url(https://i.imgur.com/TZlPJDV.png) /* lines_m.png */ no-repeat; }
 
-#mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div a[href*="KimiUsot"]:before, #mal\_cs_listinfo div:first-of-type a:before, 
-#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:last-of-type:before {
+#mal\_cs_otherlinks div a[href*="login"]:before,
+#mal\_cs_listinfo div:last-of-type a:before,
+#mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before,
+#mal\_cs_links div:last-of-type a:last-of-type:before {
 	background-image: url(https://i.imgur.com/d5B2ciV.png) /* top_bg_m.png */;
 }
 

@@ -3,7 +3,7 @@ Akame ga Kill by Hahaido
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
-@\import "http://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 @\import "https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IM+Fell+English+SC&display=swap";
 
 /* Animations */
@@ -545,8 +545,11 @@ td[class^='td']:first-child { border-left: 2px solid #000000 !important;  }
 
 #mal\_control_strip:before { background: url(https://i.imgur.com/8Ntsbaj.png) /* lines.png */ no-repeat; }
 
-#mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div a[href*="KimiUsot"]:before, #mal\_cs_listinfo div:first-of-type a:before, 
-#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:last-of-type:before {
+#mal\_cs_otherlinks div a[href*="login"]:before,
+#mal\_cs_listinfo div:last-of-type a:before,
+#mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before,
+#mal\_cs_links div:last-of-type a:last-of-type:before {
 	background-image: url(https://i.imgur.com/1c8s6c2.png) /* top_bg.png */;
 }
 
