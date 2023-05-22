@@ -1,5 +1,7 @@
 /*
 Durarara by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-21
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -291,22 +293,6 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #d2e6b6 !important; }
 #mal\_cs_otherlinks div a[href*="login"] { background-image: url(https://i.imgur.com/BMdPgGJ.png) /* login.png */ !important; }
 
 #mal\_cs_listinfo div:last-of-type a:hover, #mal\_cs_otherlinks div a[href*="login"]:hover { margin-left: -781px !important; top: 58px !important; background-size: 80%; }
-
-#mal\_cs_otherlinks div a[href*="faq"] {
-	pointer-events: none;
-	position: fixed !important;
-	display: block !important;
-	right: 600px;
-	bottom: 18px;
-	width: 420px;
-	height: 80px;
-	content: none !important;
-	color: transparent !important; 
-	letter-spacing: -5px !important;
-	background-image: url() /* broken image: butt_disabled.png */ !important; 
-	background-repeat: no-repeat;
-	z-index: 6;
-}
 
 /* Main Style */
 
