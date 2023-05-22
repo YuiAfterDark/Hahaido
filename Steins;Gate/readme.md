@@ -15,6 +15,7 @@ Built for classic lists.
 - Numbers
 - Score
 - Episodes
+- optionally more
 
 ### Links
 

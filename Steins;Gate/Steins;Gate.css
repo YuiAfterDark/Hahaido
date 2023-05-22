@@ -1,5 +1,7 @@
 /*
 Steins;Gate by Hahaido
+Modified by Valerio Lyndon'
+Last update: 2023-May-21
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/animetitleafter";
@@ -579,7 +581,7 @@ a { text-decoration: none; }
 	-webkit-transition: opacity .2s linear .9s;
 	z-index: 3;
 }
-tr:hover .animetitle + small { visibility: visible !important; opacity: 1 !important; }
+tr:hover .animetitle + small { visibility: visible !important; opacity: 1 !important; animation-delay: 0s; }
 
 .td1, .td2 {
 	font-size: 15px;
@@ -647,7 +649,7 @@ tr:hover .animetitle + small { visibility: visible !important; opacity: 1 !impor
 	left: 200px;  
 	margin-top: -66px; 
 	width: 250px;
-	font-family: 'FireDusk';
+	font-family: 'Fire Dusk';
 	font-size: 14px;
 	line-height: 16px;
 	text-align: right;
