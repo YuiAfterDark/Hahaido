@@ -1,5 +1,7 @@
 /*
 Gintama by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-22
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/modern.css";
@@ -68,7 +70,7 @@ Gintama by Hahaido
 	text-align: right;
 }
 
-.header .header-menu .header-info a[href$="/login.php"]:before {
+.header .header-menu .header-info a[href*="/login.php"]:before {
 	position: absolute;
 	display: block;
 	content: '';
@@ -324,7 +326,7 @@ Gintama by Hahaido
 	width: 147px;
 	height: 50px;
 	padding: 0;
-	font-size: 14px;
+	font-size: 0;
 	color: transparent;
 	text-align: center;
 	vertical-align: middle;
@@ -586,7 +588,7 @@ body.ownlist {
 	z-index: 2;
 }
 
-.cover-block .image-container {
+#cover-image-container {
 	display: block;
 	margin: 10px 0 0 145px;
 	width: 519px;
