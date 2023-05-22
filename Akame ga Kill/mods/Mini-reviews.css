@@ -1,0 +1,63 @@
+/* Mod by Shishio-kun */
+
+/*
+MINI REVIEWS (HOVER)
+Move the area around with the left and top codes.
+Adjust the surrounding area of the tags by adjusting the padding.
+Control the height and width of the section with the height and width codes.
+
+If your tags/mini-reviews aren't hovering correctly or you need help understanding or adjusting the background color code, see the bottom of the original tutorial:
+http://myanimelist.net/forum/?topicid=563993
+*/
+td[class^='td']:nth-of-type(6) {
+visibility: hidden;
+opacity: 0;
+position: fixed;
+top: 310px;
+right: 1%;
+background-color: rgba(250, 30, 25, 0.85) !important;
+border-color: black;
+border-radius: 25px 25px 25px 25px;
+border-style: solid;
+border-width: 1px;
+font-size: 12px;
+height: 150px;
+width: 200px;
+padding: 10px 10px 0px 24px;
+color: white !important;
+z-index: 1;
+transition: 3s;
+}
+
+/* TAG TEXT */
+tr:hover td[class^='td']:nth-of-type(6) a {
+color: white !important;
+	text-decoration: none !important;
+	font-size: 16px;
+}
+
+/* OTHER SETTINGS */ 
+tr:hover td[class^='td']:nth-of-type(6){
+visibility: visible;
+opacity: 1;
+}
+
+/* REMOVE HEADER
+Deletes the header Tags which isn't necessary.
+*/
+.table_header:nth-of-type(6) {
+display: none;
+}
+
+/* REMOVE TAG EDIT BUTTON
+Deletes the Tag's edit link which will is inaccessible with this setup, use the edit button by Animetitle to edit your tags.
+*/
+td:nth-of-type(6) small {
+display: none;
+}
+
+.td1:nth-of-type(6) small, .td2:nth-of-type(6) small,
+.td1:nth-of-type(5) small, .td2:nth-of-type(5) small,
+.td1:nth-of-type(4) small, .td2:nth-of-type(4) small {
+    visibility: visible !important;
+}

@@ -1,0 +1,76 @@
+/* Mein */
+
+#mal\_control_strip:before { background: url(https://i.imgur.com/TZlPJDV.png) /* lines_m.png */ no-repeat; }
+
+#mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div a[href*="KimiUsot"]:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:last-of-type:before {
+	background-image: url(https://i.imgur.com/d5B2ciV.png) /* top_bg_m.png */;
+}
+
+#list_surround > table:first-of-type:before { background-image: url(https://i.imgur.com/TeXQ3QI.png) /* logo_m.png */; }
+
+.status_selected a, .status_not_selected a,
+.status_selected a:before, .status_not_selected a:before { border-color: #fbcde7; }
+
+.status_selected a, .status_not_selected a:hover,
+.status_selected a:before, .status_not_selected a:hover:before { background-color: rgb(241, 149, 201); }
+
+.status_selected a:after, .status_not_selected a:hover:after {
+	background: url(https://i.imgur.com/i2uvhwG.png) /* arrow_m.png */ no-repeat;
+}
+
+/* Custom cursor */
+a, body { cursor: url(https://i.imgur.com/fbXiMgl.png) /* cursor_m.png */ 1 1, auto; }
+
+body { color: #fbcde7; }
+
+a { color: #fbcde7; }
+
+td[class^='td'][width="45"], td[class^='td'][width="45"] a { color: #fbcde7; }
+
+.table_header { background-color: rgb(241, 149, 201)  !important; } 
+
+.table_header:last-child, td[class^='td']:last-child { box-shadow: 1px 0  0 #fbcde7; }
+
+tr:hover td[class^='td']:first-child:before {
+	background: url(https://i.imgur.com/i2uvhwG.png) /* arrow_m.png */ no-repeat;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	background-image: url(https://i.imgur.com/DuwBGw4.png) /* headers_bg_m.png */;
+}
+
+/* CURRENTLY WATCHING BACKGROUND */
+.status_selected:first-child {
+	background-image: url(https://i.imgur.com/QmqJk5v.jpg) /* watching_m.jpg */;
+}
+
+/* COMPLETED BACKGROUND */
+.status_selected:nth-child(2) {
+	background-image: url(https://i.imgur.com/9tLOoNC.jpg) /* completed_m.jpg */;
+}
+
+/* ON-HOLD BACKGROUND */
+.status_selected:nth-child(3) {
+	background-image: url(https://i.imgur.com/1Gccabu.jpg) /* onhold_m.jpg */;
+}
+
+/* DROPPED BACKGROUND */
+.status_selected:nth-child(4) {
+	background-image: url(https://i.imgur.com/OSwMUKh.jpg) /* dropped_m.jpg */;
+}
+
+/* PLANNED BACKGROUND */
+.status_selected:nth-child(5) {
+	background-image: url(https://i.imgur.com/lIKYIOQ.jpg) /* planned_m.jpg */;
+}
+
+/* ALL BACKGROUND */
+.status_selected:last-child {
+	background-image: url(https://i.imgur.com/Wqqit9k.jpg) /* all_m.jpg */;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
+#mal_cs_links div a[href*="addtolist"]:after,  #mal\_cs_links div:last-of-type a:last-of-type:after,
+#copyright, #copyright a { text-shadow: 1px 1px #f195c9; }

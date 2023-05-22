@@ -1,0 +1,619 @@
+/*
+Akame ga Kill by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "http://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IM+Fell+English+SC&display=swap";
+
+/* Animations */
+
+@keyframes Rotate {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1); }
+    55% { transform: scaleY(.9); }
+    60% { transform: scaleY(.8); }
+    65% { transform: scaleY(.7); }
+    70% { transform: scaleY(.6); }
+    75% { transform: scaleY(.5); }
+    80% { transform: scaleY(.4); }
+    85% { transform: scaleY(.3); }
+    90% { transform: scaleY(.2); }
+    95% { transform: scaleY(.1); }
+    100% { transform: scaleY(0); }
+}
+ 
+@-webkit-keyframes Rotate {
+    0% { -webkit-transform: scaleY(1); }
+    50% { -webkit-transform: scaleY(1); }
+    55% { -webkit-transform: scaleY(.9); }
+    60% { -webkit-transform: scaleY(.8); }
+    65% { -webkit-transform: scaleY(.7); }
+    70% { -webkit-transform: scaleY(.6); }
+    75% { -webkit-transform: scaleY(.5); }
+    80% { -webkit-transform: scaleY(.4); }
+    85% { -webkit-transform: scaleY(.3); }
+    90% { -webkit-transform: scaleY(.2); }
+    95% { -webkit-transform: scaleY(.1); }
+    100% { -webkit-transform: scaleY(0); }
+}
+
+@keyframes Dagger {
+	0% { transform: rotate(5deg); margin-right: 0; margin-top: 0; }
+	50% { transform: rotate(30deg); margin-right: 70px; margin-top: 15px; }
+	100% { transform: rotate(5deg); margin-right: 0; margin-top: 0; }
+}
+   
+@-webkit-keyframes Dagger {
+	0% { -webkit-transform: rotate(5deg); margin-right: 0; margin-top: 0; }
+	50% { -webkit-transform: rotate(30deg); margin-right: 70px; margin-top: 15px; }
+	100% { -webkit-transform: rotate(5deg); margin-right: 0; margin-top: 0; }
+}
+
+/* Top Menu */
+
+#mal\_control_strip:before {
+	position: absolute;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 86px;
+	height: 265px;
+	z-index: -1;
+}
+
+#mal\_control_strip {
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 0;
+	background: none !important;
+	z-index: 1;
+}
+
+#mal\_control_strip table {
+	display: block !important;
+	width: 64px !important; 
+}
+
+#mal\_control_strip td {
+	display: block !important;
+	width: 64px !important;
+}
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img, #mal\_cs_pic, #mal\_cs_otherlinks strong, #search,
+#mal\_cs_otherlinks div a[href*="shared"], #mal\_cs_otherlinks div span[title*="Compatibility Score"] { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_otherlinks div:nth-child(2) { color: transparent !important; }
+
+#mal\_cs_otherlinks div a[href*="register"], #mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="list/"],
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"],
+#mal\_cs_links div a[href$="/"] , #mal\_cs_otherlinks div a[href*="faq"] { display: none !important; }
+
+#mal\_cs_listinfo {
+	position: fixed !important;
+	margin-left: -474px !important; 
+	bottom: -9px; 
+	z-index: 1;
+}
+
+#mal\_cs_listinfo div { display: inline !important;  margin: 0 !important; } 
+
+#mal\_cs_links { 
+	position: absolute !important; 
+	margin-left: -420px !important; 
+	bottom: -9px !important;
+	z-index: 2;
+}
+
+#mal\_cs_links div { display: inline !important; }
+
+#mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before, #mal\_cs_links div:last-of-type a:first-of-type:before, #mal\_cs_links div:last-of-type a:last-of-type:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 70px;
+	height: 69px;
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transition: transform .5s linear;
+	-webkit-transition: -webkit-transform .5s linear;
+}
+
+#mal\_cs_otherlinks div a[href*="login"], #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+	position: fixed !important;
+	display: block;
+	left: 5px;
+	width: 70px;
+	height: 69px;
+	font-size: 0 !important;
+	color: transparent;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:after { 
+	pointer-events: none;
+	opacity: 0;
+	position: absolute;
+	display: block;
+	left: 5px;
+	margin-left: 80px;
+	margin-top: 20px;
+	width: 60px;
+	height: 20px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 17px !important;
+	color: #FFFFFF;
+	text-align: left;
+	letter-spacing: -5px;
+	transition: opacity .5s linear, letter-spacing .5s linear;
+	-webkit-transition: opacity .5s linear, letter-spacing .5s linear;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:hover:before, #mal\_cs_listinfo div:last-of-type a:hover:before, #mal\_cs_listinfo div:first-of-type a:hover:before, 
+#mal_cs_links div a[href*="addtolist"]:hover:before, #mal\_cs_links div:last-of-type a:first-of-type:hover:before, #mal\_cs_links div:last-of-type a:last-of-type:hover:before {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { opacity: 1; letter-spacing: 1px; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { top: 5px; }
+
+#mal\_cs_listinfo div:first-of-type a:before { background-position: 0 -69px; }
+
+
+#mal\_cs_listinfo div:first-of-type a:after { content: 'profile'; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { top: 75px; }
+
+#mal\_cs_links div a[href*="addtolist"]:before { background-position: 0 -138px; }
+
+#mal\_cs_links div a[href*="addtolist"]:after { content: 'add'; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type  { top: 145px; }
+
+#mal\_cs_links div:last-of-type a:first-of-type:before, #mal\_cs_links div:last-of-type a:last-of-type:before  { background-position: 0 -207px; }
+
+#mal\_cs_links div:last-of-type a:last-of-type:after { content: 'manga'; }
+
+/* ANIMELIST */
+#mal\_cs_links div:last-of-type a:first-of-type:after { content: 'anime'; } 
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { top: 215px; }
+
+#mal\_cs_listinfo div:last-of-type a:before { background-position: 0 -276px; }
+
+#mal\_cs_listinfo div:last-of-type a:after { content: 'out'; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { top: 5px; }
+
+#mal\_cs_otherlinks div a[href*="login"]:after { content: 'enter'; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type:before {
+	opacity: 1;
+	position: fixed;
+	display: block; 
+	right: 0;
+	bottom: 80px;
+	content: '';
+	width: 100px;
+	height: 144px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	transition: opacity .5s linear .7s, width 0s linear .7s, height .5s linear, background-position .5s linear;
+	-webkit-transition: opacity .5s linear .7s, width 0s linear .7s, height .5s linear, background-position .5s linear;
+}
+
+#list_surround > table:first-of-type:hover:before {
+	opacity: 0;
+	width: 0;
+	height: 304px; 
+	background-position: center top;
+	transition: opacity .5s linear .7s, width 0s linear 1.2s, height .5s linear, background-position .5s linear;
+	-webkit-transition: opacity .5s linear .7s, width 0s linear 1.2s, height .5s linear, background-position .5s linear;
+}
+
+#list_surround > table:first-of-type:hover .status_selected a, #list_surround > table:first-of-type:hover .status_not_selected a { margin-right: 0; }
+
+/* RENDERS AND BACKGROUNDS */
+.status_selected {
+	position: fixed;
+	display: inline-block;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+/* MENU BUTTONS */
+.status_not_selected { position: fixed; }
+
+.status_selected a, .status_not_selected a,
+.status_selected a:before, .status_not_selected a:before {
+	position: fixed;
+	display: block;
+	margin-right: -132px;
+	width: 100px;
+	padding-right: 5px;
+	line-height: 25px;
+	font-size: 14px;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	border-left: 1px solid #000000 !important;
+	text-align: right;
+    	white-space: nowrap;
+	font-family: 'Architects Daughter', cursive;
+	transition: margin-right .5s linear .3s;
+	-webkit-transition: margin-right .5s linear .3s;
+}
+
+.status_selected a:before, .status_not_selected a:before { border-left: none !important; }
+
+.status_selected a, .status_not_selected a {
+	right: 0;
+	bottom: 90px;
+}
+
+.status_selected a, .status_not_selected a:hover,
+.status_selected a:before, .status_not_selected a:hover:before {
+	color: #000000;
+	background-color: rgb(203, 40, 28);
+}
+
+.status_selected a:after, .status_not_selected a:hover:after {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	margin-left: -126px;
+	margin-top: -2px;
+	width: 25px;
+    	height: 25px;
+}
+
+.status_not_selected a:hover:after {
+	animation: Rotate .5s infinite alternate;
+    	-webkit-animation: Rotate .5s infinite alternate;
+}
+
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"],
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { font-size: 0; }
+
+.status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after,
+.status_not_selected a[href*="status=6"]:after, .status_selected a[href*="status=6"]:after { content: ''; }
+
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { margin-bottom: 125px; }
+
+.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin-bottom: 100px; } 
+
+.status_not_selected a[href*="status=3"], .status_selected a[href*="status=3"] { margin-bottom: 75px; } 
+
+.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin-bottom: 50px; } 
+
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin-bottom: 25px; }
+
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { border-width: 1px; }
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"]:before, .status_selected a[href*="status=1"]:before { content: 'Watching'; border-width: 0; }
+ 
+/* Planned */
+.status_not_selected a[href*="status=6"]:before, .status_selected a[href*="status=6"]:before { content: 'Planned'; border-width: 0; }
+
+/* Main Style */
+
+/* TOP MENU BUTTONS */
+/* FOR ANIME LIST */
+#mal\_cs_links div:last-of-type a:first-of-type { display: none; } /* DISABLE ANIMELIST BUTTON */
+
+/* FOR MANGA LIST */
+/* #mal\_cs_links div:last-of-type a:last-of-type { display: none; } */ /* DISABLE MANGALIST BUTTON */
+
+a { text-decoration: none; }
+
+body {
+	font-family: 'IM Fell English SC', serif;
+	font-size: 13px;
+	letter-spacing: .5px;
+	background-color: #000000;
+}
+
+/* LIST SETTINGS */
+
+#list_surround {
+	position: relative;
+	left: 100%;
+	margin-left: -890px;
+	top: 0;
+	width: 600px;
+	padding-top: 50px;
+}
+
+.table_header span { display: none; }
+
+.table_header:nth-child(2) { text-align: left; }
+
+.td1, .td2 { 
+	padding: 6px 0 3px; 
+	line-height: 13px;
+	vertical-align: top;
+	transition: background-color .4s ease;
+	-webkit-transition: background-color .4s ease;
+}
+
+.animetitle, .animetitle + small { display: table-cell; }
+
+.animetitle + small:before { content: ' '; white-space: pre-wrap; }
+
+.animetitle + small {
+	visibility: visible !important;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-transform: lowercase;
+	letter-spacing: .5px;
+}
+
+#list_surround small { visibility: hidden; }
+
+#list_surround small a:first-of-type {
+	visibility: hidden;
+    	position: absolute;
+    	margin-left: -8px;
+    	font-size: 11px;
+}
+
+a[title="View More Information"] { display: none; }
+ 
+#list_surround tr:hover small, #list_surround tr:hover small a { visibility: visible; }
+
+td[class^='td']:nth-child(2) { text-align: left; }
+
+/* LIST COLOR */
+.table_header, .td1, .td2 {
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+tr:hover td[class^='td']:first-child:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	margin-left: -39px;
+	margin-top: -5px;
+	width: 25px;
+    	height: 25px;
+	animation: Rotate .5s infinite alternate;
+    	-webkit-animation: Rotate .5s infinite alternate;
+}
+
+tr:hover td[class^='td']:not(.borderRBL) { background-color: rgb(0, 0, 0); }
+
+/* LIST FONT COLOR */
+.table_headerLink {
+	font-family: 'Architects Daughter', cursive;
+	line-height: 24px;
+	font-size: 10px;
+	color: #000000 !important;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.table_headerLink strong { font-weight: normal !important; }
+
+/* BORDER COLORS */
+
+td[class^='td']:first-child { border-left: 2px solid #000000 !important;  }
+
+.table_header { box-shadow: 1px 0  0 #000000; } 
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: inline-block;
+	margin-left: -25px;
+	height: 189px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	width: 650px;
+	height: 250px;
+	font-size: 0;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.header_cw span { background-position: center 0; }
+
+.header_completed span { background-position: center -250px; }
+
+.header_onhold span { background-position: center -500px; }
+
+.header_dropped span { background-position: center -750px; }
+
+.header_ptw span { background-position: center -1000px; }
+
+/* BACKGROUNDS */
+.status_selected { background-position: center, center; }
+
+.category_totals, #grand_totals {
+	padding: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: rgb(0, 0, 0);
+	box-shadow: 1px 0  0 #000000;
+	text-transform: lowercase;
+}
+
+#grand_totals {
+	position: absolute;
+	display: block;
+	margin-top: -20px;
+	width: 590px;
+}
+
+#copyright, #copyright a { 
+	font-family: 'Architects Daughter', cursive;
+	color: #FFFFFF;
+}
+
+#copyright {
+	position: fixed;
+	display: block;
+	right: 5px;
+	bottom: 10px;
+	width: 280px;
+	font-size: 12px;
+	text-align: right !important;
+}
+
+#copyright a { 
+	padding-right: 2px;
+	font-size: 14px;
+}
+
+#copyright:after {
+	diplay: block;
+	content: "Designed by Hahaido";
+	font-size: 12px;
+}
+
+.hide:before {
+	display: block;
+	content: '';
+	margin-left: -15px;
+	margin-top: -73px;
+	width: 212px;
+	height: 300px;
+	background: url(https://i.imgur.com/2NYB1Bn.png) /* covers_bg.png */ no-repeat;
+}
+
+.hide {
+	visibility: hidden;
+	position: fixed !important;
+	display: block !important;
+	right: 50px;
+	top: -300px;
+	width: 182px;
+	height: 178px;
+	padding: 73px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-clip: content-box;
+	background-size: 100% 100%;
+	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transition: top .5s linear;
+	-webkit-transition: top .5s linear;
+	z-index: 5;
+}
+
+:hover + .hide {
+	top: 0;
+	visibility: visible;
+	animation: Dagger 1.5s ease-in-out .4s infinite alternate;
+	-webkit-animation: Dagger 1.5s ease-in-out .4s infinite alternate;
+}
+
+@-moz-document url-prefix() {
+	#list_surround small a:last-of-type:before { line-height: 6px; }	
+	.td1, .td2 { line-height: 14px; padding: 4px 0; }
+}
+
+/* Theme */
+
+/* Akame */
+
+#mal\_control_strip:before { background: url(https://i.imgur.com/8Ntsbaj.png) /* lines.png */ no-repeat; }
+
+#mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div a[href*="KimiUsot"]:before, #mal\_cs_listinfo div:first-of-type a:before, 
+#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:last-of-type:before {
+	background-image: url(https://i.imgur.com/1c8s6c2.png) /* top_bg.png */;
+}
+
+#list_surround > table:first-of-type:before { background-image: url(https://i.imgur.com/R6KkSWL.png) /* menu.png */; }
+
+.status_selected a, .status_not_selected a,
+.status_selected a:before, .status_not_selected a:before { border-color: #cb281c; }
+
+.status_selected a, .status_not_selected a:hover,
+.status_selected a:before, .status_not_selected a:hover:before { background-color: rgb(203, 40, 28); }
+
+.status_selected a:after, .status_not_selected a:hover:after {
+	background: url(https://i.imgur.com/CEzRIW3.png) /* arrow.png */ no-repeat;
+}
+
+/* Custom cursor */
+a, body { cursor: url(https://i.imgur.com/VjUoRQ3.png) /* cursor.png */ 1 1, auto; }
+
+body { color: #cb281c; }
+
+a { color: #cb281c; }
+
+td[class^='td'][width="45"], td[class^='td'][width="45"] a { color: #cb281c; }
+
+.table_header { background-color: rgb(203, 40, 28)  !important; } 
+
+.table_header:last-child, td[class^='td']:last-child { box-shadow: 1px 0  0 #cb281c; }
+
+tr:hover td[class^='td']:first-child:before {
+	background: url(https://i.imgur.com/CEzRIW3.png) /* arrow.png */ no-repeat;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	background-image: url(https://i.imgur.com/d4zBThN.png) /* headers_bg.png */;
+}
+
+/* CURRENTLY WATCHING BACKGROUND */
+.status_selected:first-child {
+	background-image: url(https://i.imgur.com/trhzhLc.jpg) /* watching.jpg */;
+}
+
+/* COMPLETED BACKGROUND */
+.status_selected:nth-child(2) {
+	background-image: url(https://i.imgur.com/w7UITcS.jpg) /* completed.jpg */;
+}
+
+/* ON-HOLD BACKGROUND */
+.status_selected:nth-child(3) {
+	background-image: url(https://i.imgur.com/UMpvRzO.jpg) /* dropped.jpg */;
+}
+
+/* DROPPED BACKGROUND */
+.status_selected:nth-child(4) {
+	background-image: url(https://i.imgur.com/qrXYoAD.jpg) /* onhold.jpg */;
+}
+
+/* PLANNED BACKGROUND */
+.status_selected:nth-child(5) {
+	background-image: url(https://i.imgur.com/XJjtqM0.jpg) /* planned.jpg */;
+}
+
+/* ALL BACKGROUND */
+.status_selected:last-child {
+	background-image: url(https://i.imgur.com/4UIKfhN.jpg) /* all.jpg */;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
+#mal_cs_links div a[href*="addtolist"]:after,  #mal\_cs_links div:last-of-type a:last-of-type:after,
+#copyright, #copyright a { text-shadow: 1px 1px #f11c26; }
