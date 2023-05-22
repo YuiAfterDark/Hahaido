@@ -1,5 +1,7 @@
 /*
 Sword Art Online by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-21
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -31,7 +33,7 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 	width: 48px;
 	line-height: 28px;
 	font-size: 16px;
-	font-family: 'maximilien';
+	font-family: 'Maximilien Regular';
 	text-align: center;
 	letter-spacing: 0;
 	background-color: rgba(255, 255, 255, 1);
@@ -47,33 +49,45 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 #list_surround table:nth-of-type(n+4) small a:first-of-type:hover { background-color: rgba(192, 149, 59, 1); color: #FFFFFF !important; }
 
 /* SORT */
+[class^="header_"] + table {
+	position: relative;
+	display: block;
+}
+[class^="header_"] + table tr {
+	position: absolute;
+	left: calc(50% + 177px + 20px);
+	top: -60px;
+}
+
 .table_header span { display: none; }
 
-.table_header { 
-	position: absolute; 
-	display: block; 
-	margin-left: 462px;
-	margin-top: -60px;
-	width: 64px;
-	transition: margin-left .3s linear;
-	-moz-transition: margin-left .3s linear;
-	-webkit-transition: margin-left .3s linear;
+.table_header {
+	display: block;
 	z-index: 1;
 }
 
-.table_header:hover { margin-left: 524px !important; }
-
-.table_headerLink strong, .table_header a[href$="order=4"], .table_header a[href$="order=12"] { 
+.table_headerLink {
+	position: relative;
+	display: block;
+	width: 64px;
+	padding-right: 16px;
 	color: transparent;
 	letter-spacing: -12px;
+	transition: transform .3s linear;
+	-moz-transition: transform .3s linear;
+	-webkit-transition: transform .3s linear;
+}
+.table_headerLink:hover {
+	transform: translateX(62px);
 }
 
-.table_headerLink strong:before, .table_header a[href$="order=4"]:before, .table_header a[href$="order=12"]:before { 
+.table_headerLink::before { 
 	position: absolute;
 	display: block;
 	content: '';
 	margin-left: 0;
-	width: 80px;
+	width: 78px;
+	padding-left: 2px;
 	font-family: 'maximilien';
 	line-height: 15px;
 	color: #a5a5a5;
@@ -91,27 +105,32 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 	-webkit-transition: font-size .3s linear;
 }
 
-.table_headerLink strong:before { content: 'Title'; }
+.table_headerLink::before {
+	content: 'Title';
+}
+.table_headerLink:is([href$="order=4"],[href*="order=4&"])::before {
+	content: 'Score';
+}
+.table_headerLink:is([href$="order=12"],[href*="order=12&"])::before {
+	content: 'Progress';
+}
+.table_headerLink:not([href$="order=1"],[href*="order=1&"],[href$="order=4"],[href*="order=4&"],[href$="order=12"],[href*="order=12&"]) {
+	display: none;
+}
 
-.table_header a[href$="order=4"]:before { content: 'Score'; }
-.table_header[width="45"] { margin-top: -42px; }
-
-.table_header a[href$="order=12"]:before { content: 'Progress'; }
-.table_header[width="70"] { margin-top: -24px; }
-
-.table_headerLink strong:hover:before, .table_header a[href$="order=4"]:hover:before, .table_header a[href$="order=12"]:hover:before {
+.table_headerLink:hover:before {
 	color: #FFFFFF;
 	font-size: 14px;
 	border-color: #41372e;
 	background-color: rgba(192, 149, 59, 1);
 }
 
-.table_headerLink strong:after, .table_header a[href$="order=4"]:after, .table_header a[href$="order=12"]:after { 
+.table_headerLink:after { 
 	pointer-events: none;
 	position: absolute;
-	display: table-cell;
 	content: '';
-	margin-left: 68px;
+	right: 5px;
+	top: 4px;
 	width: 8px;
 	height: 8px;
 	background-color: rgba(165, 165, 165, 1);
@@ -132,41 +151,39 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 
 #list_surround table:first-of-type {
 	position: absolute !important;
-	left: 50% !important;
-	margin-left: 96px;
+	left: calc(50% + 96px) !important;
 	top: 114px !important;
-	width: 256px;
+	width: auto;
 }
 
-.status_not_selected, .status_selected { 
-	position: relative !important;  
-	display: inline-block;
-	margin-left: 3px !important;
-	width: 20px !important;
+.status_not_selected, .status_selected {
+	display: block;
+	float: left;
+	margin-left: 3px;
+	width: 20px;
 }
 
-.status_not_selected a, .status_selected a { 
-	position: absolute;
+.status_not_selected a, .status_selected a {
+	position: relative;
 	display: block;
 	color: transparent;
 	font-size: 0;
-	margin-top: 0;
-	width: 19px !important; 
+	width: 19px; 
 	height: 20px;
 	padding: 0 1px 0 0;
 	border-radius: 8px 0 0 0;
-	border-width: 1px 1px 0 1px !important; 
+	border-width: 1px 1px 0 1px; 
 	border-style: solid; 
 	border-color: #a5a5a5; 
 	background-color: rgba(255, 255, 255, 1);
-	transition: margin-top .5s linear, height .5s linear;
-	-moz-transition: margin-top .5s linear, height .5s linear;
-	-webkit-transition: margin-top .5s linear, height .5s linear;
+	transition: transform .5s linear, height .5s linear;
+	-moz-transition: transform .5s linear, height .5s linear;
+	-webkit-transition: transform .5s linear, height .5s linear;
 }
 
 .status_not_selected a:hover { 
-	margin-top: -181px !important; 
-	height: 200px; 
+	transform: translateY(-181px);
+	height: 200px;
 }
 
 .status_not_selected a:hover, .status_selected a {
@@ -177,7 +194,7 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 .status_not_selected a:after, .status_selected a:after {
 	display: block; 
 	width: 10px;
-	font-family: 'maximilien';
+	font-family: 'Maximilien Regular';
 	color: #a5a5a5;
 	font-size: 0;
 	padding: 16px 0 0 0;
@@ -199,25 +216,22 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 .status_not_selected a[href*="status=2"]:after { margin-top: 26px; content: 'F i n i s h e d'; }
   
 /* On hold */
-.status_not_selected  a[href*="status=3"]:after { margin-top: 65px; content: 'P a u s e d'; }
+.status_not_selected a[href*="status=3"]:after { margin-top: 65px; content: 'P a u s e d'; }
 
 /* Dropped */
 .status_not_selected a[href*="status=4"]:after { margin-top: 44px; content: 'D r o p p e d'; }
   
 /* Planned */
-.status_not_selected  a[href*="status=6"]:after { margin-top: 44px; content: 'P l a n n e d'; }
+.status_not_selected a[href*="status=6"]:after { margin-top: 44px; content: 'P l a n n e d'; }
   
 /* All */
-.status_not_selected  a[href*="status=7"]:after { margin-top: 84px; content: 'S t a t s'; }
+.status_not_selected a[href*="status=7"]:after { margin-top: 84px; content: 'S t a t s'; }
 
 .status_not_selected a:before, .status_selected a:before { 
-	pointer-events: none;
-	visibility: visible !important;
-	position: absolute;
-	display: inline-block;
 	content: '';
-	margin-left: -2px;
-	margin-top: 4px;
+	position: absolute;
+	top: 6px;
+	left: 7px;
 	width: 8px;
 	height: 8px;
 	background-color: rgba(165, 165, 165, 1);
