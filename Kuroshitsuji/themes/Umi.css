@@ -1,0 +1,39 @@
+#mal\_control_strip a:after, .status_not_selected a:after, .status_selected a:after, .table_headerLink, #copyright { color: #b95946; }
+
+#mal\_control_strip a:hover:after, .status_not_selected a:hover:after, .status_selected a:after, .table_headerLink:hover { color: #d47562; }
+
+body, a, .td1, .td2 { color: #fdcdc3; }
+
+#list_surround > table:first-of-type:before {
+	background: url(https://i.imgur.com/JV1l7gJ.png) /* category_bg_u.png */ no-repeat;
+}
+
+.hide:before { background: url(https://i.imgur.com/mVTm5cS.png) /* covers_bg_u.png */ no-repeat left top; }
+
+.hide:after { background: url(https://i.imgur.com/XEsmJdG.png) /* bottom_bg_u.png */ no-repeat; }
+
+body:before {
+	background-color: rgba(132, 31, 11, .3);
+	box-shadow: inset 1px 0 0 #d47562, inset -1px 0 0 #d47562, inset 2px 0 0 #841f0b, inset -2px 0 0 #841f0b;
+}
+
+body:after {
+	background-image: url(https://i.imgur.com/VmRcHZ9.png) /* top_bg_u.png */;
+}
+
+body {
+	background-image: url(https://i.imgur.com/RucR25e.jpg) /* background_u.jpg */;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span { 
+	background-image: url(https://i.imgur.com/3YcZVcw.png) /* headers_bg_u.png */;
+}
+
+.category_totals:before {
+	background: url(https://i.imgur.com/65HdV4R.png) /* totals_bg_u.png */ no-repeat left top;
+}
+
+#inlineContent {
+	background: url(https://i.imgur.com/uSDUP0X.png) /* bg_u.png */ repeat-x center top;
+}
