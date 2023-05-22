@@ -390,6 +390,7 @@ Last update: 2023-May-22
 	height: 64px;
 	border: none;
 	z-index: 1;
+	pointer-events: none;
 }
 
 .list-menu-float .icon-menu {
@@ -401,6 +402,10 @@ Last update: 2023-May-22
 	background-color: transparent;
 	background-image: url(https://i.imgur.com/LJcDcrj.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
+}
+
+.list-menu-float .icon-menu:not(.setting) {
+	pointer-events: auto;
 }
 
 /* SVG */
@@ -445,7 +450,7 @@ Last update: 2023-May-22
 	height: 32px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://i.imgur.com/LJcDcrj.png) /* top_menu_bg.png */;
+	background-image: url(https://i.imgur.com/LJcDcrj.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -490,29 +495,39 @@ Last update: 2023-May-22
 	height: 32px;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
+	overflow: visible;
 }
 
 
 .list-menu-float .icon-menu.setting:hover .text {
 	top: 62px;
 	width: 80px;
+	height: 32px;
 }
 
-.list-menu-float .icon-menu.setting .text .link-list-setting {
-	opacity: 1;
-	display: block;
-}
-
+.list-menu-float .icon-menu.setting .text .link-list-setting,
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting {
 	position: absolute;
+	top: 0;
 	display: block;
 	width: 80px;
 	height: 32px;
 	color: transparent;
 	background-color: transparent;
+	opacity: 1;
+	pointer-events: auto;
 }
 
-.list-menu-float .icon-menu.setting:hover .text .link-list-setting { top: 62px; }
+.list-menu-float .icon-menu.setting .text .link-list-setting::before {
+	content: "";
+	position: absolute;
+	bottom: 32px;
+	right: 0;
+	width: 64px;
+	height: 64px;
+	background: black !important;
+	pointer-events: auto;
+}
 
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting { display: none; }
 
