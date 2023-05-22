@@ -1,20 +1,13 @@
 /*
 Lineage by SylakentH_ and Hahaido
 Modified by Shishio-kun and Valerio Lyndon
-Last update: 2023-May-17
+Last update: 2023-May-21
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
-
-@font-face {
-	font-family: 'SAO';
-	src: url(https://files.catbox.moe/ahnop0.woff) format('woff');
-}
-@font-face {
-	font-family: 'Philosopher';
-	src: url(https://files.catbox.moe/my810e.woff) format('woff');
-}
+@\import "https://files.catbox.moe/a3iay5.css"; /* SAO font */
+@\import "https://files.catbox.moe/hnyheu.css"; /* Philosopher font */
 
 /* Top Menu */
 
