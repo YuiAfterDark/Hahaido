@@ -1,0 +1,389 @@
+/*
+xxxHOLiC by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Astloch&display=swap";
+
+/* Tab Content */
+
+#list_surround table tbody:hover tr td[class^='td']:first-of-type {
+	border-radius: 6px 0 0 6px;
+	-o-border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+ 	-webkit-border-radius: 6px 0 0 6px;
+}
+
+#list_surround table tbody:hover tr td[class^='td']:last-of-type {
+	border-radius: 0 6px 6px 0;
+	-o-border-radius: 0 6px 6px 0;
+	-moz-border-radius: 0 6px 6px 0;
+ 	-webkit-border-radius: 0 6px 6px 0;
+}
+
+/* Score */
+#list_surround table tbody tr td[width="45"] { width: 35px !important; }
+
+/* Type */
+#list_surround table tbody tr td[width="50"]  { width: 60px !important; }
+
+/* Progress */
+#list_surround table tbody tr td[width="70"] { width: 80px !important; }
+
+#list_surround table tbody:hover tr td[class^='td']:nth-of-type(6) { visibility: visible; }
+
+tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a { 
+	color: #000000;
+	background-color: rgba(221, 94, 137, 1);
+}
+
+#list_surround table:nth-of-type(n+4) .animetitle span {
+	display: block;
+	max-width: 440px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Airing, rewatching etc.*/
+.animetitle + small { visibility: hidden; position: absolute; }
+
+/* EDIT */
+#list_surround table:nth-of-type(n+4) tbody small { line-height: 14px !important; visibility: hidden; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type {
+	visibility: visible;
+	position: absolute !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+	content: none !important;
+	color: transparent !important;
+	width: 16px;
+	height: 19px;
+	margin-left: -462px !important;
+	margin-top: 4px !important;
+	background-color: rgba(43, 39, 66, 1);
+	background-image: url(https://i.imgur.com/hpy9F6T.png) /* moon.png */ !important;
+	background-repeat: no-repeat !important;
+	letter-spacing: -5px !important;
+}
+
+#list_surround table:nth-of-type(n+4) tbody small a:first-of-type:hover { background-color: rgba(53, 54, 110, 1); }
+
+#list_surround table:nth-of-type(n+4) tbody small a:last-of-type { visibility: hidden !important; }
+
+/* SORT */
+.table_header span { display: none; }
+
+#list_surround table:nth-of-type(3) { position: relative; padding: 6px 0 4px; border-bottom: solid 1px #35366e; } 
+
+#list_surround table:nth-of-type(3) a {
+	font-size: 12px;
+	color: #d9898a;
+}
+
+#list_surround table:nth-of-type(3) a:hover { text-decoration: underline; }
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	top: 0;
+	background: none !important;
+	z-index: 15;
+}
+
+#mal_control_strip table {
+	width: auto;
+	height: 64px !important;
+}
+
+#mal\_control_strip td { height: 60px !important; }
+
+#mal\_control_strip, #mal\_control_strip a, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip td div a { 
+	font-family: 'Astloch', cursive !important; /* Custom font */   
+	font-size: 18px !important;
+	color: #d9898a;
+	text-shadow: 0.1em 0.1em 0.2em #d9898a; 
+}
+
+#mal_cs_pic img, #mal\_cs_powered img, #search { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+#mal\_control_strip a { text-decoration: none !important; }
+
+
+/*  There is no such... */
+#mal\_cs_listinfo div:first-of-type { 
+	position: absolute; 
+	display: block; 
+	width: 500px;
+	top: 0;
+	left: 45%; 
+	margin-left: 4px;
+}
+
+#mal\_cs_listinfo div:first-of-type:before { 
+	content: 'There is no such thing as coincidence in this world. What does exist is only the inevitable, '; 
+	color: #d9898a;
+}
+
+/* Username, Logout */
+#mal\_cs_otherlinks strong { display: none !important; }
+
+#mal\_cs_listinfo div:last-of-type {
+	position: absolute;
+	display: inline-block;
+	left: 45%; 
+	top: 24px;
+	width: 64px;
+}
+
+#mal\_cs_listinfo div a:hover { text-decoration: underline !important; }
+
+#mal\_cs_listinfo div:last-of-type a { visibility: hidden; letter-spacing: -5px !important; }
+
+#mal\_cs_listinfo div:last-of-type a:before { 
+	visibility: visible;
+	content: '(do not believe)';
+	margin-left: 380px !important;
+	font-weight: 600;
+	letter-spacing: 1.5px !important;
+	white-space: nowrap;
+}
+
+#mal\_cs_listinfo div:last-of-type a:after { 
+	visibility: visible;
+	position: absolute;
+	display: block; 
+	content: ''; 
+	margin-left: 0;
+	margin-top: -51px;
+	width: 494px;
+	height: 50px;
+	border: solid 2px #d9898a;
+	border-top: none;
+	background-color: rgba(255, 166, 126, 1);
+	border-radius: 0 0 6px 6px;
+	-o-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+ 	-webkit-border-radius: 0 0 6px 6px;
+	z-index: -1;
+}
+
+#mal\_cs_listinfo div:last-of-type a:hover:before { text-decoration: underline; }
+
+/* 'Add' button */
+#mal\_cs_links, #mal\_cs_otherlinks { visibility: hidden; }
+
+#mal\_cs_links div a[href*="addtolist"] { 
+	visibility: visible !important; 
+	position: fixed !important;
+	display: block !important;
+	content: none !important;
+	color: transparent !important;
+	text-shadow: none !important;
+	height: 48px;
+	width: 48px;
+	top: 68px !important;
+	left: 0 !important;
+	border: solid 1px #2b2742;
+	border-left: none;
+	background-color: rgba(43, 39, 66, 1);
+	background-image: url(https://i.imgur.com/OUgq0w8.png) /* add.png */ !important; 
+}
+
+#mal\_cs_links div a[href*="addtolist"]:hover { border-color: #35366e; background-color: rgba(53, 54, 110, 1); }
+
+/* Log in */
+#mal\_cs_otherlinks div a[href*="login"] { visibility: hidden; }
+
+#mal\_cs_otherlinks div a[href*="login"]:after {
+	visibility: visible;
+	position: absolute;
+	display: block; 
+	top: 0;
+	left: 45%; 
+	width: 156px;
+	padding-left: 4px;
+	font-weight: 600;
+	content: 'Accept your destiny' !important;
+	border: solid 2px #d9898a;
+	border-top: none;
+	background-color: rgba(255, 166, 126, 1);
+	border-radius: 0 0 6px 6px;
+	-o-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+ 	-webkit-border-radius: 0 0 6px 6px;
+}
+
+#mal\_cs_otherlinks div a[href*="login"]:hover:after  { text-decoration: underline; }
+
+/* Category Menu */
+
+#list_surround table:first-of-type {
+	position: fixed !important;
+	bottom: 0;
+	left: 45%;
+	width: 742px;
+	z-index: 10;
+}
+
+.status_not_selected, .status_selected  { 
+	position: relative !important;
+	white-space: nowrap; 
+}
+
+.status_not_selected a:before, .status_selected a:before {
+}
+
+.status_not_selected a, .status_selected a { 
+	display: inline-block;
+	width: 148.4px;
+	padding: 8px 0 6px;
+	text-align: center;
+	font-size: 16px;
+	border-style: solid;
+	border-color: #35366e;
+	border-width: 1px 1px 0 0;
+	border-radius: 120px 120px 0 0 / 10px 10px;
+	background: linear-gradient(top, rgba(221, 94, 137, 1) 0%, rgba(221, 94, 137, 1) 15%, rgba(0, 0, 0, 1) 50%,  rgba(0, 0, 0, 1) 100%);
+	background: -moz-linear-gradient(top, rgba(221, 94, 137, 1) 0%, rgba(221, 94, 137, 1) 15%, rgba(0, 0, 0, 1) 50%,  rgba(0, 0, 0, 1) 100%);
+	background:  -webkit-gradient(
+                                	linear,
+                            		top left,
+                            		bottom right,
+                            		color-stop(0, rgba(221, 94, 137, 1)),
+			                color-stop(.15, rgba(221, 94, 137, 1)),
+			                color-stop(.5, rgba(0, 0, 0, 1)),
+                            		color-stop(1, rgba(0, 0, 0, 1)));  
+}
+
+.status_not_selected a { color: #2b2742; }
+
+
+.status_not_selected a:hover, .status_selected a, .status_not_selected a:hover:before, .status_selected a:before { 
+	color: #35366e; 
+}
+
+/* Currently watching */
+.status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { font-size: 0; border-width: 1px 1px 0 1px; }
+.status_not_selected a[href*="status=1"]:before, .status_selected a[href*="status=1"]:before { content: 'Current'; padding-left: 26px; font-size: 16px !important; }
+
+/* Planned */
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { font-size: 0; border-width: 1px 1px 0 0; }
+.status_not_selected  a[href*="status=6"]:before, .status_selected  a[href*="status=6"]:before { content: 'Planned'; padding-left: 24px; font-size: 16px !important; }
+
+/*All */
+.status_selected  a[href*="status=7"], .status_not_selected  a[href*="status=7"] { display: none; }
+
+/* Main Style */
+
+* { cursor: url(https://i.imgur.com/asCz8B1.png) /* cursor.png */ 2 16, auto; }
+
+#list_surround br { display:none; }
+
+body:before {
+	position: fixed !important;
+	display: block;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://cdn.imgchest.com/files/l7lxcp5j5d7.png) /* Yuuko.png */;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
+body {
+	background-image: url(https://i.imgur.com/ByBYAcD.png) /* background.png */; /* City background */
+	background-repeat: repeat;
+        color: #ffa67e;
+        font-size: 12px;
+	font-weight: 600;
+	font-family: 'Astloch', cursive; /* Custom font */
+	letter-spacing: 1.5px;
+	overflow-x: hidden;
+}
+
+a { text-decoration: none; }
+
+#list_surround:before {
+	position: absolute !important;
+	display: block;
+	content: '';
+	left: 400px;
+	top: -154px;
+	width: 300px;
+	height: 156px;
+	background: url(https://i.imgur.com/5a1NiMr.png) /* mokona.png */ no-repeat;
+	z-index: 1;
+}
+
+#list_surround {
+	position: relative !important;
+	left: 45%;
+	top: 128px;
+	width: 650px;
+	margin-bottom: 158px;
+	padding-left: 12px;
+	border: 40px solid transparent;
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+ 	-webkit-border-radius: 10px;
+	border-image: url(https://i.imgur.com/IMgK2Me.png) /* frame.png */ 40 round;
+	-o-border-image: url(https://i.imgur.com/IMgK2Me.png) /* frame.png */ 40 round;
+	-moz-border-image: url(https://i.imgur.com/IMgK2Me.png) /* frame.png */ 40 round;
+	-webkit-border-image: url(https://i.imgur.com/IMgK2Me.png) /* frame.png */ 40 round;
+}
+
+.animetitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffa67e;
+}
+
+.td1, .td2 {
+	font-size: 12px;
+	color: #ffa67e;
+	line-height: 24px !important;
+}
+
+.td1 a, .td2 a { color: #ffa67e; }
+
+#list_surround .header_title span { display: none; }
+
+.category_totals {
+	position: absolute !important;
+	display: inline-block !important;
+	margin-top: 48px;
+	width: 646px !important;
+	padding: 2px;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 22px;
+	text-align: center !important;
+	z-index: 5;
+}
+
+#grand_totals { display: none; }
+
+#copyright {
+	position: relative !important;
+	margin: 0 auto !important;
+	width: 80%;
+	text-align: center;
+	border-top: solid 1px #35366e;
+	border-bottom: solid 1px #35366e;
+}
+
+#copyright a { color: #d9898a; font-weight: 600; }
+
+#copyright a:hover { text-decoration: underline; }
+
+#copyright:after { display: block; content: 'List designed by Hahaido.'; }
