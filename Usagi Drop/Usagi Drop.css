@@ -1,5 +1,7 @@
 /*
 Usagi Drop by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-21
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -96,8 +98,7 @@ td[width="50"] { width: 70px !important; }
 
 #list_surround table:nth-of-type(3) a:hover { margin-left: -28px; text-decoration: underline; } 
 
-.table_header a[href$="order=1"]:before, .table_header a[href$="order=4"]:before, 
-.table_header a[href$="order=12"]:before {
+.table_header a:before {
 	position: absolute;
 	display: block;
 	content: '';
@@ -108,11 +109,11 @@ td[width="50"] { width: 70px !important; }
 	z-index: -1;
 }
 
-.table_header a[href$="order=1"]:before { margin-left: -52px; background: url(https://i.imgur.com/MCU3oTF.png) /* title.png */; }
+.table_header a:is([href$="order=1"],[href*="order=1&"]):before { margin-left: -52px; background: url(https://i.imgur.com/MCU3oTF.png) /* title.png */; }
 
-.table_header a[href$="order=4"]:before { background: url(https://i.imgur.com/HywLCE9.png) /* score.png */; }
+.table_header a:is([href$="order=4"],[href*="order=4&"]):before { background: url(https://i.imgur.com/HywLCE9.png) /* score.png */; }
 
-.table_header a[href$="order=12"]:before { background: url(https://i.imgur.com/OjYL3dP.png) /* episodes.png */; }
+.table_header a:is([href$="order=12"],[href*="order=12&"]):before { background: url(https://i.imgur.com/OjYL3dP.png) /* episodes.png */; }
 
 /* Top Menu */
 
