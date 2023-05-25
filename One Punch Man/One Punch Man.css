@@ -1,5 +1,7 @@
 /*
 One Punch Man by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -178,11 +180,6 @@ td[class^='td']:not(.borderRBL):last-child { width: 56px; padding-right: 6px; }
 .table_headerLink strong { font-weight: normal !important; }
 
 .table_header:first-child { display:none; }
-
-@-moz-document url-prefix() {
-	.header_cw + table, .header_completed + table, .header_onhold + table,
-	.header_dropped + table, .header_ptw + table { margin: -58px 0 0 360px; }
-}
 
 /* Category Menu */
 
