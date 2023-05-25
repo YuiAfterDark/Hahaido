@@ -1,5 +1,7 @@
 /*
 Kiseijuu by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -250,19 +252,19 @@ td[class^='td']:last-child { width: 56px; padding-right: 6px; }
 .status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"] { margin: 147px 0 0 -270px; }
 
 /* Completed */
-.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin: 205px 0 0 -536px; }
+.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin: 205px 0 0 -371px; }
   
 /* On hold */
-.status_not_selected  a[href*="status=3"], .status_selected a[href*="status=3"] { margin: 318px 0 0 -559px; }
+.status_not_selected  a[href*="status=3"], .status_selected a[href*="status=3"] { margin: 318px 0 0 -393px; }
 
 /* Dropped */
-.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin: 430px 0 0 -534px; }
+.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin: 430px 0 0 -367px; }
   
 /* Planned */
-.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin: 503px 0 0 -443px; }
+.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin: 503px 0 0 -275px; }
   
 /* All */
-.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { margin: 534px 0 0 -331px; }
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { margin: 534px 0 0 -162px; }
 
 .status_selected a { z-index: 1; }
 
@@ -319,23 +321,6 @@ td[class^='td']:last-child { width: 56px; padding-right: 6px; }
 	height: 90px;
 	background: url(https://i.imgur.com/mbvvhQx.png) /* category_buttons.png */ no-repeat;
 	border-radius: 50em;
-}
-
-@-moz-document url-prefix() {
-/* Completed */
-.status_not_selected a[href*="status=2"], .status_selected a[href*="status=2"] { margin: 205px 0 0 -371px; }
-  
-/* On hold */
-.status_not_selected  a[href*="status=3"], .status_selected a[href*="status=3"] { margin: 318px 0 0 -393px; }
-
-/* Dropped */
-.status_not_selected a[href*="status=4"], .status_selected a[href*="status=4"] { margin: 430px 0 0 -367px; }
-  
-/* Planned */
-.status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { margin: 503px 0 0 -275px; }
-  
-/* All */
-.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { margin: 534px 0 0 -162px; }
 }
 
 /* Main Style */
