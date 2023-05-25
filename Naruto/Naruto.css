@@ -1,5 +1,7 @@
 /*
 Hinata (Naruto) by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -96,11 +98,6 @@ tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: 
 #list_surround table:nth-of-type(3) a:hover { color: #aa9fbd; }
 
 .table_header:first-child { display:none; }
-
-@-moz-document url-prefix() {
-	.header_cw + table, .header_completed + table, .header_onhold + table,
-	.header_dropped + table, .header_ptw + table { margin: -217px 0 0 223px; }
-}
 
 /* Top Menu */
 
