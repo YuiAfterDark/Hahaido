@@ -1,11 +1,12 @@
-/* Plastic Memories by Hahaido */
-/* Repaired in 2022 by jery_js */
-/* Further repairs & changes by Shishio-kun & Valerio_Lyndon */
-/* Last update: 2023-Apr-12 */
+/*
+Plastic Memories by Hahaido
+Modified by Shishio-kun, jery_js, and Valerio Lyndon
+Last update: 2023-Apr-12
+*/
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/animetitleafter";
 @\import "https://malscraper.azurewebsites.net/covers/all/manga/presets/animetitleafter";
-@\import "http://fonts.googleapis.com/css?family=Jura";
+@\import "http://fonts.googleapis.com/css2?family=Jura&display=swap";
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 
 /* Category Menu */
