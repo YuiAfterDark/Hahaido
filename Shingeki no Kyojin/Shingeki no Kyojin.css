@@ -1,7 +1,7 @@
 /*
 Shingeki no Kyojin by Hahaido
 Modified by Valerio Lyndon
-Last update: 2023-May-21
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -294,13 +294,13 @@ td[class^='td']:last-child { margin-left: 100px; }
 #mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; }
 
 #mal\_cs_otherlinks div a[href*="register"], #mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="mangalist"],
-#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search, #mal\_cs_links div:last-of-type a:first-of-type, 
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search,
 #mal\_cs_links div a[href$="/"], #mal\_cs_otherlinks div a[href*="faq"] { display: none !important; }
 
 #mal\_cs_otherlinks div a[href*="login"], #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
-#mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a:last-of-type { 
+#mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a { 
 	position: absolute !important;
-	display: block !important;
+	display: block;
 	left: 10px !important;
 	top: calc(100% + 50px) !important;
 	content: none !important;
@@ -310,7 +310,7 @@ td[class^='td']:last-child { margin-left: 100px; }
 }
 
 #mal\_cs_otherlinks div a[href*="login"]:before, #mal\_cs_listinfo div:last-of-type a:before, #mal\_cs_listinfo div:first-of-type a:before, 
-#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:last-of-type:before { 
+#mal_cs_links div a[href*="addtolist"]:before,  #mal\_cs_links div:last-of-type a:before { 
 	position: absolute;
 	padding-left: 16px;
 	font-family: 'Encient German Gothic';
@@ -332,9 +332,14 @@ td[class^='td']:last-child { margin-left: 100px; }
 #mal\_cs_links div a[href*="addtolist"]:before { content: 'add'; margin-top: 100px; }
 #mal\_cs_links div a[href*="addtolist"]:after { margin-top: 107px; }
 
-/* MANGALIST */
+/* SWAP LIST */
 #mal\_cs_links div:last-of-type a:last-of-type:before { content: 'manga'; margin-top: 120px; }
-#mal\_cs_links div:last-of-type a:last-of-type:after { margin-top: 127px; }
+#mal\_cs_links div:last-of-type a:first-of-type:before { content: 'anime'; margin-top: 120px; }
+#mal\_cs_links div:last-of-type a:after { margin-top: 127px; }
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type,
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type {
+	display: none;
+}
 
 /* LOGIN */
 #mal\_cs_otherlinks div a[href*="login"]:before { content: 'login'; margin-top: 80px; }
@@ -346,7 +351,7 @@ td[class^='td']:last-child { margin-left: 100px; }
 
 
 #mal\_cs_otherlinks div a[href*="login"]:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
-#mal_cs_links div a[href*="addtolist"]:hover:after,  #mal\_cs_links div:last-of-type a:last-of-type:hover:after {
+#mal_cs_links div a[href*="addtolist"]:hover:after,  #mal\_cs_links div:last-of-type a:hover:after {
 	position: absolute;
 	display: block;
 	content: '';
@@ -360,7 +365,7 @@ td[class^='td']:last-child { margin-left: 100px; }
 
 @-moz-document url-prefix() {
 	#mal\_cs_otherlinks div a[href*="login"]:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
-	#mal_cs_links div a[href*="addtolist"]:hover:after,  #mal\_cs_links div:last-of-type a:last-of-type:hover:after {
+	#mal_cs_links div a[href*="addtolist"]:hover:after,  #mal\_cs_links div:last-of-type a:hover:after {
 		top: 0;
 	}
 }

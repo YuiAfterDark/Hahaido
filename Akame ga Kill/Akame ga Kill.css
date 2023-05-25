@@ -1,5 +1,7 @@
 /*
 Akame ga Kill by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -320,10 +322,10 @@ Akame ga Kill by Hahaido
 
 /* TOP MENU BUTTONS */
 /* FOR ANIME LIST */
-#mal\_cs_links div:last-of-type a:first-of-type { display: none; } /* DISABLE ANIMELIST BUTTON */
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type { display: none; } /* DISABLE ANIMELIST BUTTON */
 
 /* FOR MANGA LIST */
-/* #mal\_cs_links div:last-of-type a:last-of-type { display: none; } */ /* DISABLE MANGALIST BUTTON */
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type { display: none; } /* DISABLE MANGALIST BUTTON */
 
 a { text-decoration: none; }
 
@@ -549,7 +551,7 @@ td[class^='td']:first-child { border-left: 2px solid #000000 !important;  }
 #mal\_cs_listinfo div:last-of-type a:before,
 #mal\_cs_listinfo div:first-of-type a:before, 
 #mal_cs_links div a[href*="addtolist"]:before,
-#mal\_cs_links div:last-of-type a:last-of-type:before {
+#mal\_cs_links div:last-of-type a:before {
 	background-image: url(https://i.imgur.com/1c8s6c2.png) /* top_bg.png */;
 }
 

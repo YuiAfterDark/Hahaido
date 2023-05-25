@@ -1,5 +1,7 @@
 /*
 Touhou by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -700,13 +702,12 @@ tr:hover td[class^='td']:not(.borderRBL), tr:hover td[class^='td']:not(.borderRB
 	z-index: 4;
 }
 
-.status_not_selected a[href*="status=1"] {
-	/* for manga list */
-	/* background-position: 0 -600px; */
+/* for manga list */
+[data-work="manga"] .status_not_selected a[href*="status=1"] {
+	background-position: 0 -600px;
 }
-.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover {
-	/* for manga list */
-	/* background-position: -100px -600px; */
+[data-work="manga"] .status_selected a[href*="status=1"], [data-work="manga"] .status_not_selected a[href*="status=1"]:hover {
+	background-position: -100px -600px;
 }
 
 @-moz-document url-prefix() {
@@ -716,12 +717,12 @@ tr:hover td[class^='td']:not(.borderRBL), tr:hover td[class^='td']:not(.borderRB
 
 @media only screen and (max-width: 1366px) {
 	/* for manga list */
-	/* .status_not_selected a[href*="status=1"] {
+	[data-work="manga"] .status_not_selected a[href*="status=1"] {
 		 background-position: 0 -432px; 
 	}
-	.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover {
+	[data-work="manga"] .status_selected a[href*="status=1"], [data-work="manga"] .status_not_selected a[href*="status=1"]:hover {
 		background-position: -72px -432px;
-	} */
+	}
 	body { font-size: 11px; }
 	#list_surround:before { right: 102px; margin-top: -29px; width: 416px; height: 542px; }
 	#list_surround { margin-top: -232px; width: 369px; height: 484px; padding-right: 119px;}
@@ -747,9 +748,9 @@ tr:hover td[class^='td']:not(.borderRBL), tr:hover td[class^='td']:not(.borderRB
 	}
 	.header_cw span { 
 		background-position: center 0; 
-		/* for manga list */
-		/* .header_cw span { background-position: center -564px; } */
 	}
+	/* for manga list */
+	[data-work="manga"] .header_cw span { background-position: center -564px; }
 	.header_completed span { background-position: center -114px; }
 	.header_onhold span { background-position: center -228px; }
 	.header_dropped span { background-position: center -342px; }
@@ -769,5 +770,4 @@ tr:hover td[class^='td']:not(.borderRBL), tr:hover td[class^='td']:not(.borderRB
 		width: 430px;
 		height: 556px;
 	}
-}
 }

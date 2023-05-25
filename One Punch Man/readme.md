@@ -8,6 +8,8 @@
 
 Built for classic lists.
 
+Animelist only.
+
 **Columns:**
 
 - Numbers

@@ -1,7 +1,7 @@
 /*
 Fate/stay night by Hahaido
 Modified by Valerio Lyndon
-Last update: 2023-May-21
+Last update: 2023-May-24
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -326,8 +326,9 @@ Last update: 2023-May-21
 .status_not_selected a[href*="status=1"], .status_selected a[href*="status=1"],
 .status_not_selected a[href*="status=6"], .status_selected a[href*="status=6"] { font-size: 0 !important; }
 
-/* Currently watching */
+/* Current */
 .status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after { content: 'Watching'; }
+.status_not_selected a[href*="/mangalist/"][href*="status=1"]:after, .status_selected a[href*="/mangalist/"][href*="status=1"]:after { content: 'Reading'; }
   
 /* Planned */
 .status_not_selected a[href*="status=6"]:after, .status_selected a[href*="status=6"]:after { content: 'Planned'; }

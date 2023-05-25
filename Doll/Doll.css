@@ -1,5 +1,7 @@
 /*
 Doll by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -323,10 +325,10 @@ tr:hover > .td1, tr:hover > .td2 { box-shadow: 0 -1px 0 #f2a962; }
 #mal\_cs_otherlinks div:nth-child(2) {  color: transparent !important; text-shadow: none !important; }
 
 #mal_cs_otherlinks div a[href*="history"], #mal_cs_otherlinks div a[href*="mangalist"],
-#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search, #mal\_cs_links div:last-of-type a:first-of-type, 
+#mal_cs_otherlinks div a[href*="forum"], #mal_cs_otherlinks div a[href*="export"], #search,
 #mal\_cs_links div a[href$="/"] { display: none !important; }
 
-#mal\_cs_listinfo div:first-of-type a, #mal\_cs_listinfo div:last-of-type a, #mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a:last-of-type { 
+#mal\_cs_listinfo div:first-of-type a, #mal\_cs_listinfo div:last-of-type a, #mal_cs_links div a[href*="addtolist"],  #mal\_cs_links div:last-of-type a { 
 	position: relative !important;
 	font-size: 0 !important;
 }
@@ -366,8 +368,13 @@ tr:hover > .td1, tr:hover > .td2 { box-shadow: 0 -1px 0 #f2a962; }
 /* ADD */
 #mal\_cs_links div a[href*="addtolist"]:before { content: 'add'; }
 
-/* MANGALIST */
+/* SWAP LIST */
 #mal\_cs_links div:last-of-type a:last-of-type:before { content: 'manga'; margin-left: -9px; }
+#mal\_cs_links div:last-of-type a:first-of-type:before { content: 'anime'; margin-left: -9px; }
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type,
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type {
+	display: none;
+}
 
 /* LOGOUT */
 #mal\_cs_listinfo div:last-of-type a:before { content: 'logout'; margin-left: 110px; }

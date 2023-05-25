@@ -1,5 +1,7 @@
 /*
 Suigintou (Rozen Maiden) by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -32,7 +34,7 @@ Suigintou (Rozen Maiden) by Hahaido
 #mal\_cs_links div a[href$="/"] { display: none !important; }
 
 #mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
-#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a { 
 	position: fixed;
 	display: block;
 	left: 10px;
@@ -42,7 +44,7 @@ Suigintou (Rozen Maiden) by Hahaido
 }
 
 #mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
-#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:after {
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:after {
 	position: absolute;
 	display: block;
 	margin-left: 16px;
@@ -64,7 +66,7 @@ Suigintou (Rozen Maiden) by Hahaido
 }
 
 #mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
-#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after {
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:hover:after {
 	margin-left: 0;
 	padding-left: 5px;
 }
@@ -81,11 +83,16 @@ Suigintou (Rozen Maiden) by Hahaido
 #mal\_cs_links div a[href*="addtolist"]:after { content: 'Add'; background-position: 0 -96px; }
 #mal\_cs_links div a[href*="addtolist"]:hover:after { background-position: -24px -96px; }
 
-/* MANGALIST */
-#mal\_cs_links div:last-of-type a:last-of-type { top: 50%; }
+/* SWAP LIST */
+#mal\_cs_links div:last-of-type a { top: 50%; }
 
 #mal\_cs_links div:last-of-type a:last-of-type:after { content: 'Manga'; background-position: 0 -120px; }
-#mal\_cs_links div:last-of-type a:last-of-type:hover:after { background-position: -24px -120px; }
+#mal\_cs_links div:last-of-type a:first-of-type:after { content: 'Anime'; background-position: 0 -120px; }
+#mal\_cs_links div:last-of-type a:hover:after { background-position: -24px -120px; }
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type,
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type {
+	display: none;
+}
 
 /* LOGOUT */
 #mal\_cs_listinfo div:last-of-type a { top: calc(50% + 24px); }

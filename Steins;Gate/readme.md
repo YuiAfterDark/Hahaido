@@ -10,6 +10,8 @@
 
 Built for classic lists.
 
+Intended for animelists.
+
 **Columns:**
 
 - Numbers

@@ -35,7 +35,7 @@ Last update: 2023-May-24
 #mal\_cs_links div a[href$="/"] { display: none !important; }
 
 #mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
-#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a { 
 	position: absolute;
 	display: block;
 	/*left: 50px;*/
@@ -46,7 +46,7 @@ Last update: 2023-May-24
 }
 
 #mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
-#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:after {
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:after {
 	position: absolute;
 	display: block;
 	width: 90px;
@@ -63,7 +63,7 @@ Last update: 2023-May-24
 }
 
 #mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
-#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { 
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:hover:after { 
 	color: #FFFFFF;
 	text-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
 }
@@ -78,10 +78,15 @@ Last update: 2023-May-24
 
 #mal\_cs_links div a[href*="addtolist"]:after { content: 'Add'; box-shadow: inset 0 -2px 0 #f9dcbf, inset 0 3px 0 #f9dcbf, inset -1px 0 0 #dd9fa7, inset 1px 0 0 #dd9fa7; }
 
-/* MANGALIST */
-#mal\_cs_links div:last-of-type a:last-of-type { right: 380px; }
+/* SWAP LIST */
+#mal\_cs_links div:last-of-type a { right: 380px; }
 
 #mal\_cs_links div:last-of-type a:last-of-type:after { content: 'Mangalist'; }
+#mal\_cs_links div:last-of-type a:first-of-type:after { content: 'Animelist'; }
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type,
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type {
+	display: none;
+}
 
 /* LOGOUT */
 #mal\_cs_listinfo div:last-of-type a { right: 290px; }

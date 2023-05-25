@@ -1,5 +1,7 @@
 /*
 Sword Art Online II: Phantom Bullet by Hahaido
+Modified by Valerio Lyndon
+Last update: 2023-May-24
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -32,7 +34,7 @@ Sword Art Online II: Phantom Bullet by Hahaido
 #mal\_cs_links div a[href$="/"] { display: none !important; }
 
 #mal\_cs_otherlinks div a, #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a, 
-#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_links div:last-of-type a:last-of-type { 
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a { 
 	position: fixed;
 	display: block;
 	left: 0;
@@ -43,7 +45,7 @@ Sword Art Online II: Phantom Bullet by Hahaido
 }
 
 #mal\_cs_otherlinks div a:after, #mal\_cs_listinfo div:last-of-type a:after, #mal\_cs_listinfo div:first-of-type a:after, 
-#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:first-of-type:after, #mal\_cs_links div:last-of-type a:last-of-type:after {
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:after {
 	position: absolute;
 	display: block;
 	width: 80px;
@@ -58,7 +60,7 @@ Sword Art Online II: Phantom Bullet by Hahaido
 }
 
 #mal\_cs_otherlinks div a:hover:after, #mal\_cs_listinfo div:last-of-type a:hover:after, #mal\_cs_listinfo div:first-of-type a:hover:after, 
-#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:first-of-type:hover:after, #mal\_cs_links div:last-of-type a:last-of-type:hover:after { 
+#mal_cs_links div a[href*="addtolist"]:hover:after, #mal\_cs_links div:last-of-type a:hover:after { 
 	color: #FFFFFF; 
 	animation: Blink linear .5s;
         -webkit-animation: Blink linear .5s;
@@ -72,10 +74,15 @@ Sword Art Online II: Phantom Bullet by Hahaido
 
 #mal\_cs_links div a[href*="addtolist"]:after { content: 'Add';  }
 
-/* MANGALIST */
-#mal\_cs_links div:last-of-type a:last-of-type { left: 160px; }
+/* SWAP LIST */
+#mal\_cs_links div:last-of-type a { left: 160px; }
 
 #mal\_cs_links div:last-of-type a:last-of-type:after { content: 'Mangalist'; }
+#mal\_cs_links div:last-of-type a:first-of-type:after { content: 'Animelist'; }
+[data-work="anime"] #mal\_cs_links div:last-of-type a:first-of-type,
+[data-work="manga"] #mal\_cs_links div:last-of-type a:last-of-type {
+	display: none;
+}
 
 /* LOGOUT */
 #mal\_cs_listinfo div:last-of-type a { left: 240px; }
