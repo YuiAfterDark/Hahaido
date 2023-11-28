@@ -1,7 +1,7 @@
 /*
 Magi layout by Hahaido
 Modifications made by Shishio-kun and Valerio Lyndon
-Last update: 2023-May-15
+Last update: 2023-Nov-28
 */
 
 @\import "https://fonts.googleapis.com/css2?family=Fauna+One&display=swap";
@@ -571,7 +571,7 @@ display: block;
 width: 900px;
 height: 580px;
 margin: 0 auto;
-background-image: url(http://i.imgur.com/VEBoFUI.png);
+background-image: url(https://i.imgur.com/pGpBVHA.png) /* top_bg.png */;
 text-align: center;
 }
 
