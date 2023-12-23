@@ -1,7 +1,7 @@
 /*
 Re:Zero layout by Hahaido
 Modifications made by Shishio-kun and Valerio Lyndon
-Last update: 2023-May-15
+Last update: 2023-Dec-22
 */
 
 @\import "https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap";
@@ -592,6 +592,8 @@ Last update: 2023-May-15
 	background-size: cover;
 	border-radius: 4px;
 }
+
+.list-menu-float .icon-menu.statistics { display: none; }
 
 .list-menu-float .icon-menu.quick-add { background-position: 0 0; }
 .list-menu-float .icon-menu.quick-add:hover { background-position: 0 -53px; }
