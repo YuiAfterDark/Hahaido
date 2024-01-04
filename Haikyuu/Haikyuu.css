@@ -1,7 +1,7 @@
 /*
 Haikyuu by Hahaido
 Modified by jery_js, Shishio-kun, and Valerio Lyndon
-Last update: 2023-May-22
+Last update: 2024-Jan-03
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/modern.css";
@@ -588,11 +588,11 @@ body.ownlist {
 	position: fixed;
 	display: block;
 	content: '';
-	left: 0;
+	right: 0;
 	top: 0;
-	width: 100%;
+	width: calc(29% + 2.4vh);
 	height: 100%;
-	background-image: url(https://i.imgur.com/drTTFTz.png) /* side_bg.png */;
+	background-image: url(https://i.imgur.com/4sGeAmd.png) /* side_bg_crop.png */;
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: cover;
