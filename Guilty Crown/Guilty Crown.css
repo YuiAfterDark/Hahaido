@@ -1,5 +1,7 @@
 /*
 Guilty Crown by Hahaido
+Modified by Valerio Lyndon
+Last update: 2024-Jan-06
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -326,9 +328,9 @@ tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: 
 	font-weight: normal;
 } 
 
-.table_headerLink strong, .table_header a[href$="order=4"], .table_header a[href$="order=9"], .table_header a[href$="order=12"] { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
+.table_headerLink strong, .table_header a[href*="order=4"], .table_header a[href*="order=9"], .table_header a[href*="order=12"] { visibility: hidden; font-weight: normal; letter-spacing: -12px; }
 
-.table_headerLink strong:before, .table_header a[href$="order=4"]:before, .table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { 
+.table_headerLink strong:before, .table_header a[href*="order=4"]:before, .table_header a[href*="order=9"]:before, .table_header a[href*="order=12"]:before { 
 	visibility: visible;
 	position: fixed;
 	display: block;
@@ -342,13 +344,16 @@ tr:hover > .td1, tr:hover > .td2, tr:hover > .td1 a, tr:hover > .td2 a { color: 
 	letter-spacing: 0 !important;  
 }
 
-.table_headerLink strong:hover:before, .table_header a[href$="order=4"]:hover:before, .table_header a[href$="order=9"]:hover:before, .table_header a[href$="order=12"]:hover:before { color: #FFFFFF; border-color: #FFFFFF; }
+.table_headerLink strong:hover:before, .table_header a[href*="order=4"]:hover:before, .table_header a[href*="order=9"]:hover:before, .table_header a[href*="order=12"]:hover:before { color: #FFFFFF; border-color: #FFFFFF; }
 
+/* Title */
 .table_headerLink strong:before { content: 'T';  }
 
-.table_header a[href$="order=4"]:before { content: 'S'; }
+/* Score */
+.table_header a[href*="order=4"]:before { content: 'S'; }
 
-.table_header a[href$="order=9"]:before, .table_header a[href$="order=12"]:before { content: 'P'; }
+/* Episodes & Chapters */
+.table_header a[href*="order=9"]:before, .table_header a[href*="order=12"]:before { content: 'P'; }
 
 .table_header:first-of-type { right: 931px; top: 285px; }
 
