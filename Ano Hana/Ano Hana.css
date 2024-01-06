@@ -1,7 +1,7 @@
 /*
 Ano Hana by Hahaido
 Modified by Valerio Lyndon
-Last update: 2023-May-24
+Last update: 2024-Jan-06
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -89,11 +89,10 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 	-webkit-transition: background-position .3s linear;
 }
 
-.table_header a { font-size: 0; }
-
-.table_header a:hover, .table_headerLink strong:hover {
-	color: #FFFFFF !important;
-	background-color: rgb(199, 219, 252);
+.table_header a {
+	display: block;
+	height: 100%;
+	font-size: 0;
 }
 
 /* Category Menu */
@@ -330,6 +329,10 @@ tr:hover > .td1 a, tr:hover > .td2 a { color: #FFFFFF; }
 
 #list_surround br { display: none; }
 
+body {
+	min-width: 1300px;
+}
+
 body:before, body:after {
 	position: absolute;
 	display: block;
@@ -337,6 +340,7 @@ body:before, body:after {
 	left: 0;
 	top: 0;
 	width: 100%;
+	min-width: 1300px;
 	height: 350px;
 }
 
