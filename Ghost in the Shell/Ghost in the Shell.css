@@ -1,5 +1,7 @@
 /*
 Ghost in the Shell by Hahaido
+Modified by Valerio_Lyndon
+Last update: 2024-Jan-06
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/animetitleafter";
@@ -152,7 +154,7 @@ tr:hover .animetitle span {
 
 
 .table_headerLink {
-	display: inline-block;
+	display: block;
 	margin-left: 4px;
 	width: 16px;
 	height: 16px;
