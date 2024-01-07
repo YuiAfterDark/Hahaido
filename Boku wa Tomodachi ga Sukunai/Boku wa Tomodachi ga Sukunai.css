@@ -1,5 +1,7 @@
 /*
 Boku wa Tomodachi ga Sukunai by Hahaido
+Modified by Valerio Lyndon
+Last update: 2024-JAN-06
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -284,6 +286,7 @@ tr:hover td[class^='td'][width="45"], tr:hover td[class^='td'][width="45"] a { c
 /* Currently watching */
 .status_not_selected:first-child, .status_selected:first-child { border-radius: 0 0 8px 0; }
 .status_not_selected a[href*="status=1"]:after, .status_selected a[href*="status=1"]:after { content: 'Watching'; }
+.status_not_selected a[href*="status=1"][href*="/mangalist/"]:after, .status_selected a[href*="status=1"][href*="/mangalist/"]:after { content: 'Reading'; }
 
 /* Completed */
 .status_not_selected a[href*="status=2"]:after, .status_selected a[href*="status=2"]:after { content: 'Completed'; }
