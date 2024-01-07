@@ -1,3 +1,5 @@
+/* Umineko */
+
 #mal\_control_strip a:after, .status_not_selected a:after, .status_selected a:after, .table_headerLink, #copyright { color: #b95946; }
 
 #mal\_control_strip a:hover:after, .status_not_selected a:hover:after, .status_selected a:after, .table_headerLink:hover { color: #d47562; }
