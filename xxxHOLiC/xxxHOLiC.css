@@ -1,7 +1,7 @@
 /*
 xxxHOLiC by Hahaido
 Modified by Valerio Lyndon
-Last update: 2023-May-22
+Last update: 2024-Jan-08
 */
 
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
@@ -62,7 +62,7 @@ tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a {
 	color: transparent !important;
 	width: 16px;
 	height: 19px;
-	margin-left: -462px !important;
+	left: -13px !important;
 	margin-top: 4px !important;
 	background-color: rgba(43, 39, 66, 1);
 	background-image: url(https://i.imgur.com/hpy9F6T.png) /* moon.png */ !important;
@@ -122,7 +122,7 @@ tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a {
 	display: block; 
 	width: 500px;
 	top: 0;
-	left: 45%; 
+	left: clamp(0px, 45%, calc(100% - 742px));
 	margin-left: 4px;
 }
 
@@ -137,7 +137,7 @@ tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a {
 #mal\_cs_listinfo div:last-of-type {
 	position: absolute;
 	display: inline-block;
-	left: 45%; 
+	left: clamp(0px, 45%, calc(100% - 742px)); 
 	top: 24px;
 	width: 64px;
 }
@@ -206,7 +206,7 @@ tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a {
 	position: absolute;
 	display: block; 
 	top: 0;
-	left: 45%; 
+	left: clamp(0px, 45%, calc(100% - 742px))%; 
 	width: 156px;
 	padding-left: 4px;
 	font-weight: 600;
@@ -227,7 +227,7 @@ tr:hover >  .td1, tr:hover > .td2, tr:hover >  .td1 a, tr:hover > .td2 a {
 #list_surround table:first-of-type {
 	position: fixed !important;
 	bottom: 0;
-	left: 45%;
+	left: clamp(0px, 45%, calc(100% - 742px));
 	width: 742px;
 	z-index: 10;
 }
@@ -292,15 +292,16 @@ body:before {
 	content: '';
 	left: 0;
 	top: 0;
-	width: 100%;
+	width: max(742px, 100%);
 	height: 100%;
 	background-image: url(https://cdn.imgchest.com/files/l7lxcp5j5d7.png) /* Yuuko.png */;
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: left bottom;
 	background-size: contain;
 }
 
 body {
+	min-width: 742px;
 	background-image: url(https://i.imgur.com/ByBYAcD.png) /* background.png */; /* City background */
 	background-repeat: repeat;
         color: #ffa67e;
@@ -308,7 +309,6 @@ body {
 	font-weight: 600;
 	font-family: 'Astloch', cursive; /* Custom font */
 	letter-spacing: 1.5px;
-	overflow-x: hidden;
 }
 
 a { text-decoration: none; }
@@ -327,7 +327,7 @@ a { text-decoration: none; }
 
 #list_surround {
 	position: relative !important;
-	left: 45%;
+	left: clamp(0px, 45%, calc(100% - 742px));
 	top: 128px;
 	width: 650px;
 	margin-bottom: 158px;
