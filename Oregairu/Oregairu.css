@@ -1,0 +1,518 @@
+/*
+Oregairu by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css?family=Anaheim|Nothing+You+Could+Do";
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: absolute;
+	display: block;
+	left: calc(100% - 512px) !important;
+	top: 288px;
+	width: 500px !important;
+	height: 0 !important;
+	background: none !important;
+	float: right;
+	z-index: 2;
+}
+
+#mal\_control_strip, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a, #mal\_control_strip a:before {   
+	font-family: 'Nothing You Could Do', cursive !important;
+	font-size: 16px !important;
+	white-space: nowrap;
+}
+
+#mal\_control_strip, #mal\_control_strip td, #mal\_control_strip td div { color: #3c3c3c !important; }
+
+#mal\_control_strip a { color: #e84c91 !important; }
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover { color: #3c3c3c !important; ; }
+
+#mal\_control_strip td div { margin: 0 !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img,  #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_pic, #search { display: none; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_links div a[href$="/"], #mal\_cs_otherlinks div a[href$="/forum/"] { display: none !important; }
+
+#mal\_cs_otherlinks  { display: inline-block !important; }
+
+#mal\_cs_otherlinks div:nth-of-type(2) { position: absolute; top: 26px; right: 0; }
+
+#mal\_cs_otherlinks div strong { position: absolute; right: 0; padding: 0 5px 0 0; font-weight: normal; }
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]):before, #mal\_cs_listinfo div:last-of-type a:before,
+#mal\_cs_listinfo div:first-of-type a:before, #mal_cs_links div a[href*="addtolist"]:before, #mal\_cs_links div:last-of-type a:last-of-type:before {
+	opacity: 0;
+	position: absolute;
+	display: inline-block;
+	width: 80px;
+	margin: 75px 0 0 -13px;
+	padding: 4px;
+	line-height: 17px;
+	font-family: 'Anaheim', sans-serif !important;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	border: solid 1px #ffffff;
+	background-color: rgb(0, 152, 216);
+	box-shadow: 1px 1px 2px  rgba(0, 0, 0, .5);
+	border-radius: 16px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	z-index: 1;
+}
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]):hover:before, #mal\_cs_listinfo div:last-of-type a:hover:before,
+#mal\_cs_listinfo div:first-of-type a:hover:before, #mal_cs_links div a[href*="addtolist"]:hover:before, #mal\_cs_links div:last-of-type a:last-of-type:hover:before { opacity: 1; margin: 95px 0 0 -13px;  }
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]), #mal\_cs_listinfo div:last-of-type a,
+#mal\_cs_listinfo div:first-of-type a, #mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type {
+	position: fixed !important;
+	display: block;
+	top: -2px;
+	width: 64px;
+	height: 90px;
+	font-size: 0 !important;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/top_buttons.png);
+	background-repeat: no-repeat;
+	transition: top .3s ease-out;
+	-webkit-transition: top .3s ease-out;
+}
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]):hover, #mal\_cs_listinfo div:last-of-type a:hover,
+#mal\_cs_listinfo div:first-of-type a:hover, #mal_cs_links div a[href*="addtolist"]:hover, #mal\_cs_links div:last-of-type a:last-of-type:hover { top: -12px; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { left: 18px; }
+#mal\_cs_listinfo div:first-of-type a:before { content: 'Profile'; }
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { left: 87px; background-position: -64px 0; }
+#mal\_cs_links div a[href*="addtolist"]:before { content: 'Add'; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { left: 156px; background-position: -192px 0; }
+#mal\_cs_links div:last-of-type a:last-of-type:before { content: 'Manga'; }
+#mal\_cs_otherlinks div a[href*="mangalist"] { padding: 0 5px 0 0; }
+
+/* HISTORY */
+#mal\_cs_otherlinks div a[href*="history"] { left: 225px; background-position: -256px 0; }
+#mal\_cs_otherlinks div a[href*="history"]:before { content: 'History'; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { left: 294px; background-position: -384px 0; }
+#mal\_cs_listinfo div:last-of-type a:before { content: 'Logout'; }
+
+/* EXPORT */
+#mal\_cs_otherlinks div a[href*="export"] { left: 363px; background-position: -576px 0; }
+#mal\_cs_otherlinks div a[href*="export"]:before { content: 'Export'; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] {  left: 18px; background-position: -320px 0; }
+#mal\_cs_otherlinks div a[href*="login"]:before { content: 'Login'; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { left: 87px; background-position: -448px 0; }
+#mal\_cs_otherlinks div a[href*="register"]:before { content: 'Register'; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="/forum/?"] { left: 156px; background-position: -512px 0; }
+#mal\_cs_otherlinks div a[href*="/forum/?"]:before { content: 'Help'; }
+
+/* Tab Content */
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; color: #e84c91; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a {
+	font-size: 14px;
+	color: #e84c91; 
+	text-shadow: none;
+	text-transform: lowercase;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:hover { color: #733e3e; }
+
+/* SORT */
+.table_header, .table_headerLink {
+	font-size: 14px;
+	color: #e84c91; 
+	font-weight: normal;
+	text-align: center;
+}
+
+.table_headerLink:hover { color: #733e3e; }
+
+.table_header strong, .table_headerLink strong { font-weight: normal !important; }
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; color: #e84c91; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a {
+	font-size: 14px;
+	color: #e84c91; 
+	text-shadow: none;
+	text-transform: lowercase;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover small { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody small a:hover { color: #733e3e; }
+
+/* SORT */
+.table_header, .table_headerLink {
+	font-size: 14px;
+	color: #e84c91; 
+	font-weight: normal;
+	text-align: center;
+}
+
+.table_headerLink:hover { color: #733e3e; }
+
+.table_header strong, .table_headerLink strong { font-weight: normal !important; }
+
+/* Category Menu */
+
+#list_surround > table:first-of-type:before {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	right: -155px;
+	top: -440px;
+	width: 440px;
+	height: 1208px;
+	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/sheet.png)  no-repeat;
+	z-index: -2;
+}
+
+#list_surround > table:first-of-type {
+	position: absolute !important;
+	display: block;
+	right: 155px;
+	top: 440px;
+	width: 230px;
+	float: right;
+	z-index: 1;
+}
+
+/* MENU BUTTONS */
+.status_not_selected:before, .status_selected:before {
+	opacity: 0;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 231px;
+	height: 80px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/category_buttons.png);
+	background-repeat: no-repeat;
+	background-position: -231px -122px;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+	z-index: -1;
+}
+
+.status_not_selected:hover:before, .status_selected:before { opacity: 1; }
+
+.status_not_selected, .status_selected {
+	position: relative !important;
+	display: block;
+	margin: 0 0 20px 0;
+	width: 231px;
+	height: 61px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/category_buttons.png);
+	background-repeat: no-repeat;
+}
+
+.status_not_selected:nth-child(n+1), .status_selected:nth-child(n+1) { background-position: 0 -61px; }
+
+.status_not_selected:nth-child(2n+1), .status_selected:nth-child(2n+1) { background-position: 0 0; }
+
+.status_not_selected a:before, .status_selected a:before {
+	opacity: 1;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 231px;
+	height: 61px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/category_buttons.png);
+	background-repeat: no-repeat;
+	transition: opacity .3s linear;
+	-webkit-transition: opacity .3s linear;
+	z-index: -1;
+}
+
+.status_not_selected:nth-child(n+1) a:before, .status_selected:nth-child(n+1) a:before  { background-position: -231px -61px; }
+
+.status_not_selected:nth-child(2n+1) a:before, .status_selected:nth-child(2n+1) a:before { background-position: -231px 0; }
+
+.status_not_selected a:hover:before, .status_selected a:before { opacity: 0; }
+
+.status_not_selected a, .status_selected a {
+	position: absolute;
+	display: block;
+	width: 170px;
+	line-height: 60px;
+	padding: 0 60px 0 0;
+	font-family: 'Nothing You Could Do', cursive;
+	text-align: right;
+	font-size: 16px;
+	color: #3c3c3c;
+	z-index: 1;
+}
+
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { box-shadow: none; }
+
+/* Falling */
+
+@-webkit-keyframes Falling {
+
+	  0% {
+		opacity: 1;
+		width: 37px;
+		height: 23px;
+		-webkit-transform: translate(0, 0) rotateZ(0deg);
+	  }
+
+	  75% {
+		opacity: 1;
+		width: 37px;
+		height: 23px;
+		-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+	  }
+
+	  100% {
+		opacity: 0;
+		width: 37px;
+		height: 23px;
+		-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+	  }
+
+}
+
+@keyframes Falling {
+
+	  0% {
+		opacity: 1;
+		width: 37px;
+		height: 23px;
+		transform: translate(0, 0) rotateZ(0deg);
+	  }
+
+	  75% {
+		opacity: 1;
+		width: 37px;
+		height: 23px;
+		transform: translate(100px, 600px) rotateZ(270deg); 
+	  }
+
+	  100% {
+		opacity: 0;
+		width: 37px;
+		height: 23px;
+		transform: translate(150px, 800px) rotateZ(360deg);
+	  }
+
+}
+
+/* Main Style */
+
+* { cursor: default, auto !important; }
+
+body {
+	font-family: 'Anaheim', sans-serif;
+	font-size: 12px;
+	background-color: rgb(255, 255, 255);
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/background.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+tr:hover > td[class^='td']:not(.borderRBL) { box-shadow: 0 1px 0 #e84c91; }
+
+.td1:not(.borderRBL), .td2:not(.borderRBL), .td1 a, .td2 a { font-size: 16px; color: #733e3e; }
+
+.animetitle + small, .borderRBL a { color: #e84c91; }
+
+a { text-decoration: none; }
+
+#list_surround:before, #list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#list_surround:before {
+	left: -20px;
+	top: 0;
+	width: 650px;
+	height: 100%;
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 0 0 20px; 
+	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/border.png) 0 0 0 20 round;
+	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/border.png) 0 0 0 20 round;
+	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/border.png) 0 0 0 20 round;
+}
+
+ #list_surround:after {
+	pointer-events: none;
+	position: fixed;
+	display: block;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/overlay.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#list_surround {
+	position: relative;
+	display: inline-block;
+	right: 0;
+	width: 645px;
+	padding: 1208px 375px 0 0;
+	background-color: rgba(255, 255, 255, .5);
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/body_bg.png),
+					 url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/top_bg.png);
+	background-repeat: repeat-y, no-repeat;
+	background-position: right top, left 120px;
+	float: right;
+}
+
+#list_surround br { display:none; }
+
+.td1, .td2  { vertical-align: top; line-height: 20px; }
+
+.animetitle + small {
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+.borderRBL {
+	padding: 0 5px;
+	font-size: 12px;
+	color: #0098d8;
+	box-shadow: 0 1px 0 #0098d8;
+}
+
+.borderRBL a:hover { color: #733e3e; }
+
+.borderRBL small { visibility: visible !important; }
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: block;
+	margin: 0 0 0 490px;
+	height: 110px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	margin: 10px 0 0 0;
+	width: 430px;
+	height: 145px;
+	font-size: 0;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/headers_bg.png);
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: 0 0; }
+
+.header_completed span { background-position: 0 -145px; }
+
+.header_onhold span { background-position: 0 -290px; }
+
+.header_dropped span { background-position: 0 -435px; }
+
+.header_ptw span { background-position: 0 -580px; }
+
+.category_totals, #grand_totals {
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	background-image: -webkit-linear-gradient(left, rgba(0, 152, 216, 0) 5%, rgba(0, 152, 216, 1) 15%, rgba(0, 152, 216, 1) 100%);
+	background-image: -moz-linear-gradient(left, rgba(0, 152, 216, 0) 5%, rgba(0, 152, 216, 1) 15%, rgba(0, 152, 216, 1) 100%);
+	background-image: linear-gradient(to left, rgba(0, 152, 216, 0) 5%, rgba(0, 152, 216, 1) 15%, rgba(0, 152, 216, 1) 100%);
+}
+
+.category_totals { margin-top: 10px; padding: 5px 5px 0; }
+
+#grand_totals:before { display: block; content: 'GRAND TOTALS'; color: #ffffff; }
+
+#grand_totals { padding: 0 5px 5px; }
+
+#copyright:after { display: block; content: 'List designed by Hahaido.'; }
+
+#copyright { color: #e84c91; }
+
+/* Falling petals*/
+#inlineContent:before, #inlineContent:after, #mal\_control_strip:before, #mal\_control_strip:after, #list_surround > table:first-of-type:after {
+	position: fixed;
+	display: inline-block;
+	content: '';
+	left: -37px;
+	top: -23px;
+	width: 37px;
+	height: 23px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/OreGairu/-Images-/leaf.png);
+	-webkit-animation: Falling 10s infinite  linear;
+	animation: Falling 10s infinite  linear;
+}
+
+#inlineContent:after {
+	margin: 0 0 0 100px;
+	-webkit-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+#mal\_control_strip:before {
+	margin: 0 0 0 200px;
+	-webkit-animation-delay: 9s;
+	animation-delay: 9s;
+}
+
+#mal\_control_strip:after {
+	margin: 0 0 0 300px;
+	-webkit-animation-delay: 6.5s;
+	animation-delay: 6.5s;
+}
+
+#list_surround > table:first-of-type:after {
+	margin: 0 0 0 400px;
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s;
+}
+
+#inlineContent {
+	pointer-events: none;
+	position: fixed;
+	display: block !important;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	z-index: 5;
+}
