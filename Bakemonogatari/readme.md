@@ -1,4 +1,4 @@
-# Layout # - _
+# Bakemonogatari
 
 ![](gallery/demo.jpg)
 
@@ -12,6 +12,4 @@ Must use style 1.
 
 **Columns:**
 
-Most, but not Days, Premiered, Genres, etc.
-
-Numbers recommended.
+Any, but numbers and image recommended and must be used together if one is enabled.

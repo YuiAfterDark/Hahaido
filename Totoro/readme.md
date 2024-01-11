@@ -1,4 +1,4 @@
-# Layout # - _
+# Totoro
 
 ![](gallery/demo.jpg)
 
@@ -10,10 +10,4 @@ Built for classic lists.
 
 **Columns:**
 
-- Numbers
-- Score
-- Episodes
-
-### Links
-
-- [Forum]()
+Any?
