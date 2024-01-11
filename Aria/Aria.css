@@ -1,0 +1,420 @@
+/*
+Aria by Hahaido
+*/
+
+@\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
+@\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
+@\import "https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap";
+
+/* Top Menu */
+
+#mal\_control_strip {
+	position: relative;
+	display: block;
+	height: 0 !important;
+	background: none !important;
+	float: right;
+}
+
+#mal\_control_strip tbody{
+	position: absolute;
+	display: block;
+	right: 31%;
+	top: 20px;
+	width: 600px;
+	float: right;
+}
+
+#mal\_control_strip, #mal\_control_strip td, #mal\_control_strip td div, #mal\_control_strip a, #mal\_control_strip a:before {
+	font-family: 'Crimson Text', serif !important;
+	font-size: 14px !important;
+	white-space: nowrap;
+}
+
+#mal\_control_strip, #mal\_control_strip td, #mal\_control_strip td div { color: #ffffff !important; }
+
+#mal\_control_strip a, #mal\_control_strip a:before { color: #ffffff !important; }
+
+#mal\_control_strip a { text-decoration: none !important; }
+
+#mal\_control_strip a:hover, #mal\_control_strip a:hover:before { color: #fee591 !important; }
+
+#mal\_control_strip td:not(#mal\_cs_powered):not(#mal\_cs_otherlinks) { display: inline-block !important; width: 50px; }
+
+#mal\_control_strip td div { margin: 0 !important; }
+
+#mal\_control_strip img, #mal\_cs_powered, #mal\_cs_powered img,  #mal\_cs_links div:last-of-type a:first-of-type, #mal\_cs_pic, #search { display: none !important; }
+
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links { border-right: none !important; }
+
+#mal\_cs_links div a[href$="/"], #mal\_cs_otherlinks div a[href$="/forum/"] { display: none !important; }
+
+#mal\_cs_otherlinks  { display: inline-block !important; }
+
+#mal\_cs_otherlinks div:nth-of-type(2) { position: absolute; top: 60px; right: 0; }
+
+#mal\_cs_otherlinks div:nth-of-type(2) a { top: -30px !important; }
+
+#mal\_cs_otherlinks div strong { position: absolute; right: 0; padding: 0 5px 0 0; font-weight: normal; }
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]):not([href*="/forum/?"]):after, 
+#mal\_cs_listinfo div:first-of-type a:after,
+#mal_cs_links div a[href*="addtolist"]:after, #mal\_cs_links div:last-of-type a:last-of-type:after {
+	display: inline-block;
+	content: '•';
+	width: 20px;
+	line-height: 15px;
+	text-align: center;
+}
+
+#mal\_cs_otherlinks div a:not([href*="/profile/"]):not([href*="/sharedanime"]):not([href*="/mangalist/"]):not([href*="/sharedmanga"]):not([href*="/animelist/"]), #mal\_cs_listinfo div:last-of-type a, #mal\_cs_listinfo div:first-of-type a,
+#mal_cs_links div a[href*="addtolist"], #mal\_cs_links div:last-of-type a:last-of-type, #mal\_cs_listinfo div:first-of-type a:before {
+	position: absolute !important;
+	display: block;
+	top: 30px;
+	width: 50px;
+	padding: 0 5px 0 0;
+	text-align: right;
+}
+
+/* EXPORT */
+#mal\_cs_otherlinks div a[href*="export"] { right: 313px; }
+
+/*  USERNAME */
+#mal\_cs_listinfo div:first-of-type a { right: 265px; width: 0; }
+#mal\_cs_listinfo div:first-of-type a strong { font-size: 0; }
+#mal\_cs_listinfo div:first-of-type a:before { 
+	display: block;
+	content: 'My Page'; 
+	top: 0;
+	margin: 0 0 0 -43px;
+	width: 40px;
+}
+
+/* ADD */
+#mal\_cs_links div a[href*="addtolist"] { right: 193px; }
+
+/* MANGALIST */
+#mal\_cs_links div:last-of-type a:last-of-type { right: 99px; width: 70px; }
+#mal\_cs_otherlinks div a[href*="mangalist"] { padding: 0 5px 0 0; }
+
+/* HISTORY */
+#mal\_cs_otherlinks div a[href*="history"] { right: 41px; top: -30px !important; }
+
+/* LOGOUT */
+#mal\_cs_listinfo div:last-of-type a { right: 0; width: 32px; }
+
+/* LOGIN */
+#mal\_cs_otherlinks div a[href*="login"] { right: 204px; width: 27px !important; }
+
+/* REGISTER */
+#mal\_cs_otherlinks div a[href*="register"] { right: 79px; width: 101px !important; }
+
+/* FAQ */
+#mal\_cs_otherlinks div a[href*="/forum/?"] { right: 0; width: 54px !important; }
+
+/* Tab Content */
+
+/* EDIT-MORE */
+#list_surround table:nth-of-type(n+4) tbody div small { visibility: hidden; font-size: 0; color: transparent; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a:first-of-type {
+	position: absolute;
+    	margin: 0 0 0 -20px;
+	font-size: 14px;
+	color: #a0a0a0; 
+	text-transform: lowercase;
+}
+
+#list_surround table:nth-of-type(n+4) tbody:hover div small a:first-of-type { visibility: visible; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a:hover:first-of-type { color: #2d68b5; }
+
+#list_surround table:nth-of-type(n+4) tbody div small a:last-of-type { font-size: 0; color: transparent; }
+
+/* SORT */
+.table_headerLink {
+	font-size: 16px;
+	color: #a0a0a0; 
+	font-weight: normal;
+	text-align: center;
+}
+
+.table_headerLink:hover { color: #2d68b5; }
+
+.table_headerLink strong { font-weight: normal !important; }
+
+/* Disable Tags in the Sort Options */
+.table_header[width="125"] { display: none !important; } 
+
+/* Category Menu */
+
+#list_surround > table:first-of-type {
+	position: absolute !important;
+	display: block;
+	top: 140px;
+	width: 150px;
+}
+
+/* MENU BUTTONS */
+.status_not_selected, .status_selected {
+	position: relative !important;
+	display: block;
+	margin: 5px 0 0 0;
+	width: 150px;
+}
+
+.status_not_selected:not(:last-child):after, .status_selected:not(:last-child):after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	border-top: solid 1px #2d68b5;
+	background-color: rgb(255, 255, 255);
+	width: 40px;
+	height: 1px;
+}
+
+.status_not_selected a, .status_selected a {
+	display: block;
+	width: 150px;
+	padding: 0 0 0 5px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #a0a0a0;
+	text-align: left;
+}
+
+.status_not_selected a:hover, .status_selected a { color: #2d68b5; }
+
+.status_not_selected a[href*="status=7"], .status_selected a[href*="status=7"] { box-shadow: none; } 
+
+/* Main Style */
+
+* { cursor: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/cursor.png), auto !important; }
+
+body {
+	font-family: 'Crimson Text', serif;
+	font-size: 12px;
+	background-color: rgb(255, 255, 255);
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/background.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+tr:hover > td[class^='td']:not(.borderRBL) { background-color: rgba(255, 255, 255, 1);  }
+
+
+.td1:not(.borderRBL), .td2:not(.borderRBL), .td1 a, .td2 a { font-size: 16px; color: #2d68b5; }
+
+.animetitle + small, .borderRBL a, td[class^='td'][width="125"], td[class^='td'][width="125"] a { color: #a0a0a0; }
+
+a { text-decoration: none; }
+
+#list_surround:before, #list_surround:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#list_surround:before {
+	left: -90px;
+	top: -56px;
+	width: 699px;
+	height: calc(100% + 56px);
+	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/signboard.png) no-repeat;
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 0 0 91px; 
+	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
+	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
+	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
+	z-index: 1;
+}
+
+#list_surround:after {
+	left: -110px;
+	top: -268px;
+	width: 146px;
+	height: 227px;
+	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/aria.png) no-repeat;
+	z-index: 2;
+}
+
+#list_surround {
+	position: relative;
+	display: block;
+	width: 600px;
+	margin: 300px 31% 0 0;
+	min-height: 800px;
+	padding: 350px 0 0 0;
+	background-color: rgba(255, 255, 255, .7);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 0 16px 0 0; 
+	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
+	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
+	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
+	float: right;
+}
+
+#list_surround br { display:none; }
+
+.td1, .td2  { height: 48px; vertical-align: middle; line-height: 20px; }
+
+.animetitle {
+	display: inline-block;
+	padding: 0 0 0 50px;
+}
+
+.animetitle + small {
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+/* HEADERS */
+.header_title {
+	pointer-events: none;
+	display: block;
+	height: 180px;
+}
+
+/* Headers pics */
+.header_cw span, .header_completed span, .header_onhold span, .header_dropped span, .header_ptw span {
+	position: absolute;
+	display: inline-block;
+	margin: 10px 0 0 0;
+	width: 452px;
+	height: 154px;
+	font-size: 0;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/headers_bg.png);
+	background-repeat: no-repeat;
+}
+
+.header_cw span { background-position: 0 0; }
+
+.header_completed span { background-position: 0 -154px; }
+
+.header_onhold span { background-position: 0 -308px; }
+
+.header_dropped span { background-position: 0 -462px; }
+
+.header_ptw span { background-position: 0 -616px; }
+
+.category_totals, #grand_totals {
+	position: relative;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	background-color: rgb(168, 194, 227);
+}
+
+.category_totals:before {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	margin: -11px 0 0 -5px;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(168, 194, 227);
+}
+
+.category_totals { margin-top: 10px; padding: 5px 5px 0; }
+
+#grand_totals:before { display: block; content: 'GRAND \00a0 TOTALS'; color: #fffffff; }
+
+#grand_totals { padding: 2px 5px 0; }
+
+#copyright:after { display: block; content: 'List designed by Hahaido.'; }
+
+#copyright { color: #a0a0a0; padding: 0 0 5px; }
+
+#inlineContent {
+	pointer-events: none;
+	position: absolute;
+	display: block !important;
+	top: -220px;
+	right: 50px;
+	width: 456px;
+	height: 198px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/birds.png);
+	z-index: -1;
+}
+
+/* Tags */
+td[class^='td'][width="125"] {
+	visibility: hidden;
+	opacity 0;
+	position: absolute !important;
+	width: 170px; 
+	height: 220px;
+	left: 30px;
+	margin: -1px 0 0 0;
+	margin: -183px 0 0 0;
+	padding: 5px;
+        font-size: 12px;
+	line-height: 16px !important;
+	border: solid 1px #2d68b5; 
+	background-color: rgb(255, 255, 255);
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+div[id^='tagChangeRow'] a {
+	display: block;
+	width: 24px; 
+	height: 24px;
+	font-size: 0;
+	color: transparent;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/edit.png);
+	background-repeat: no-repeat;
+}
+
+div[id^='tagChangeRow'] a:hover {
+	background-position: 0 -24px;
+}
+
+tr:hover > td[class^='td'][width="125"] { 
+	visibility: visible; 
+	opacity: 1;
+	left: 213px;
+	-webkit-transition: all .3s linear .3s;
+	transition: all .3s linear .3s;
+}
+
+.hide {
+	pointer-events: none;
+	position: absolute;
+	display: inline-block !important;
+	margin: -44px 0 0 30px;
+	width: 40px;
+	height: 40px;
+	border: solid 1px #ffffff;
+	background-clip: content-box;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	box-shadow: 0 0 0 2px #2d68b5;
+	border-radius: 100px;
+	-webkit-transition: all .3s linear .3s;
+	transition: all .3s linear .3s;
+	z-index: 0;
+}
+
+:hover + .hide {
+	width: 180px;
+	height: 226px;
+	margin: -229px 0 0 30px;
+	border-radius: 0;
+	box-shadow: 0 0 0 2px #a0a0a0;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
