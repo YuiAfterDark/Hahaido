@@ -514,18 +514,13 @@ body.ownlist:after {
 	left: -20px;
 	top: 60px;
 	width: 740px;
+	height: 190px;
+	background: url(https://dl.dropboxusercontent.com/s/stbneh921mjfpwh/top_bg.png) no-repeat;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.cover-block .image-container {
-	height: 190px;
-	background: url(https://dl.dropboxusercontent.com/s/stbneh921mjfpwh/top_bg.png) no-repeat;
-}
-
-.cover-block .image-container.hide { display: none; }
-
-.cover-block .image-container img { display: none; }
+#cover-image-container { display: none; }
 
 td { line-height: 1.5em; }
 
