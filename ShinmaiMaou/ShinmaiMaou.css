@@ -24,7 +24,7 @@ Shinmai Maou no Testament by Hahaido
 	width: 40px;
 	height: 36px;
 	background-color: transparent;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/top_buttons.png);
+	background-image: url(https://i.ibb.co/92rjdZq/top-buttons.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -134,7 +134,7 @@ Shinmai Maou no Testament by Hahaido
 	font-size: 0;
 	color: transparent;
 	background-clip: content-box;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/category_bg.png);
+	background-image: url(https://i.ibb.co/Kj4rdWJ/category-bg.png) /* category_bg.png */;
 	background-repeat: no-repeat;
 	float: left;
 }
@@ -178,7 +178,7 @@ Shinmai Maou no Testament by Hahaido
 	width: 40px;
 	height: 40px;
 	background-color: transparent;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/category_bg.png);
+	background-image: url(https://i.ibb.co/Kj4rdWJ/category-bg.png) /* category_bg.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -255,7 +255,7 @@ Shinmai Maou no Testament by Hahaido
 	font-size: 0;
 	color: transparent;
 	text-shadow: none;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/top_buttons.png);
+	background-image: url(https://i.ibb.co/92rjdZq/top-buttons.png) /* top_buttons.png */;
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
@@ -441,7 +441,7 @@ body.ownlist {
 	font-family: 'Mirza', serif;
 	font-size: 15px;
 	background-color: rgb(25, 35, 37);
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/background.jpg);
+	background-image: url(https://i.ibb.co/8D34t44/background.jpg) /* background.jpg */;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -483,9 +483,9 @@ body.ownlist {
 	border-color: transparent;
 	border-style: solid; 
 	border-width: 31px; 
-	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
-	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
-	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
+	-webkit-border-image: url(https://i.ibb.co/y8vfChS/border.png) /* border.png */ 31 round;
+	-moz-border-image: url(https://i.ibb.co/y8vfChS/border.png) /* border.png */ 31 round;
+	border-image: url(https://i.ibb.co/y8vfChS/border.png) /* border.png */ 31 round;
 }
 
 .list-block {
@@ -683,7 +683,7 @@ a { text-decoration: none; }
 .list-table .list-table-data .data.title .add-edit-more a {
 	width: 24px;
 	height: 24px;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/add_edit_more.png);
+	background-image: url(https://i.ibb.co/8Mfttxm/add-edit-more.png) /* add_edit_more.png */;
 	background-repeat: no-repeat;
 }
 
@@ -770,7 +770,7 @@ a { text-decoration: none; }
 	height: 24px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/add_edit_more.png);
+	background-image: url(https://i.ibb.co/8Mfttxm/add-edit-more.png) /* add_edit_more.png */;
 	background-repeat: no-repeat;
 	background-position: -72px 0; 
 	float: right;
@@ -797,7 +797,7 @@ a { text-decoration: none; }
 	width: 744px;
 	height: 550px;
 	background-color: transparent;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/headers_bg.png);
+	background-image: url(https://i.ibb.co/zQsS0RV/headers-bg.png) /* headers_bg.png */;
 	background-repeat: no-repeat;
 }
 
@@ -844,7 +844,7 @@ a { text-decoration: none; }
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/filter_render.png) no-repeat;
+	background: url(https://i.ibb.co/GTxR1tL/filter-render.png) /* filter_render.png */ no-repeat;
 }
 
 #advanced-options {
@@ -862,7 +862,7 @@ a { text-decoration: none; }
 	color: #282828;
 	text-align: left;
 	background-color: transparent;
-	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/filter_bg.png) no-repeat;
+	background: url(https://i.ibb.co/tCbxw0K/filter-bg.png) /* filter_bg.png */ no-repeat;
 	border: none;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
 	border-radius: 16px;
