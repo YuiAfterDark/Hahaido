@@ -1,0 +1,1111 @@
+/*
+Shinmai Maou no Testament by Hahaido
+*/
+
+@\import "https://yuiafterdark.github.io/shared/fixes/modern.css";
+@\import "https://fonts.googleapis.com/css?family=Mirza";
+
+/* Top Menu */
+
+.list-menu-float {
+	position: absolute;
+	left: calc(50% - 800px);
+	top: 428px;
+	width: 798px;
+	height: 36px;
+	border: none;
+}
+
+.list-menu-float .icon-menu {
+	opacity: 1;
+	position: relative;
+	display: block;
+	left: 384px;
+	width: 40px;
+	height: 36px;
+	background-color: transparent;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/top_buttons.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.list-menu-float .icon-menu:not(.profile):hover {
+	left: 324px;
+	width: 100px;
+	background-color: transparent;
+}
+
+/* SVG */
+.list-menu-float .icon-menu svg.icon { display: none; }
+
+.list-menu-float .icon-menu.profile {
+	position: absolute;
+	display: block;
+	left: 373px;
+	top: -52px;
+	width: 50px;
+	height: 50px;
+	border-style: solid;
+	border-color: #ea3f47;
+	border-width: 1px 0 1px 1px;
+	background-size: cover;
+	border-radius: 4px 0 0 4px;
+}
+
+.list-menu-float .icon-menu.quick-add { background-position: 0 0; }
+
+.list-menu-float .icon-menu.anime-list { background-position: 0 -36px; }
+
+.list-menu-float .icon-menu.manga-list { background-position: 0 -72px; }
+
+.list-menu-float .icon-menu.history { background-position: 0 -108px; }
+
+.list-menu-float .icon-menu.export { background-position: 0 -144px; }
+
+.list-menu-float form { display: block; width: 100px; }
+.list-menu-float .icon-menu.logout { background-position: 0 -180px; }
+
+.list-menu-float .icon-menu.setting { background-position: 0 -216px; }
+
+.list-menu-float .icon-menu .text { display: none; }
+
+.list-menu-float .icon-menu:not(.profile):hover {
+	background-color: transparent;
+}
+
+/* setting */
+.list-menu-float .icon-menu.setting .text {
+	display: none;
+}
+
+.list-menu-float .icon-menu.setting .text .link-list-setting {
+	width: 100px;
+	height: 36px;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 36px;
+	color: transparent;
+	background-color: transparent;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting { display: none; }
+
+/* Category Menu */
+
+.status-menu-container.fixed {
+	position: absolute;
+	top: -384px;
+}
+
+.status-menu-container {
+	position: absolute;
+	right: -130px;
+	top: -384px;
+	margin: 0;
+	width: 800px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	z-index: 5;
+}
+
+.status-menu-container .status-menu {
+	position: relative;
+	display: table-cell;
+	margin: 0;
+	width: 444px;
+	border-collapse: separate;
+	border-spacing: 0;
+	float: right;
+}
+
+.status-menu-container .status-menu .status-button {
+	position: relative;
+	top: 0;
+	margin: 0 0 0 -114px;
+	width: 150px;
+	height: 40px;
+	padding: 0;
+	font-size: 0;
+	color: transparent;
+	background-clip: content-box;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/category_bg.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.status-menu-container .status-menu .status-button:hover {
+	top: 40px;
+	border: none;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	z-index: 2;
+}
+
+.status-menu-container .status-menu .status-button.on { 
+	pointer-events: none;
+	top: 40px;
+	padding: 0 114px 0 0;
+	color: transparent;
+	font-weight: normal;
+	z-index: 1;
+}
+
+.status-menu-container .status-menu .status-button.all_anime { background-position: 0 0;  }
+.status-menu-container .status-menu .status-button.all_anime.on { margin: 0; }
+
+.status-menu-container .status-menu .status-button.watching, .status-menu-container .status-menu .status-button.reading { background-position: -150px 0; }
+
+.status-menu-container .status-menu .status-button.completed { background-position: -300px  0; }
+
+.status-menu-container .status-menu .status-button.onhold { background-position: -450px 0; }
+
+.status-menu-container .status-menu .status-button.dropped { background-position: -600px 0; }
+
+.status-menu-container .status-menu .status-button.plantowatch, .status-menu-container .status-menu .status-button.plantoread { background-position: -750px 0; }
+
+.status-menu-container .status-menu .status-button:after {
+	opacity: 1;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 40px;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/category_bg.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.status-menu-container .status-menu .status-button:hover:after, .status-menu-container .status-menu .status-button.on:after { opacity: 0; }
+
+.status-menu-container .status-menu .status-button.all_anime:after { background-position: -57px -40px; }
+
+.status-menu-container .status-menu .status-button.watching:after, .status-menu-container .status-menu .status-button.reading:after { background-position: -207px -40px; }
+
+.status-menu-container .status-menu .status-button.completed:after { background-position: -357px  -40px; }
+
+.status-menu-container .status-menu .status-button.onhold:after { background-position: -507px -40px; }
+
+.status-menu-container .status-menu .status-button.dropped:after { background-position: -657px -40px; }
+
+.status-menu-container .status-menu .status-button.plantowatch:after, .status-menu-container .status-menu .status-button.plantoread:after { background-position: -807px -40px; }
+
+/* Menus */
+
+/* HEADER */
+.header {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 5; 
+}
+
+.header a, .header .header-menu .header-info, .header .header-menu .btn-menu {
+	color: #000000;
+	text-shadow: 1px 1px 0 #ffffff, 1px 2px .8em #ffffff, 1px 2px .8em  #ffffff, 1px 2px .8em  #ffffff, 1px 2px .8em  #ffffff;
+	font-weight: normal;
+}
+
+.header a:hover { text-decoration: none; }
+
+.header .header-title { display: none; }
+
+.header .header-menu {
+	position: relative;
+	margin: 0 auto;
+	top: 0;
+	width: 800px;
+}
+
+.header .header-menu.other {
+	top: 0;
+}
+
+.header .header-menu .btn-menu {
+	position: absolute;
+	right: 37px;
+	top: 50px;
+	font-size: 16px;
+	text-align: right;
+}
+
+.header .header-menu .header-info {
+	position: absolute;
+	top: 72px;
+	right: 37px;
+	font-size: 1em;
+	margin: 0;
+	text-align: right;
+}
+
+.header .header-menu .header-info a[href*="/login"], .header .header-menu .header-info a[href*="/register"], 
+.header .header-menu .list-menu .icon-menu {
+	position: absolute;
+	width: 40px;
+	height: 36px;
+	font-size: 0;
+	color: transparent;
+	text-shadow: none;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/top_buttons.png);
+	background-repeat: no-repeat;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.header .header-menu .header-info a[href*="/login"], .header .header-menu .header-info a[href*="/register"] {
+	display: block;
+	left: -769px;
+}
+
+.header .header-menu .header-info a[href*="/login"]:hover, .header .header-menu .header-info a[href*="/register"]:hover {
+	width: 100px;
+	left: -829px;
+}
+
+.header .header-menu .header-info a[href*="/login"] { top: 304px; background-position: 0 -252px; }
+
+.header .header-menu .header-info a[href*="/register"] { top: 340px; background-position: 0 -288px; }
+
+.header .username { font-weight: normal; }
+
+.header .header-menu .list-menu {
+	position: absolute;
+	display: none;
+	right: -3px;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.header .header-menu .list-menu[style="display: block;"]  { 
+	top: 644px;
+	left: -12px;
+	-webkit-animation: fade_in .3s forwards ease-out;
+	animation: fade_in .3s forwards ease-out;
+}
+
+.header .header-menu .list-menu .icon-menu {
+	left: 0;
+}
+
+.header .header-menu .list-menu .icon-menu:hover {
+	width: 100px;
+	left: -60px;
+}
+
+.header .header-menu .list-menu .icon-menu.anime-list { background-position: 0 -36px; }
+
+.header .header-menu .list-menu .icon-menu.manga-list { background-position: 0 -72px; }
+
+.header .header-menu .list-menu .icon-menu:hover { background-color: transparent; }
+
+.header .header-menu .list-menu .icon-menu svg.icon, .header .header-menu .list-menu .icon-menu .text  { display: none; }
+
+/* SEARCH */
+.status-menu-container .search-container { display: none; }
+
+/* SORT */
+.list-table > tbody:first-of-type {
+	position: absolute;
+	display: block;
+	right: 28px;
+	top: 80px;
+	margin: 0;
+	z-index: 2;
+}
+
+.list-table .list-table-header .header-title, .list-unit .list-status-title .stats a {
+	position: relative; 
+	display: block;
+	width: 80px !important;
+	padding: 0 10px 0 0 !important;
+	line-height: 32px;
+	color: #ffffff;
+	text-align: right !important;
+	background: none;
+	border-left: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	background-image: -webkit-linear-gradient(left, rgb(234, 63, 71) 0%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%) !important;
+	background-image: -moz-linear-gradient(left, rgb(234, 63, 71) 0%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%) !important;
+	background-image: linear-gradient(to right, rgb(234, 63, 71) 0%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%) !important;
+}
+
+.list-table .list-table-header .header-title:hover, .list-unit .list-status-title .stats a:hover {
+	background-image: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%) !important;
+	background-image: -moz-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%) !important;
+	background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%) !important;
+}
+
+.list-table .list-table-header .header-title:hover .link.sort { color: #000000; }
+
+.list-table .list-table-header .header-title .sort-icon {
+	opacity: 1; 
+	font-size: 0;
+	color: transparent;
+}
+
+.list-table .list-table-header .header-title .link { 
+	font-size: 14px; 
+	color: #ffffff;
+}
+
+.list-table .list-table-header .header-title.status, .list-unit.all_anime .list-table .list-table-header .header-title.status, 
+.list-table .list-table-header .header-title.number, .list-table .list-table-header .header-title.image, 
+.list-table .list-table-header .header-title.tags { display: none; }
+
+.list-table .list-table-header .header-title { color: #ffffff; }
+
+.list-table .list-table-header .header-title .link.sort {
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+	white-space: nowrap;
+	text-transform: uppercase;
+	-webkit-transition: none;
+	transition: none;
+}
+
+/* STATS */
+.list-unit .list-status-title .stats {
+	position: absolute;
+	right: 0;
+	top: 342px;
+	z-index: 3;
+}
+
+.list-unit .list-status-title .stats a {
+	display: block;
+	margin: 0;
+	color: #ffffff;
+	font-size: 14px; 
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.list-unit .list-status-title .stats a:hover { color: #000000; }
+
+#show-stats-button { display: none; }
+
+#show-stats-button i.fa.fa-bar-chart, #advanced-options-button i.fa.fa-filter { font-size: 12px; }
+
+.list-unit .list-stats {
+	position: absolute;
+	display: block;
+	width: 735px;
+	padding: 0 0 0 10px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #42e73c;
+	text-align: left;
+	background-color: transparent;
+	z-index: 1;
+}
+
+/* Animation */
+
+@-webkit-keyframes fade_in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fade_in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* Main Style */
+
+@-webkit-keyframes Slide {
+	from { margin-top: -50%; }
+	to { margin-top: 0; }
+}
+
+@keyframes Slide {
+	from { margin-top: -50%; }
+	to { margin-top: 0; }
+}
+
+* { cursor: default !important; }
+
+body.ownlist {
+	font-family: 'Mirza', serif;
+	font-size: 15px;
+	background-color: rgb(25, 35, 37);
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+.list-container {
+	position: relative;
+	margin: 340px auto 0;
+	width: 800px;
+	min-height: 228px;
+	text-align: left;
+	background-color: transparent;
+	border: none;
+}
+
+.list-block:before, .list-block:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	z-index: -1;
+}
+
+.list-block:before {
+	left: 28px;
+	top: 23px;
+	width: 744px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.list-block:after {
+	top: -5px;
+	width: 738px;
+	height: calc(100% - 6px);
+	/* Table borders */
+	background-clip: padding-box;
+	border-color: transparent;
+	border-style: solid; 
+	border-width: 31px; 
+	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
+	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
+	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/border.png) 31 round;
+}
+
+.list-block {
+	margin: 0;
+	width: 800px;
+	min-height: 100%;
+}
+
+.list-unit {
+	display: block;
+	width: 744px;
+	min-height: 228px;
+	padding: 205px 28px 0;
+}
+
+.cover-block {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	top: -406px;
+	margin: 0 0 0 -100px;
+	width: 1000px;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+.cover-block .image-container {
+	height: 612px;
+	background: url() no-repeat;
+	z-index: 3;
+}
+
+.cover-block .image-container.hide { display: none; }
+
+.cover-block .image-container img { display: none; }
+
+td { line-height: 1.5em; }
+
+a { text-decoration: none; }
+
+.list-table .list-table-data .data { color: #ffffff; }
+
+.list-table .list-table-data .data a { color: #ffffff; }
+
+.list-table {
+	width: 738px;
+	margin: 50px 0 0 0;
+	border-collapse: collapse;
+	border: none;
+}
+
+.list-table > tbody:nth-of-type(2n+1) { background-color: transparent; }
+
+.list-table > tbody:not(:first-of-type ) {
+	position: relative;
+	margin: 0 0 20px;
+	width: 246px;
+	height: 159px;
+	float: left;
+}
+
+.list-table .list-table-data .data {
+	position: absolute;
+	display: block;
+	left: 70px;
+	width: 100%;
+	color: #ffffff;
+	text-align: left;
+	border: none;
+}
+
+/* Animated columns */
+.list-table .list-table-data .data.title .add-edit-more, .list-table .list-table-data .data.progress, .list-table .list-table-data .data.tags {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.list-table .list-item:hover .add-edit-more, .list-table .list-item:hover .data.progress, 
+.list-table .list-item:hover .list-table-data .data.tags  {
+	visibility: visible;
+	opacity: 1; 
+}
+
+.list-table .list-item:hover .list-table-data .data.tags  { bottom: 154px; }
+
+.list-table .list-table-data .data {
+	display: table-cell;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+}
+
+.list-table .list-table-data .data a { font-weight: normal !important; }
+
+.list-table .list-table-data .data a:hover { text-decoration: none !important; }
+
+.list-table .list-table-data a.edit-disabled {
+	cursor: text;
+	color: #000000;
+}
+
+.list-table .list-table-data .data.status {
+	display: block;
+	left: 12px;
+	width: 4px;
+	height: 22px;
+	z-index: 1;
+}
+
+.list-table .list-table-data .data.number { 
+	left: 12px;
+	width: 62px;
+	height: 22px;
+	color: #000000;
+	text-align: center; 
+	background-image: -webkit-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%);
+	background-image: -moz-linear-gradient(left, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%);
+	background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(180, 180, 180) 100%);
+}
+
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching { 	
+	background-color: rgb(66, 146, 205);
+}
+
+.list-table .list-table-data .data.status.completed {
+	background-color: rgb(235, 110, 166);
+}
+
+.list-table .list-table-data .data.status.onhold {
+	background-color: rgb(167, 75, 152);
+}
+
+.list-table .list-table-data .data.status.dropped {
+	background-color: rgb(41, 184, 190);
+}
+
+.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch {
+	background-color: rgb(243, 155, 31);
+}
+
+.list-table .list-table-data .data.image { left: 0; }
+
+.list-table .list-table-data .data.image a { display: inline-block; }
+
+.list-table .list-table-data .data.image .image {
+	width: 96px;
+	height: 130px;
+	border: solid 1px #000000;
+}
+
+.list-table .list-table-data .data.title {
+	left: 12px;
+	bottom: 0;
+	width: 90%;
+	padding: 0 0 5px;
+	text-align: center;
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 10%, rgba(255, 255, 255, .7) 90%, rgba(255, 255, 255, 0) 100%);
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 10%, rgba(255, 255, 255, .7) 90%, rgba(255, 255, 255, 0) 100%);
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .7) 10%, rgba(255, 255, 255, .7) 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+.list-table .list-table-data .data.title a {
+	display: inline-block;
+	min-width: 0; 
+	max-width: 90%;
+	color: #000000;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.list-table .list-table-data .data.title .ml4 { display: none; }
+
+.list-table .list-table-data .data.title .add-edit-more {
+	position: absolute;
+	display: inline-block;
+	top: -127px;
+	left: 67px;
+	width: 48px;
+	font-size: 0;
+	color: transparent;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.list-table .list-table-data:hover .data.title .add-edit-more { 
+	visibility: visible;
+	opacity: 1; 
+}
+
+.list-table .list-table-data .data.title .add-edit-more a {
+	width: 24px;
+	height: 24px;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/add_edit_more.png);
+	background-repeat: no-repeat;
+}
+
+.list-table .list-table-data .data.title .add a { background-position: 0 0; }
+.list-table .list-table-data .data.title .add a:hover { background-position: 0 -24px; }
+
+.list-table .list-table-data .data.title .edit a { background-position: -24px 0; }
+.list-table .list-table-data .data.title .edit a:hover { background-position: -24px -24px; }
+
+.list-table .list-table-data .data.title .more a { background-position: -48px 0; }
+.list-table .list-table-data .data.title .more a:hover { background-position: -48px -24px; }
+
+.list-table .list-table-data .data.title .add-edit-more a:hover { color: #ffe479; }
+
+.list-table .more-info { display: none; border: none; }
+
+.list-table .more-info .more-content { 
+	position: absolute;
+	top: 30px;
+	width: 246px;
+	height: 159px;
+	padding: 0;
+	overflow-y: auto;
+	z-index: 3;
+}
+
+.borderRBL, .borderRBL a { color: #000000; }
+
+.borderRBL { 
+	opacity: 0; 
+	display: block;
+	text-align: left; 
+}
+
+.borderRBL a  { font-weight: bold; }
+
+.list-table .more-info[style="display: table-row;"] .borderRBL {
+	-webkit-animation: Slide .3s ease-out, fade_in .3s forwards ease-out .3s;
+	animation: Slide .3s ease-out, fade_in .3s forwards ease-out .3s;
+}
+
+.list-table .list-table-data .data.score {
+	left: 153px;
+	top: 0;
+	width: 34px;
+	padding: 0 0 4px;
+	line-height: 30px;
+	text-align: center;
+	border: solid 2px #ea3f47;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10em;
+	z-index: 2;
+}
+
+.list-table .list-table-data .data.score a { color: #000000; }
+
+.list-table .list-table-data .data.type {
+	left: 12px;
+	top: 22px;
+	width: 62px;
+	text-align: center;
+} 
+
+.list-table .list-table-data .data.progress {
+	top: 0;
+	left: 74px;
+	width: 98px;
+	padding: 55px 0;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.list-table .list-table-data .data.progress a { color: #ffffff; }
+.list-table .list-table-data .data.progress a:hover { color: #42e73c; }
+
+.list-table .list-table-data .data.tags {
+	left: 0;
+	bottom: 174px;
+	z-index: 3;
+}
+
+.list-table .list-table-data .data.tags a.edit {
+	width: 24px;
+	height: 24px;
+	font-size: 0;
+	color: transparent;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/add_edit_more.png);
+	background-repeat: no-repeat;
+	background-position: -72px 0; 
+	float: right;
+}
+
+.list-table .list-table-data .data.tags a.edit:hover { background-position: -72px -24px; }
+
+.list-table .list-table-data .data.tags a {
+	color: #000000;
+}
+
+.borderRBL, .list-table .list-table-data .data.tags {
+	padding: 0 2px;
+	line-height: 18px;
+	box-shadow: 0 0 2px #000000;
+	background-color: rgb(255, 255, 255);
+}
+
+/* HEADERS */
+.list-unit .list-status-title {
+	position: absolute;
+	display: table;
+	margin: -500px 0 0 0;
+	width: 744px;
+	height: 550px;
+	background-color: transparent;
+	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/headers_bg.png);
+	background-repeat: no-repeat;
+}
+
+.list-unit .list-status-title .text { display: none; }
+
+.list-unit.watching .list-status-title, .list-unit.reading .list-status-title { background-position: 0 -550px; }
+
+.list-unit.completed .list-status-title { background-position: 0 -1100px; }
+
+.list-unit.onhold .list-status-title { background-position: 0 -1650px; }
+
+.list-unit.dropped .list-status-title { background-position: 0 -2200px; }
+
+.list-unit.plantowatch .list-status-title, .list-unit.plantoread .list-status-title { background-position: 0 -2750px; }
+
+#footer-block {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+	background-color: transparent;
+}
+
+#copyright {
+	position: relative;
+	margin: -30px auto 50px;
+	width: 800px;
+	padding: 0 0 5px;
+	line-height: 18px;
+	font-family: 'Mirza', serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 0 2px #000000;
+}
+
+#copyright:after { display: block; content: 'List designed by Hahaido.'; }
+
+#advanced-options:after {
+	pointer-events: none;
+	position: absolute;
+	display: block;
+	content: '';
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/filter_render.png) no-repeat;
+}
+
+#advanced-options {
+	opacity: 0;
+	position: absolute;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 62px;
+	margin: 0 auto;
+	width: 865px;
+	height: 465px;
+	padding: 55px 0 30px;
+	font-family: 'Mirza', serif;
+	color: #282828;
+	text-align: left;
+	background-color: transparent;
+	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/ShinmaiMaou/-Images-/filter_bg.png) no-repeat;
+	border: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+	border-radius: 16px;
+	z-index: 1101;
+}
+
+#fancybox-overlay { opacity: 0; }
+
+#fancybox-overlay[style="display: block;"] {
+	opacity: .7;
+	background-color: rgb(0, 0, 0);
+}
+
+#fancybox-overlay[style="display: block;"], #advanced-options[style="display: block;"] {
+	-webkit-animation: fade_in .3s forwards ease-out;
+	animation: fade_in .3s forwards ease-out;
+}
+
+#advanced-options #fancybox-close {
+	position: absolute !important;
+	top: 30px !important;
+	right: 63px !important;
+	width: 24px !important;
+	height: 24px !important;
+	background: none !important;
+	cursor: pointer;
+	z-index: 1103;
+}
+
+#advanced-options .advanced-options-header {
+	width: 730px;
+	margin: 0px auto;
+	padding-bottom: 4px;
+	font-size: 16px;
+	color: #eb6ea6;
+	border: none;
+	box-shadow: 0 1px 0 #eb6ea6;
+}
+
+#advanced-options .advanced-options-header .description {
+	margin-left: 8px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#advanced-options input[type=text], #advanced-options select,  #advanced-options select:disabled {
+	height: 21px;
+	padding: 0 2px;
+	color: #282828;
+	background-color: rgb(255, 255, 255);
+	border: solid 1px #282828;
+}
+
+#advanced-options select:disabled { color: #505050; }
+
+#advanced-options select, #advanced-options select:disabled {
+	display: inline-block;
+	padding-right: 20px;
+	background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 18px 8px;
+}
+
+#advanced-options select:disabled { background-color: rgb(220, 220, 220); }
+
+#advanced-options select option { color: #282828; }
+
+#advanced-options select::-ms-expand { display: none; }
+
+#advanced-options input:focus, #advanced-options select:focus { outline: none; }
+
+/* FILTER */
+#advanced-options .filter-widget {
+	margin: 0 auto;
+	width: 730px;
+	padding: 12px 0 0;
+}
+
+#advanced-options .filter-widget select {
+	margin-right: 8px;
+	font-size: 14px;
+}
+
+/* SORT */
+#advanced-options .sort-widget {
+	margin: 0px auto;
+	width: 730px;
+	padding: 12px 0 0;
+}
+
+#advanced-options .sort-widget:last-of-type { padding-bottom: 45px; }
+
+#advanced-options .sort-widget select {
+    width: 172px;
+    margin-right: 8px;
+}
+
+#advanced-options .sort-widget input[type=radio] { display: none; }
+
+#advanced-options .sort-widget input[type=radio] + label {
+	position: relative;
+	display: inline-block;
+	line-height: 24px;
+	padding: 0;
+	color: #505050;
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+}
+
+#advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label {
+	background-color: transparent;
+	border: none;
+}
+
+#advanced-options .sort-widget input[type=radio]:disabled + label, #advanced-options .sort-widget input[type=radio]:checked:disabled + label { color: #505050; }
+
+#advanced-options .sort-widget input[type=radio]:checked + label { color: #eb6ea6; }
+
+
+#advanced-options .filter-widget.title input[type=text] { width: 360px; }
+
+#advanced-options .filter-widget.airing-status select,
+#advanced-options .filter-widget.publishing-status select {width: 152px; }
+
+#advanced-options .filter-widget.producer select,
+#advanced-options .filter-widget.magazine select { width: 360px; }
+
+#advanced-options .filter-widget.aired-date select.year,
+#advanced-options .filter-widget.published-date select.year { width: 80px; }
+
+#advanced-options .filter-widget.aired-date select.month,
+#advanced-options .filter-widget.published-date select.month,
+#advanced-options .filter-widget.aired-date select.day,
+#advanced-options .filter-widget.published-date select.day { width: 60px; }
+
+#advanced-options .filter-widget.aired-date .text,
+#advanced-options .filter-widget.published-date .text {
+	display: inline-block;
+	margin-right: 4px;
+	font-size: 14px;
+}
+
+#advanced-options .filter-widget.aired-season select.year { width: 80px; }
+
+#advanced-options .filter-widget.aired-season select.season { width: 110px; }
+
+#advanced-options .sort-widget .widget-header,
+#advanced-options .filter-widget .widget-header {
+	display: inline-block;
+	width: 110px;
+	font-family: 'Mirza', serif;
+	font-size: 14px;
+}
+
+#advanced-options .sort-widget:last-of-type,
+#advanced-options .filter-widget:last-of-type { padding-bottom: 40px; }
+
+#advanced-options .advanced-options-button {
+	position: relative;
+	display: table;
+	width: 365px;
+	left: 20px;
+	top: 14px;
+	padding: 0;
+	text-align: center;
+	border: none;
+	float: left;
+}
+
+#advanced-options .btn-apply,
+#advanced-options .btn-clear {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	width: 135px;
+	padding: 0;
+	line-height: 36px;
+	font-size: 14px;
+	color: #eb6ea6;
+	border-style: solid;
+	border-color: #eb6ea6;
+	background-color: transparent;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+#advanced-options .btn-apply { border-width: 1px; border-radius: 0; }
+
+#advanced-options .btn-clear {  border-width: 1px 1px 1px 0;  border-radius: 0 8px 8px 0; }
+
+#advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {
+	color: #ffffff;
+	border: solid 1px transparent;
+	background-color: rgb(235, 110, 166);
+}
+
+/* DESIGN SETTINGS BUTTON */
+.cover-block .image-container .btn-list-setting { display: none; }
+
+/* List Container - List Table - Items */
+.list-table .list-table-data a:not(.edit-disabled):hover { text-decoration: underline; }
+
+.list-table .list-table-data .tags .edit {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #c4c4b9;
+	font-size: 10px;
+	font-family: 'Mirza', serif;
+}
+
+.list-table .list-table-data .tags .edit:hover { color: #9a9a8a !important; }
+
+.list-table .list-table-data .tags textarea {
+	box-sizing: border-box;
+	width: 100%;
+	height: 60px;
+}
+
+.list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
+	position: absolute;
+	font-size: .9em;
+	left: 62px;
+	width: 98px;
+	margin: -23px 0 0 0;
+	color: #ffffff;
+	background-image: -webkit-linear-gradient(left, rgb(174, 31, 33) 0, rgb(234, 63, 71) 10%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%);
+	background-image: -moz-linear-gradient(left, rgb(174, 31, 33) 0, rgb(234, 63, 71) 10%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%);
+	background-image: linear-gradient(to right, rgb(174, 31, 33) 0, rgb(234, 63, 71) 10%, rgb(234, 63, 71) 90%, rgb(174, 31, 33) 100%);
+	text-align: center;
+	text-transform: lowercase;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.list-table .list-table-data .data.tags { word-wrap: break-word; }
+
+.list-unit .loading-space {
+    margin: 8px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+}
