@@ -13,3 +13,5 @@ Must use style 1.
 **Columns:**
 
 Most, but not Days, Premiered, Genres, etc.
+
+Numbers recommended.
