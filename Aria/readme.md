@@ -6,8 +6,13 @@
 
 ### Usage Notes
 
-Built for classic lists.
+Built for classic animelists.
 
 **Columns:**
 
-??
+- Tags
+- any others?
+
+**Notes:**
+
+Font used on signboard looks to be Zhikharev, a paid font.

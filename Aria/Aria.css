@@ -5,6 +5,7 @@ Aria by Hahaido
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
 @\import "https://yuiafterdark.github.io/shared/fixes/classic.css";
 @\import "https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap";
+@\import "https://files.catbox.moe/5gfwoz.css";
 
 /* Top Menu */
 
@@ -191,13 +192,13 @@ Aria by Hahaido
 
 /* Main Style */
 
-* { cursor: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/cursor.png), auto !important; }
+* { cursor: url(https://i.ibb.co/wwKFzSR/cursor.png) /* cursor.png */, auto !important; }
 
 body {
 	font-family: 'Crimson Text', serif;
 	font-size: 12px;
 	background-color: rgb(255, 255, 255);
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/background.jpg);
+	background-image: url(https://i.ibb.co/6vbhg1q/background.jpg) /* background.jpg */;
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	background-attachment: fixed;
@@ -221,19 +222,26 @@ a { text-decoration: none; }
 }
 
 #list_surround:before {
+	content: "Hahaido's";
+	box-sizing: border-box;
+	padding: 273px 33px 0 291px;
+	text-align: center;
+	white-space: nowrap;
+	font: 36px/53px "BlacklightD", cursive;
+	color: #a87f60;
 	left: -90px;
 	top: -56px;
 	width: 699px;
 	height: calc(100% + 56px);
-	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/signboard.png) no-repeat;
+	background: url(https://i.ibb.co/xFP6DFK/signboard-blank.png) /* signboard.png */ no-repeat;
 	/* Table borders */
 	background-clip: padding-box;
 	border-color: transparent;
 	border-style: solid; 
 	border-width: 0 0 0 91px; 
-	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
-	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
-	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border.png) 0 0 0 91 round;
+	-webkit-border-image: url(https://i.ibb.co/PtXV0tX/border.png) /* border.png */ 0 0 0 91 round;
+	-moz-border-image: url(https://i.ibb.co/PtXV0tX/border.png) /* border.png */ 0 0 0 91 round;
+	border-image: url(https://i.ibb.co/PtXV0tX/border.png) /* border.png */ 0 0 0 91 round;
 	z-index: 1;
 }
 
@@ -242,7 +250,7 @@ a { text-decoration: none; }
 	top: -268px;
 	width: 146px;
 	height: 227px;
-	background: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/aria.png) no-repeat;
+	background: url(https://i.ibb.co/KWGKjgc/aria.png) /* aria.png */ no-repeat;
 	z-index: 2;
 }
 
@@ -259,9 +267,9 @@ a { text-decoration: none; }
 	border-color: transparent;
 	border-style: solid; 
 	border-width: 0 16px 0 0; 
-	-webkit-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
-	-moz-border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
-	border-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/border_right.png) 0 16 0 0 round;
+	-webkit-border-image: url(https://i.ibb.co/rHqSvZc/border-right.png) /* border_right.png */ 0 16 0 0 round;
+	-moz-border-image: url(https://i.ibb.co/rHqSvZc/border-right.png) /* border_right.png */ 0 16 0 0 round;
+	border-image: url(https://i.ibb.co/rHqSvZc/border-right.png) /* border_right.png */ 0 16 0 0 round;
 	float: right;
 }
 
@@ -294,7 +302,7 @@ a { text-decoration: none; }
 	width: 452px;
 	height: 154px;
 	font-size: 0;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/headers_bg.png);
+	background-image: url(https://i.ibb.co/QrmQrXd/headers-bg.png) /* headers_bg.png */;
 	background-repeat: no-repeat;
 }
 
@@ -345,7 +353,7 @@ a { text-decoration: none; }
 	right: 50px;
 	width: 456px;
 	height: 198px;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/birds.png);
+	background-image: url(https://i.ibb.co/2Wjpb0V/birds.png) /* birds.png */;
 	z-index: -1;
 }
 
@@ -374,7 +382,7 @@ div[id^='tagChangeRow'] a {
 	height: 24px;
 	font-size: 0;
 	color: transparent;
-	background-image: url(https://dl.dropboxusercontent.com/u/78192465/MyAnimeList/Aria/-Images-/edit.png);
+	background-image: url(https://i.ibb.co/5kXjFF8/edit.png) /* edit.png */;
 	background-repeat: no-repeat;
 }
 
