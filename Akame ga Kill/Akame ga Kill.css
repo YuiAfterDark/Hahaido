@@ -1,7 +1,7 @@
 /*
 Akame ga Kill by Hahaido
 Modified by Valerio Lyndon
-Last update: 2023-May-24
+Last update: 2024-Jan-12
 */
 
 @\import "https://malscraper.azurewebsites.net/covers/all/anime/presets/more";
@@ -407,16 +407,18 @@ tr:hover td[class^='td']:first-child:before {
 tr:hover td[class^='td']:not(.borderRBL) { background-color: rgb(0, 0, 0); }
 
 /* LIST FONT COLOR */
-.table_headerLink {
+.table_header,
+.table_header strong {
 	font-family: 'Architects Daughter', cursive;
 	line-height: 24px;
 	font-size: 10px;
-	color: #000000 !important;
 	font-weight: normal;
 	text-transform: uppercase;
 }
-
-.table_headerLink strong { font-weight: normal !important; }
+.table_headerLink,
+.table_header:nth-child(n+1) {
+	color: #000000;
+}
 
 /* BORDER COLORS */
 
