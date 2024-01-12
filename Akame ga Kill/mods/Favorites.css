@@ -1,0 +1,41 @@
+﻿.animetitle[href$="/Kimi_ni_Todoke"] span:first-letter, 
+.animetitle[href$="/Kimi_ni_Todoke_2nd_Season"] span:first-letter, 
+.animetitle[href$="/Candy_Candy"] span:first-letter, 
+.animetitle[href$="/Blood+"] span:first-letter, 
+.animetitle[href$="/Kimi_ga_Nozomu_Eien"] span:first-letter, 
+.animetitle[href$="/Shingetsutan_Tsukihime"] span:first-letter, 
+.animetitle[href$="/Saikano"] span:first-letter, 
+.animetitle[href$="/Amagami_SS"] span:first-letter, 
+.animetitle[href$="/Amagami_SS+_Plus"] span:first-letter,
+.animetitle[href$="/Sekirei"] span:first-letter, 
+.animetitle[href$="/Sekirei:_Pure_Engagement"] span:first-letter, 
+.animetitle[href$="/Mirai_Nikki_(TV)"] span:first-letter,
+.animetitle[href$="/Nisemonogatari"] span:first-letter,
+.animetitle[href$="/Nyan_Koi!"] span:first-letter,
+.animetitle[href$="/Gosick"] span:first-letter,
+.animetitle[href$="/Kokoro_Connect"] span:first-letter,.animetitle[href$="/Kokoro_Connect:_Michi_Random"] span:first-letter,
+.animetitle[href$="/Peach_Girl"] span:first-letter,
+.animetitle[href$="/Kanon_(2006)"] span:first-letter,
+.animetitle[href$="/sola"] span:first-letter,
+.animetitle[href$="/Toaru_Majutsu_no_Index"] span:first-letter,
+.animetitle[href$="/Toaru_Majutsu_no_Index_II"] span:first-letter,
+.animetitle[href$="/Motto_To_LOVE-Ru"] span:first-letter,
+.animetitle[href$="/Sankarea"] span:first-letter,
+.animetitle[href$="/Kurokami"] span:first-letter,
+.animetitle[href$="/Suzuka"] span:first-letter,
+.animetitle[href$="/Kekkaishi"] span:first-letter,
+.animetitle[href$="/Ano_Hi_Mita_Hana_no_Namae_wo_Bokutachi_wa_Mada_Shiranai."] span:first-letter,
+.animetitle[href$="/Zetsuen_no_Tempest"] span:first-letter,
+.animetitle[href$="/Code_Geass:_Hangyaku_no_Lelouch"] span:first-letter,
+.animetitle[href$="/Code_Geass:_Hangyaku_no_Lelouch_R2"] span:first-letter,
+.animetitle[href$="/Muv-Luv_Alternative:_Total_Eclipse"] span:first-letter,
+.animetitle[href$="/Koi_to_Senkyo_to_Chocolate"] span:first-letter,
+.animetitle[href$="/Kingdom"] span:first-letter,
+.animetitle[href$="/Tegami_Bachi"] span:first-letter,
+.animetitle[href$="/Tegami_Bachi_Reverse"] span:first-letter {
+	font-size: 15px;
+	color: #f2a603;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 0 1px #f11c26, 0 -1px #FFFFFF;
+}
